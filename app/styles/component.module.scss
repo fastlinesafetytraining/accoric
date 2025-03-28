@@ -1,0 +1,51 @@
+/* Primary Button*/
+.sitePrimaryButton {
+	background-color: #CE2029;
+	padding: calc(0.5rem + 1px) 3.5rem;
+	color: #fff;
+	border-radius: 0.5em;
+	margin: 1rem;
+	transition: all 0.3s ease-in-out;
+}
+
+.sitePrimaryButton:hover {
+	background-color: #B22234;
+}
+
+/*Secondary Button*/
+
+.siteSecondaryButton {
+	margin: 1rem;
+	background-color: #65A0E5;
+	padding: 0.5rem 3.5rem;
+	color: #fff;
+	border-radius: 0.5em;
+	transition: all 0.3s ease-in-out;
+}
+
+.siteSecondaryButton:hover {
+	background-color: #E0E0E0;
+	color: #1a1a1a;
+}
+
+/*Desktop Navigation Bar*/
+
+.siteDesktopNavBar {
+	padding: 1rem 2rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+	height: 50px;
+}
+
+.siteDesktopNavBar .navListMenu {
+	list-style: none;
+	display: flex;
+	gap: 2rem;
+	margin: 0;
+	padding: 0;
+}
+
+.siteDesktopNavBar .navlistSubmenuItem {
+	font-size: 1rem;
+}
