@@ -60,11 +60,6 @@ export default function Footer() {
 						<li>
 							<Link href="/faq">FAQs</Link>
 						</li>
-						<li>
-							<Link href="www.fastlinesafetytraining.com">
-								Certificate Trainings
-							</Link>
-						</li>
 					</ul>
 					<ul className="link-list">
 						<li>Company</li>
@@ -72,7 +67,9 @@ export default function Footer() {
 							<Link href="/about-us">About Us</Link>
 						</li>
 						<li>
-							<Link href="data-security-policy">Data Security Policy</Link>
+							<Link href="www.fastlinesafetytraining.com">
+								Certificate Trainings
+							</Link>
 						</li>
 					</ul>
 				</div>
