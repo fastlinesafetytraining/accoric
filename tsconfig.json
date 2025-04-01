@@ -25,6 +25,6 @@
       "@Utils/*": ["./app/utils/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(pages)/not-found.js"],
   "exclude": ["node_modules"]
 }
