@@ -48,6 +48,9 @@ export default function Footer() {
 						<li>
 							<Link href="/accoric-dashcard">Accoric DashCard</Link>
 						</li>
+						<li>
+							<Link href="/safety-library">Safety Library</Link>
+						</li>
 					</ul>
 					<ul className="link-list">
 						<li>Support</li>
@@ -67,9 +70,6 @@ export default function Footer() {
 						<li>Company</li>
 						<li>
 							<Link href="/about-us">About Us</Link>
-						</li>
-						<li>
-							<Link href="/contact-us">Contact Us</Link>
 						</li>
 						<li>
 							<Link href="data-security-policy">Data Security Policy</Link>
