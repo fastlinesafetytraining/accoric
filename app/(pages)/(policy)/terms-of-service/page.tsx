@@ -1,7 +1,13 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import styles from '@Styles/policyPage.module.scss';
 
-export default function PrivacyPolicyPage() {
+export const metadata = {
+	title: 'Terms of Service | Policy | Accoric',
+	description: 'Read our Terms of Service to understand your rights and responsibilities when using our services.',
+};
+
+export default function Page() {
 	return (
 		<div className={styles.policyPage}>
 			<div className={styles.policyHeader}>
@@ -20,7 +26,7 @@ export default function PrivacyPolicyPage() {
 						services.
 					</p>
 				</div>
-				
+
 				<hr />
 
 				<div
