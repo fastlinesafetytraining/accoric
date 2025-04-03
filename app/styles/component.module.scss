@@ -1,6 +1,8 @@
+@use './variables.module' as v;
+
 /* Primary Button*/
 .sitePrimaryButton {
-	background-color: #CE2029;
+	background-color: v.$site-accent-color;
 	padding: calc(0.5rem + 1px) 3.5rem;
 	color: #fff;
 	border-radius: 0.5em;
@@ -9,14 +11,14 @@
 }
 
 .sitePrimaryButton:hover {
-	background-color: #B22234;
+	background-color: v.$primary-button-hover-color;
 }
 
 /*Secondary Button*/
 
 .siteSecondaryButton {
 	margin: 1rem;
-	background-color: #65A0E5;
+	background-color: v.$secondary-button-color;
 	padding: 0.5rem 3.5rem;
 	color: #fff;
 	border-radius: 0.5em;
@@ -24,7 +26,7 @@
 }
 
 .siteSecondaryButton:hover {
-	background-color: #E0E0E0;
+	background-color: v.$secondary-button-hover-color;
 	color: #1a1a1a;
 }
 
