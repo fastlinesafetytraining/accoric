@@ -26,6 +26,15 @@ body {
 
 /* Header Styling*/
 
+header {
+	backdrop-filter: blur(1);
+	position: sticky;
+	top: 0;
+	left: 0;
+	box-shadow: 0 0 10px 0 #eeeeee;
+	z-index: 10;
+}
+
 header .login-button{
 	background-color: #CE2029;
 	color: #fff;
@@ -49,6 +58,7 @@ header .login-button:hover {
 
 footer {
 	min-height: 400px;
+	margin: 5rem 0;
 	padding: 10px 5px 5px 5px;
 	display: flex;
 	flex-direction: column;
