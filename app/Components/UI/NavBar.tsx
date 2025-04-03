@@ -43,13 +43,10 @@ export default function NavBar(): React.ReactElement {
 						</Dropdown>
 					</li>
 					<li>
-						<Link href="/why-choose-us">Why Choose Us?</Link>
+						<Link href="/pricing">Pricing</Link>
 					</li>
 					<li>
 						<Link href="/resources">Resources</Link>
-					</li>
-					<li>
-						<Link href="/pricing">Pricing</Link>
 					</li>
 					<li>
 						<Link href="/about-us">About Us</Link>
