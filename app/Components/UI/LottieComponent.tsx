@@ -2,6 +2,12 @@
 
 import Lottie from "lottie-react";
 
-export default function LottieComponent({ animationData, loop }: { animationData: any, loop: boolean }) {
-	return <Lottie animationData={animationData} loop={loop} />
+interface LottieComponentProps {
+	animationData: any;
+	loop: boolean;
+	ariaLabel?: string;
+}
+
+export default function LottieComponent({ animationData, loop, ariaLabel }: LottieComponentProps) {
+	return <Lottie animationData={animationData} loop={loop} aria-label={ariaLabel} />
 }
