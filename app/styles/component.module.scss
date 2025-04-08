@@ -1,9 +1,10 @@
 @use './variables.module' as v;
+@use './_base.scss' as *;
 
 /* Primary Button*/
 .sitePrimaryButton {
 	background-color: v.$site-accent-color;
-	padding: calc(0.5rem + 1px) 3.5rem;
+	padding: 1rem 3.5rem;
 	color: #fff;
 	border-radius: 0.5em;
 	margin: 1rem;
@@ -19,7 +20,7 @@
 .siteSecondaryButton {
 	margin: 1rem;
 	background-color: v.$secondary-button-color;
-	padding: 0.5rem 3.5rem;
+	padding: 1rem 3.5rem;
 	color: #fff;
 	border-radius: 0.5em;
 	transition: all 0.3s ease-in-out;
@@ -51,3 +52,44 @@
 .siteDesktopNavBar .navlistSubmenuItem {
 	font-size: 1rem;
 }
+
+/*Past Clients*/
+.clientContainer {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-column-gap: 2rem;
+	grid-row-gap: 2rem;
+	max-width: 1200px;
+	margin: 2rem auto;
+	justify-items: center;
+	align-items: center;
+	.clientImage {
+		min-width: 225px;
+		border-radius: 1rem;
+		border: 1px solid v.$site-light-gray;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+		filter: saturate(0%) hue-rotate(180deg);
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			filter: grayscale(0%);
+		}
+		@media (max-width: 1024px) {
+			min-width: 150px;
+		}
+		@media (max-width: 768px) {
+			min-width: 100px;
+		}
+	}
+	@media (max-width: 1024px) {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(3, 1fr);
+		grid-column-gap: 1rem;
+		grid-row-gap: 1rem;
+	}
+	@media (max-width: 768px) {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+	}
+	
+}
+
