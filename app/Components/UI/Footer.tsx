@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import '../../styles/globals.css';
+import { LinkedinOutlined } from '@ant-design/icons';
 
 export default function Footer() {
 	return (
@@ -25,13 +26,7 @@ export default function Footer() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<Image
-								width={100}
-								height={100}
-								src="/svg/linkedin-svg-icon.svg"
-								alt="LinkedIn"
-								className="w-6 h-6"
-							/>
+							<LinkedinOutlined className="text-3xl" />
 						</Link>
 					</div>
 				</div>
