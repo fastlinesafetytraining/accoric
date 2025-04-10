@@ -1,0 +1,30 @@
+@use "./_variables.module" as v;
+
+@mixin h-two-plus-highlight {
+    // font-size: 4.167vw;
+    font-size: clamp(3rem, 4.167vw, 5rem);
+    font-weight: 900;
+    color: v.$site-secondary-color;
+    margin-bottom: 1.667vw;
+    line-height: clamp(4rem, 3.75vw, 4rem);
+    position: relative;
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 80%;
+        height: 2px;
+        background: v.$site-accent-color;
+        z-index: -1;
+        border-radius: 1em;
+    }
+    .headingHighlight {
+        color: v.$site-primary-color;
+        font-style: italic;
+        font-size: clamp(4rem, 5vw, 6rem);
+        text-shadow: -5px 5px 0 0 v.$site-secondary-color;
+        margin: 0 1rem;
+    }
+}
+
