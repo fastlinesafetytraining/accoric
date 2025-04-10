@@ -2,7 +2,11 @@ import Image from "next/image";
 import React from "react";
 import { Avatar } from "antd";
 import { PastClients, PrimaryButton, SecondaryButton } from "../Components/UI";
-import { PhoneOutlined, MailOutlined, ClockCircleOutlined } from "@ant-design/icons";
+import {
+  PhoneOutlined,
+  MailOutlined,
+  ClockCircleOutlined,
+} from "@ant-design/icons";
 import styles from "@Styles/home.module.scss";
 
 export const metadata = {
@@ -12,7 +16,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className={styles.homePage}>
+    <main className={styles.homePage}>
       <section className={styles.heroSection}>
         <div className={styles.heroContainer}>
           <div className={styles.heroContent}>
@@ -68,7 +72,7 @@ export default function Home() {
           </div>
           <div className={styles.dashcardContent}>
             <h2>
-              <span className={styles.dashcardTitle__highlight}>Dash</span>card
+              <span className={styles.headingHighlight}>Dash</span>card
             </h2>
             <p>All Your Certifications. One Card.</p>
             <div className={styles.dashcardFeatures}>
@@ -110,9 +114,8 @@ export default function Home() {
         <div className={styles.accoricManagementContainer}>
           <div className={styles.accoricManagementContent}>
             <h2>
-              <span className={styles.accoricManagementTitle__highlight}>
-                Accoric
-              </span>{" "}
+              <span className={styles.headingHighlight}>Accoric</span>
+              <br />
               Management
             </h2>
             <p>
@@ -161,30 +164,105 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.aboutAccoricSection}>
+        <h2>
+          About <span className={styles.headingHighlight}>Accoric</span>
+        </h2>
+        <div className={styles.aboutAccoricContainer}>
+          <div className={styles.aboutAccoricContent}>
+            <p>
+              Accoric is dedicated to revolutionizing construction certification
+              tracking and personnel management. Founded on the principles of
+              efficiency, accuracy, and security, we understand the unique
+              challenges faced by the construction industry in maintaining
+              compliance and managing a skilled workforce.
+            </p>
+            <p>
+              Our platform is designed to streamline these critical processes,
+              providing a centralized solution for tracking certifications,
+              managing employee information, and ensuring project readiness. We
+              empower construction companies to reduce administrative burdens,
+              minimize risks associated with expired credentials, and ultimately
+              focus on building success.
+            </p>
+          </div>
+          <div className={styles.aboutAccoricImageContainer}>
+            <Image
+              width={600}
+              height={600}
+              src="/Images/commercial-supervisor-using-accoric.webp"
+              alt="Commercial supervisor using accoric management software on his phone"
+              className={styles.aboutAccoricImage_large}
+            />
+            <div className={styles.feature__one}>
+              <p>Advance Scheduling</p>
+            </div>
+            <div className={styles.feature__two}>
+              <p>Certificate Tracking</p>
+            </div>
+            <div className={styles.feature__three}>
+              <p>Improved Efficiency</p>
+            </div>
+            <Image
+              width={768}
+              height={432}
+              src="/Images/checking-current-certifications.webp"
+              alt="Checking current certifications using accoric NFC Dashcard"
+              className={styles.aboutAccoricImage_small}
+            />
+          </div>
+        </div>
+      </section>
+
       <section className={styles.testimonialsSection}>
         <div className={styles.testimonialsContainer}>
           <div className={styles.testimonial}>
-            <Avatar size={"large"} src="/Images/related-services-logo.webp"/>
-            <h3>Justin A.</h3>
-            <p>Accoric Management has empowered Related Services LLC to <b>proactively manage employee credentials</b> and <b>certification status</b>, a significant improvement. We highly recommend it.</p>
+            <div className={styles.testimonial__author}>
+              <Avatar size={"large"} src="/Images/related-services-logo.webp" />
+              <h3>Justin A.</h3>
+            </div>
+            <em className={styles.testimonial__quote}>
+              Accoric Management has empowered Related Services LLC to{" "}
+              <b>proactively manage employee credentials</b> and{" "}
+              <b>certification status</b>, a significant improvement. We highly
+              recommend it.
+            </em>
           </div>
           <div className={styles.testimonial}>
-            <Avatar alt="Champions Speacialty" size={"large"} src="Images/champion-scc-logo.webp"/>
-            <h3>Amel H.</h3>
-            <p>
-              Accoric Management has significantly improved Realted Services LLC's ability to manage employee credentials and track certifications, making it easier to stay ahead. We wholeheartly endorse it for any business seeking better organization.
-            </p>
+            <div className={styles.testimonial__author}>
+              <Avatar
+                alt="Champions Speacialty"
+                size={"large"}
+                src="Images/champion-scc-logo.webp"
+              />
+              <h3>Amel H.</h3>
+            </div>
+            <em className={styles.testimonial__quote}>
+              Accoric Management's capabilities have enabled Champion Painting's
+              management team to bid and{" "}
+              <b>pre-plan projects more efficiently</b> with{" "}
+              <b>easy access to all employee training credentials</b>.
+            </em>
           </div>
           <div className={styles.testimonial}>
-            <Avatar alt="Millbrook Fire" size={"large"} src="/Images/millbrook-logo.webp"/>
-            <h3>Nick D.</h3>
-            <p>
-              With Accoric Management's unparalleled safety management and proactive approach to certifications, we've experienced significantly downtime prevention. It's an investment that <b>pays for itself in the first month!</b> 
-            </p>
+            <div className={styles.testimonial__author}>
+              <Avatar
+                alt="Millbrook Fire"
+                size={"large"}
+                src="/Images/millbrook-logo.webp"
+              />
+              <h3>Nick D.</h3>
+            </div>
+            <em className={styles.testimonial__quote}>
+              With Accoric Management's unparalleled safety management and
+              proactive approach to certifications, we've experienced
+              significantly downtime prevention. It's an investment that{" "}
+              <b>pays for itself in the first month!</b>
+            </em>
           </div>
         </div>
-        <div className={styles.testimonialTitle}>
-        <Image
+        <div className={styles.testimonialContent}>
+          <Image
             width={150}
             height={150}
             src="/Images/rating-stars.webp"
@@ -192,53 +270,65 @@ export default function Home() {
             className={styles.testimonial_stars}
           />
           <h2>Testimonials</h2>
-          <p>Discover why organizations across various industries trust Accoric to manage their employees certification and deliver tangible results.</p>
-          <Image  width={300} height={100} src="/svg/our-collaboration-solution.svg" alt="Collaboration" />
+          <p>
+            Discover why organizations across various industries trust Accoric
+            to manage their employees certification and deliver tangible
+            results.
+          </p>
+          <Image
+            width={300}
+            height={100}
+            src="/svg/our-collaboration-solution.svg"
+            alt="Collaboration"
+          />
         </div>
       </section>
 
       <section className={styles.contactSection}>
         <h2>Get in Touch</h2>
-        <p>Open to all questions and inquiries. We are available to help you with your needs</p>
+        <p>
+          Open to all questions and inquiries. We are available to help you with
+          your needs
+        </p>
         <div className={styles.contactMethodContainer}>
           <div className={styles.contactMethod}>
             <ClockCircleOutlined className={styles.contactMethodIcon} />
             <h3>Hours of Operation</h3>
-            <br/>
+            <br />
             <h4>Weekdays</h4>
             <p>8:30AM - 4:30PM EDT</p>
-            <br/>
+            <br />
             <h4>Weekends</h4>
             <p>Closed</p>
           </div>
           <div className={styles.contactMethod}>
             <PhoneOutlined rotate={90} className={styles.contactMethodIcon} />
             <h3>Call Us</h3>
-            <br/>
+            <br />
             <h4>For Accoric Management Technical Support</h4>
             <p>+1 (516) 200-4720</p>
-            <br/>
+            <br />
             <h4>For Dashcard Support</h4>
             <p>+1 (516) 200-4720</p>
-            <br/>
+            <br />
             <h4>For Sales/General Inquiry</h4>
             <p>+1 (516) 200-4720</p>
           </div>
           <div className={styles.contactMethod}>
             <MailOutlined className={styles.contactMethodIcon} />
             <h3>Email Us</h3>
-            <br/>
+            <br />
             <h4>For Accoric Management Technical Support</h4>
             <p>techsupport@accoric.com</p>
-            <br/>
+            <br />
             <h4>For Dashcard Support</h4>
             <p>dash@accoric.com</p>
-            <br/>
+            <br />
             <h4>For Sales/General Inquiry</h4>
             <p>info@accoric.com</p>
           </div>
         </div>
       </section>
-    </div>
+    </main>
   );
 }
