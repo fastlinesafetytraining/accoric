@@ -1,7 +1,6 @@
 @use "./_variables.module" as v;
 
 @mixin h-two-plus-highlight {
-    // font-size: 4.167vw;
     font-size: clamp(3rem, 4.167vw, 5rem);
     font-weight: 900;
     color: v.$site-secondary-color;
