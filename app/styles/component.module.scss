@@ -1,34 +1,84 @@
+@use 'sass:color';
 @use './variables.module' as v;
-@use './_base.scss' as *;
+@use './base.scss';
 
 /* Primary Button*/
 .sitePrimaryButton {
-	background-color: v.$site-accent-color;
-	padding: 1rem 3.5rem;
-	color: #fff;
-	border-radius: 0.5em;
-	margin: 1rem;
-	transition: all 0.3s ease-in-out;
-}
-
-.sitePrimaryButton:hover {
-	background-color: v.$primary-button-hover-color;
+	border: 2px solid v.$primary-button-color;
+	background-color: v.$primary-button-color;
+	padding: clamp(0.75rem, 1.5vw, 1rem) clamp(2rem, 4vw, 3.5rem);
+	color: white;
+	border-radius: 0.25em;
+	text-align: center;
+	transition: all 0.2s;
+	position: relative;
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 10px 20px rgb(216, 216, 216);
+	}
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: 0 5px 10px rgb(216, 216, 216);
+	}
+	&::after {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 0.25em;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.4s;
+	}
+	&::after {
+		background-color: v.$primary-button-color;
+	}
+	&:hover::after {
+		transform: scaleX(1.2) scaleY(1.4);
+		opacity: 0;
+	}
 }
 
 /*Secondary Button*/
 
 .siteSecondaryButton {
-	margin: 1rem;
-	background-color: v.$secondary-button-color;
-	padding: 1rem 3.5rem;
-	color: #fff;
-	border-radius: 0.5em;
-	transition: all 0.3s ease-in-out;
-}
-
-.siteSecondaryButton:hover {
-	background-color: v.$secondary-button-hover-color;
-	color: #1a1a1a;
+	border: 2px solid v.$secondary-button-color;
+	background-color: white;
+	padding: clamp(0.75rem, 1.5vw, 1rem) clamp(2rem, 4vw, 3.5rem);
+	color: black;
+	border-radius: 0.25em;
+	text-align: center;
+	transition: all 0.2s;
+	position: relative;
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 10px 20px rgb(216, 216, 216);
+	}
+	&:active {
+		transform: translateY(-1px);
+		box-shadow: 0 5px 10px rgb(216, 216, 216);
+	}
+	&::after {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 0.25em;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.4s;
+	}
+	&::after {
+		background-color: v.$secondary-button-color;
+	}
+	&:hover::after {
+		transform: scaleX(1.2) scaleY(1.4);
+		opacity: 0;
+	}
 }
 
 /*Desktop Navigation Bar*/
