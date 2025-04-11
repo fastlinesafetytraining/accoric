@@ -6,6 +6,7 @@ import {
   PhoneOutlined,
   MailOutlined,
   ClockCircleOutlined,
+  ArrowUpOutlined,
 } from "@ant-design/icons";
 import styles from "@Styles/home.module.scss";
 
@@ -105,6 +106,7 @@ export default function Home() {
                   world.
                 </p>
               </div>
+              <a href="#">Learn More <ArrowUpOutlined rotate={45} /></a>
             </div>
           </div>
         </div>
@@ -151,6 +153,7 @@ export default function Home() {
                   world.
                 </p>
               </div>
+              <a href="#">Learn More <ArrowUpOutlined rotate={45} /></a>
             </div>
           </div>
           <div className={styles.accoricManagementImage}>
