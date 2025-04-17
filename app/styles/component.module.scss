@@ -156,3 +156,13 @@
 	}
 }
 
+/*Video Player*/
+
+.videoPlayer {
+    width: 45vw;
+    height: 45vh;
+    object-fit: cover;
+    border-radius: 1em;
+    margin-top: 2rem;
+	box-shadow: 10px 10px 2px 0 v.$site-secondary-color;
+}
