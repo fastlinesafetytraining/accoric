@@ -1,7 +1,7 @@
 'use client';
 
 import Image from "next/image";
-import pastClients from "@/app/Utils/const/pastClient";
+import pastClients from "@/app/utils/const/pastClient";
 import styles from '@Styles/component.module.scss';
 
 
