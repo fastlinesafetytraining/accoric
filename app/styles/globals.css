@@ -1,4 +1,5 @@
 @import 'tailwindcss';
+@import 'lenis/dist/lenis.css';
 
 :root {
 	--background: #ffffff;
@@ -19,6 +20,7 @@
 	}
 }
 
+/* Body Styling */
 body {
 	background: var(--background);
 	color: var(--foreground);
@@ -58,7 +60,7 @@ header .login-button:hover {
 }
 
 main {
-	background-color: #fff;
+	background-color: #fdfdfd;
 }
 
 
