@@ -6,14 +6,14 @@ import '@Styles/globals.css'
 
 export default function Header() {
 	return (
-		<header className="p-4 flex justify-between items-center">
+		<header className="flex justify-between items-center">
 			<Link href="/">
 				<Image
 					width={200}
 					height={100}
 					src="/accoric-logo.webp"
 					alt="Accoric Logo"
-					className="min-w-[100px] max-w-[200px] h-auto"
+					className="logo min-w-[100px] max-w-[200px] h-auto"
 				/>
 			</Link>
 			<NavBar />
