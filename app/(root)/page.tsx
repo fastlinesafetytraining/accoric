@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Avatar } from "antd";
-import { PastClients, PrimaryButton, SecondaryButton } from "../Components/UI";
+import { PastClients, PrimaryButton, SecondaryButton } from "@Components/UI";
 import {
   PhoneOutlined,
   MailOutlined,
@@ -221,7 +221,6 @@ export default function Home() {
         <div className={styles.testimonialsContainer}>
           <div className={styles.testimonial}>
             <div className={styles.testimonial__author}>
-              <Avatar size={"large"} src="/Images/related-services-logo.webp" />
               <h3>Justin A.</h3>
             </div>
             <em className={styles.testimonial__quote}>
