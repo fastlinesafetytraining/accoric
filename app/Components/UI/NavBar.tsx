@@ -19,12 +19,6 @@ const items: MenuProps['items'] = [
         label: (
             <Link className="text-lg px-4 py-1" href='/accoric-dashcard'>Accoric DashCard</Link>
         )
-    },
-    {
-        key: '3',
-        label: (
-            <Link className='text-lg px-4 py-1' href='/safety-library'>Safety Library</Link>
-        )
     }
 ];
 
