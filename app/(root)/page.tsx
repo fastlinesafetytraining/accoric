@@ -1,15 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import { Avatar } from "antd";
-import { PastClients, PrimaryButton, SecondaryButton } from "@Components/UI";
-import {
-  PhoneOutlined,
-  MailOutlined,
-  ClockCircleOutlined,
-  ArrowUpOutlined,
-} from "@ant-design/icons";
+import { PastClients, PrimaryButton, SecondaryButton, ContactCTA } from "@Components/UI";
+import { FaClock, FaPhoneAlt, FaEnvelope, FaArrowUp } from "react-icons/fa";
 import styles from "@Styles/home.module.scss";
-
 export const metadata = {
   title: "Accoric - Construction Certificate Management Software",
   description: "All Your CERTIFICATES Stored Into One Location",
@@ -106,7 +100,7 @@ export default function Home() {
                   world.
                 </p>
               </div>
-              <a href="#">Learn More <ArrowUpOutlined rotate={45} /></a>
+              <a href="#">Learn More <FaArrowUp rotate={45} /></a>
             </div>
           </div>
         </div>
@@ -153,7 +147,7 @@ export default function Home() {
                   world.
                 </p>
               </div>
-              <a href="#">Learn More <ArrowUpOutlined rotate={45} /></a>
+              <a href="#">Learn More <FaArrowUp rotate={45} /></a>
             </div>
           </div>
           <div className={styles.accoricManagementImage}>
@@ -286,6 +280,10 @@ export default function Home() {
         </div>
       </section>
 
+      <section className={styles.contactCTA}>
+        <ContactCTA />
+      </section>
+
       <section className={styles.contactSection}>
         <h2>Get in Touch</h2>
         <p>
@@ -294,7 +292,7 @@ export default function Home() {
         </p>
         <div className={styles.contactMethodContainer}>
           <div className={styles.contactMethod}>
-            <ClockCircleOutlined className={styles.contactMethodIcon} />
+            <FaClock className={styles.contactMethodIcon} />
             <h3>Hours of Operation</h3>
             <br />
             <h4>Weekdays</h4>
@@ -304,7 +302,7 @@ export default function Home() {
             <p>Closed</p>
           </div>
           <div className={styles.contactMethod}>
-            <PhoneOutlined rotate={90} className={styles.contactMethodIcon} />
+            <FaPhoneAlt className={styles.contactMethodIcon} />
             <h3>Call Us</h3>
             <br />
             <h4>For Accoric Management Technical Support</h4>
@@ -317,7 +315,7 @@ export default function Home() {
             <p>+1 (516) 200-4720</p>
           </div>
           <div className={styles.contactMethod}>
-            <MailOutlined className={styles.contactMethodIcon} />
+            <FaEnvelope className={styles.contactMethodIcon} />
             <h3>Email Us</h3>
             <br />
             <h4>For Accoric Management Technical Support</h4>

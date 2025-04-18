@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import '../../styles/globals.css';
-import { LinkedinOutlined } from '@ant-design/icons';
+import { FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
 	return (
@@ -27,7 +27,7 @@ export default function Footer() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<LinkedinOutlined className="text-3xl" />
+							<FaLinkedin className="text-3xl" />
 						</Link>
 					</div>
 				</div>

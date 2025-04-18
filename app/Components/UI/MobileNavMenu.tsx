@@ -1,7 +1,7 @@
 'use client';
 import React, { useState } from "react"
 import { Button, Drawer } from "antd"
-import { MenuOutlined } from "@ant-design/icons"
+import { FaBars } from "react-icons/fa";
 
 export default function MobileNavMenu(): React.ReactElement {
 	const [open, setOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function MobileNavMenu(): React.ReactElement {
 
 	return (
 		<>
-			<Button type="primary" onClick={showDrawer}><MenuOutlined /></Button>
+			<Button type="primary" onClick={showDrawer}><FaBars /></Button>
 			<Drawer title="Mobile Menu" onClose={onClose} open={open}>
 				<ul className="mobile-nav-menu">
 					<li><a href="/accoric-management">Accoric Management</a></li>
