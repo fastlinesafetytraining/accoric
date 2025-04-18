@@ -1,5 +1,4 @@
-'use client';
-import { useState } from 'react';
+import { CollapseProps } from 'antd';
 import { Collapse } from 'antd';
 import Script from 'next/script';
 
@@ -14,18 +13,23 @@ interface FAQProps {
 }
 
 export default function FAQ({ items, title = "Frequently Asked Questions" }: FAQProps) {
-  const [activeKey, setActiveKey] = useState<string | string[]>([]);
+  
+  const faqItems: CollapseProps['items'] = items.map((item, index) => ({
+    key: index.toString(),
+    label: item.question,
+    children: item.answer
+  }));
 
   // Generate JSON-LD schema
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": items.map(item => ({
+    "mainEntity": faqItems.map(item => ({
       "@type": "Question",
-      "name": item.question,
+      "name": item.label,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": item.answer
+        "text": item.children
       }
     }))
   };
@@ -39,16 +43,9 @@ export default function FAQ({ items, title = "Frequently Asked Questions" }: FAQ
       <div>
         {title && <h2>{title}</h2>}
         <Collapse
+          items={faqItems}
           accordion
-          activeKey={activeKey}
-          onChange={(key) => setActiveKey(key)}
-        >
-          {items.map((item, index) => (
-            <Collapse.Panel header={item.question} key={index.toString()}>
-              <p>{item.answer}</p>
-            </Collapse.Panel>
-          ))}
-        </Collapse>
+        />
       </div>
     </>
   );
