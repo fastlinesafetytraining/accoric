@@ -9,6 +9,7 @@ export default function Footer() {
 			<div className="footer-main-content-container">
 				<div className="footer-logo-container m-10">
 					<Image
+						unoptimized
 						width={192}
 						height={192}
 						src="/svg/accoric-logo-icon.svg"
@@ -71,6 +72,7 @@ export default function Footer() {
 
 				<div className="flex flex-col items-center m-10">
 					<Image
+						unoptimized
 						className="mb-8 rounded-full"
 						width={100}
 						height={100}

@@ -9,6 +9,7 @@ export default function Header() {
 		<header className="flex justify-between items-center">
 			<Link href="/">
 				<Image
+					unoptimized
 					width={200}
 					height={100}
 					src="/svg/accoric-logo-svg.svg"
