@@ -6,5 +6,6 @@ import LottieComponent from './LottieComponent';
 import PastClients from './PastClients';
 import VideoPlayer from './VideoPlayer';
 import PricingForm from './PricingForm';
+import FAQ from './FAQ';
 
-export { Header, Footer, PrimaryButton, SecondaryButton, LottieComponent, PastClients, VideoPlayer, PricingForm };
+export { Header, Footer, PrimaryButton, SecondaryButton, LottieComponent, PastClients, VideoPlayer, PricingForm, FAQ };
