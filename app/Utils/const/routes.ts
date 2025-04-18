@@ -16,8 +16,8 @@ export const navMenuItems = [
   },
   {
     key: "4",
-    label: "Resources",
-    href: "/resources",
+    label: "Support",
+    href: "/support",
   },
   {
     key: "5",
