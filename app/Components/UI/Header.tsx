@@ -11,7 +11,7 @@ export default function Header() {
 				<Image
 					width={200}
 					height={100}
-					src="/accoric-logo.webp"
+					src="/svg/accoric-logo-svg.svg"
 					alt="Accoric Logo"
 					className="logo min-w-[100px] max-w-[200px] h-auto"
 				/>

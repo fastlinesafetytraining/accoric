@@ -11,7 +11,7 @@ export default function Footer() {
 					<Image
 						width={192}
 						height={192}
-						src="/accoric-logo-icon.webp"
+						src="/svg/accoric-logo-icon.svg"
 						alt="Accoric Logo"
 						className="w-30"
 					/>
@@ -71,10 +71,10 @@ export default function Footer() {
 
 				<div className="flex flex-col items-center m-10">
 					<Image
-						className="mb-8"
+						className="mb-8 rounded-full"
 						width={100}
 						height={100}
-						src="/usa-flag-icon.png"
+						src="/svg/usa-flag.svg"
 						alt="USA Flag"
 					/>
 					<p>
