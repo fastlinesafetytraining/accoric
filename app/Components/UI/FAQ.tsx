@@ -1,6 +1,7 @@
 import { CollapseProps } from 'antd';
 import { Collapse } from 'antd';
 import Script from 'next/script';
+import styles from "@Styles/component.module.scss";
 
 interface FAQItem {
   question: string;
@@ -8,43 +9,47 @@ interface FAQItem {
 }
 
 interface FAQProps {
-  items: FAQItem[];
-  title?: string;
+  items: Promise<{ gatheredItems: FAQItem[] }> | FAQItem[];
 }
 
-export default function FAQ({ items, title = "Frequently Asked Questions" }: FAQProps) {
+export default async function FAQ({ items }: FAQProps) {
+  const faqItemsArray = Array.isArray(items) ? items : (await items).gatheredItems;
   
-  const faqItems: CollapseProps['items'] = items.map((item, index) => ({
+  const faqItems: CollapseProps['items'] = faqItemsArray.map((item, index) => ({
     key: index.toString(),
-    label: item.question,
-    children: item.answer
+    label: <h3 className={styles.faqQuestion}>{item.question}</h3>,
+    children: <p className={styles.faqAnswer}>{item.answer}</p>
   }));
 
   // Generate JSON-LD schema
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqItems.map(item => ({
+    "mainEntity": faqItemsArray.map(item => ({
       "@type": "Question",
-      "name": item.label,
+      "name": item.question,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": item.children
+        "text": item.answer
       }
     }))
   };
 
   return (
     <>
-      <Script id="faq-schema" type="application/ld+json">
-        {JSON.stringify(faqSchema)}
-      </Script>
+      <Script 
+        id="faq-schema" 
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
 
-      <div>
-        {title && <h2>{title}</h2>}
+      <div className={styles.faq}>
+        <h2>Frequently Asked Questions</h2>
         <Collapse
+          size='large'
           items={faqItems}
           accordion
+          style={{ backgroundColor: '#fdfdfd' }}
         />
       </div>
     </>
