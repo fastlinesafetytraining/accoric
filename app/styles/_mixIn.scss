@@ -7,17 +7,6 @@
     margin-bottom: 1.667vw;
     line-height: clamp(4rem, 3.75vw, 4rem);
     position: relative;
-    &::before {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: 0;
-        width: 80%;
-        height: 2px;
-        background: v.$site-accent-color;
-        z-index: -1;
-        border-radius: 1em;
-    }
     .headingHighlight {
         color: v.$site-primary-color;
         font-style: italic;
