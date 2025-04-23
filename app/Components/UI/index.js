@@ -7,5 +7,6 @@ import PastClients from './PastClients';
 import VideoPlayer from './VideoPlayer';
 import PricingForm from './PricingForm';
 import FAQ from './FAQ';
+import ContactCTA from './ContactCTA';
 
-export { Header, Footer, PrimaryButton, SecondaryButton, LottieComponent, PastClients, VideoPlayer, PricingForm, FAQ };
+export { Header, Footer, PrimaryButton, SecondaryButton, LottieComponent, PastClients, VideoPlayer, PricingForm, FAQ, ContactCTA };
