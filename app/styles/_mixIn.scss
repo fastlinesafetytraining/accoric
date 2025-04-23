@@ -1,4 +1,4 @@
-@use "./_variables.module" as v;
+@use "./_variables.scss" as v;
 
 @mixin h-two-plus-highlight {
     font-size: clamp(3rem, 4.167vw, 5rem);
