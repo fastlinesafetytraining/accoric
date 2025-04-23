@@ -1,11 +1,5 @@
-@use "./variables.module" as v;
+@use "./variables.scss" as v;
 @use "./mixIn" as m;
-
-.homePage {
-  h2 {
-    @include m.h-two-plus-highlight;
-  }
-}
 
 .heroSection {
   padding: 2rem;
@@ -107,11 +101,9 @@
   width: 80%;
   margin: 5rem auto;
   position: relative;
+  text-align: center;
   h2 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
-    &::before {
-      display: none;
-    }
+    @include m.h-two-plus-highlight;
   }
   p {
     font-size: 1.5rem;
@@ -130,6 +122,9 @@
   justify-content: space-between;
   align-items: center;
   margin: 3rem auto;
+  h2 {
+    @include m.h-two-plus-highlight;
+  }
 
   .dashcardContainer, .accoricManagementContainer {
     width: 100%;
@@ -179,6 +174,7 @@
     align-items: flex-start;
     padding: 2rem;
     a {
+      display: inline-flex;
       margin: 1rem;
       align-self: flex-end;
       position: relative;
@@ -192,10 +188,15 @@
         left: 0;
         transition: all 0.2s ease-in-out;
       }
+      svg {
+        margin: 0 0.25rem;
+        transition: all 0.2s ease-in-out;
+        transform: rotate(45deg);
+      }
       &:hover::after {
         width: 10%;
       }
-      &:hover > span {
+      &:hover > svg {
         animation: scaleAndRotate 0.5s ease-in-out;
       }
     }
@@ -239,6 +240,9 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  h2 {
+    @include m.h-two-plus-highlight;
+  }
   .aboutAccoricContainer {
     display: flex;
     flex-direction: row;
@@ -393,6 +397,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     z-index: 2;
+    h2 {
+      @include m.h-two-plus-highlight;
+    }
     @media (max-width: v.$tablet-breakpoint) {
       width: 90%;;
     }
@@ -411,7 +418,7 @@
   align-items: center;
   text-align: center;
   h2 {
-    font-size: 4rem;
+    @include m.h-two-plus-highlight;
   }
   p {
     font-size: 1.5rem;
@@ -443,12 +450,13 @@
       }
       .contactMethodIcon {
         margin-bottom: 1rem;
-        font-size: 3rem;
+        font-size: clamp(2rem, 15vw, 4rem);
         border-radius: 50%;
         color: v.$site-secondary-color;
         background-color: #fff;
         box-shadow: 0 0 10px 0 rgba(112, 112, 112, 0.1);
         padding: 1rem;
+        overflow: visible;
       }
       h3 {
         font-size: clamp(1.25rem, 2vw, 1.75rem);
@@ -499,14 +507,14 @@
 
 @keyframes scaleAndRotate {
   0% {
-    transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(45deg);
   }
 
   50% {
-    transform: scale(1.2) rotate(360deg);
+    transform: scale(1.2);
   }
 
   100% {
-    transform: scale(1) rotate(360deg);
+    transform: scale(1) rotate(405deg);
   }
 }
