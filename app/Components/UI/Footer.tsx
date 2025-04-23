@@ -44,9 +44,6 @@ export default function Footer() {
 						<li>
 							<Link href="/accoric-dashcard">Accoric DashCard</Link>
 						</li>
-						<li>
-							<Link href="/safety-library">Safety Library</Link>
-						</li>
 					</ul>
 					<ul className="link-list">
 						<li>Support</li>
@@ -63,9 +60,9 @@ export default function Footer() {
 							<Link href="/about-us">About Us</Link>
 						</li>
 						<li>
-							<Link href="www.fastlinesafetytraining.com">
+							<a href="https://www.fastlinesafetytraining.com" target="_blank" rel="noopener noreferrer">
 								Certificate Trainings
-							</Link>
+							</a>
 						</li>
 					</ul>
 				</div>
