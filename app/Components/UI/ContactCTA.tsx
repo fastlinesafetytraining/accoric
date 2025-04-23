@@ -1,18 +1,29 @@
-import Link from "next/link";
-import { Flex } from "antd";
+import Image from "next/image";
 import styles from "@Styles/component.module.scss";
+import { PrimaryButton } from ".";
 
-export default function ContactCTA() {
+export default function ContactCTA() {	
 	return (
-		<>
-			<Flex justify="space-evenly" align="center" className={styles.contactCTA}>
-				<h2 className={styles.contactCTA__title}>Request a Demo</h2>
-				<p className={styles.contactCTA__description}>
-					Request a demo of our product to see how it can help your business.<br />
-					Our team will be in touch with you shortly to schedule a demo.
-				</p>
-				<Link href="/contact" className={styles.contactCTA__button}>Request Info</Link>
-			</Flex>
-		</>
+		<div className={styles.contactCTA}>
+          <div className={styles.contactCTA__imageContainer}>
+            <Image
+              className={styles.contactCTA__imageContainer__image}
+              src="/Images/accoric-trust-promise.webp"
+              alt="Call to action image"
+              width={391}
+              height={150}
+            />
+          </div>
+          <div className={styles.contactCTA__content}>
+            <h2>Ready to stop dealing with paper documents?</h2>
+            <p>
+              Throw away the messy binder of paper and finally know who has what
+              certification.
+            </p>
+          </div>
+          <PrimaryButton href="/contact" title="Get Started">
+            Get Started
+          </PrimaryButton>
+		</div>
 	);
 }
