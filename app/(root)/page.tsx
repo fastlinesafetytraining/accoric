@@ -280,10 +280,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.contactCTA}>
-        <ContactCTA />
-      </section>
-
       <section className={styles.contactSection}>
         <h2>Get in Touch</h2>
         <p>
@@ -329,6 +325,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <ContactCTA />
     </main>
   );
 }
