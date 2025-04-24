@@ -1,5 +1,5 @@
 @use "./variables.scss" as v;
-@use "./mixIn" as m;
+@use "./mixins.scss" as m;
 
 .heroSection {
   padding: 2rem;
