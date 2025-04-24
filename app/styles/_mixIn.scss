@@ -16,3 +16,10 @@
     }
 }
 
+@mixin text-gradient {
+	background: linear-gradient(v.$site-light-blue, v.$soft-black-2) border-box;
+	border: 4px solid transparent;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
