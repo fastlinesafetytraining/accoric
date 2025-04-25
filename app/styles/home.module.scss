@@ -1,6 +1,21 @@
 @use "./variables.scss" as v;
 @use "./mixins.scss" as m;
 
+.homePage {
+  @media (max-width: v.$tablet-breakpoint) {
+    padding: 1rem;
+  }
+  section:not(.heroSection) {
+    min-height: 80vh;
+    margin: 0 auto 5rem auto;
+    @media (max-width: v.$tablet-breakpoint) {
+      width: 100%;
+      border-radius: 1em;
+      padding: 1rem;
+      box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+    }
+  }
+}
 .heroSection {
   padding: 2rem;
   border-radius: 1rem;
@@ -126,17 +141,14 @@
     @include m.h-two-plus-highlight;
   }
 
-  .dashcardContainer, .accoricManagementContainer {
+  .dashcardContainer,
+  .accoricManagementContainer {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    @media (max-width: v.$tablet-breakpoint) {
-      border-radius: 1em;
-      box-shadow: 0 0 5px 0 lightgrey;
-    }
   }
-  
+
   .dashcardContainer {
     @media (max-width: v.$tablet-breakpoint) {
       flex-direction: column-reverse;
@@ -164,7 +176,7 @@
     @media (max-width: v.$tablet-breakpoint) {
       width: 100%;
       box-shadow: none;
-  } 
+    }
   }
   .dashcardContent,
   .accoricManagementContent {
@@ -255,7 +267,7 @@
       width: 40%;
       @media (max-width: v.$tablet-breakpoint) {
         width: 100%;
-    } 
+      }
     }
     .aboutAccoricImageContainer {
       margin-top: 3rem;
@@ -352,7 +364,7 @@
     gap: 2rem;
     z-index: 2;
     @media (max-width: v.$tablet-breakpoint) {
-      width: 90%;;
+      width: 90%;
     }
     .testimonial {
       max-width: 60%;
@@ -398,13 +410,12 @@
     justify-content: space-evenly;
     z-index: 2;
     h2 {
-      @include m.h-two-plus-highlight;
+      font-size: clamp(3rem, 5vw, 6rem);
+      color: v.$site-secondary-color;
+      font-weight: 900;
     }
     @media (max-width: v.$tablet-breakpoint) {
-      width: 90%;;
-    }
-    h2 {
-      font-size: 4rem;
+      width: 90%;
     }
   }
 }
