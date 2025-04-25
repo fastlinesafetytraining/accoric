@@ -148,9 +148,9 @@
 	@media (max-width: 1024px) {
 		max-width: 90vw;
 	}
-
 	.clientImage {
-		width: clamp(150px, 15vw, 225px);
+		width: auto;
+		height: auto;
 		border-radius: 1rem;
 		filter: grayscale(100%);
 		transition: all 0.3s ease-in-out;
