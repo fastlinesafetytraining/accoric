@@ -273,7 +273,6 @@
 	p {
 		color: v.$site-secondary-color;
 		font-size: clamp(1rem, 1vw, 1.2rem);
-		margin: 1rem;
 	}
 	p:last-child {
 		text-align: right;
@@ -349,7 +348,7 @@
 /*FAQ*/
 
 .faq {
-	max-width: 800px;
+	max-width: 1000px;
 	margin: 1rem auto;
 	border-radius: 1em;
 	h2 {
