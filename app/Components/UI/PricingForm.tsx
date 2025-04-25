@@ -51,15 +51,50 @@ export default function PricingForm() {
   };
 
   const radioOptions = [
-    { label: "5+", value: 5 },
-    { label: "25+", value: 25 },
-    { label: "50+", value: 50 },
-    { label: "100+", value: 100 },
-    { label: "200+", value: 200 },
-    { label: "300+", value: 300 },
-    { label: "400+", value: 400 },
-    { label: "500+", value: 500 },
-    { label: "600+", value: 600 },
+    { label: "5+", value: "5+" },
+    { label: "25+", value: "25+" },
+    { label: "50+", value: "50+" },
+    { label: "100+", value: "100+" },
+    { label: "200+", value: "200+" },
+    { label: "300+", value: "300+" },
+    { label: "400+", value: "400+" },
+    { label: "500+", value: "500+" },
+    { label: "600+", value: "600+" },
+  ];
+
+  const formFields = [
+    {
+      name: "fullName",
+      label: "Full Name",
+      rules: [{ required: true, message: "Please enter your full name" }],
+      prefix: <FaUser />,
+      placeholder: "Full Name *",
+      type: "text",
+    },
+    {
+      name: "companyName",
+      label: "Company Name",
+      rules: [{ required: true, message: "Please enter your company name" }],
+      prefix: <FaBuilding />,
+      placeholder: "Company Name *",
+      type: "text",
+    },
+    {
+      name: "email",
+      label: "Email",
+      rules: [{ required: true, message: "Please enter your email" }],
+      prefix: <FaEnvelope />,
+      placeholder: "Email *",
+      type: "email",
+    },
+    {
+      name: "phone",
+      label: "Phone",
+      rules: [{ required: true, message: "Please enter your phone number" }],
+      prefix: <FaPhoneAlt />,
+      placeholder: "Phone *",
+      type: "tel",
+    },
   ];
 
   const handleEmployeeNumberChange = (value: number) => {
@@ -81,85 +116,65 @@ export default function PricingForm() {
     <div className={styles.pricingFormContainer}>
       <h2>Pricing Form</h2>
       <p>Please fill out the form below to get a quote for your company.</p>
+      <p>Required Fields are marked with an asterisk (*)</p>
       <ConfigProvider
-              theme={{
-                components: {
-                  Input: {
-                    activeBorderColor: "#0c0050",
-                    hoverBorderColor: "#0c0050",
-                  },
-                  Slider: {
-                    trackBg: "#0c0050",
-                    trackHoverBg: "#0c0050",
-                  },
-                  Radio: {
-                    buttonSolidCheckedBg: "#0c0050",
-                    buttonSolidCheckedHoverBg: "#0c0050",
-                  },
-                },
-              }}
-            >
-      <Form
-        form={form}
-        className={styles.pricingForm}
-        name="Pricing Form"
-        initialValues={{ remember: true }}
-        size="large"
-        layout="inline"
-        autoComplete="off"
-      >
-        <Form.Item
-          name="fullName"
-          className={styles.pricingForm__input}
-          rules={[{ required: true, message: "Please enter your full name" }]}
-        >
-          <Input size="large" prefix={<FaUser />} placeholder="Full Name" type="text" />
-        </Form.Item>
-        <Form.Item
-          name="companyName"
-          className={styles.pricingForm__input}
-          rules={[
-            { required: true, message: "Please enter your company name" },
-          ]}
-        >
-          <Input
-            size="large"
-            prefix={<FaBuilding />}
-            placeholder="Company Name"
-            type="text"
-          />
-        </Form.Item>
-        <Form.Item
-          name="email"
-          className={styles.pricingForm__input}
-          rules={[{ required: true, message: "Please enter your email" }]}
-        >
-          <Input size="large" prefix={<FaEnvelope />} placeholder="Email" type="email" />
-        </Form.Item>
-        <Form.Item
-          name="phone"
-          className={styles.pricingForm__input}
-          rules={[
-            { required: true, message: "Please enter your phone number" },
-          ]}
-        >
-          <Input size="large" prefix={<FaPhoneAlt />} placeholder="Phone" type="tel" />
-        </Form.Item>
-        <Form.Item
-          name="numberOfEmployees"
-          getValueFromEvent={(e) => e.target.value}
-          className={styles.pricingForm__employeeNumber}
-          rules={[
-            {
-              required: true,
-              message: "Please select your number of employees",
+        theme={{
+          components: {
+            Input: {
+              activeBorderColor: "#0c0050",
+              hoverBorderColor: "#0c0050",
             },
-          ]}
+            Slider: {
+              trackBg: "#0c0050",
+              trackHoverBg: "#0c0050",
+            },
+            Radio: {
+              buttonSolidCheckedBg: "#0c0050",
+              buttonSolidCheckedHoverBg: "#0c0050",
+            },
+          },
+        }}
+      >
+        <Form
+          form={form}
+          className={styles.pricingForm}
+          name="Pricing Form"
+          initialValues={{ remember: true }}
+          size="large"
+          layout="inline"
+          autoComplete="off"
         >
-          <div aria-label="Slider Information">
-            <p className={styles.pricingForm__employeeNumber__info}>
-              Number of Employees to be Monitored: <b>{`${selectedValue}+`}</b>
-            </p>
+          {formFields.map((field) => (
+            <Form.Item
+              key={field.name}
+              name={field.name}
+              className={styles.pricingForm__input}
+              rules={field.rules}
+            >
+              <Input
+                size="large"
+                prefix={field.prefix}
+                placeholder={field.placeholder}
+                type={field.type}
+              />
+            </Form.Item>
+          ))}
+          <Form.Item
+            name="numberOfEmployees"
+            getValueFromEvent={(e) => e.target.value}
+            className={styles.pricingForm__employeeNumber}
+            rules={[
+              {
+                required: true,
+                message: "Please select your number of employees",
+              },
+            ]}
+          >
+            <div aria-label="Slider Information">
+              <p className={styles.pricingForm__employeeNumber__info}>
+                Number of Employees to be Monitored:{" "}
+                <b>{`${selectedValue}+`}</b>
+              </p>
 
               <Slider
                 className={styles.pricingForm__employeeNumber__slider}
@@ -167,39 +182,39 @@ export default function PricingForm() {
                 marks={marks}
                 min={Number(Object.keys(marks)[0])}
                 max={Number(Object.keys(marks).pop())}
-              value={selectedValue}
-              tooltip={{ open: false }}
+                value={selectedValue}
+                tooltip={{ open: false }}
                 onChange={(value) => handleEmployeeNumberChange(value)}
               />
 
-            <Radio.Group
-              className={styles.pricingForm__employeeNumber__radio}
-              value={selectedValue}
-              options={radioOptions}
-              optionType="button"
-              buttonStyle="solid"
-              onChange={(e) => handleEmployeeNumberChange(e.target.value)}
-            ></Radio.Group>
-            <p className={styles.pricingForm__employeeNumber__cost}>
-              Cost: <b>{priceValue}</b>
-            </p>
-          </div>
-        </Form.Item>
-        <Form.Item className={styles.pricingForm__button}>
-          <Button
-            type="primary"
-            style={{ backgroundColor: "#ce2029" }}
-            htmlType="submit"
-            onClick={formSubmission}
-          >
-            Submit
-          </Button>
-        </Form.Item>
-      </Form>
-      <p>
-        We'll collect this information subject to our{" "}
-        <a href="/privacy-policy">Privacy Policy</a>.
-      </p>
+              <Radio.Group
+                className={styles.pricingForm__employeeNumber__radio}
+                value={selectedValue}
+                options={radioOptions}
+                optionType="button"
+                buttonStyle="solid"
+                onChange={(e) => handleEmployeeNumberChange(e.target.value)}
+              ></Radio.Group>
+              <p className={styles.pricingForm__employeeNumber__cost}>
+                Cost: <b>{priceValue}</b>
+              </p>
+            </div>
+          </Form.Item>
+          <Form.Item className={styles.pricingForm__button}>
+            <Button
+              type="primary"
+              style={{ backgroundColor: "#ce2029" }}
+              htmlType="submit"
+              onClick={formSubmission}
+            >
+              Submit
+            </Button>
+          </Form.Item>
+        </Form>
+        <p>
+          We'll collect this information subject to our{" "}
+          <a href="/privacy-policy">Privacy Policy</a>.
+        </p>
       </ConfigProvider>
     </div>
   );
