@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ContactCTA, ContactCards } from "@Components/UI";
-import { benefits, } from "./page-data";
+import { benefits } from "./page-data";
 import styles from "@Styles/aboutUs.module.scss";
 
 export const metadata = {
@@ -12,24 +12,34 @@ export const metadata = {
 export default function AboutUs() {
   return (
     <main className={styles.aboutUs}>
-      <section aria-label="About Us Hero Section" className={styles.aboutUs__hero}>
+      <section
+        aria-label="About Us Hero Section"
+        className={styles.aboutUs__hero}
+      >
         <div className={styles.aboutUs__hero__content}>
           <h1>About Us</h1>
           <p className={styles.aboutUs__hero__subtitle}>
-            Simplifying certification tracking while ensuring maximum security and efficiency
+            Simplifying certification tracking while ensuring maximum security
+            and efficiency
           </p>
           <div className={styles.aboutUs__hero__stats}>
             <div className={styles.aboutUs__hero__stat}>
               <span className={styles.aboutUs__hero__stat__number}>500+</span>
-              <span className={styles.aboutUs__hero__stat__label}>Companies Served</span>
+              <span className={styles.aboutUs__hero__stat__label}>
+                Companies Served
+              </span>
             </div>
             <div className={styles.aboutUs__hero__stat}>
               <span className={styles.aboutUs__hero__stat__number}>10k+</span>
-              <span className={styles.aboutUs__hero__stat__label}>Certifications Tracked</span>
+              <span className={styles.aboutUs__hero__stat__label}>
+                Certifications Tracked
+              </span>
             </div>
             <div className={styles.aboutUs__hero__stat}>
               <span className={styles.aboutUs__hero__stat__number}>99%</span>
-              <span className={styles.aboutUs__hero__stat__label}>Client Satisfaction</span>
+              <span className={styles.aboutUs__hero__stat__label}>
+                Client Satisfaction
+              </span>
             </div>
           </div>
         </div>
@@ -112,7 +122,10 @@ export default function AboutUs() {
             </div>
           </div>
         </section>
-        <section className={styles.section_highlight} aria-label="Accoric Promise">
+        <section
+          className={styles.section_highlight}
+          aria-label="Accoric Promise"
+        >
           <div className={styles.aboutUs__promise}>
             <div className={styles.aboutUs__promise__content}>
               <h2>
