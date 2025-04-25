@@ -8,5 +8,6 @@ import VideoPlayer from './VideoPlayer';
 import PricingForm from './PricingForm';
 import FAQ from './FAQ';
 import ContactCTA from './ContactCTA';
+import ContactCards from './ContactCards';
 
-export { Header, Footer, PrimaryButton, SecondaryButton, LottieComponent, PastClients, VideoPlayer, PricingForm, FAQ, ContactCTA };
+export { Header, Footer, PrimaryButton, SecondaryButton, LottieComponent, PastClients, VideoPlayer, PricingForm, FAQ, ContactCTA, ContactCards };

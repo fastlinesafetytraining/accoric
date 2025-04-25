@@ -1,7 +1,6 @@
 import Image from "next/image";
-import { Divider } from "antd";
-import { ContactCTA } from "@Components/UI";
-import { benefits, quickContactCard } from "./page-data";
+import { ContactCTA, ContactCards } from "@Components/UI";
+import { benefits, } from "./page-data";
 import styles from "@Styles/aboutUs.module.scss";
 
 export const metadata = {
@@ -113,10 +112,7 @@ export default function AboutUs() {
             </div>
           </div>
         </section>
-        <section
-          className={styles.section_highlight}
-          aria-label="Accoric Promise"
-        >
+        <section className={styles.section_highlight} aria-label="Accoric Promise">
           <div className={styles.aboutUs__promise}>
             <div className={styles.aboutUs__promise__content}>
               <h2>
@@ -148,27 +144,7 @@ export default function AboutUs() {
           </div>
         </section>
         <section aria-label="Contact information">
-          <div className={styles.aboutUs__contactUs}>
-            <h2>Contact Us</h2>
-            <div className={styles.aboutUs__contactUs__cardContainer}>
-              {quickContactCard.map((card, index) => (
-                <div
-                  key={index}
-                  className={styles.aboutUs__contactUs__cardContainer__card}
-                >
-                  {card.icon}
-                  <h3>{card.title}</h3>
-                  <Divider />
-                  {card.content.map((content, index) => (
-                    <div key={index}>
-                      <h4>{content.title}</h4>
-                      <p>{content.info}</p>
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </div>
-          </div>
+          <ContactCards />
         </section>
         <ContactCTA />
       </div>

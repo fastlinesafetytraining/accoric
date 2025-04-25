@@ -199,61 +199,7 @@
   }
 }
 
-.aboutUs__contactUs {
-  padding: 1rem;
-  border-radius: 1em;
-  h2 {
-    margin-top: 2rem;
-    text-align: center;
-    line-height: 8rem;
-  }
-  &__cardContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: stretch;
-    gap: clamp(1rem, 2vw, 3rem) clamp(1rem, 2vw, 3rem);
-    padding: 5% 0;
-    @media (max-width: v.$mobile-breakpoint) {
-      flex-direction: column;
-    }
 
-    &__card {
-      border-radius: 1em;
-      background-color: #fdfdfd;
-      box-shadow: 0 0 5px 0 #ddd;
-      padding: 1rem;
-      text-align: center;
-      width: 33%;
-      @media (max-width: v.$tablet-breakpoint) {
-        width: 100%;
-      }
-      svg {
-        margin: 1rem auto;
-        font-size: 3rem;
-        color: #0083e0;
-      }
-      h2 {
-        @include m.h-two-plus-highlight;
-        font-size: 1.5rem;
-        margin: 1rem 0;
-      }
-      h3 {
-        margin-top: 1rem;
-        font-size: 1.3rem;
-        font-weight: 700;
-        color: #2b2b2b;
-      }
-      h4 {
-        margin-top: 1rem;
-        margin-bottom: 0.25rem;
-        font-size: 1.3rem;
-        font-weight: 600;
-        color: #2b2b2b;
-      }
-    }
-  }
-}
 
 @keyframes zoomIn {
 	0% {

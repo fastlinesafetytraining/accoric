@@ -1,4 +1,3 @@
-import { FaEnvelope, FaPhoneAlt, FaClock } from "react-icons/fa";
 import { LottieComponent } from "@Components/UI";
 import {
   easeOfUseLottie,
@@ -6,63 +5,13 @@ import {
   simplisticLottie,
 } from "@/public/lottie/index";
 
-type QuickContactCardProps = {
-    icon: React.ReactNode;
-    title: string;
-    content: {
-      title: string;
-      info: string;
-    }[];
-  };
-  
+
   type BenefitProps = {
     title: string;
     description: string;
     icon: React.ReactNode;
   }
-  
-  export const quickContactCard: QuickContactCardProps[] = [
-    {
-      icon: <FaEnvelope />,
-      title: "Email Us",
-      content: [{
-        title: "Technical Help (Accoric Management):",
-        info: "techsupport@accoric.com",
-      }, 
-      {
-        title: "Technical Help (Accoric DashCard):",
-        info: "dash@accoric.com",
-      },
-      {
-        title: "Sales/General Inquiry:",
-        info: "info@accoric.com",
-      }]
-    },
-    {
-      icon: <FaPhoneAlt />,
-      title: "Call Us",
-      content: [{
-        title: "Technical Help (Accoric Management):",
-        info: "(631) 200-4720",
-      },
-      {
-        title: "Technical Help (Accoric Management):",
-        info: "(631) 200-1051",
-      },
-      {
-        title: "Sales/General Inquiry:",
-        info: "(516) 200-4720",
-      }]
-    },
-    {
-      icon: <FaClock />,
-      title: "Hours Of Operations",
-      content: [{
-        title: "Monday-Friday:",
-        info: "9:00AM - 5:00PM EDT",
-      }]
-    },
-  ];
+
   
   export const benefits: BenefitProps[] = [
   {

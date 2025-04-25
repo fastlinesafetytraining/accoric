@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
 import { Avatar } from "antd";
-import { PastClients, PrimaryButton, SecondaryButton, ContactCTA } from "@Components/UI";
-import { FaClock, FaPhoneAlt, FaEnvelope, FaArrowUp } from "react-icons/fa";
+import { PastClients, PrimaryButton, SecondaryButton, ContactCTA, ContactCards } from "@Components/UI";
+import { FaArrowUp } from "react-icons/fa";
 import styles from "@Styles/home.module.scss";
 export const metadata = {
   title: "Accoric - Construction Certificate Management Software",
@@ -280,50 +280,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className={styles.contactSection}>
-        <h2>Get in Touch</h2>
-        <p>
-          Open to all questions and inquiries. We are available to help you with
-          your needs
-        </p>
-        <div className={styles.contactMethodContainer}>
-          <div className={styles.contactMethod}>
-            <FaClock className={styles.contactMethodIcon} />
-            <h3>Hours of Operation</h3>
-            <br />
-            <h4>Weekdays</h4>
-            <p>8:30AM - 4:30PM EDT</p>
-            <br />
-            <h4>Weekends</h4>
-            <p>Closed</p>
-          </div>
-          <div className={styles.contactMethod}>
-            <FaPhoneAlt className={styles.contactMethodIcon} />
-            <h3>Call Us</h3>
-            <br />
-            <h4>For Accoric Management Technical Support</h4>
-            <p>+1 (516) 200-4720</p>
-            <br />
-            <h4>For Dashcard Support</h4>
-            <p>+1 (516) 200-4720</p>
-            <br />
-            <h4>For Sales/General Inquiry</h4>
-            <p>+1 (516) 200-4720</p>
-          </div>
-          <div className={styles.contactMethod}>
-            <FaEnvelope className={styles.contactMethodIcon} />
-            <h3>Email Us</h3>
-            <br />
-            <h4>For Accoric Management Technical Support</h4>
-            <p>techsupport@accoric.com</p>
-            <br />
-            <h4>For Dashcard Support</h4>
-            <p>dash@accoric.com</p>
-            <br />
-            <h4>For Sales/General Inquiry</h4>
-            <p>info@accoric.com</p>
-          </div>
-        </div>
+      <section aria-label="Contact Information">
+        <ContactCards />
       </section>
       <ContactCTA />
     </main>
