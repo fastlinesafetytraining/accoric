@@ -1,11 +1,17 @@
 import Image from "next/image";
 import React from "react";
 import { Avatar } from "antd";
-import { PastClients, PrimaryButton, SecondaryButton, ContactCTA, ContactCards } from "@Components/UI";
+import {
+  PastClients,
+  PrimaryButton,
+  SecondaryButton,
+  ContactCTA,
+  ContactCards,
+} from "@Components/UI";
 import { FaArrowUp } from "react-icons/fa";
 import styles from "@Styles/home.module.scss";
 export const metadata = {
-  title: "Accoric - Construction Certificate Management Software",
+  title: "Construction Certificate Management Software | Accoric",
   description: "All Your CERTIFICATES Stored Into One Location",
 };
 
@@ -100,7 +106,9 @@ export default function Home() {
                   world.
                 </p>
               </div>
-              <a href="#">Learn More <FaArrowUp rotate={45} /></a>
+              <a href="#">
+                Learn More <FaArrowUp rotate={45} />
+              </a>
             </div>
           </div>
         </div>
@@ -147,7 +155,9 @@ export default function Home() {
                   world.
                 </p>
               </div>
-              <a href="#">Learn More <FaArrowUp rotate={45} /></a>
+              <a href="#">
+                Learn More <FaArrowUp rotate={45} />
+              </a>
             </div>
           </div>
           <div className={styles.accoricManagementImage}>
@@ -229,7 +239,7 @@ export default function Home() {
               <Avatar
                 alt="Champions Speacialty"
                 size={"large"}
-                src="Images/champion-scc-logo.webp"
+                src="Images/client-logos/champion-scc-logo.webp"
               />
               <h3>Amel H.</h3>
             </div>
@@ -245,7 +255,7 @@ export default function Home() {
               <Avatar
                 alt="Millbrook Fire"
                 size={"large"}
-                src="/Images/millbrook-logo.webp"
+                src="/Images/client-logos/millbrook-logo.webp"
               />
               <h3>Nick D.</h3>
             </div>
