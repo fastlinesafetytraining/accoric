@@ -63,10 +63,11 @@
     justify-content: center;
     align-items: center;
   }
-  &__subtitle {
-    font-size: clamp(1.5rem, 2vw, 2rem);
+  p.aboutUs__hero__subtitle {
+    max-width: 90vw;
+    margin: 0 auto;
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
     font-weight: 600;
-    margin-left: 10%;
   }
   &__stats {
     display: flex;
@@ -120,6 +121,7 @@
       border: 3px solid #fff;
       height: 400px;
       width: 400px;
+      box-shadow: 0 0 20px 0 #eee;
       @media (max-width: v.$mobile-breakpoint) {
         height: 250px;
         width: 250px;
@@ -136,13 +138,13 @@
 }
 
 .aboutUs__bio__imageContainer {
-  // transform: perspective(1000px) rotateX(20deg) rotateY(20deg);
+  transform: perspective(1000px) rotateX(20deg) rotateY(20deg);
   animation: transform3dLeft ease-in-out;
   animation-timeline: view();
   animation-range: 10% 80%;
 }
 .aboutUs__promise__imageContainer {
-  // transform: perspective(1000px) rotateX(20deg) rotateY(-20deg);
+  transform: perspective(1000px) rotateX(20deg) rotateY(-20deg);
   animation: transform3dRight ease-in-out;
   animation-timeline: view();
   animation-range: 10% 80%;
@@ -221,25 +223,21 @@
 }
 
 @keyframes transform3dLeft {
-  0%, 100% {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-  }
-  25% {
+  from {
     transform: perspective(1000px) rotateX(20deg) rotateY(20deg);
   }
-  50% {
-    transform: perspective(1000px) rotateX(20deg) rotateY(-20deg);
+
+  to {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
   }
 }
 
 @keyframes transform3dRight {
-  0%, 100% {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-  }
-  25% {
+  from {
     transform: perspective(1000px) rotateX(20deg) rotateY(-20deg);
   }
-  75% {
-    transform: perspective(1000px) rotateX(20deg) rotateY(20deg);
+
+  to {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
   }
 }
