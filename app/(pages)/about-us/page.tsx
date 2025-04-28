@@ -107,18 +107,20 @@ export default function AboutUs() {
             className={styles.aboutUs__benefits}
             aria-label="Ease of Use for Certification Tracking"
           >
-            <h2>
-              <span className={styles.site_highlight_title}>Why</span> Choose
-              Us?
-            </h2>
-            <div className={styles.aboutUs__benefits__container}>
-              {benefits.map((benefit, index) => (
-                <div className={styles.aboutUs__benefits__item} key={index}>
-                  {benefit.icon}
-                  <h3>{benefit.title}</h3>
-                  <p>{benefit.description}</p>
+            <div className={styles.aboutUs__benefits__stickyContainer}>
+              <h2>
+                <span className={styles.site_highlight_title}>Why</span> Choose
+                Us?
+              </h2>
+              <div className={styles.aboutUs__benefits__container}>
+                {benefits.map((benefit, index) => (
+                  <div className={styles.aboutUs__benefits__item} key={index}>
+                    {benefit.icon}
+                    <h3>{benefit.title}</h3>
+                    <p>{benefit.description}</p>
+                  </div>
+                ))}
                 </div>
-              ))}
             </div>
           </div>
         </section>
