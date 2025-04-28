@@ -1,5 +1,6 @@
 @use "./variables.scss" as v;
 @use "./mixins.scss" as m;
+@use "./keyframes.scss";
 
 .homePage {
   @media (max-width: v.$tablet-breakpoint) {
@@ -420,44 +421,3 @@
   }
 }
 
-/*KeyFrames*/
-
-@keyframes hover {
-  0% {
-    transform: translateY(-10px);
-  }
-
-  50% {
-    transform: translateY(0);
-  }
-
-  100% {
-    transform: translateY(-10px);
-  }
-}
-
-@keyframes hover2 {
-  0% {
-    transform: translateY(10px);
-  }
-  50% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
-
-@keyframes scaleAndRotate {
-  0% {
-    transform: scale(1) rotate(45deg);
-  }
-
-  50% {
-    transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1) rotate(405deg);
-  }
-}

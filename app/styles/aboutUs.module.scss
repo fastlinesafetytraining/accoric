@@ -1,5 +1,6 @@
 @use "./variables.scss" as v;
 @use "./mixins.scss" as m;
+@use "./keyframes.scss";
 @use "./base.scss";
 
 .aboutUs {
@@ -151,6 +152,10 @@
 }
 
 .aboutUs__benefits {
+  height: 200vh;
+  position: sticky;
+  top: 0;
+  left: 0;
   h2 {
     @include m.h-two-plus-highlight;
     margin: 2rem 0;
@@ -204,40 +209,3 @@
   }
 }
 
-@keyframes zoomIn {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-@keyframes slideInUp {
-  0% {
-    transform: translateY(100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-@keyframes transform3dLeft {
-  from {
-    transform: perspective(1000px) rotateX(20deg) rotateY(20deg);
-  }
-
-  to {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-  }
-}
-
-@keyframes transform3dRight {
-  from {
-    transform: perspective(1000px) rotateX(20deg) rotateY(-20deg);
-  }
-
-  to {
-    transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
-  }
-}

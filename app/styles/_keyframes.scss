@@ -1,0 +1,97 @@
+
+
+/*Navigation menu background animation*/
+@keyframes navigation-menu-background {
+    0% {
+        height: 2px;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+
+@keyframes zoomIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideInUp {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /*About us Image container scroll animation*/
+  
+  @keyframes transform3dLeft {
+    from {
+      transform: perspective(1000px) rotateX(20deg) rotateY(20deg);
+    }
+  
+    to {
+      transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    }
+  }
+  
+  @keyframes transform3dRight {
+    from {
+      transform: perspective(1000px) rotateX(20deg) rotateY(-20deg);
+    }
+  
+    to {
+      transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+    }
+  }
+
+  /*KeyFrames*/
+
+@keyframes hover {
+    0% {
+      transform: translateY(-10px);
+    }
+  
+    50% {
+      transform: translateY(0);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes hover2 {
+    0% {
+      transform: translateY(10px);
+    }
+    50% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(10px);
+    }
+  }
+
+  /*Link text animation By Home Page*/
+  
+  @keyframes scaleAndRotate {
+    0% {
+      transform: scale(1) rotate(45deg);
+    }
+  
+    50% {
+      transform: scale(1.2);
+    }
+  
+    100% {
+      transform: scale(1) rotate(405deg);
+    }
+  }
+  
