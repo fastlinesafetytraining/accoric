@@ -16,8 +16,22 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  const lenisOptions = {  
+    duration: 2,
+    smooth: true,
+    lerp: 0.1,
+    smoothWheel: true,
+    smoothTouch: true,
+    predictive: true,
+    wheelMultiplier: 0.75,
+    touchMultiplier: 0.75,
+    touchInertiaMultiplier: 0.75,
+    touchInertiaThreshold: 0.75,
+    touchInertiaThresholdMultiplier: 0.75,
+  }
   return (
-    <ReactLenis root>
+    <ReactLenis root options={lenisOptions}>
       <html lang="en">
         <body className={openSans.className}>
         <Header />
