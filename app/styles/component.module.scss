@@ -2,6 +2,7 @@
 @use './variables.scss' as v;
 @use './mixins.scss' as m;
 @use './base.scss';
+@use './keyframes.scss';
 
 /* Primary Button*/
 .sitePrimaryButton {
@@ -106,25 +107,28 @@
 				padding: 2rem 1rem;
 				background-color: transparent;
 				color: v.$soft-black-1;
-				transition: all 0.3s ease-in-out;
+				transition: all 300ms ease-in;
 				position: relative;
+				z-index: 2;
 				&:hover {
-					color: v.$site-secondary-color;
+					color: white;
 				}
-				&::after {
+				&::before {
 					position: absolute;
 					bottom: 0;
 					left: 0;
 					transform: scaleX(0);
-					transition: transform 0.3s ease-in-out;
+					transition: all 300ms ease-in;
 					content: '';
 					display: block;
 					width: 100%;
 					height: 2px;
+					z-index: -1;
 					background-color: v.$site-secondary-color;
 				}
-				&:hover::after {
+				&:hover::before {
 					transform: scaleX(1);
+					animation: 200ms ease-in-out 250ms normal forwards navigation-menu;
 				}
 				&:active {
 					transform: scale(0.9);
