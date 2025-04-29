@@ -1,0 +1,118 @@
+@use './variables.scss' as v;
+
+.support {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f8f9fa;
+
+  &__container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  &__sidebar {
+    position: sticky;
+    top: 7rem;
+    height: fit-content;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+  }
+
+  &__nav {
+    h3 {
+      color: #2c3e50;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+
+      li {
+        margin-bottom: 0.5rem;
+
+        a {
+          color: #4a5568;
+          text-decoration: none;
+          font-size: 0.95rem;
+          transition: color 0.2s ease;
+
+          &:hover {
+            color: #3182ce;
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+
+    h1 {
+      color: #2d3748;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      color: #2c3e50;
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin: 2rem 0 1rem;
+    }
+  }
+
+  &__intro {
+    color: #4a5568;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  &__section {
+    margin-bottom: 2rem;
+
+    p {
+      color: #4a5568;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// Responsive styles
+@media (max-width: 1024px) {
+  .support {
+    &__container {
+      grid-template-columns: 240px 1fr;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .support {
+    padding: 1rem;
+
+    &__container {
+      grid-template-columns: 1fr;
+    }
+
+    &__sidebar {
+      position: relative;
+      top: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}
