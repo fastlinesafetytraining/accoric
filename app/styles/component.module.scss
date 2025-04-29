@@ -128,7 +128,7 @@
 				}
 				&:hover::before {
 					transform: scaleX(1);
-					animation: 200ms ease-in-out 250ms normal forwards navigation-menu;
+					animation: 200ms ease-in-out 250ms normal forwards navigation-menu-background;
 				}
 				&:active {
 					transform: scale(0.9);
@@ -353,7 +353,7 @@
 
 .faq {
 	max-width: 1000px;
-	margin: 1rem auto;
+	margin: 4rem auto;
 	border-radius: 1em;
 	h2 {
 		font-size: clamp(1.5rem, 2vw, 2rem);
