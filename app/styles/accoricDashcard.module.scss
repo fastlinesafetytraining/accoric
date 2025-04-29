@@ -1,0 +1,73 @@
+@use "./variables.scss" as v;
+
+
+.accoricDashcard {
+    background: radial-gradient(circle, #2e2e2e, #badbeb);
+    padding-bottom: 1rem;
+    &__header {
+        &__h1 {
+            position: absolute;
+            top: 55vh;
+            left: 10%;
+            font-size: 4rem;
+            font-weight: 700;
+            background: v.$product-heading-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        &__span {
+            z-index: 4;
+            position: absolute;
+            top: 70vh;
+            left: 60%;
+            font-size: 4rem;
+            font-weight: 700;
+            background: v.$product-heading-gradient-2;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    section {
+        height: 150vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+        z-index: 1;
+
+        h2 {
+            font-size: 3rem;
+            font-weight: 800;
+            text-shadow: -3px 3px 0 0 rgb(255, 255, 255);
+            color: v.$site-secondary-color;
+            z-index: 3;
+        }
+        h2:nth-child(even) {
+            text-align: end;
+            align-self: flex-end;
+        }
+        h2:nth-child(odd) {
+            float: right;
+        }
+    }
+    section:nth-child(4) {
+        background-color: #ffc3f7;
+    }
+    section:nth-child(5) {
+        background-color: #ffe59f;
+    }
+    section:nth-child(6) {
+        background-color: #d3d3d3;
+    }
+    section:nth-child(7) {
+        background-color: #d5ccff;
+    }
+    .accoricDashcard__spline {
+        position: sticky;
+        top: 10vh;
+        left: 0;
+        z-index: 2;
+        max-height: 100vh;
+    }
+}
