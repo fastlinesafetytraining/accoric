@@ -106,7 +106,7 @@
 			&__Link {
 				padding: 2rem 1rem;
 				background-color: transparent;
-				color: v.$soft-black-1;
+				color: v.$soft-black-2;
 				transition: all 300ms ease-in;
 				position: relative;
 				z-index: 2;
@@ -124,7 +124,7 @@
 					width: 100%;
 					height: 2px;
 					z-index: -1;
-					background-color: v.$site-secondary-color;
+					background-color: v.$site-primary-color;
 				}
 				&:hover::before {
 					transform: scaleX(1);
@@ -132,7 +132,7 @@
 				}
 				&:active {
 					transform: scale(0.9);
-					background-color: v.$site-secondary-color;
+					background-color: v.$site-primary-color;
 					color: white;
 				}
 			}
