@@ -95,3 +95,23 @@
     }
   }
   
+/* Accoric Dashcard heading animation*/
+
+@keyframes carouselLeft {
+  0% {
+    transform: translateX(-170%);
+  }
+  100% {
+    transform: translateX(170%);
+  }
+}
+
+@keyframes carouselRight {
+  0% {
+    transform: translateX(190%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
