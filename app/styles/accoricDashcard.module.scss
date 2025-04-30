@@ -1,73 +1,97 @@
 @use "./variables.scss" as v;
-
+@use "./keyframes.scss";
 
 .accoricDashcard {
-    background: radial-gradient(circle, #2e2e2e, #badbeb);
-    padding-bottom: 1rem;
-    &__header {
-        &__h1 {
-            position: absolute;
-            top: 55vh;
-            left: 10%;
-            font-size: 4rem;
-            font-weight: 700;
-            background: v.$product-heading-gradient;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        &__span {
-            z-index: 4;
-            position: absolute;
-            top: 70vh;
-            left: 60%;
-            font-size: 4rem;
-            font-weight: 700;
-            background: v.$product-heading-gradient-2;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+  background-color: #fafafa;
+  padding-bottom: 1rem;
+  &__header {
+    &__h1 {
+      position: absolute;
+      top: 25vh;
+      left: 10%;
+      font-size: clamp(2rem, 10vw, 7rem);
+      font-weight: 700;
+      text-shadow:
+        16ch 0 5px v.$heading-black-1,
+        -16ch 0 5px v.$heading-black-1,
+        -32ch 0 0px v.$heading-black-2,
+        32ch 0 0px v.$heading-black-2,
+        50ch 0 5px v.$heading-black-2,
+        -50ch 0 0 v.$heading-black-2;
+      color: v.$heading-black-1;
+      animation: 30s linear alternate infinite carouselLeft;
     }
-    section {
-        height: 150vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        gap: 2rem;
-        z-index: 1;
+    &__span {
+      z-index: 4;
+      position: absolute;
+      top: 70vh;
+      left: 10%;
+      font-size: clamp(2rem, 10vw, 7rem);
+      font-weight: 700;
+      text-shadow:
+        25ch 0 0 v.$heading-black-2,
+        -25ch 0 0 v.$heading-black-2,
+        -50ch 0 5px v.$heading-black-1,
+        50ch 0 5px v.$heading-black-1,
+        75ch 0 0 v.$heading-black-2,
+        -75ch 0 0 v.$heading-black-2;
+      color: v.$heading-black-1;
+      animation: 40s linear alternate infinite carouselRight;
+    }
+  }
+  section {
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
 
-        h2 {
-            font-size: 3rem;
-            font-weight: 800;
-            text-shadow: -3px 3px 0 0 rgb(255, 255, 255);
-            color: v.$site-secondary-color;
-            z-index: 3;
-        }
-        h2:nth-child(even) {
-            text-align: end;
-            align-self: flex-end;
-        }
-        h2:nth-child(odd) {
-            float: right;
-        }
+    gap: 2rem;
+    z-index: 1;
+
+    h2 {
+      margin-top: 10%;
+      margin-bottom: 10%;
+      position: sticky;
+      top: 20%;
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 800;
+      text-shadow: -3px 3px 0 0 rgb(255, 255, 255);
+      color: v.$site-secondary-color;
+      z-index: 3;
     }
-    section:nth-child(4) {
-        background-color: #ffc3f7;
+  }
+  section:nth-child(even) {
+    background-color: #b0dfff;
+  }
+  section:nth-child(7) {
+    h2 {
+      margin-bottom: 45%;
     }
-    section:nth-child(5) {
-        background-color: #ffe59f;
-    }
-    section:nth-child(6) {
-        background-color: #d3d3d3;
-    }
-    section:nth-child(7) {
-        background-color: #d5ccff;
-    }
-    .accoricDashcard__spline {
-        position: sticky;
-        top: 10vh;
-        left: 0;
-        z-index: 2;
-        max-height: 100vh;
-    }
+  }
 }
+.accoricDashcard__spline {
+  position: sticky;
+  top: 10vh;
+  left: 0;
+  z-index: 2;
+  max-height: 100vh;
+  margin-bottom: 10%;
+  @media (max-width: v.$tablet-breakpoint) {
+    top: 50vh;
+    margin-bottom: 20%;
+  }
+  @media (max-width: v.$mobile-breakpoint) {
+    top: 70vh;
+    margin-bottom: 20%;
+  }
+}
+
+
+.accoricDashcard__videoPlayer {
+  margin-left: 5%;
+  width: 35vw;
+  height: 35vh;
+  z-index: 2;
+}
+
+
