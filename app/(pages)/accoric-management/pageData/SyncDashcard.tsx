@@ -27,15 +27,6 @@ export default function SyncDashcard() {
           start: "top bottom-=200px",
           end: "100px",
           scrub: 0.3,
-          markers: {
-            startColor: "purple",
-            endColor: "blue",
-            fontSize: "16px",
-          },
-          snap: {
-            snapTo: 1 / 3,
-            duration: 0.3,
-          },
         },
       }
     );
@@ -53,7 +44,6 @@ export default function SyncDashcard() {
           start: "top bottom-=300px",
           end: "100px",
           scrub: 0.3,
-          markers: true,
         },
       }
     );
@@ -71,7 +61,6 @@ export default function SyncDashcard() {
           start: "top bottom-=300px",
           end: "100px",
           scrub: 0.3,
-          markers: true,
         },
       }
     );
