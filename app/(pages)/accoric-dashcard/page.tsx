@@ -1,6 +1,6 @@
 import React from "react";
 import Spline from "@splinetool/react-spline/next";
-import { ContactCTA } from "@/app/Components/UI";
+import { ContactCTA, VideoPlayer } from "@/app/Components/UI";
 import { Metadata } from "next";
 import styles from "@/app/styles/accoricDashcard.module.scss";
 
@@ -12,17 +12,24 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className={styles.accoricDashcard}>
-        <h1 className={styles.accoricDashcard__header__h1}>Accoric Dashcard</h1>
-        <span className={styles.accoricDashcard__header__span}>Forget the<br/> cluttered wallet</span>
+      <h1 className={styles.accoricDashcard__header__h1}>Accoric Dashcard</h1>
+      <span className={styles.accoricDashcard__header__span}>
+        Forget the cluttered wallet
+      </span>
       <Spline
         className={styles.accoricDashcard__spline}
         scene="https://prod.spline.design/KURjrdKU-bE194jq/scene.splinecode"
       />
       <section>
         <h2>Carry your certifications everywhere — literally</h2>
+        <VideoPlayer
+          className={styles.accoricDashcard__videoPlayer}
+          src="/Videos/accoric-app-on-construction-beam.mp4"
+          ariaLabel="Accoric Dashcard Video Commercial on a beam"
+        />
       </section>
       <section>
-        <h2>All yout certifications - One card</h2>
+        <h2>All your certifications - One card</h2>
       </section>
       <section>
         <h2>Share your certifications</h2>
