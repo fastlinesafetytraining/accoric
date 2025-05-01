@@ -2,7 +2,7 @@ import React from 'react';
 import type { Metadata } from 'next';
 import styles from '@Styles/policyPage.module.scss';
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: 'Terms of Service | Policy | Accoric',
 	description: 'Read our Terms of Service to understand your rights and responsibilities when using our services.',
 };
