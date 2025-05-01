@@ -7,9 +7,9 @@ import {
   SecondaryButton,
   ContactCTA,
   ContactCards,
-} from "@Components/UI";
+} from "@components/UI";
 import { FaArrowUp } from "react-icons/fa";
-import styles from "@Styles/home.module.scss";
+import styles from "@styles/home.module.scss";
 export const metadata = {
   title: "Construction Certificate Management Software | Accoric",
   description: "All Your CERTIFICATES Stored Into One Location",

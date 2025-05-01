@@ -2,7 +2,7 @@ import React from "react"
 import Image from "next/image"
 import Link from "next/link"
 import NavBar from "./NavBar"
-import '@Styles/globals.css'
+import '@styles/globals.css'
 
 export default function Header() {
 	return (

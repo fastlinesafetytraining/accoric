@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "@Styles/support.module.scss";
+import styles from "@styles/support.module.scss";
 
 export default function SupportPage() {
     const supportSections = [

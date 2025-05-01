@@ -1,8 +1,8 @@
 import { ReactLenis } from "lenis/react";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import "@Styles/globals.css";
-import { Header, Footer } from "@Components/UI";
+import "@styles/globals.css";
+import { Header, Footer } from "@components/UI";
 const openSans = Open_Sans({ subsets: ['latin'] });
 
 

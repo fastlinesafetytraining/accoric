@@ -1,8 +1,8 @@
 import React from "react";
-import { PricingForm, FAQ, PastClients } from "@Components/UI";
+import { PricingForm, FAQ, PastClients } from "@components/UI";
 import { TbSquareRoundedCheckFilled } from "react-icons/tb";
 import { includedInAllSubscriptions, faqItems } from "./page-data";
-import styles from "@Styles/pricing.module.scss";
+import styles from "@styles/pricing.module.scss";
 
 export default function Page() {
   return (

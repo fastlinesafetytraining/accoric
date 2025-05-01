@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react"
-import styles from '@Styles/component.module.scss';
+import styles from '@styles/component.module.scss';
 
 interface SecondaryButtonProps {
 	href: string;

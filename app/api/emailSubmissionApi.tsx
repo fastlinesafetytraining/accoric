@@ -1,4 +1,4 @@
-import EmailHtmlTemplate from "@Components/templates/EmailTemplate";
+import EmailHtmlTemplate from "@components/templates/EmailTemplate";
 import { Resend } from "resend";
 import { renderToStaticMarkup } from 'react-dom/server';
 

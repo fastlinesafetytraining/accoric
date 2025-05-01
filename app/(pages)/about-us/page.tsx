@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { ContactCTA, ContactCards } from "@Components/UI";
+import { ContactCTA, ContactCards } from "@components/UI";
 import { benefits } from "./page-data";
-import styles from "@Styles/aboutUs.module.scss";
+import styles from "@styles/aboutUs.module.scss";
 
 export const metadata = {
   title: "About Us | Accoric",

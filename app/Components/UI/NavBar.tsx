@@ -3,9 +3,9 @@ import "@ant-design/v5-patch-for-react-19";
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button, Drawer } from "antd";
-import { navMenuItems } from '@Utils/const/routes';
+import navMenuItems from '@utils/const/routes';
 import { FaBars } from "react-icons/fa";
-import styles from '@Styles/component.module.scss';
+import styles from '@styles/component.module.scss';
 import PrimaryButton from "./PrimaryButton";
 
 export default function NavBar(): React.ReactElement {

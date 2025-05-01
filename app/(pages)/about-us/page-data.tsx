@@ -1,4 +1,4 @@
-import { LottieComponent } from "@Components/UI";
+import { LottieComponent } from "@components/UI";
 import {
   easeOfUseLottie,
   quickSetupLottie,

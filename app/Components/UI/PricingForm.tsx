@@ -5,7 +5,7 @@ import "@ant-design/v5-patch-for-react-19";
 import type { SliderSingleProps } from "antd/es/slider";
 import { Form, Input, Button, Slider, Radio, ConfigProvider, notification } from "antd";
 import { FaBuilding, FaUser, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import styles from "@Styles/component.module.scss";
+import styles from "@styles/component.module.scss";
 
 export default function PricingForm() {
   const [form] = Form.useForm();

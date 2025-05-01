@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaEnvelope, FaPhoneAlt, FaClock } from "react-icons/fa";
 import { Divider } from "antd";
-import styles from '@Styles/component.module.scss';
+import styles from '@styles/component.module.scss';
 
 type ContactCardProps = {
     icon: React.ReactNode;

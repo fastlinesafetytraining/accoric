@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import styles from "@Styles/accoricManagement.module.scss";
-import { VideoPlayer, ContactCTA, FAQ } from "@Components/UI";
+import styles from "@styles/accoricManagement.module.scss";
+import { VideoPlayer, ContactCTA, FAQ } from "@components/UI";
 import { Features, SyncDashcard, faq } from "./pageData";
 
 export const metadata = {

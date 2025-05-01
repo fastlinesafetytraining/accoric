@@ -1,7 +1,7 @@
 import { CollapseProps } from 'antd';
 import { Collapse } from 'antd';
 import Script from 'next/script';
-import styles from "@Styles/component.module.scss";
+import styles from "@styles/component.module.scss";
 
 interface FAQItem {
   question: string;
