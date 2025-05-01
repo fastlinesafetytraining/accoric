@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { ContactCTA, ContactCards } from "@components/UI";
-import { benefits } from "./page-data";
+import { benefits } from "./page-data/benefits";
 import styles from "@styles/aboutUs.module.scss";
 
 export const metadata = {
