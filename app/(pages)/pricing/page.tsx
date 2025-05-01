@@ -2,7 +2,6 @@ import React from "react";
 import { PricingForm, FAQ, PastClients } from "@Components/UI";
 import { TbSquareRoundedCheckFilled } from "react-icons/tb";
 import { includedInAllSubscriptions, faqItems } from "./page-data";
-
 import styles from "@Styles/pricing.module.scss";
 
 export default function Page() {
@@ -35,7 +34,7 @@ export default function Page() {
           <PricingForm />
         </section>
         <section className={styles.pricing__clients}>
-        <h2>Start tracking your workers' <span>certifications</span></h2>
+        <h2>Start tracking your workers&apos; <span>certifications</span></h2>
           <p>
             Plus, we upload all of your data and create your account for you!
             All you do is sign in.

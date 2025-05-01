@@ -244,7 +244,7 @@ export default function Home() {
               <h3>Amel H.</h3>
             </div>
             <em className={styles.testimonial__quote}>
-              Accoric Management's capabilities have enabled Champion Painting's
+              Accoric Management&apos;s capabilities have enabled Champion Painting&apos;s
               management team to bid and{" "}
               <b>pre-plan projects more efficiently</b> with{" "}
               <b>easy access to all employee training credentials</b>.
@@ -260,9 +260,9 @@ export default function Home() {
               <h3>Nick D.</h3>
             </div>
             <em className={styles.testimonial__quote}>
-              With Accoric Management's unparalleled safety management and
-              proactive approach to certifications, we've experienced
-              significantly downtime prevention. It's an investment that{" "}
+              With Accoric Management&apos;s unparalleled safety management and
+              proactive approach to certifications, we&apos;ve experienced
+              significantly downtime prevention. It&apos;s an investment that{" "}
               <b>pays for itself in the first month!</b>
             </em>
           </div>

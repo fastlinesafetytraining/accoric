@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface EmailTemplateProps {
     fullName: string;
     email: string;
@@ -15,7 +17,9 @@ export default function EmailHtmlTemplate ({fullName, email, companyName, phone,
                 <table cellPadding="0" cellSpacing="0" width="100%">
                     <tr>
                     <td style={{textAlign: "center", padding: "20px 0"}}>
-                        <img
+                        <Image
+                        width={300}
+                        height={100}
                         src="/svg/accoric-logo-svg.svg"
                         alt="Company Logo"
                         style={{maxWidth: "200px"}}
@@ -55,7 +59,7 @@ export default function EmailHtmlTemplate ({fullName, email, companyName, phone,
                         <td>{phone}</td>
                         </tr>
                         <tr>
-                        <td style={{fontWeight: "700"}}>Employee's to be tracked:</td>
+                        <td style={{fontWeight: "700"}}>Employee&apos;s to be tracked:</td>
                         <td>{numberOfEmployees}</td>
                         </tr>
                     </table>

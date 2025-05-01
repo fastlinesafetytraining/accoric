@@ -53,7 +53,7 @@ export default function SupportPage() {
                 <div className={styles.support__content}>
                     <h1>Support Center</h1>
                     <p className={styles.support__intro}>
-                        Welcome to our support center. Here you'll find comprehensive guides and documentation to help you start working with our products as quickly as possible.
+                        Welcome to our support center. Here you&apos;ll find comprehensive guides and documentation to help you start working with our products as quickly as possible.
                     </p>
 
                     <section id="account-setup" className={styles.support__section}>
