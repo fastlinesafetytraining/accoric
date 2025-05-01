@@ -1,4 +1,4 @@
-export const navMenuItems = [
+const navMenuItems = [
   {
     key: "1",
     label: "Accoric Management",
@@ -25,3 +25,5 @@ export const navMenuItems = [
     href: "/about-us",
   },  
 ];
+
+export default navMenuItems;
