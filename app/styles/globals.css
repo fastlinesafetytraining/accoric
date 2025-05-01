@@ -49,13 +49,19 @@ header .login-button{
 }
 
 header .login-button:hover {
-	background-color: #B22234; /* Darker shade for hover effect */
+	background-color: #B22234;
 	transition: background-color 0.3s ease;
 }
 
 @media (max-width: 1024px) {
 	header .login-button {
 		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	header {
+		padding: 1rem;
 	}
 }
 
