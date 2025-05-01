@@ -54,7 +54,7 @@
         color: v.$site-primary-color;
         font-size: clamp(4rem, 5.667vw, 6.8rem);
         font-style: italic;
-        text-shadow: -5px 5px 0 0 v.$site-secondary-color;
+        text-shadow: -5px 5px 0 v.$site-secondary-color;
       }
       .heroTitle__last {
         font-size: clamp(2.1rem, 3.75vw, 3.75rem);
