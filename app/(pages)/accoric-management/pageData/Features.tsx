@@ -38,24 +38,6 @@ export default function Features() {
   gsap.registerPlugin(ScrollTrigger);
 
   useGSAP(() => {
-    gsap.fromTo(
-      boxRef.current,
-      {
-        opacity: 0.5,
-        y: 50,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        scrollTrigger: {
-          trigger: boxRef.current,
-          start: "top 10%",
-          end: "100px",
-          scrub: true,
-          snap: 0.5,
-        },
-      }
-    );
     gsap.from(
       '.managementFeatureItem',
       {
