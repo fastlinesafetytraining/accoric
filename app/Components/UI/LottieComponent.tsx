@@ -1,9 +1,8 @@
 'use client'
-
 import Lottie from "lottie-react";
 
 interface LottieComponentProps {
-	animationData: any;
+	animationData: object;
 	loop: boolean;
 	ariaLabel?: string;
 	className?: string;
