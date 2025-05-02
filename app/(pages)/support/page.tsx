@@ -1,55 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import supportMenu from "./[slug]/support-menu";
 import styles from "@styles/support.module.scss";
 
 export default function SupportPage() {
-    const supportSections = [
-        {
-            title: "Getting Started",
-            items: [
-                { title: "Account Setup", href: "#account-setup" },
-                { title: "First Steps", href: "#first-steps" },
-                { title: "Basic Navigation", href: "#basic-navigation" }
-            ]
-        },
-        {
-            title: "Product Support",
-            items: [
-                { title: "Accoric Management", href: "#accoric-management" },
-                { title: "Accoric DashCard", href: "#accoric-dashcard" },
-                { title: "Safety Library", href: "#safety-library" }
-            ]
-        },
-        {
-            title: "Common Issues",
-            items: [
-                { title: "Password Reset", href: "#password-reset" },
-                { title: "Data Import", href: "#data-import" },
-                { title: "User Management", href: "#user-management" }
-            ]
-        }
-    ];
-
     return (
         <main className={styles.support}>
             <div className={styles.support__container}>
-                <aside className={styles.support__sidebar}>
-                    <nav className={styles.support__nav}>
-                        {supportSections.map((section, index) => (
-                            <div key={index} className={styles.support__section}>
-                                <h3>{section.title}</h3>
-                                <ul>
-                                    {section.items.map((item, itemIndex) => (
-                                        <li key={itemIndex}>
-                                            <Link href={item.href}>{item.title}</Link>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-                    </nav>
-                </aside>
-                
                 <div className={styles.support__content}>
                     <h1>Support Center</h1>
                     <p className={styles.support__intro}>
