@@ -12,32 +12,14 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className={styles.accoricDashcard}>
-      <h1 className={styles.accoricDashcard__header__h1}>Accoric Dashcard</h1>
       <span className={styles.accoricDashcard__header__span}>
-        Forget the cluttered wallet
+        Coming Soon...
       </span>
+      <h1 className={styles.accoricDashcard__header__h1}>Accoric Product</h1>
       <Spline
         className={styles.accoricDashcard__spline}
         scene="https://prod.spline.design/KURjrdKU-bE194jq/scene.splinecode"
       />
-      <section>
-        <h2>Carry your certifications everywhere — literally</h2>
-        <VideoPlayer
-          className={styles.accoricDashcard__videoPlayer}
-          src="/Videos/accoric-app-on-construction-beam.mp4"
-          ariaLabel="Accoric Dashcard Video Commercial on a beam"
-        />
-      </section>
-      <section>
-        <h2>All your certifications - One card</h2>
-      </section>
-      <section>
-        <h2>Share your certifications</h2>
-      </section>
-      <section>
-        <h2>Pair your dashcard with Accoric Management</h2>
-      </section>
-      <ContactCTA />
     </main>
   );
 }
