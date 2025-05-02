@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { emailFormSubmission } from "@/app/api/emailSubmissionApi";
 import "@ant-design/v5-patch-for-react-19";
 import type { SliderSingleProps } from "antd/es/slider";
-import { Form, Input, Button, Slider, Radio, ConfigProvider, notification } from "antd";
+import { App, Form, Input, Button, Slider, Radio, ConfigProvider, notification } from "antd";
 import { FaBuilding, FaUser, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import styles from "@styles/component.module.scss";
 
@@ -12,24 +12,24 @@ export default function PricingForm() {
   const [selectedValue, setSelectedValue] = useState<number>(5);
   const [priceValue, setPriceValue] = useState<string>("$799/Year");
 
+  const { useApp } = App;
+  const { notification: appNotification } = useApp();
+
   const formSubmission = async () => {
     const values = form.getFieldsValue();
-    console.log("Form submitted", values);
     await emailFormSubmission(values)
     .then((response: {status: number, message: string}) => {
-      console.log("Response", response);
-      notification.success({
+      appNotification.success({
         placement: "top",
         message: "Email sent successfully",
-        description: "We will get back to you soon",
+        description: response.message,
       });
     })
-    .catch((error) => {
-      console.log("Error", error);
-      notification.error({
+    .catch((error: {message: string}) => {
+      appNotification.error({
         placement: "top",
         message: "Email sent failed",
-        description: "Please try again",
+        description: error.message,
       });
     });
   };
@@ -125,7 +125,6 @@ export default function PricingForm() {
   };
 
   useEffect(() => {
-    console.log(selectedValue);
     form.setFieldsValue({
       numberOfEmployees: selectedValue,
     });
