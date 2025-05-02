@@ -50,9 +50,6 @@ export default function Footer() {
 						<li>
 							<Link href="/product-support">Product Support</Link>
 						</li>
-						<li>
-							<Link href="/faq">FAQs</Link>
-						</li>
 					</ul>
 					<ul className="link-list">
 						<li>Company</li>
