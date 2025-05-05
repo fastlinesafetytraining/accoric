@@ -51,7 +51,7 @@ export const supportMenu: SupportMenu[] = [
 			},
 			{
 				title: "Updating Employees",
-				link: "updating-employees",
+				link: "/support/updating-employees",
 			},
 			{
 				title: "Using Expired Certification Table",
@@ -59,15 +59,15 @@ export const supportMenu: SupportMenu[] = [
 			},
 			{
 				title: "Active/Inactive Employees",
-				link: "support/active-or-inactive-employees",
+				link: "/support/active-or-inactive-employees",
 			},
 			{
 				title: "Using Notes",
-				link: "support/using-notes",
+				link: "/support/using-notes",
 			},
 			{
 				title: "Using Categories",
-				link: "support/using-categories",
+				link: "/support/using-categories",
 			},
 			{
 				title: "Generating Spreadsheets",
@@ -79,7 +79,7 @@ export const supportMenu: SupportMenu[] = [
 			},
 			{
 				title: "Forgor Password",
-				link: "support/forgot-password",
+				link: "/support/forgot-password",
 			},
 		],
 	},
