@@ -51,7 +51,7 @@ export default function Page() {
                 <Image
                     width={2590}
                     height={1869}
-                    src="/support-page-screenshots/accoric-management-update-category-name.webp" 
+                    src="/Images/support-page-screenshots/accoric-management-update-category-name.webp" 
                     alt="Creating Categories" 
                 />
             </p>
