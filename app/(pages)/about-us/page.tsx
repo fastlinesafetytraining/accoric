@@ -19,7 +19,7 @@ export default function AboutUs() {
         <div className={styles.aboutUs__hero__content}>
           <h1>About Us</h1>
           <p className={styles.aboutUs__hero__subtitle}>
-            Simplifying certification tracking while ensuring maximum security
+            Simplifying certification tracking while ensuring<br/> maximum security
             and efficiency
           </p>
           <div className={styles.aboutUs__hero__stats}>
