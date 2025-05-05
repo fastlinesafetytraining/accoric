@@ -78,20 +78,11 @@ export const supportMenu: SupportMenu[] = [
 				link: "/support/secondary-users",
 			},
 			{
-				title: "Forgor Password",
+				title: "Forgot Password",
 				link: "/support/forgot-password",
 			},
 		],
 	},
-    {
-        sectionTitle: "Accoric Management",
-        sectionItems: [
-            {
-                title: "Accoric Management",
-                link: "/support/accoric-management",
-            },
-        ],
-    },
 ];
 
 export default supportMenu;
