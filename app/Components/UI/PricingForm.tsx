@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { emailFormSubmission } from "@/app/api/emailSubmissionApi";
 import "@ant-design/v5-patch-for-react-19";
 import type { SliderSingleProps } from "antd/es/slider";
-import { App, Form, Input, Button, Slider, Radio, ConfigProvider, notification } from "antd";
+import { App, Form, Input, Button, Slider, Radio, ConfigProvider } from "antd";
 import { FaBuilding, FaUser, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 import styles from "@styles/component.module.scss";
 
