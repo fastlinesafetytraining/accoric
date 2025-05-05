@@ -9,5 +9,6 @@ import PricingForm from './PricingForm';
 import FAQ from './FAQ';
 import ContactCTA from './ContactCTA';
 import ContactCards from './ContactCards';
+import SupportSideMenu from './SupportSideMenu';
 
-export { Header, Footer, PrimaryButton, SecondaryButton, LottieComponent, PastClients, VideoPlayer, PricingForm, FAQ, ContactCTA, ContactCards };
+export { Header, Footer, PrimaryButton, SecondaryButton, LottieComponent, PastClients, VideoPlayer, PricingForm, FAQ, ContactCTA, ContactCards, SupportSideMenu };

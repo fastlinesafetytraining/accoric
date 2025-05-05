@@ -453,3 +453,47 @@
     }
   }
 }
+
+
+/*Support Side Menu*/
+
+  .supportSidebar {
+    position: sticky;
+    top: 7rem;
+    height: fit-content;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+	&__nav {
+	  h3 {
+		color: #2c3e50;
+		font-size: 1.1rem;
+		font-weight: 600;
+		margin-bottom: 1rem;
+	  }
+  
+	  ul {
+		list-style: none;
+		padding: 0;
+		margin: 0 0 1.5rem 0;
+  
+		li {
+		  margin-bottom: 0.5rem;
+  
+		  a {
+			color: #4a5568;
+			text-decoration: none;
+			font-size: 0.95rem;
+			transition: color 0.2s ease;
+			&.active {
+				color: v.$site-primary-color;
+			}
+			&:hover {
+			  color: #3182ce;
+			}
+		  }
+		}
+	  }
+	}
+  }
