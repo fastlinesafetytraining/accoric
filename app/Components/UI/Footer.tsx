@@ -48,7 +48,7 @@ export default function Footer() {
 					<ul className="link-list">
 						<li>Support</li>
 						<li>
-							<Link href="/product-support">Product Support</Link>
+							<Link href="/support">Product Support</Link>
 						</li>
 					</ul>
 					<ul className="link-list">
