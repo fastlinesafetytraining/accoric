@@ -1,6 +1,5 @@
 import React from "react";
 import Spline from "@splinetool/react-spline/next";
-import { ContactCTA, VideoPlayer } from "@/app/Components/UI";
 import { Metadata } from "next";
 import styles from "@/app/styles/accoricDashcard.module.scss";
 
