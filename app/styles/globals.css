@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @import 'lenis/dist/lenis.css';
 
-:root {
+/* :root {
 	--background: #ffffff;
 	--foreground: #171717;
 }
@@ -18,12 +18,12 @@
 		--background: #0a0a0a;
 		--foreground: #ededed;
 	}
-}
+} */
 
 /* Body Styling */
 body {
-	background: var(--background);
-	color: var(--foreground);
+	background: #ffffff;
+	color: #171717;
 	font-size: 1.1rem;
 	overflow-x: hidden;
 }
@@ -79,8 +79,8 @@ footer {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	background: var(--background);
-	color: var(--foreground);
+	background: #ffffff;
+	color: #171717;
 	/* position: sticky;
 	bottom: 0;
 	z-index: -1; */
