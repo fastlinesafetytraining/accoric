@@ -4,6 +4,7 @@
 .accoricDashcard {
   background-color: #fafafa;
   padding-bottom: 1rem;
+  min-height: 100vh;
   &__header {
     &__span {
       position: absolute;
@@ -77,11 +78,7 @@
   max-height: 100vh;
   margin-bottom: 10%;
   @media (max-width: v.$tablet-breakpoint) {
-    top: 50vh;
-    margin-bottom: 20%;
-  }
-  @media (max-width: v.$mobile-breakpoint) {
-    top: 70vh;
+    top: 30vh;
     margin-bottom: 20%;
   }
 }
