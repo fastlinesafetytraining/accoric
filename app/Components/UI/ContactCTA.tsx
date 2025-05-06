@@ -21,7 +21,7 @@ export default function ContactCTA() {
               certification.
             </p>
           </div>
-          <PrimaryButton href="/contact" title="Get Started">
+          <PrimaryButton href="/pricing" title="Get Started">
             Get Started
           </PrimaryButton>
 		</div>
