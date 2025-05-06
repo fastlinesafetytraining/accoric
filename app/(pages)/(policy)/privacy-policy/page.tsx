@@ -363,7 +363,7 @@ export default function PrivacyPolicyPage() {
 						practices. If we have processed your data based on your consent, and
 						you wish to revoke your consent, please contact us.
 					</p>
-					<ul>
+					<ul className={styles.policyContentList}>
 						<li>
 							<span>Advertising, Direct Marketing, and Lead Generation</span>
 						</li>

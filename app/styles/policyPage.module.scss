@@ -41,7 +41,7 @@
 		font-size: 1.2rem;
 
 		li {
-			margin: 2rem 0;
+			padding: 1rem 0;
 			line-height: 1.75rem;
 		}
 	}
@@ -107,4 +107,9 @@
 	@media (max-width: 767px) {
 		width: 90%;
 	}
+}
+
+.policyContentList {
+	columns: 2;
+	column-gap: 2rem;
 }
