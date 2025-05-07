@@ -3,9 +3,10 @@ import styles from "@styles/support.module.scss";
 import { Metadata } from "next";
 import Link from "next/link";
 import { supportMenu } from "@/libs/utils/conts/routes";
+
 export const metadata: Metadata = {
   title: "Support | Accoric",
-  description: "Support for Accoric Management",
+  description: "Support Center for Accoric Management, a comprehensive guide to help you start working with our products as quickly as possible.",
 };
 
 export default function SupportPage() {

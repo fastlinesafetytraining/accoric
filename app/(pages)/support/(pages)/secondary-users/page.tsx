@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Secondary Users | Support | Accoric Management",
+    description: "Learn how to create secondary users and manage their permissions in Accoric Management.",
+}
 
 export default function Page() {
     return (

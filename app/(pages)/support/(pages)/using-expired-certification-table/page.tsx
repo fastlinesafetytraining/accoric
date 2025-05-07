@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Using the Expiring Certifications Table | Support | Accoric Management",
+    description: "Learn how to use the expiring certification table effectively in your Accoric Management account.",
+}
 
 export default function Page() {
     return (

@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Adding Employees | Support | Accoric Management",
+    description: "Learn how to add employees to your Accoric Management account.",
+}
 
 export default function Page() {
     return (

@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Generating Spreadsheets | Support | Accoric Management",
+    description: "Learn how to generate spreadsheets from information uploaded to your Accoric Management account.",
+}
 
 export default function Page() {
     return (

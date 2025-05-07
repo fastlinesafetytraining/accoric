@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Resetting Your Password | Support | Accoric Management",
+    description: "Learn how to reset your password in Accoric Management.",
+}
 
 export default function Page() {
     return (

@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Adding Certifications | Support | Accoric Management",
+    description: "Learn how to add certifications to employees in Accoric Management.",
+}
 
 export default function AddingCertifications() {
 	return (

@@ -1,3 +1,10 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Updating Employees | Support | Accoric Management",
+    description: "Learn how to update employee information in your Accoric Management account.",
+}
+
 export default function Page() {
     return (
         <>

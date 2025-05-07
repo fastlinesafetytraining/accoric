@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Using Notes | Support | Accoric Management",
+    description: "Learn how to use the notes section on the Employee Profile page in your Accoric Management account.",
+}
 
 export default function Page() {
     return (

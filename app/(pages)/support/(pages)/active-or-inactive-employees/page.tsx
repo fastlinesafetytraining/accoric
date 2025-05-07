@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Employee Active/Inactive Status | Support | Accoric Management",
+    description: "Learn how to change the active/inactive status of employees in Accoric Management.",
+}
 
 export default function Page() {
     return (

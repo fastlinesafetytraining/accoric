@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Using the Employee Table | Support | Accoric Management",
+    description: "Learn how to manage the Employee table on the Employee Dashboard.",
+}
 
 export default function Page() {
     return (

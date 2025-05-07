@@ -1,4 +1,10 @@
 import Image from "next/image";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Creating and Using Categories | Support | Accoric Management",
+    description: "Learn how to create and use categories in your Accoric Management account.",
+}
 
 export default function Page() {
     return (

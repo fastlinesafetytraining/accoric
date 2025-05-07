@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FaAngleDown, FaBars } from "react-icons/fa";
+import { FaCaretDown } from "react-icons/fa";
 import { Drawer, Button } from "antd";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -18,7 +18,7 @@ export default function SupportSideMenu() {
 	
 		return (
 			<>
-			<Button icon={<FaBars />} onClick={() => setMenuActive(true)}>
+			<Button block iconPosition="end" icon={<FaCaretDown />} onClick={() => setMenuActive(true)}>
 				Menu
 			</Button>
 			<Drawer height={`70%`} placement="bottom" open={menuActive} onClose={() => setMenuActive(false)}>
@@ -30,6 +30,10 @@ export default function SupportSideMenu() {
 	
 	
 	const DesktopMenu = () => {
+		const handleLinkClick = () => {
+			setMenuActive(false);
+			window.scrollTo(0, 0);
+		}
 		return (
 			<>
 				<nav className={styles.supportSidebar__nav}>
@@ -38,8 +42,8 @@ export default function SupportSideMenu() {
 							<h3>{section.sectionTitle}</h3>
 							<ul>
 								{section.sectionItems.map((item, itemIndex) => (
-									<li onClick={() => setMenuActive(false)} key={itemIndex}>
-										<Link href={item.link}>{item.title}</Link>
+									<li onClick={handleLinkClick} key={itemIndex}>
+										<Link className={styles.supportSidebar__nav__link} href={item.link}>{item.title}</Link>
 									</li>
 								))}
 							</ul>
