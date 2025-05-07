@@ -5,5 +5,6 @@ import nfcLottie from "./nfc.json";
 import snapshotLottie from "./snapshot.json";
 import notificationsLottie from "./notifications.json";
 import automationLottie from "./automate.json";
+import menuIconLottie from "./menuIcon.json";
 
-export { easeOfUseLottie, quickSetupLottie, simplisticLottie, nfcLottie, snapshotLottie, notificationsLottie, automationLottie };
+export { easeOfUseLottie, quickSetupLottie, simplisticLottie, nfcLottie, snapshotLottie, notificationsLottie, automationLottie, menuIconLottie };
