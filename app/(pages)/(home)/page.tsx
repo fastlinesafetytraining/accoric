@@ -10,7 +10,9 @@ import {
 } from "@components/UI";
 import { FaArrowUp } from "react-icons/fa";
 import styles from "@styles/home.module.scss";
-export const metadata = {
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
   title: "Construction Certificate Management Software | Accoric",
   description: "All Your CERTIFICATES Stored Into One Location",
 };
@@ -46,7 +48,7 @@ export default function Home() {
             <Image
               width={449}
               height={500}
-              src="/accoric-dashcard-mockup.png"
+              src="/accoric-dashcard-mockup.webp"
               alt="Accoric Dashcard Link Showing all certifications on a Phone Mockup"
             />
           </div>
