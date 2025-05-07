@@ -66,38 +66,14 @@ export default function AboutUs() {
               <h2>
                 <span className={styles.site_highlight_title}>Who</span> we are?
               </h2>
-              <h3>
-                We offer
-                <b>
-                  <i> Quick Onboaring </i>
-                </b>
-                because we do it for you
-              </h3>
               <p>
-                <b>
-                  When your purchase Accoric Management, We want you to actually
-                  use it.
-                </b>
+                At <span>Accoric</span>, we have developed a solution specifically for companies with a large workforce. Our goal is to provide a straightforward way to keep track of your fleet&apos; certifications, helping you avoid unexpected expirations.
               </p>
               <p>
-                You purchase Accoric Management to save yourself time tracking
-                your employees and their certifications because your plate is
-                full with other tasks like financing, scheduling, and deadlines.
-                So, when would you have time to onboard hundreds of pictures of
-                certificcations and employee data onto your Accoric Management
-                account?
+                We are <span>committed</span> to revolutionizing how companies manage their certifications and compliance requirements. Our focus is on simplifying certification tracking while ensuring maximum security and efficiency.
               </p>
               <p>
-                <b>
-                  We want you up and running ASAP, so you can quickly get back
-                  to work.
-                </b>
-              </p>
-              <p>
-                At Accoric, we&apos;re dedicated to revolutionizing how
-                organizations manage their certifications and compliance
-                requirements. Our goal is to simplify certification tracking
-                while ensuring maximum security and efficiency.
+                Our team of <span>experienced professionals</span> is ready to assist you in managing your certifications and compliance effectively.
               </p>
             </div>
           </div>
@@ -117,7 +93,7 @@ export default function AboutUs() {
                   <div className={styles.aboutUs__benefits__item} key={index}>
                     {benefit.icon}
                     <h3>{benefit.title}</h3>
-                    <p>{benefit.description}</p>
+                    {benefit.description}
                   </div>
                 ))}
                 </div>
@@ -134,15 +110,12 @@ export default function AboutUs() {
                 Our <span className={styles.site_highlight_title}>Promise</span>
               </h2>
               <p>
-                At Accoric, we&apos;re dedicated to revolutionizing how
-                organizations manage their certifications and compliance
-                requirements. Our goal is to simplify certification tracking
-                while ensuring maximum security and efficiency.
+                Our promise is to provide you with the <span>best possible service and
+                support.</span> We will help you get started with your Accoric
+                Management account in no time.
               </p>
               <p>
-                Our promise is to provide you with the best possible service and
-                support. We will help you get started with your Accoric
-                Management account in no time.
+                We will also provide you with a dashboard to view your certifications and compliance requirements.
               </p>
             </div>
             <div

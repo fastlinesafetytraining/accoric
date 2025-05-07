@@ -36,8 +36,12 @@
   a,
   p {
     margin: 1rem 0;
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.4rem);
     color: v.$soft-black-2;
+    span {
+      color: v.$site-secondary-color;
+      font-weight: 800;
+    }
   }
   @media (max-width: v.$mobile-breakpoint) {
     padding: 0 1rem;
@@ -154,6 +158,9 @@
 
 .aboutUs__benefits {
   height: 130vh;
+  @media (max-width: v.$mobile-breakpoint) {
+    height: 100%;
+  }
   h2 {
     @include m.h-two-plus-highlight;
     margin: 2rem 0;
@@ -184,6 +191,10 @@
     justify-content: center;
     text-align: center;
     gap: 1rem;
+    width: 30%;
+    @media (max-width: v.$mobile-breakpoint) {
+      width: 100%;
+    }
 
     div {
       background-color: v.$site-light-gray;
