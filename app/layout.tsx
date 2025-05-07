@@ -40,9 +40,11 @@ export default function RootLayout({
           				{/* Google Tag Manager */}
           <Script
 					async
+          id="google-tag-manager"
 					src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_PRODUCTION_GOOGLE_TAG_MANAGER_ID}`}
 				></Script>
 				<Script
+					id="google-tag-manager-script"
 					dangerouslySetInnerHTML={{
 						__html: `
                         window.dataLayer = window.dataLayer || [];
