@@ -2,7 +2,7 @@ import EmailHtmlTemplate from "@components/templates/EmailTemplate";
 import { Resend } from "resend";
 import { renderToStaticMarkup } from 'react-dom/server';
 
-const resend = new Resend(process.env.NEXT_PUBLIC_FORM_RESEND_API_KEY);
+const resend = new Resend(process.env.NEXT_PUBLIC_FORM_RESEND_API_KEY || process.env.RESEND_API_KEY);
 
 interface EmailFormSubmissionValues {
     fullName: string;
