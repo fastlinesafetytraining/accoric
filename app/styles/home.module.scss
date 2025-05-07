@@ -186,6 +186,10 @@
     justify-content: center;
     align-items: flex-start;
     padding: 2rem;
+    max-width: 60%;
+    @media (max-width: v.$tablet-breakpoint) {
+      max-width: 100%;
+    }
     a {
       display: inline-flex;
       margin: 1rem;
@@ -219,6 +223,7 @@
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
+      gap: 1rem;
       .dashcardFeature,
       .accoricManagementFeature {
         display: flex;
@@ -266,6 +271,17 @@
     }
     .aboutAccoricContent {
       width: 40%;
+      p {
+        font-size: clamp(1.1rem, 1.5vw, 1.2rem);
+        margin: 3rem 0;
+        color: v.$paragraph-global-color;
+        text-indent: 0.5rem;
+        span {
+          font-size: clamp(1.2rem, 2vw, 1.5rem);
+          font-weight: 900;
+          color: v.$site-secondary-color;
+        }
+      }
       @media (max-width: v.$tablet-breakpoint) {
         width: 100%;
       }
@@ -378,6 +394,9 @@
       -webkit-backdrop-filter: blur(4px);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
+      @media (max-width: v.$mobile-breakpoint) {
+        max-width: 100%;
+      }
       .testimonial__author {
         display: flex;
         justify-content: flex-start;
@@ -410,6 +429,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     z-index: 2;
+    gap: 1rem;
     h2 {
       font-size: clamp(3rem, 5vw, 6rem);
       color: v.$site-secondary-color;

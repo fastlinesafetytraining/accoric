@@ -31,12 +31,12 @@ export default function Home() {
               </span>
             </h1>
             <div className={styles.heroButtons}>
-              <PrimaryButton title="See Pricing for Dashcard" href="#">
+              <PrimaryButton title="See Pricing for Accoric Management" href="/pricing">
                 See Pricing
               </PrimaryButton>
               <SecondaryButton
-                title="Learn more about accoric's Dashcard and their benefit "
-                href="#"
+                title="Learn more about Accoric Management and their benefits"
+                href="/accoric-management"
               >
                 Learn More
               </SecondaryButton>
@@ -88,25 +88,22 @@ export default function Home() {
               <div className={styles.dashcardFeature}>
                 <h4>Expiration Date Monitoring</h4>
                 <p>
-                  We are proud to be trusted by leading companies around the
-                  world.
+                  Know what certifications are expiring, so you can plan accordingly.
                 </p>
               </div>
               <div className={styles.dashcardFeature}>
-                <h4>Employee ID Badging</h4>
+                <h4>Share Certifications</h4>
                 <p>
-                  We are proud to be trusted by leading companies around the
-                  world.
+                  Share your certifications with employers and stakeholders, right from your phone.
                 </p>
               </div>
               <div className={styles.dashcardFeature}>
-                <h4>Employee ID Badging</h4>
+                <h4>NFC Scanning</h4>
                 <p>
-                  We are proud to be trusted by leading companies around the
-                  world.
+                  Scan a worker's ID card to view their certifications using the back of your smartphone.
                 </p>
               </div>
-              <a href="#">
+              <a aria-label="Learn more about Accoric Dashcard" href="/accoric-dashcard">
                 Learn More <FaArrowUp rotate={45} />
               </a>
             </div>
@@ -123,39 +120,35 @@ export default function Home() {
               Management
             </h2>
             <p>
-              We are proud to be trusted by leading companies around the world.
+              Certification tracking software, but we set up and monitor your account for you.
             </p>
             <div className={styles.accoricManagementFeatures}>
               <h3>Key Capabilities</h3>
               <div className={styles.accoricManagementFeature}>
-                <h4>Certifications Digitized</h4>
+                <h4>We Do The Setup</h4>
                 <p>
-                  We are proud to be trusted by leading companies around the
-                  world.
+                  We digitize and upload your documents, so all you have to do is sign in.
                 </p>
               </div>
               <div className={styles.accoricManagementFeature}>
-                <h4>Expiration Date Monitoring</h4>
+                <h4>Email Notifications</h4>
                 <p>
-                  We are proud to be trusted by leading companies around the
-                  world.
+                  Stay on top of employees' expired and soon-to-be expired certifications via email reminders.
                 </p>
               </div>
               <div className={styles.accoricManagementFeature}>
                 <h4>Employee ID Badging</h4>
                 <p>
-                  We are proud to be trusted by leading companies around the
-                  world.
+                  Sync employees' certification information to an ID card. Scan the card and digitally view certifications from anywhere.
                 </p>
               </div>
               <div className={styles.accoricManagementFeature}>
-                <h4>Employee ID Badging</h4>
+                <h4>Spreadsheet Friendly</h4>
                 <p>
-                  We are proud to be trusted by leading companies around the
-                  world.
+                  View certification issue and expiration dates at a glance.
                 </p>
               </div>
-              <a href="#">
+              <a aria-label="Learn more about Accoric Management" href="/accoric-management">
                 Learn More <FaArrowUp rotate={45} />
               </a>
             </div>
@@ -178,14 +171,14 @@ export default function Home() {
         <div className={styles.aboutAccoricContainer}>
           <div className={styles.aboutAccoricContent}>
             <p>
-              Accoric is dedicated to revolutionizing construction certification
+              <span>Accoric</span> is dedicated to revolutionizing construction certification
               tracking and personnel management. Founded on the principles of
               efficiency, accuracy, and security, we understand the unique
               challenges faced by the construction industry in maintaining
               compliance and managing a skilled workforce.
             </p>
             <p>
-              Our platform is designed to streamline these critical processes,
+              <span>Our platform</span> is designed to streamline these critical processes,
               providing a centralized solution for tracking certifications,
               managing employee information, and ensuring project readiness. We
               empower construction companies to reduce administrative burdens,
@@ -289,10 +282,7 @@ export default function Home() {
           />
         </div>
       </section>
-
-      <section aria-label="Contact Information">
-        <ContactCards />
-      </section>
+      <ContactCards />
       <ContactCTA />
     </main>
   );
