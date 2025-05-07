@@ -14,7 +14,7 @@ export default function Page() {
                     <Image
                         width={204}
                         height={161}
-                        src="Images/support-page-screenshots/accoric-management-forgot-password.webp" 
+                        src="/Images/support-page-screenshots/accoric-management-forgot-password.webp" 
                         alt="Forgot Password on Login" 
                     />
                 </li>
