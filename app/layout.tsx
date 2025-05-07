@@ -17,19 +17,6 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Accoric",
-    description: "Accoric is a software company that provides solutions for businesses.",
-  },
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-  },
 };
 
 const lenisOptions = {
