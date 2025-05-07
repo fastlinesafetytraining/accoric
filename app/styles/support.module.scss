@@ -44,6 +44,9 @@
       list-style: none;
       padding: 0;
       columns: 3;
+      @media (max-width: v.$mobile-breakpoint) {
+        columns: 1;
+      }
     }
     li {
       margin-bottom: 1rem;
@@ -102,10 +105,13 @@
       object-fit: contain;
     }
 
-    p {
+    p, li {
       font-size: 1.1rem;
-      line-height: 1.6;
+      line-height: 2;
       margin-bottom: 1rem;
+    }
+    hr {
+      margin: 2rem 0;
     }
   }
 
