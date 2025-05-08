@@ -386,6 +386,9 @@
 	}
 	.faqAnswer {
 		font-size: clamp(1rem, 1.5vw, 1.1rem);
+		text-align: start;
+		font-weight: 500;
+		color: v.$site-secondary-color;
 	}
 }
 
