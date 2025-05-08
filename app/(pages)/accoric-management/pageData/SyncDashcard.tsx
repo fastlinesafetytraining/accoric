@@ -25,7 +25,7 @@ export default function SyncDashcard() {
         scrollTrigger: {
           trigger: boxRef.current,
           start: "top bottom-=200px",
-          end: "100px",
+          end: "50px",
           scrub: 0.3,
         },
       }
@@ -42,7 +42,7 @@ export default function SyncDashcard() {
         scrollTrigger: {
           trigger: boxRef.current,
           start: "top bottom-=300px",
-          end: "100px",
+          end: "50px",
           scrub: 0.3,
         },
       }
@@ -59,7 +59,7 @@ export default function SyncDashcard() {
         scrollTrigger: {
           trigger: boxRef.current,
           start: "top bottom-=300px",
-          end: "100px",
+          end: "50px",
           scrub: 0.3,
         },
       }
@@ -70,6 +70,12 @@ export default function SyncDashcard() {
     <section ref={boxRef} className={styles.accoricManagement__content__3}>
       <div className={styles.accoricManagement__content__3__sticky}>
         <h2>Sync Stright to your DASHcard</h2>
+        <p>
+          Create a professional profile for your company by equipping each worker with an Accoric NFC DashCARD branded with your company logo.
+        </p>
+        <p>
+          Each DashCARD uses NFC technology. Scannable by any smartphone, An employees&apos; profile pages on Accoric Management are paired with each worker&apos;s individual DashCARD. Making Certifications and other documentation available on-site when the card
+        </p>
         <div className={styles.accoricManagement__content__3__content}>
           <Image
             width={350}
@@ -93,6 +99,7 @@ export default function SyncDashcard() {
             alt="A mockup example of accoric management on a mobile device"
           />
         </div>
+
       </div>
     </section>
   );

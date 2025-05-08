@@ -46,10 +46,9 @@ export default function Features() {
         stagger: 0.3,
         scrollTrigger: {
           trigger: boxRef.current,
-          start: "top 10%",
-          end: "100px",
+          start: "top 20%",
+          end: "10px",
           scrub: true,
-          snap: 0.5,
         },
       },
     );
@@ -61,47 +60,50 @@ export default function Features() {
       id="accoricManagement__features"
       className={styles.accoricManagement__features}
     >
-      <h2>Features</h2>
-      <h3>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
-      </h3>
-      <div className={styles.accoricManagement__features__content}>
-        <Image
-          width={645}
-          height={400}
-          className={styles.accoricManagement__features__content__image}
-          src="/Images/accoric-management-tablet-view.webp"
-          alt="A mockup example of accoric management on a tablet device"
-        />
-        <div
-          id="accoricManagement__features__content__list"
-          className={styles.accoricManagement__features__content__list}
-        >
-          {features.map((feature, index) => (
-            <div
-              key={index}
-              className={
-                `${styles.accoricManagement__features__content__list__item} managementFeatureItem`
-              }
-            >
-              <LottieComponent
-                animationData={feature.Lottieicon}
-                className={
-                  styles.accoricManagement__features__content__list__item__icon
-                }
-                loop={true}
-              />
+      <div className={styles.accoricManagement__features__sticky}>
+        <h2>Features</h2>
+        <h3>
+          We give you the tools you need to manage your workforce!
+        </h3>
+        <div className={styles.accoricManagement__features__content}>
+          <Image
+            width={645}
+            height={400}
+            className={styles.accoricManagement__features__content__image}
+            src="/Images/accoric-management-tablet-view.webp"
+            alt="A mockup example of accoric management on a tablet device"
+          />
+          <div
+            id="accoricManagement__features__content__list"
+            className={styles.accoricManagement__features__content__list}
+          >
+            {features.map((feature, index) => (
               <div
+                key={index}
                 className={
-                  styles.accoricManagement__features__content__list__item__text
+                  `${styles.accoricManagement__features__content__list__item} managementFeatureItem`
                 }
               >
-                <h3>{feature.title}</h3>
-                <p>{feature.description}</p>
+                <LottieComponent
+                  animationData={feature.Lottieicon}
+                  className={
+                    styles.accoricManagement__features__content__list__item__icon
+                  }
+                  loop={true}
+                />
+                <div
+                  className={
+                    styles.accoricManagement__features__content__list__item__text
+                  }
+                >
+                  <h3>{feature.title}</h3>
+                  <p>{feature.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+
       </div>
     </section>
   );

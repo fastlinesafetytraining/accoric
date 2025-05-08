@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@styles/accoricManagement.module.scss";
-import { VideoPlayer, ContactCTA, FAQ } from "@components/UI";
+import { VideoPlayer, ContactCTA, FAQ, PastClients } from "@components/UI";
 import { Features, SyncDashcard, faq } from "./pageData";
 
 export const metadata = {
@@ -22,13 +22,15 @@ export default function Page() {
         </section>
         <section className={styles.accoricManagement__content__1}>
           <div className={styles.accoricManagement__content__1__text}>
-            <h2>Accoric Management</h2>
+            <h2>Involve in your company&apos;s compliance</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Architecto dolor laboriosam cumque exercitationem consectetur
-              repudiandae tempore quo vel, consequatur est vitae neque eaque!
-              Aliquam provident repudiandae odio nihil vitae eligendi.
+              From digitizing documents and creating your account for you, to reminding you of certification
+              expirations, we have you covered. We also help ensure everyone has what they need while on the job.
             </p>
+          <h2>Accoric Management</h2>
+          <p>
+            Centralizes your workforce&apos;s certifications, training, and more. Offers real-time certification verification with DashCARDs, streamlines renewal reminders with custom report generation, and provides valuable analytics via spreadsheet reports to identify potential gaps in training.
+          </p>
           </div>
           <Image
             width={910}
@@ -36,32 +38,28 @@ export default function Page() {
             className={styles.accoricManagement__content__1__image}
             alt="A mockup example of accoric management on a desktop"
             src="/Images/accoric-desktop-mockup.webp"
-          />
-          <div className={styles.accoricManagement__content__1__text}>
-            <h2>Accoric Management</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Architecto dolor laboriosam cumque exercitationem consectetur
-              repudiandae tempore quo vel, consequatur est vitae neque eaque!
-              Aliquam provident repudiandae odio nihil vitae eligendi.
-            </p>
-          </div>
+          />          
+        </section>
+        <section className={styles.accoricManagement__pastClients}>
+          <h2>Join the many companies that have trusted us to manage their workforce</h2>
+          <PastClients />
         </section>
         <Features />
         <section className={styles.accoricManagement__content__2}>
           <Image
-            width={645}
-            height={400}
-            src="/Images/accoric-management-tablet-view.webp"
+            width={766}
+            height={534}
+            src="/Images/accoric-management-mockup.webp"
             alt="A mockup example of accoric management on a tablet device"
           />
           <div className={styles.accoricManagement__content__2__text}>
-            <h2>Accoric Management</h2>
+            <h2>A Snapshot of your workforce</h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              aliquam dicta culpa reiciendis odio quasi accusantium laudantium
-              quisquam in, reprehenderit nulla, animi error eius dolor, tenetur
-              ipsam architecto commodi quos?
+              Easily monitor your employees&apos; certifications with a user-friendly dashboard. Access, edit, and issue certifications directly from the dashboard.
+            </p>
+            <h3>Wondering if your employees possess the required certifications for their roles?</h3>
+            <p>
+              Utilize the dashboard&apos;s search feature to quickly identify employees with the necessary certifications for their work.
             </p>
           </div>
         </section>
@@ -78,8 +76,8 @@ export default function Page() {
           />
         </section>
         <SyncDashcard />
-        <ContactCTA />
         <FAQ items={faq} />
+        <ContactCTA />
       </main>
   );
 }
