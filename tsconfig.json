@@ -24,6 +24,6 @@
       "@styles/*": ["./app/styles/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(pages)/not-found.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(pages)/not-found.js", "app/Components/templates/EmailTemplate.jsx"],
   "exclude": ["node_modules"]
 }
