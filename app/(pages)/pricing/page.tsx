@@ -1,4 +1,5 @@
 import React from "react";
+import { Toaster } from "react-hot-toast";
 import { PricingForm, FAQ, PastClients } from "@components/UI";
 import { TbSquareRoundedCheckFilled } from "react-icons/tb";
 import { includedInAllSubscriptions, faqItems } from "./page-data";
@@ -12,7 +13,8 @@ export const metadata = {
 
 export default function Page() {
   return (
-    <main className={styles.pricing}> 
+    <main className={styles.pricing}>
+      <Toaster />
       <section className={styles.pricing__header}>
         <h1>Pricing</h1>
         <p>
