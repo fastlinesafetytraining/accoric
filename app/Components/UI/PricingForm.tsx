@@ -1,44 +1,32 @@
 "use client";
 import "@ant-design/v5-patch-for-react-19";
 import React, { useEffect, useState } from "react";
-import { emailFormSubmission } from "@/app/api/emailSubmissionApi";
 import {
 	formFields,
 	marks,
 	radioOptions,
 } from "@/libs/utils/conts/pricingFormData";
-import { App, Form, Input, Button, Slider, Radio, ConfigProvider } from "antd";
+import { Form, Input, Button, Slider, Radio, ConfigProvider } from "antd";
 import styles from "@styles/component.module.scss";
+import toast from "react-hot-toast";
 
 export default function PricingForm() {
 	const [form] = Form.useForm();
 	const [selectedValue, setSelectedValue] = useState<number>(5);
 	const [priceValue, setPriceValue] = useState<string>("$799/Year");
 
-	const { useApp } = App;
-	const { notification: appNotification } = useApp();
-
-	const formSubmission = async () => {
-		const values = form.getFieldsValue();
-
-		await emailFormSubmission(values)
-			.then((response: { status: number; message: string }) => {
-				appNotification.success({
-					placement: "top",
-					message: "Email sent successfully",
-					description: response.message,
-				});
-				console.log("Email sent successfully");
-				form.resetFields();
-			})
-			.catch((error: { message: string }) => {
-				appNotification.error({
-					placement: "top",
-					message: "Email sent failed",
-					description: error.message,
-				});
-				console.log("Email sent failed", error);
-			});
+	const handleSubmit = async () => {
+		const response = await fetch("/api/send", {
+			method: "POST",
+			body: JSON.stringify(form.getFieldsValue()),
+		});
+		if (!response.ok) {
+			toast.error("Email sent failed");
+			form.resetFields();
+		} else {
+			toast.success("Email sent successfully");
+			form.resetFields();
+		}
 	};
 
 	const calculatePrice = (value: number) => {
@@ -108,7 +96,7 @@ export default function PricingForm() {
 					size='large'
 					layout='inline'
 					autoComplete='off'
-					onFinish={formSubmission}
+					onFinish={handleSubmit}
 				>
 					{formFields.map((field) => (
 						<Form.Item
