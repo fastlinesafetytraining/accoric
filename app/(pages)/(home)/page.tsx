@@ -102,7 +102,7 @@ export default function Home() {
               <div className={styles.dashcardFeature}>
                 <h4>NFC Scanning</h4>
                 <p>
-                  Scan a worker's ID card to view their certifications using the back of your smartphone.
+                  Scan a worker&apos;s ID card to view their certifications using the back of your smartphone.
                 </p>
               </div>
               <a aria-label="Learn more about Accoric Dashcard" href="/accoric-dashcard">
@@ -135,13 +135,13 @@ export default function Home() {
               <div className={styles.accoricManagementFeature}>
                 <h4>Email Notifications</h4>
                 <p>
-                  Stay on top of employees' expired and soon-to-be expired certifications via email reminders.
+                  Stay on top of employees&apos; expired and soon-to-be expired certifications via email reminders.
                 </p>
               </div>
               <div className={styles.accoricManagementFeature}>
                 <h4>Employee ID Badging</h4>
                 <p>
-                  Sync employees' certification information to an ID card. Scan the card and digitally view certifications from anywhere.
+                  Sync employees&apos; certification information to an ID card. Scan the card and digitally view certifications from anywhere.
                 </p>
               </div>
               <div className={styles.accoricManagementFeature}>
