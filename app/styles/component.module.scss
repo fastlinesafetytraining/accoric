@@ -153,8 +153,55 @@
 /*Mobile Navigation Bar*/
 
 .mobileNavBar {
+	&__drawerTitle {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 50px;
+		h2 {
+			font-size: 1.25rem;
+			font-weight: 600;
+			span {
+				font-size: 2rem;
+				font-weight: 700;
+				color: v.$site-primary-color;
+				text-shadow: 0 1px 0 black;
+			}
+		}
+		&__closeIcon {
+			font-size: 2rem;
+			aspect-ratio: 1/1;
+			font-weight: 600;
+			color: v.$site-secondary-color;
+			cursor: pointer;
+			border: 1px solid v.$site-secondary-color;
+			border-radius: 0.25em;
+			padding: 0.5rem;
+			&:hover {
+				background-color: v.$site-secondary-color;
+				color: #fff;
+			}
+		}
+	}
 	&__menu {
 		margin-bottom: 1rem;
+		&__item {
+			font-size: clamp(1.25rem, 2vw, 1.5rem);
+			font-weight: 600;
+			padding: 1rem 0;
+			border-bottom: 1px solid v.$site-light-gray;
+			text-align: right;
+			&:last-child {
+				border-bottom: none;
+			}
+			&__link {
+				color: v.$site-secondary-color;
+				&:hover {
+					color: v.$site-primary-color;
+				}
+			}
+		}
 	}
 	@media (min-width: v.$mobile-breakpoint) {
 		display: none;
