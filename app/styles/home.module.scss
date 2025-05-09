@@ -44,20 +44,21 @@
       font-weight: 900;
       color: v.$site-secondary-color;
       line-height: clamp(2.5rem, 5vw, 5rem);
-      @media (max-screen: v.$mobile-breakpoint) {
-        text-align: centere;
+      padding: 0 1rem;
+      @media (max-width: v.$mobile-breakpoint) {
+        text-align: center;
       }
       .heroTitle__first {
-        font-size: clamp(6rem, 10vw, 12.5rem);
+        font-size: clamp(5rem, 10vw, 12.5rem);
       }
       .heroTitle__highlight {
         color: v.$site-primary-color;
-        font-size: clamp(4rem, 5.667vw, 6.8rem);
+        font-size: clamp(3rem, 5.667vw, 6.8rem);
         font-style: italic;
         text-shadow: -5px 5px 0 v.$site-secondary-color;
       }
       .heroTitle__last {
-        font-size: clamp(2.1rem, 3.75vw, 3.75rem);
+        font-size: clamp(2rem, 3.75vw, 3.75rem);
       }
     }
 
@@ -185,7 +186,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 2rem;
     max-width: 60%;
     @media (max-width: v.$tablet-breakpoint) {
       max-width: 100%;
@@ -319,16 +319,28 @@
         top: 25%;
         left: -15%;
         animation: hover 9s infinite ease-in-out;
+        @media (max-width: v.$mobile-breakpoint) {
+          top: 5%;
+          left: -10%;
+        }
       }
       .feature__two {
         top: -5%;
         left: 30%;
         animation: hover 10s infinite ease-in-out;
+        @media (max-width: v.$mobile-breakpoint) {
+          top: -30%;
+          left: 30%;
+        }
       }
       .feature__three {
         top: 15%;
         right: -15%;
         animation: hover2 10s infinite ease-in-out;
+        @media (max-width: v.$mobile-breakpoint) {
+          top: 25%;
+          right: -10%;
+        }
       }
       .aboutAccoricImage_small {
         width: 50%;
