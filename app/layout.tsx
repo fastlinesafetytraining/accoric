@@ -1,10 +1,11 @@
 import { ReactLenis } from "lenis/react";
 import Script from "next/script";
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
-import "@styles/globals.css";
 import { Header, Footer } from "@components/UI";
 import NoScriptGoogleTag from "@components/NoScriptGoogleTag";
+import "@styles/globals.css";
 
 const openSans = Open_Sans({ subsets: ['latin'] });
 
@@ -63,6 +64,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <NoScriptGoogleTag />
+          <Analytics />
         </body>
       </html>
     </ReactLenis>
