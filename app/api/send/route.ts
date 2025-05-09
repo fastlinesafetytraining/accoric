@@ -24,12 +24,12 @@ export async function POST(request: NextRequest) {
         const { data, error } = await resend.emails.send(emailData);
 
         if (error) {
-            return NextResponse.json({ error: "Email sending failed" }, { status: 500 });
+            return NextResponse.json({ error: "Email sending failed before sending" }, { status: 400 });
         }
 
         return NextResponse.json({ message: "Email sent successfully", data }, { status: 200 });
 
     } catch (error) {
-        return NextResponse.json({ error: "Email sending failed", details: error }, { status: 500 });
+        return NextResponse.json({ error: "Email sending failed!", details: error }, { status: 500 });
     }
 }
