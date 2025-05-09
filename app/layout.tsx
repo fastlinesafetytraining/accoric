@@ -1,5 +1,4 @@
 import { ReactLenis } from "lenis/react";
-import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from "next";
