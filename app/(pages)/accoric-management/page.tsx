@@ -5,8 +5,8 @@ import { VideoPlayer, ContactCTA, FAQ, PastClients } from "@components/UI";
 import { Features, SyncDashcard, faq } from "./pageData";
 
 export const metadata = {
-  title: "Accoric Management",
-  description: "Accoric Management",
+  title: "Accoric Management Certification Tracking Software | Accoric",
+  description: "Accoric Management is a certification tracking software that helps you manage your employees' certifications, training, and more.",
 };
 
 export default function Page() {

@@ -8,7 +8,7 @@ import styles from "@styles/pricing.module.scss";
 export const metadata = {
   title: "Pricing | Accoric",
   description:
-    "Learn more about Accoric and our mission to simplify certification tracking while ensuring maximum security and efficiency.",
+    "Accoric offers a range of pricing options to suit your needs. Please contact us to discuss your requirements.",
 };
 
 export default function Page() {
