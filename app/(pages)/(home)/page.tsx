@@ -13,7 +13,7 @@ import styles from "@styles/home.module.scss";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Construction Certificate Management Software | Accoric",
+  title: "Accoric | Construction Certificate Management Software",
   description: "All Your CERTIFICATES Stored Into One Location",
 };
 
