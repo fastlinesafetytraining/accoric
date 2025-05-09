@@ -11,10 +11,12 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <main className={styles.accoricDashcard}>
-      <span className={styles.accoricDashcard__header__span}>
-        Coming Soon...
-      </span>
-      <h1 className={styles.accoricDashcard__header__h1}>Accoric Product</h1>
+      <div className={styles.accoricDashcard__header}>
+        <span className={styles.accoricDashcard__header__span}>
+          Coming Soon...
+        </span>
+        <h1 className={styles.accoricDashcard__header__h1}>Accoric Product</h1>
+      </div>
       <Spline
         className={styles.accoricDashcard__spline}
         scene="https://prod.spline.design/KURjrdKU-bE194jq/scene.splinecode"
