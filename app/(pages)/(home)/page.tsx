@@ -48,7 +48,7 @@ export default function Home() {
             <Image
               width={449}
               height={500}
-              src="/accoric-dashcard-mockup.webp"
+              src="/Images/accoric-dashcard-mockup.webp"
               alt="Accoric Dashcard Link Showing all certifications on a Phone Mockup"
             />
           </div>
