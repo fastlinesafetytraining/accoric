@@ -20,6 +20,11 @@ export default function NavBar(): React.ReactElement {
 		setMenuActive(false);
 	};
 
+	const handleLinkClick = (href: string) => {
+		hideMenu();
+		window.scrollTo(0, 0);
+	};
+
 	useEffect(() => {
 		const handleWindowResize = () => {
 			setIsMobile(window.innerWidth < 768);
@@ -63,7 +68,7 @@ export default function NavBar(): React.ReactElement {
 						<ul className={styles.mobileNavBar__menu}>
 							{navMenuItems.map((item) => (
 								<li className={styles.mobileNavBar__menu__item} key={item.key}>
-									<Link className={styles.mobileNavBar__menu__item__link} href={item.href}>{item.label}</Link>
+									<Link onClick={() => handleLinkClick(item.href)} className={styles.mobileNavBar__menu__item__link} href={item.href}>{item.label}</Link>
 								</li>
 							))}
 						</ul>
