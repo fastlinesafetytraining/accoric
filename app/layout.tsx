@@ -1,6 +1,7 @@
 import { ReactLenis } from "lenis/react";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import { Header, Footer } from "@components/UI";
@@ -38,33 +39,13 @@ export default function RootLayout({
   return (
     <ReactLenis root options={lenisOptions}>
       <html lang="en">
-        <head>
-          {/* Google Tag Manager */}
-          <Script
-            async
-            id="google-tag-manager"
-            src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_PRODUCTION_GOOGLE_TAG_MANAGER_ID}`}
-            strategy="afterInteractive"
-          />
-          <Script
-            id="google-tag-manager-script"
-            strategy="afterInteractive"
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-              `,
-            }}
-          />
-          {/* End Google Tag Manager */}
-        </head>
         <body className={openSans.className}>
           <Header />
           {children}
           <Footer />
           <NoScriptGoogleTag />
           <Analytics />
+          <GoogleAnalytics gaId="G-JX1WF602T8" />
         </body>
       </html>
     </ReactLenis>
