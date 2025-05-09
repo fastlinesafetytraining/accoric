@@ -7,16 +7,17 @@ export const EmailHtmlTemplate = ({
 	phone,
 	numberOfEmployees,
 }) => (
-	<table border="0" max-width="600px" margin="0 auto" bgcolor="#ffffff" cellpadding="0" cellspacing="0">
-		<tr>
-			<td padding="20px" border="0">
+	<body style="width: 100%">
+		<table border="0" max-width="600px" margin="0 auto" bgcolor="#ffffff" cellpadding="0" cellspacing="0">
+			<tr>
+				<td padding="20px" border="0">
 				<table cellpadding="0" cellspacing="0" width="100%">
 					<tr>
 						<td align="center" padding="20px 0">
 							<img
 								width="300"
 								height="100"
-								src="https://accoric.vercel.app/svg/accoric-logo-svg.svg"
+								src="https://accoric.com/Images/accoric-logo.png"
 								alt="Company Logo"
 								max-width="200px"
 							/>
@@ -88,7 +89,8 @@ export const EmailHtmlTemplate = ({
 						</td>
 					</tr>
 				</table>
-			</td>
-		</tr>
-	</table>
+				</td>
+			</tr>
+		</table>
+	</body>
 );
