@@ -1,7 +1,7 @@
 @use "./_variables.scss" as v;
 
 @mixin h-two-plus-highlight {
-    font-size: clamp(3rem, 4.167vw, 5rem);
+    font-size: clamp(2.5rem, 4.167vw, 5rem);
     font-weight: 900;
     color: v.$site-secondary-color;
     margin-bottom: 1.667vw;
@@ -10,7 +10,7 @@
     .headingHighlight {
         color: v.$site-primary-color;
         font-style: italic;
-        font-size: clamp(4rem, 5vw, 6rem);
+        font-size: clamp(3.5rem, 5vw, 6rem);
         text-shadow: -5px 5px 0 0 v.$site-secondary-color;
         margin: 0 1rem;
     }
