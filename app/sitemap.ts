@@ -104,7 +104,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
             images: [`${defaultImageUrl}`]
 		},
 		{
-			url: `${baseUrl}/support/active-and-inactive-employees`,
+			url: `${baseUrl}/support/active-or-inactive-employees`,
 			lastModified: new Date().toISOString(),
 			changeFrequency: "weekly",
 			priority: 0.5,
