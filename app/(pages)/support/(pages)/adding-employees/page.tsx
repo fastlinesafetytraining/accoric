@@ -29,9 +29,8 @@ export default function Page() {
                         <li>
                             Add a Profile picture. (<em>Preferred picture formats are .jpg or .png</em>). 
                             When added, employees by default are active; profile pictures will have a green outline, 
-                            indicating they are active. Click{" "}
-                            <a href="https://wwww.accoric.com/support/active-or-inactive-employees">Here</a>
-                            to learn more about active/inactive status of employees.
+                            indicating they are active. Check out this support page to learn more about{" "}
+                            <a href="https://wwww.accoric.com/support/active-or-inactive-employees"> Active/Inactive Status of Employees.</a>
                         </li>
                     </ol>
                 </li>
