@@ -40,7 +40,7 @@ export default function Home() {
                 title="Learn more about Accoric Management and their benefits"
                 href="/accoric-management"
               >
-                Learn More
+                Learn More About Accoric Management
               </SecondaryButton>
             </div>
           </div>
