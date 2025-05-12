@@ -74,7 +74,7 @@
   height: 80vh;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 2rem;
   @media (max-width: v.$tablet-breakpoint) {
     flex-direction: column-reverse;
@@ -88,10 +88,9 @@
     border-radius: 0.5em;
     margin: 0 1rem;
     padding: 0 1rem;
-    margin-bottom: 10%;
     animation: AccoricManagementHeroImage ease-in-out;
     animation-timeline: view();
-    animation-range: -275px 40%;
+    animation-range: -35% 40%;
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
     @media (max-width: v.$tablet-breakpoint) {
       animation: none;
