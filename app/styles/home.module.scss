@@ -63,13 +63,17 @@
     }
 
     .heroButtons {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       width: 100%;
       flex-direction: row;
       justify-content: space-evenly;
-      align-items: center;
+      align-items: stretch;
       margin-top: 2rem;
-      gap: 1rem;
+      gap: 2rem 5rem;
+      @media (max-width: v.$tablet-breakpoint) {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
   }
   .heroImage {
@@ -169,6 +173,7 @@
     justify-content: center;
     align-items: center;
     width: clamp(300px, 40%, 600px);
+    margin: 0 1rem;
     padding: clamp(0.5rem, 1vw, 1rem);
     border-radius: clamp(1em, 2vw, 2em);
     box-shadow: 0 0 10px 0 rgba(112, 112, 112, 0.1);
