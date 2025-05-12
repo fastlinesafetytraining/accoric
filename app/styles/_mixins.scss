@@ -23,3 +23,8 @@
 	-webkit-text-fill-color: transparent;
 }
 
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
