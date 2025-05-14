@@ -1,8 +1,6 @@
 @use "sass:color";
-@use "./variables.scss" as v;
-@use "./mixins.scss" as m;
-@use "./base.scss";
 @use "./keyframes.scss";
+@use "./base.scss";
 
 /* Primary Button*/
 .sitePrimaryButton {
