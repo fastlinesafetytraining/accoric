@@ -33,11 +33,11 @@
     margin: 5rem auto;
     text-align: center;
     height: 60vh;
-    border-bottom: 1px solid v.$site-light-gray;
+    border-bottom: 1px solid v.$global-light-gray;
     h1 {
         font-size: 10vw;
         font-weight: 300;
-        color: v.$soft-black-2;
+        color: v.$heading-h1-color;
     }
     p {
         max-width: 90vw;
@@ -95,12 +95,12 @@
         font-size: clamp(1.25rem, 3vw, 3rem);
         font-weight:700;
         margin: clamp(1rem, 2vw, 2rem);
-        color: v.$site-secondary-color;
+        color: v.$global-secondary-color;
     }
     &__container {
         border-radius: 1em;
-        background-color: color.adjust(v.$site-primary-color, $lightness: 40%);
-        color: v.$site-secondary-color;
+        background-color: color.adjust(v.$global-primary-color, $lightness: 40%);
+        color: v.$global-secondary-color;
         padding: 2rem;
         width: 100%;
         max-width: 1000px;
@@ -112,11 +112,11 @@
             li {
                 display: flex;
                 align-items: center;
-                color: v.$site-secondary-color;
+                color: v.$global-secondary-color;
                 i {
                     font-size: 1.5rem;
                     margin-right: 1rem;
-                    color: v.$site-secondary-color;
+                    color: v.$global-secondary-color;
                 }
             }
         }

@@ -6,12 +6,12 @@
 		font-size: 2rem;
 		font-weight: 600;
 		margin: 1rem 0;
-		color: v.$soft-black-2;
+		color: v.$heading-h2-color;
 	}
 	h3 {
 		font-size: 1.5rem;
 		font-weight: 500;
-		color: v.$soft-black-2;
+		color: v.$heading-h3-color;
 	}
 
 
@@ -20,7 +20,7 @@
 		font-size: 1.2rem;
 		b {
 			font-weight: 600;
-			color: v.$site-accent-color;
+			color: v.$global-accent-color;
 		}
 	}
 
@@ -62,7 +62,7 @@
 	margin-bottom: 20px;
 
 	h1 {
-		color: v.$soft-black-1;
+		color: v.$heading-h1-color;
 		margin: 0;
 		font-size: 2.5rem;
 	}
@@ -75,7 +75,7 @@
 
 	li span {
 		font-weight: 600;
-		color: v.$site-accent-color;
+		color: v.$global-accent-color;
 	}
 
 	.quickAnswerContainer {
@@ -87,7 +87,7 @@
 		font-weight: 500;
 
 		span {
-			color: v.$soft-black-2;
+			color: v.$text-paragraph-color;
 			font-size: 1.2rem;
 			font-weight: 600;
 		}

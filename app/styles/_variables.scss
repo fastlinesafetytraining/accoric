@@ -1,30 +1,69 @@
-/* Colors*/
-$site-primary-color: #2fa5f4;
-$site-secondary-color: #0c0050;
-$site-accent-color: #CE2029;
+  // Colors
 
-$site-light-blue: #0083e0;
-$site-orange: #d69e00;
 
-$site-section-background-color: #f1f1f1;
+/* Global Colors*/
+$global-primary-color: #2fa5f4;
+$global-secondary-color: #0c0050;
+$global-accent-color: #CE2029;
+$global-tertiary-color: #0083e0;
+$global-light-gray: #f1f1f1;
+$global-orange: #d69e00;
+$global-black: #2b2b2b;
 
-$soft-black-1: #3b3b3b;
-$soft-black-2: #2b2b2b;
+  // Container Colors
 
-$site-light-gray: #f1f1f1;
 
-$paragraph-global-color: #1a1a1a;
+/* Section Background Colors */
+$site-page-background-color: #f1f1f1;
+$site-page-background-color-dark-theme: #1a1a1a;
 
+/* Section Background Colors */
+$site-page-background-color: #f1f1f1;
+$site-page-background-color-dark-theme: #1a1a1a;
+
+
+  // Typography Colors
+
+
+/* Heading Colors */
+$heading-h1-color: #1a1a1a;
+$heading-h1-color-dark-theme: #eeeeee;
+
+$heading-h2-color: #1a1a1a;
+$heading-h2-color-dark-theme: #eeeeee;
+
+$heading-h3-color: #1a1a1a;
+$heading-h3-color-dark-theme: #eeeeee;
+
+/* Text Colors */
+$text-paragraph-color: #1a1a1a;
+$text-paragraph-color-dark-theme: #eeeeee;
+
+/* Link Colors */
 $link-color: #007bff;
+$link-color-dark-theme: #007bff;
 
+
+   // Component Colors
+
+
+/* Primary Button Colors */
 $primary-button-color: #CE2029;
 $primary-button-hover-color: #B22234;
 
+/* Secondary Button Colors */
 $secondary-button-color: #65A0E5;
 $secondary-button-hover-color: #E0E0E0;
+
+/* Nav Colors */
+$nav-link-color: #1a1a1a;
+$nav-link-color-dark-theme: #eeeeee;
+
+
+  // Breakpoints
+
 
 $tablet-breakpoint: 1024px;
 $mobile-breakpoint: 767px;
 
-$heading-black-1: #3d3d3d;
-$heading-black-2: #262626;
+

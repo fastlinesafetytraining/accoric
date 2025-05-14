@@ -40,7 +40,7 @@
     }
     h1 {
       font-weight: 900;
-      color: v.$site-secondary-color;
+      color: v.$global-secondary-color;
       line-height: clamp(2.5rem, 5vw, 5rem);
       padding: 0 1rem;
       @media (max-width: v.$mobile-breakpoint) {
@@ -50,10 +50,10 @@
         font-size: clamp(5rem, 10vw, 12.5rem);
       }
       .heroTitle__highlight {
-        color: v.$site-primary-color;
+        color: v.$global-primary-color;
         font-size: clamp(3rem, 5.667vw, 6.8rem);
         font-style: italic;
-        text-shadow: -5px 5px 0 v.$site-secondary-color;
+        text-shadow: -5px 5px 0 v.$global-secondary-color;
       }
       .heroTitle__last {
         font-size: clamp(2rem, 3.75vw, 3.75rem);
@@ -93,7 +93,7 @@
       height: 60%;
       border-radius: 50%;
       filter: blur(5rem);
-      background-color: v.$site-primary-color;
+      background-color: v.$global-primary-color;
       z-index: 1;
     }
     &::after {
@@ -126,7 +126,7 @@
   }
   p {
     font-size: 1.5rem;
-    color: v.$site-secondary-color;
+    color: v.$global-secondary-color;
     margin: 1rem 0;
   }
 }
@@ -239,16 +239,16 @@
     h3 {
       font-size: clamp(1.25rem, 2vw, 1.5rem);
       font-weight: 900;
-      color: v.$site-accent-color;
+      color: v.$global-accent-color;
     }
     h4 {
       font-size: clamp(1.25rem, 2vw, 1.5rem);
       font-weight: 900;
-      color: v.$site-secondary-color;
+      color: v.$global-secondary-color;
     }
     p {
       font-size: clamp(1rem, 1.5vw, 1.2rem);
-      color: v.$paragraph-global-color;
+      color: v.$text-paragraph-color;
     }
   }
 }
@@ -277,12 +277,12 @@
       p {
         font-size: clamp(1.1rem, 1.5vw, 1.2rem);
         margin: 3rem 0;
-        color: v.$paragraph-global-color;
+        color: v.$text-paragraph-color;
         text-indent: 0.5rem;
         span {
           font-size: clamp(1.2rem, 2vw, 1.5rem);
           font-weight: 900;
-          color: v.$site-secondary-color;
+          color: v.$global-secondary-color;
         }
       }
       @media (max-width: v.$tablet-breakpoint) {
@@ -316,7 +316,7 @@
         font-size: clamp(1rem, 1.5vw, 1.25rem);
         font-weight: 600;
         text-align: center;
-        color: v.$site-secondary-color;
+        color: v.$global-secondary-color;
       }
       .feature__one {
         top: 25%;
@@ -374,7 +374,7 @@
     border-radius: 50%;
     width: 50%;
     height: 100%;
-    background-color: v.$site-primary-color;
+    background-color: v.$global-primary-color;
     z-index: 1;
     @media (max-width: v.$tablet-breakpoint) {
       bottom: -30%;
@@ -418,11 +418,11 @@
         align-items: center;
         gap: 1rem;
         font-weight: 700;
-        color: v.$soft-black-1;
+        color: v.$heading-h3-color;
       }
       .testimonial__quote {
         font-size: 1rem;
-        color: v.$site-secondary-color;
+        color: v.$global-secondary-color;
         margin: 1rem 0;
       }
 
@@ -447,7 +447,7 @@
     gap: 1rem;
     h2 {
       font-size: clamp(3rem, 5vw, 6rem);
-      color: v.$site-secondary-color;
+      color: v.$global-secondary-color;
       font-weight: 900;
     }
     @media (max-width: v.$tablet-breakpoint) {
