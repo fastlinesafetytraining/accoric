@@ -1,4 +1,4 @@
-@use "./_variables.scss" as v;
+@use "./variables.scss" as v;
 
 @mixin h-two-plus-highlight {
     font-size: clamp(2.5rem, 4.167vw, 5rem);
@@ -11,7 +11,7 @@
         color: v.$global-primary-color;
         font-style: italic;
         font-size: clamp(3.5rem, 5vw, 6rem);
-        text-shadow: -5px 5px 0 0 v.$global-secondary-color;
+        text-shadow: -5px 5px 0 v.$global-secondary-color;
         margin: 0 1rem;
     }
 }
