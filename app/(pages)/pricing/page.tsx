@@ -1,6 +1,6 @@
 import React from "react";
 import { Toaster } from "react-hot-toast";
-import { PricingForm, FAQ, PastClients } from "@components/UI";
+import { PricingForm, FAQ, PastClients, CompanyStats } from "@components/UI";
 import { TbSquareRoundedCheckFilled } from "react-icons/tb";
 import { includedInAllSubscriptions, faqItems } from "./page-data";
 import styles from "@styles/pricing.module.scss";
@@ -21,26 +21,7 @@ export default function Page() {
           We offer a <span>range of pricing</span> options to suit your needs.
         </p>
         <p>Please contact us to discuss your requirements.</p>
-        <div className={styles.pricing__header__stats}>
-            <div className={styles.pricing__header__stat}>
-              <span className={styles.pricing__header__stat__number}>500+</span>
-              <span className={styles.pricing__header__stat__label}>
-                Companies Served
-              </span>
-            </div>
-            <div className={styles.pricing__header__stat}>
-              <span className={styles.pricing__header__stat__number}>10k+</span>
-              <span className={styles.pricing__header__stat__label}>
-                Certifications Tracked
-              </span>
-            </div>
-            <div className={styles.pricing__header__stat}>
-              <span className={styles.pricing__header__stat__number}>99%</span>
-              <span className={styles.pricing__header__stat__label}>
-                Client Satisfaction
-              </span>
-            </div>
-          </div>
+        <CompanyStats />
       </section>
       <div className={styles.pricing__content}>
       <section className={styles.pricing__includedList}>

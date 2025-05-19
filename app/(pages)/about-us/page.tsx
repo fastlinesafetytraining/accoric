@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ContactCTA, ContactCards } from "@components/UI";
+import { ContactCTA, ContactCards, CompanyStats } from "@components/UI";
 import { benefits } from "./page-data/benefits";
 import styles from "@styles/aboutUs.module.scss";
 
@@ -22,26 +22,7 @@ export default function AboutUs() {
             Simplifying certification tracking while ensuring<br/> maximum security
             and efficiency
           </p>
-          <div className={styles.aboutUs__hero__stats}>
-            <div className={styles.aboutUs__hero__stat}>
-              <span className={styles.aboutUs__hero__stat__number}>500+</span>
-              <span className={styles.aboutUs__hero__stat__label}>
-                Companies Served
-              </span>
-            </div>
-            <div className={styles.aboutUs__hero__stat}>
-              <span className={styles.aboutUs__hero__stat__number}>10k+</span>
-              <span className={styles.aboutUs__hero__stat__label}>
-                Certifications Tracked
-              </span>
-            </div>
-            <div className={styles.aboutUs__hero__stat}>
-              <span className={styles.aboutUs__hero__stat__number}>99%</span>
-              <span className={styles.aboutUs__hero__stat__label}>
-                Client Satisfaction
-              </span>
-            </div>
-          </div>
+          <CompanyStats />
         </div>
         <div className={styles.aboutUs__hero__background} />
       </section>
