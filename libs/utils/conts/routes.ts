@@ -81,6 +81,14 @@ export const supportMenu: SupportMenu[] = [
 				title: "Forgot Password",
 				link: "/support/forgot-password",
 			},
+			{
+				title: "Creating Automated Email Reminders",
+				link: "/support/creating-automated-email-reminders",
+			},
+			{
+				title: "Viewing, Requesting, and Deleting Dashcards",
+				link: "/support/viewing-requesting-and-deleting-dashcards",
+			},
 		],
 	},
 ];
