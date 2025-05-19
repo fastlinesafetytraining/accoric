@@ -14,7 +14,7 @@ export default function SupportSideMenu() {
 	const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' ? window.innerWidth < 768 : false);
 	const [menuActive, setMenuActive] = useState(false);
 	
-	const DropdownMenu = () => {
+	const MobileDropdownMenu = () => {
 	
 		return (
 			<>
@@ -42,7 +42,7 @@ export default function SupportSideMenu() {
 							<h3>{section.sectionTitle}</h3>
 							<ul>
 								{section.sectionItems.map((item, itemIndex) => (
-									<li onClick={handleLinkClick} key={itemIndex}>
+									<li value={item.link} onClick={handleLinkClick} key={itemIndex}>
 										<Link className={styles.supportSidebar__nav__link} href={item.link}>{item.title}</Link>
 									</li>
 								))}
@@ -56,8 +56,8 @@ export default function SupportSideMenu() {
 
 	useEffect(() => {
 		if (pathname) {
-			document.querySelectorAll(`.${styles.supportSidebar__nav} a`).forEach((link) => {
-				if (link.getAttribute("href")?.includes(pathname)) {
+			document.querySelectorAll(`.${styles.supportSidebar__nav} li`).forEach((link) => {
+				if (link.getAttribute("value")?.includes(pathname)) {
 					link.classList.add(styles.active);
 				} else {
 					link.classList.remove(styles.active);
@@ -82,7 +82,7 @@ export default function SupportSideMenu() {
 
 	return (
 		<aside className={styles.supportSidebar}>
-			{isMobile ? <DropdownMenu /> : <DesktopMenu />}
+			{isMobile ? <MobileDropdownMenu /> : <DesktopMenu />}
 		</aside>
 	);
 }
