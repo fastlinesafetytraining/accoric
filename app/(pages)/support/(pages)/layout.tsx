@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { SupportSideMenu } from "@/app/Components/UI";
 import styles from "@styles/support.module.scss";
+import Loading from "./loading";
 
 export default function SupportPage({ children }: { children: React.ReactNode }) {
     return (
@@ -8,7 +9,9 @@ export default function SupportPage({ children }: { children: React.ReactNode })
             <div className={styles.support__container}>
                 <SupportSideMenu />
                 <article className={styles.support__content}>
-                    {children}
+                    <Suspense fallback={<Loading />}>
+                        {children}
+                    </Suspense>
                 </article>
             </div>
         </main>
