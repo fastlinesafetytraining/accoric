@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import styles from "@styles/accoricManagement.module.scss";
+import styles from "@styles/pages/accoricManagement.module.scss";
 import { LottieComponent } from "@components/UI";
 import { nfcLottie } from "@/public/lottie";
 

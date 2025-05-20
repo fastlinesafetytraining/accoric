@@ -2,7 +2,7 @@ import React from "react";
 import styles from "@styles/pages/support.module.scss";
 import { Metadata } from "next";
 import Link from "next/link";
-import { supportMenu } from "@/libs/utils/conts/routes";
+import { supportMenu } from "@/libs/utils/const/routes";
 
 export const metadata: Metadata = {
   title: "Support | Accoric",

@@ -1,5 +1,5 @@
 import React, { Suspense } from "react";
-import { SupportSideMenu } from "@/app/Components/UI";
+import { SupportSideMenu } from "@/Components/UI";
 import styles from "@styles/pages/support.module.scss";
 import Loading from "./loading";
 

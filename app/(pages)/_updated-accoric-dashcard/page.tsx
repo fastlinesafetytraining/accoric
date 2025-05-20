@@ -1,8 +1,8 @@
 import React from "react";
 import Spline from "@splinetool/react-spline/next";
-import { ContactCTA, VideoPlayer } from "@/app/Components/UI";
+import { ContactCTA, VideoPlayer } from "@components/UI";
 import { Metadata } from "next";
-import styles from "@/app/styles/accoricDashcard.module.scss";
+import styles from "@styles/pages/accoricDashcard.module.scss";
 
 export const metadata: Metadata = {
   title: "Accoric Dashcard | Accoric",
