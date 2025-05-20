@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import '../../styles/globals.css';
+import '@styles/globals.css';
 import { FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {

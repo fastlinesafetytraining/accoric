@@ -4,7 +4,7 @@ import { FaCaretDown } from "react-icons/fa";
 import { Drawer, Button } from "antd";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import supportMenu from "@/libs/utils/conts/routes";
+import supportMenu from "@/libs/utils/const/routes";
 import styles from "@styles/component.module.scss";
 
 

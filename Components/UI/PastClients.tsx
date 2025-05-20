@@ -1,5 +1,5 @@
 import Image from "next/image";
-import pastClients from "@/libs/utils/conts/pastClient";
+import pastClients from "@/libs/utils/const/pastClient";
 import styles from '@styles/component.module.scss';
 import { StaticImageData } from "next/image";
 

@@ -3,7 +3,7 @@ import "@ant-design/v5-patch-for-react-19";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button, Drawer } from "antd";
-import { navMenuItems } from "@/libs/utils/conts/routes";
+import { navMenuItems } from "@/libs/utils/const/routes";
 import { FaBars, FaTimes } from "react-icons/fa";
 import styles from "@styles/component.module.scss";
 import PrimaryButton from "./PrimaryButton";
