@@ -3,7 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import NavBar from "./NavBar"
 import '@styles/globals.css'
-
+import PrimaryButton from "./PrimaryButton"
 export default function Header() {
 	return (
 		<header className="flex justify-between items-center">
@@ -18,7 +18,7 @@ export default function Header() {
 				/>
 			</Link>
 			<NavBar />
-			<Link className="login-button" href="https://accoricmgt.com/">Login</Link>
+			<PrimaryButton href="https://accoricmgt.com/" title="Login">Login</PrimaryButton>
 		</header>
 	);
 }
