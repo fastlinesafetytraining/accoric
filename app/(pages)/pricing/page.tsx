@@ -3,7 +3,7 @@ import { Toaster } from "react-hot-toast";
 import { PricingForm, FAQ, PastClients, CompanyStats } from "@components/UI";
 import { TbSquareRoundedCheckFilled } from "react-icons/tb";
 import { includedInAllSubscriptions, faqItems } from "./page-data";
-import styles from "@styles/pricing.module.scss";
+import styles from "@styles/pages/pricing.module.scss";
 
 export const metadata = {
   title: "Pricing | Accoric",

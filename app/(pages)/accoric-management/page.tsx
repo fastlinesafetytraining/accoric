@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "@styles/accoricManagement.module.scss";
+import styles from "@styles/pages/accoricManagement.module.scss";
 import { VideoPlayer, ContactCTA, FAQ, PastClients } from "@components/UI";
 import { Features, SyncDashcard, faq } from "./pageData";
 

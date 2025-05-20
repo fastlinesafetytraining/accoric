@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@styles/policyPage.module.scss';
+import styles from '@styles/pages/policyPage.module.scss';
 
 export const metadata = {
 	title: 'Privacy Policy | Policy | Accoric',

@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Metadata } from 'next';
-import styles from '@styles/policyPage.module.scss';
+import styles from '@styles/pages/policyPage.module.scss';
 
 export const metadata: Metadata = {
 	title: 'Terms of Service | Policy | Accoric',

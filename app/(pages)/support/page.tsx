@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@styles/support.module.scss";
+import styles from "@styles/pages/support.module.scss";
 import { Metadata } from "next";
 import Link from "next/link";
 import { supportMenu } from "@/libs/utils/conts/routes";

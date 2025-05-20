@@ -9,7 +9,7 @@ import {
   ContactCards,
 } from "@components/UI";
 import { FaArrowUp } from "react-icons/fa";
-import styles from "@styles/home.module.scss";
+import styles from "@styles/pages/home.module.scss";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {

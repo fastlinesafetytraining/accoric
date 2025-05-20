@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { SupportSideMenu } from "@/app/Components/UI";
-import styles from "@styles/support.module.scss";
+import styles from "@styles/pages/support.module.scss";
 import Loading from "./loading";
 
 export default function SupportPage({ children }: { children: React.ReactNode }) {
