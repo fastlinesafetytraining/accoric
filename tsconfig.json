@@ -20,10 +20,10 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@components/*": ["./app/Components/*"],
-      "@styles/*": ["./app/styles/*"],
+      "@components/*": ["./Components/*"],
+      "@styles/*": ["./styles/*"],
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "app/(pages)/not-found.js", "app/Components/templates/EmailTemplate.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
