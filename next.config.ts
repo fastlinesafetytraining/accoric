@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
 import { redirects } from "@/libs/utils/conts/redirects";
-import path from "path";
 
 /* @type {import('next').NextConfig} */
 
@@ -11,8 +10,8 @@ const nextConfig: NextConfig = {
   sassOptions: {
     implementation: "sass",
     additionalData: `
-    @use "./variables.scss" as v;
-    @use "./mixins.scss" as m;
+    @use "./app/styles/_variables.scss" as v;
+    @use "./app/styles/_mixins.scss" as m;
     `,
   },
   redirects: async () => [
