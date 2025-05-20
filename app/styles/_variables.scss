@@ -1,29 +1,27 @@
-  // Colors
+@use "sass:color";
 
+// Colors
 
 /* Global Colors*/
 $global-primary-color: #2fa5f4;
 $global-secondary-color: #0c0050;
-$global-accent-color: #CE2029;
+$global-accent-color: #ce2029;
 $global-tertiary-color: #0083e0;
 $global-light-gray: #f1f1f1;
 $global-orange: #d69e00;
 $global-black: #2b2b2b;
 
-  // Container Colors
-
-
-/* Section Background Colors */
-$site-page-background-color: #f1f1f1;
-$site-page-background-color-dark-theme: #1a1a1a;
+// Container Colors
 
 /* Section Background Colors */
 $site-page-background-color: #f1f1f1;
 $site-page-background-color-dark-theme: #1a1a1a;
 
+/* Section Background Colors */
+$site-page-background-color: #f1f1f1;
+$site-page-background-color-dark-theme: #1a1a1a;
 
-  // Typography Colors
-
+// Typography Colors
 
 /* Heading Colors */
 $heading-h1-color: #1a1a1a;
@@ -43,27 +41,35 @@ $text-paragraph-color-dark-theme: #eeeeee;
 $link-color: #007bff;
 $link-color-dark-theme: #007bff;
 
+// Component Colors
 
-   // Component Colors
-
-
-/* Primary Button Colors */
-$primary-button-color: #CE2029;
-$primary-button-hover-color: #B22234;
-
-/* Secondary Button Colors */
-$secondary-button-color: #65A0E5;
-$secondary-button-hover-color: #E0E0E0;
 
 /* Nav Colors */
 $nav-link-color: #1a1a1a;
 $nav-link-color-dark-theme: #eeeeee;
 
+/* Button */
 
-  // Breakpoints
+$button-border-radius: 3em;
 
+/* Primary Button Colors */
+
+$primary-button-color: linear-gradient(
+	to right,
+	$global-accent-color,
+	color.adjust($global-accent-color, $lightness: +10%),
+	$global-accent-color
+);
+
+/* Secondary Button Colors */
+$secondary-button-color: linear-gradient(
+	to right,
+	$global-tertiary-color,
+	color.adjust($global-tertiary-color, $lightness: +10%),
+	$global-tertiary-color
+);
+
+// Breakpoints
 
 $tablet-breakpoint: 1024px;
 $mobile-breakpoint: 767px;
-
-
