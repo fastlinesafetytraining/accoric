@@ -4,82 +4,42 @@
 
 /* Primary Button*/
 .sitePrimaryButton {
-	border: 2px solid v.$primary-button-color;
-	background-color: v.$primary-button-color;
-	padding: clamp(0.75rem, 1.5vw, 1rem) clamp(2rem, 4vw, 3.5rem);
-	color: white;
-	border-radius: 0.25em;
-	text-align: center;
-	transition: all 0.2s;
 	position: relative;
+	text-align: center;
+	color: white;
+	background: v.$primary-button-color;
+	background-size: 200% 100%;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(2rem, 4vw, 3rem);
+	border-radius: v.$button-border-radius;
+	transition: all 0.2s ease-in-out;
 	@include m.flex-center;
 	&:hover {
-		transform: translateY(-3px);
-		box-shadow: 0 10px 20px rgb(216, 216, 216);
+		background-position: 100% 0;
 	}
 	&:active {
-		transform: translateY(-1px);
-		box-shadow: 0 5px 10px rgb(216, 216, 216);
-	}
-	&::after {
-		content: "";
-		display: inline-block;
-		height: 100%;
-		width: 100%;
-		border-radius: 0.25em;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
-		transition: all 0.4s;
-	}
-	&::after {
-		background-color: v.$primary-button-color;
-	}
-	&:hover::after {
-		transform: scaleX(1.2) scaleY(1.4);
-		opacity: 0;
+		background-position: 100% 0;
 	}
 }
 
 /*Secondary Button*/
 
 .siteSecondaryButton {
-	border: 2px solid v.$secondary-button-color;
-	background-color: white;
-	padding: clamp(0.75rem, 1.5vw, 1rem) clamp(2rem, 4vw, 3.5rem);
-	color: black;
-	border-radius: 0.25em;
-	text-align: center;
-	transition: all 0.2s;
 	position: relative;
+	text-align: center;
+	color: white;
+	background: v.$secondary-button-color;
+	background-size: 200% 100%;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	padding: clamp(0.75rem, 1.5vw, 1rem) clamp(2rem, 4vw, 3rem);
+	border-radius: v.$button-border-radius;
+	transition: all 0.2s ease-in-out;
 	@include m.flex-center;
 	&:hover {
-		transform: translateY(-3px);
-		box-shadow: 0 10px 20px rgb(216, 216, 216);
+		background-position: 100% 0;
 	}
 	&:active {
-		transform: translateY(-1px);
-		box-shadow: 0 5px 10px rgb(216, 216, 216);
-	}
-	&::after {
-		content: "";
-		display: inline-block;
-		height: 100%;
-		width: 100%;
-		border-radius: 0.25em;
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: -1;
-		transition: all 0.4s;
-	}
-	&::after {
-		background-color: v.$secondary-button-color;
-	}
-	&:hover::after {
-		transform: scaleX(1.2) scaleY(1.4);
-		opacity: 0;
+		background-position: 100% 0;
 	}
 }
 
