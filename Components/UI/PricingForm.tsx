@@ -6,9 +6,9 @@ import {
 	marks,
 	radioOptions,
 } from "@/libs/utils/const/pricingFormData";
+import toast from "react-hot-toast";
 import { Form, Input, Button, Slider, Radio, ConfigProvider } from "antd";
 import styles from "@styles/component.module.scss";
-import toast from "react-hot-toast";
 
 export default function PricingForm() {
 	const [form] = Form.useForm();
