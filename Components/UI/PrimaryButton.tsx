@@ -8,6 +8,7 @@ interface PrimaryButtonProps {
     href: string;
     title: string;
     children: React.ReactNode;
+    className?: string;
 }
 
 export default function PrimaryButton(props: PrimaryButtonProps) {
@@ -18,7 +19,7 @@ export default function PrimaryButton(props: PrimaryButtonProps) {
     }, [pathname]);
 
     return (
-            <Link className={styles.sitePrimaryButton} href={props.href} title={props.title} aria-label={props.title}>
+            <Link className={`${styles.sitePrimaryButton} ${props.className}`} href={props.href} title={props.title} aria-label={props.title}>
                 {props.children}
             </Link>
 
