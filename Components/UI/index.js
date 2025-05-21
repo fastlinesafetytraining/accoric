@@ -1,28 +1,13 @@
-import Header from "./Header";
-import Footer from "./Footer";
-import PrimaryButton from "./PrimaryButton";
-import SecondaryButton from "./SecondaryButton";
-import LottieComponent from "./LottieComponent";
-import PastClients from "./PastClients";
-import VideoPlayer from "./VideoPlayer";
-import PricingForm from "./PricingForm";
-import FAQ from "./FAQ";
-import ContactCTA from "./ContactCTA";
-import ContactCards from "./ContactCards";
-import SupportSideMenu from "./SupportSideMenu";
-import CompanyStats from "./CompanyStats";
-export {
-	Header,
-	Footer,
-	PrimaryButton,
-	SecondaryButton,
-	LottieComponent,
-	PastClients,
-	VideoPlayer,
-	PricingForm,
-	FAQ,
-	ContactCTA,
-	ContactCards,
-	SupportSideMenu,
-	CompanyStats,
-};
+export { default as Header } from './Header';
+export { default as Footer } from './Footer';
+export { default as SiteButton } from './SiteButton';
+export { default as NavBar } from './NavBar';
+export { default as LottieComponent } from './LottieComponent';
+export { default as PastClients } from './PastClients';
+export { default as VideoPlayer } from './VideoPlayer';
+export { default as PricingForm } from './PricingForm';
+export { default as FAQ } from './FAQ';
+export { default as ContactCTA } from './ContactCTA';
+export { default as ContactCards } from './ContactCards';
+export { default as SupportSideMenu } from './SupportSideMenu';
+export { default as CompanyStats } from './CompanyStats';
