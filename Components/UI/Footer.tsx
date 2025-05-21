@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import { LuLinkedin, LuExternalLink } from 'react-icons/lu';
 import '@styles/globals.css';
-import { FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
 	return (
@@ -27,7 +27,7 @@ export default function Footer() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<FaLinkedin className="text-3xl" />
+							<LuLinkedin className="text-3xl" />
 						</Link>
 					</div>
 				</div>
@@ -59,6 +59,7 @@ export default function Footer() {
 						<li>
 							<a href="https://www.fastlinesafetytraining.com" target="_blank" rel="noopener noreferrer">
 								Certificate Trainings
+								<LuExternalLink />
 							</a>
 						</li>
 					</ul>

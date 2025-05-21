@@ -3,10 +3,10 @@ import "@ant-design/v5-patch-for-react-19";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Button, Drawer } from "antd";
+import { SiteButton } from ".";
 import { navMenuItems } from "@/libs/utils/const/routes";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { LuUser, LuMenu, LuX } from "react-icons/lu";
 import styles from "@styles/component.module.scss";
-import PrimaryButton from "./PrimaryButton";
 
 export default function NavBar(): React.ReactElement {
 	const [menuActive, setMenuActive] = useState(false);
@@ -45,12 +45,12 @@ export default function NavBar(): React.ReactElement {
 				// Mobile Navbar
 				<nav className={styles.mobileNavBar}>
 					<Button type='primary' ghost size="large" onClick={showMenu}>
-						<FaBars />
+						<LuMenu />
 					</Button>
 					<Drawer
 						title={
 							<div className={styles.mobileNavBar__drawerTitle}>
-								<FaTimes className={styles.mobileNavBar__drawerTitle__closeIcon} onClick={hideMenu} />
+								<LuX className={styles.mobileNavBar__drawerTitle__closeIcon} onClick={hideMenu} />
 								<h2>Welcome to <span>Accoric</span>!</h2>
 							</div>
 						}
@@ -72,9 +72,9 @@ export default function NavBar(): React.ReactElement {
 								</li>
 							))}
 						</ul>
-						<PrimaryButton href='https://accoricmgt.com/' title='Login'>
+						<SiteButton type="primary" href='https://accoricmgt.com/' title='Login' icon={<LuUser />}>
 							Login
-						</PrimaryButton>
+						</SiteButton>
 					</Drawer>
 				</nav>
 			) : (

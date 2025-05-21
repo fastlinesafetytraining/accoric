@@ -1,12 +1,12 @@
 import { SliderSingleProps } from "antd/es/slider";
-import { FaUser, FaBuilding, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
+import { LuUser, LuBuilding, LuMail, LuPhone } from "react-icons/lu";
 
 export const formFields = [
     {
       name: "fullName",
       label: "Full Name",
       rules: [{ required: true, message: "Please enter your full name" }],
-      prefix: <FaUser />,
+      prefix: <LuUser />,
       placeholder: "Full Name *",
       type: "text",
     },
@@ -14,7 +14,7 @@ export const formFields = [
       name: "companyName",
       label: "Company Name",
       rules: [{ required: true, message: "Please enter your company name" }],
-      prefix: <FaBuilding />,
+      prefix: <LuBuilding />,
       placeholder: "Company Name *",
       type: "text",
     },
@@ -22,7 +22,7 @@ export const formFields = [
       name: "email",
       label: "Email",
       rules: [{ required: true, message: "Please enter your email" }],
-      prefix: <FaEnvelope />,
+      prefix: <LuMail />,
       placeholder: "Email *",
       type: "email",
     },
@@ -30,7 +30,7 @@ export const formFields = [
       name: "phone",
       label: "Phone",
       rules: [{ required: true, message: "Please enter your phone number" }],
-      prefix: <FaPhoneAlt />,
+      prefix: <LuPhone />,
       placeholder: "Phone *",
       type: "tel",
     },

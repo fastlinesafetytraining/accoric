@@ -1,13 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
-import { FaCaretDown } from "react-icons/fa";
+import { LuChevronDown } from "react-icons/lu";
 import { Drawer, Button } from "antd";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import supportMenu from "@/libs/utils/const/routes";
 import styles from "@styles/component.module.scss";
-
-
 
 export default function SupportSideMenu() {
 	const pathname = usePathname();
@@ -18,7 +16,7 @@ export default function SupportSideMenu() {
 	
 		return (
 			<>
-			<Button block iconPosition="end" icon={<FaCaretDown />} onClick={() => setMenuActive(true)}>
+			<Button block size="large" style={{ fontSize: "1.2rem" }} iconPosition="end" icon={<LuChevronDown />} onClick={() => setMenuActive(true)}>
 				Menu
 			</Button>
 			<Drawer height={`70%`} placement="bottom" open={menuActive} onClose={() => setMenuActive(false)}>

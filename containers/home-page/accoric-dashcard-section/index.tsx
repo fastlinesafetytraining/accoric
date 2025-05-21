@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { FaArrowUp } from "react-icons/fa";
+import { LuArrowUp } from "react-icons/lu";
 import styles from "@styles/pages/home.module.scss";
 
 export default function index() {
@@ -54,7 +54,7 @@ export default function index() {
 							aria-label='Learn more about Accoric Dashcard'
 							href='/accoric-dashcard'
 						>
-							Learn More <FaArrowUp rotate={45} />
+							Learn More <LuArrowUp rotate={45} />
 						</a>
 					</div>
 				</div>

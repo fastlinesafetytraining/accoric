@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { Flex, Segmented } from 'antd';
-import { AiFillMoon, AiFillSun, AiOutlineDesktop } from 'react-icons/ai';
+import { LuSun, LuMoon, LuMonitor } from 'react-icons/lu';
 
 export default function ThemeToggle() {
 
@@ -9,9 +9,9 @@ export default function ThemeToggle() {
 		<Flex gap="small" align="flex-start">
 			<Segmented
 				options={[
-					{ value: 'light', icon: <AiFillSun /> },
-					{ value: 'system', icon: <AiOutlineDesktop /> },
-					{ value: 'dark', icon: <AiFillMoon /> },
+					{ value: 'light', icon: <LuSun /> },
+					{ value: 'system', icon: <LuMonitor /> },
+					{ value: 'dark', icon: <LuMoon /> },
 				]}
 				defaultValue="system"
 				aria-label="Theme Toggle Switch"

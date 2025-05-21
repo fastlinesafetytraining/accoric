@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { PrimaryButton, SecondaryButton } from "@components/UI";
+import { SiteButton } from "@components/UI";
+import { LuDollarSign, LuInfo } from "react-icons/lu";
 import styles from "@styles/pages/home.module.scss";
 
 export default function index() {
@@ -18,18 +19,22 @@ export default function index() {
 						</span>
 					</h1>
 					<div className={styles.heroButtons}>
-						<PrimaryButton
+						<SiteButton
 							title='See Pricing for Accoric Management'
 							href='/pricing'
+							type='primary'
+							icon={<LuDollarSign />}
 						>
 							See Pricing
-						</PrimaryButton>
-						<SecondaryButton
+						</SiteButton>
+						<SiteButton
 							title='Learn more about Accoric Management and their benefits'
 							href='/accoric-management'
+							type='secondary'
+							icon={<LuInfo />}
 						>
-							Learn More About Accoric Management
-						</SecondaryButton>
+							See Accoric Management
+						</SiteButton>
 					</div>
 				</div>
 				<div className={styles.heroImage}>

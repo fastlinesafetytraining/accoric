@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEnvelope, FaPhoneAlt, FaClock } from "react-icons/fa";
+import { LuMail, LuPhone, LuClock } from "react-icons/lu";
 import { Divider } from "antd";
 import styles from '@styles/component.module.scss';
 
@@ -15,7 +15,7 @@ type ContactCardProps = {
 export default function ContactCards() {
  const contactCard: ContactCardProps[] = [
         {
-          icon: <FaEnvelope className={styles.contactUsCards__Icon}/>,
+          icon: <LuMail className={styles.contactUsCards__Icon}/>,
           title: "Email Us",
           content: [{
             title: "Technical Help (Accoric Management):",
@@ -31,7 +31,7 @@ export default function ContactCards() {
           }]
         },
         {
-          icon: <FaPhoneAlt className={styles.contactUsCards__Icon}/>,
+          icon: <LuPhone className={styles.contactUsCards__Icon}/>,
           title: "Call Us",
           content: [{
             title: "Technical Help (Accoric Management):",
@@ -47,7 +47,7 @@ export default function ContactCards() {
           }]
         },
         {
-          icon: <FaClock className={styles.contactUsCards__Icon}/>,
+          icon: <LuClock className={styles.contactUsCards__Icon}/>,
           title: "Hours Of Operations",
           content: [{
             title: "Monday-Friday:",
