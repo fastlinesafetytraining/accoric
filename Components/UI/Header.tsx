@@ -18,7 +18,7 @@ export default function Header() {
 				/>
 			</Link>
 			<NavBar />
-			<PrimaryButton href="https://accoricmgt.com/" title="Login">Login</PrimaryButton>
+			<PrimaryButton className="login-button" href="https://accoricmgt.com/" title="Login">Login</PrimaryButton>
 		</header>
 	);
 }

@@ -47,18 +47,6 @@ header {
 	z-index: 10;
 }
 
-header .login-button{
-	background-color: #CE2029;
-	color: #fff;
-	border-radius: 0.5em;
-	padding: 0.5em 2em;
-}
-
-header .login-button:hover {
-	background-color: #B22234;
-	transition: background-color 0.3s ease;
-}
-
 @media (max-width: 1024px) {
 	header .login-button {
 		display: none;
