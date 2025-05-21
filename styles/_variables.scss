@@ -52,22 +52,13 @@ $nav-link-color-dark-theme: #eeeeee;
 
 $button-border-radius: 3em;
 
-/* Primary Button Colors */
+/* Primary Button Colors - this color is being shared with the background and border and so a single color can only be used*/
 
-$primary-button-color: linear-gradient(
-	to right,
-	$global-accent-color,
-	color.adjust($global-accent-color, $lightness: +10%),
-	$global-accent-color
-);
+$primary-button-color: $global-accent-color;
 
-/* Secondary Button Colors */
-$secondary-button-color: linear-gradient(
-	to right,
-	$global-tertiary-color,
-	color.adjust($global-tertiary-color, $lightness: +10%),
-	$global-tertiary-color
-);
+
+/* Secondary Button Colors - this color is being shared with the background and border and so a single color can only be used*/
+$secondary-button-color: color.adjust($global-tertiary-color, $lightness: -12%);
 
 // Breakpoints
 
