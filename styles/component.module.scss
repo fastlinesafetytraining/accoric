@@ -6,6 +6,7 @@
 .sitePrimaryButton {
 	position: relative;
 	text-align: center;
+	font-weight: 600;
 	color: white;
 	background: v.$primary-button-color;
 	background-size: 200% 100%;
@@ -27,6 +28,7 @@
 .siteSecondaryButton {
 	position: relative;
 	text-align: center;
+	font-weight: 600;
 	color: white;
 	background: v.$secondary-button-color;
 	background-size: 200% 100%;
