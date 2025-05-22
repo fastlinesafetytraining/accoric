@@ -11,3 +11,4 @@ export { default as ContactCTA } from './ContactCTA';
 export { default as ContactCards } from './ContactCards';
 export { default as SupportSideMenu } from './SupportSideMenu';
 export { default as CompanyStats } from './CompanyStats';
+export { default as ThemeToggle } from './ThemeToggle';
