@@ -8,7 +8,7 @@
 	text-align: center;
 	font-weight: 600;
 	background-size: 200% 100%;
-	padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(2rem, 4vw, 3rem);
+	padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(1rem, 4vw, 2.75rem);
 	border-radius: v.$button-border-radius;
 	z-index: 2;
 	transition: all 0.2s ease-in-out;
@@ -16,8 +16,11 @@
 	align-items: center;
 	justify-content: center;
 	gap: 0.5rem;
-	svg {
-		font-size: clamp(1.25rem, 2vw, 1.5rem);
+	.siteButton__icon {
+		font-size: 1.5rem;
+	}
+	.siteButton__text {
+		width: 85%;
 	}
 	&--primary {
 		color: white;

@@ -56,8 +56,8 @@ const buttonClass = props.type === 'primary' ? styles['siteButton--primary'] : s
 				flexDirection: props.iconPosition === 'left' ? 'row' : 'row-reverse'
 			}}
 		>
-			<span>{props.icon}</span>
-			{props.children}
+			<span className={styles.siteButton__icon}>{props.icon}</span>
+			<span className={styles.siteButton__text}>{props.children}</span>
 		</Link>
   )
 }
