@@ -24,7 +24,9 @@ export default function Header() {
 				className='login-button'
 				href='https://accoricmgt.com/'
 				title='Login'
-				icon={<LuUser />}>
+				icon={<LuUser />}
+				iconPosition='left'
+			>
 				Login
 			</SiteButton>
 		</header>

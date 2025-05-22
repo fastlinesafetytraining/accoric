@@ -24,6 +24,7 @@ export default function index() {
 							href='/pricing'
 							type='primary'
 							icon={<LuDollarSign />}
+							iconPosition='right'
 						>
 							See Pricing
 						</SiteButton>
@@ -32,6 +33,7 @@ export default function index() {
 							href='/accoric-management'
 							type='secondary'
 							icon={<LuInfo />}
+							iconPosition='right'
 						>
 							See Accoric Management
 						</SiteButton>

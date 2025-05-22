@@ -72,7 +72,7 @@ export default function NavBar(): React.ReactElement {
 								</li>
 							))}
 						</ul>
-						<SiteButton type="primary" href='https://accoricmgt.com/' title='Login' icon={<LuUser />}>
+						<SiteButton type="primary" href='https://accoricmgt.com/' title='Login' icon={<LuUser />} iconPosition="right">
 							Login
 						</SiteButton>
 					</Drawer>

@@ -1,6 +1,7 @@
 import Image from "next/image";
+import { SiteButton } from ".";
+import { LuSend } from "react-icons/lu";
 import styles from "@styles/component.module.scss";
-import { PrimaryButton } from ".";
 
 export default function ContactCTA() {	
 	return (
@@ -21,9 +22,9 @@ export default function ContactCTA() {
               certification.
             </p>
           </div>
-          <PrimaryButton href="/pricing" title="Get Started">
+          <SiteButton type="primary" href="/pricing" title="Get Started" icon={<LuSend />} iconPosition="right">
             Get Started
-          </PrimaryButton>
+          </SiteButton>
 		</div>
 	);
 }
