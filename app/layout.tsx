@@ -4,7 +4,6 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from "next";
 import { Open_Sans } from "next/font/google";
 import { Header, Footer } from "@components/UI";
-import NoScriptGoogleTag from "@components/NoScriptGoogleTag";
 import "@styles/globals.css";
 
 const openSans = Open_Sans({ subsets: ['latin'] });
@@ -35,6 +34,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const googleAnalyticsId:string = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID as string;
   return (
     <ReactLenis root options={lenisOptions}>
       <html lang="en">
@@ -42,9 +42,8 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          <NoScriptGoogleTag />
           <Analytics />
-          <GoogleAnalytics gaId="G-JX1WF602T8" />
+          <GoogleAnalytics gaId={googleAnalyticsId} />
         </body>
       </html>
     </ReactLenis>

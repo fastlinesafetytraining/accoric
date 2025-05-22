@@ -17,8 +17,10 @@ export async function POST(request: NextRequest) {
 			"Content-Type": "application/json",
 		},
 		body: JSON.stringify({
-			from: "Accoric <info@accoric.com>",
-			to: "nick@accoric.com",
+			from: `Accoric <${process.env.EMAIL_FROM as string}>`,
+			to: process.env.EMAIL_TO as string,
+			cc: process.env.EMAIL_CC as string,
+			bcc: process.env.EMAIL_BCC as string,
 			subject: `[${fullName}] from ${companyName}, New Email from Accoric Website`,
 			html: `	<body style="width: 100%">
 		<table border="0" max-width="600px" margin="0 auto" bgcolor="#ffffff" cellpadding="0" cellspacing="0">
