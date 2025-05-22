@@ -16,7 +16,11 @@ export const metadata: Metadata = {
     description: "Accoric is a software company that provides solutions for businesses.",
     type: "website",
     locale: "en_US",
+    siteName: "Accoric",
   },
+  alternates: {
+    canonical: "https://accoric.com",
+  }
 };
 
 const lenisOptions = {
