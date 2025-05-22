@@ -1,13 +1,32 @@
-import Link from 'next/link';
+import { Flex, Typography } from "antd";
+import { SiteButton } from "@/Components/UI";
+import { LuHouse } from "react-icons/lu";
 
 export default function NotFound() {
 	return (
-		<div className='h-[80vh] p-20 flex flex-col items-center justify-center text-center bg-zinc-100 rounded-lg shadow-md'>
-			<h1 className='font-bold text-4xl'>404 - Page Not Found</h1>
-			<p className='text-lg'>Sorry, the page you are looking for does not exist.</p>
-			<Link href="/" className='rounded-3xl bg-blue-500 text-white px-4 py-2 mt-4 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2'>
+		<Flex
+			style={{
+				flexDirection: "column",
+				gap: 10,
+				height: "70vh",
+				width: "100vw",
+				alignItems: "center",
+				justifyContent: "center",
+			}}
+		>
+			<Typography.Title level={2}>404 - Page Not Found</Typography.Title>
+			<Typography.Paragraph style={{ fontSize: "1.2rem" }}>
+				Sorry, the page you are looking for does not exist.
+			</Typography.Paragraph>
+			<SiteButton
+				href='/'
+				title='Go to Home'
+				type='secondary'
+				icon={<LuHouse />}
+				iconPosition='right'
+			>
 				Go back to Home
-			</Link>
-		</div>
+			</SiteButton>
+		</Flex>
 	);
 }
