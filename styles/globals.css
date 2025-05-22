@@ -129,6 +129,9 @@ footer .link-list li:first-child {
 
 footer a {
 	text-decoration: none;
+	display: flex;
+	align-items: center;
+	gap: 5px;
 }
 
 footer a:hover {
