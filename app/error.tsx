@@ -1,15 +1,9 @@
 "use client";
 import { SiteButton } from "@/Components/UI";
 import { LuHouse } from "react-icons/lu";
-import { Typography, Flex } from "antd";
+import { Flex } from "antd";
 
-export default function Error({
-	error,
-	reset,
-}: {
-	error: Error & { digest?: string };
-	reset: () => void;
-}) {
+export default function Error() {
 	return (
 		<Flex
 			vertical

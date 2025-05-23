@@ -1,4 +1,4 @@
-import { Flex, Typography } from "antd";
+import { Flex } from "antd";
 import { SiteButton } from "@/Components/UI";
 import { LuHouse } from "react-icons/lu";
 
