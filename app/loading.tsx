@@ -1,7 +1,7 @@
 import React from "react";
-import { Flex, Typography } from "antd";
+import { Flex } from "antd";
 import GridLoader from "react-spinners/GridLoader";
-import globalPrimaryColor from "@styles/scss-vars";
+import { globalPrimaryColor } from "@styles/scss-vars";
 
 const Loading: React.FC = () => {
 	return (
@@ -11,8 +11,8 @@ const Loading: React.FC = () => {
 			justify='center'
 			style={{ gap: 10, height: "70vh", width: "100vw" }}
 		>
-			<GridLoader color={globalPrimaryColor.globalPrimaryColor} size={20} />
-			<Typography.Title level={2}>Loading...</Typography.Title>
+			<GridLoader color={globalPrimaryColor} size={20} />
+			<h2 style={{ fontSize: "2rem", fontWeight: "bold" }}>Loading...</h2>
 		</Flex>
 	);
 };

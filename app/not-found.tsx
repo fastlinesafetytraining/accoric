@@ -14,10 +14,10 @@ export default function NotFound() {
 				justifyContent: "center",
 			}}
 		>
-			<Typography.Title level={2}>404 - Page Not Found</Typography.Title>
-			<Typography.Paragraph style={{ fontSize: "1.2rem" }}>
+			<h2 style={{ fontSize: "2rem", fontWeight: "bold" }}>404 - Page Not Found</h2>
+			<p style={{ fontSize: "1.2rem" }}>
 				Sorry, the page you are looking for does not exist.
-			</Typography.Paragraph>
+			</p>
 			<SiteButton
 				href='/'
 				title='Go to Home'

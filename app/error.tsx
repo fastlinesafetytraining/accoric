@@ -21,10 +21,10 @@ export default function Error({
 				width: "100vw",
 			}}
 		>
-			<Typography.Title level={2}>Something went wrong!</Typography.Title>
-			<Typography.Paragraph style={{ fontSize: "1.2rem" }}>
+			<h2 style={{ fontSize: "2rem", fontWeight: "bold" }}>Something went wrong!</h2>
+			<p style={{ fontSize: "1.2rem" }}>
 				We apologize for the inconvenience. Please try again.
-			</Typography.Paragraph>
+			</p>
 
 			<SiteButton
 				href='/'
