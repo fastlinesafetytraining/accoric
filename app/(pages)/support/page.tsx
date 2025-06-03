@@ -12,13 +12,13 @@ export const metadata: Metadata = {
 export default function SupportPage() {
     return (
         <main className={styles.supportPage}>
-                <div className={styles.supportPage__header}>
+                <section className={styles.supportPage__header}>
                     <h1>Support Center</h1>
                     <p>
                         Welcome to our support center. Here you&apos;ll find comprehensive guides and documentation to help you start working with our products as quickly as possible.
                     </p>
-                </div>
-                <div className={styles.supportPage__content}>
+                </section>
+                <section className={styles.supportPage__content}>
                     <h2>Explore Topics for Accoric Management</h2>
                     <ul>
                         {supportMenu[0].sectionItems.map((route, index) => (
@@ -27,7 +27,7 @@ export default function SupportPage() {
                             </li>
                         ))}
                     </ul>
-                </div>
+                </section>
         </main>
     );
 }
