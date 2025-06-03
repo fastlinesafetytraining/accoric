@@ -1,11 +1,11 @@
 const faq = [
   {
     question: "What is Accoric Management?",
-    answer: "Accoric Management is a management system for your business. It is a platform that allows you to manage your business and its employees by providing certification and training tracking. In order to provided the best work scheduling, we have created a system that allows you to schedule your employees based on their availability and skills.",
+    answer: "Accoric Management is a management system for your business. It is a platform that allows you to manage your business and its employees by providing certification and training tracking. In order to provide the best work scheduling, we have created a system that allows you to schedule your employees based on their availability and skills.",
   },
   {
     question: "Who is Accoric Management for?",
-    answer: "Accoric Management is for any business that has a large number of employees or a large number of certifications. It is also for for those who would like a better process to productivity and efficiency.",
+    answer: "Accoric Management is for any business that has a large number of employees or a large number of certifications.",
   },
   {
     question: "What is the cost of Accoric Management?",

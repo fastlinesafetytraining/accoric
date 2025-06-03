@@ -1,7 +1,8 @@
 import React from 'react';
+import type { Metadata } from 'next';
 import styles from '@styles/pages/policyPage.module.scss';
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: 'Privacy Policy | Policy | Accoric',
 	description: 'Read our Privacy Policy to understand how we collect, use, and protect your personal information.',
 };
@@ -22,8 +23,8 @@ export default function PrivacyPolicyPage() {
 						“we”, “us”, or “our”). We are committed to protecting your personal
 						information and your right to privacy. If you have any questions or
 						concerns about our policy, or practices with regards to your
-						personal information, please contact us at
-						<a href="mailto:info@accoric.com"> info@accoric</a>
+						personal information, please contact us at{" "}
+						<a href="mailto:info@accoric.com">info@accoric.com</a>
 					</p>
 
 					<p>
@@ -562,16 +563,14 @@ export default function PrivacyPolicyPage() {
 						and to reject cookies. If you choose to remove cookies or reject
 						cookies, this could affect certain features or services of our Sites
 						or Apps. To opt-out of interest-based advertising by advertisers on
-						our Sites or Apps visit
+						our Sites or Apps visit{" "}
 						<a
 							href="https://www.aboutads.info/choices/"
 							aria-label="About Ads opt-out tool"
 							title="AboutAds Opt-out tool"
 						>
-							{' '}
-							AboutAd&apos;s Opt-out tool
+							AboutAd&apos;s Opt-out tool.
 						</a>
-						.
 					</p>
 
 					<h3>Opting Out of Email Marketing</h3>
@@ -624,9 +623,9 @@ export default function PrivacyPolicyPage() {
 						</div>
 						<p>
 							<a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.83.&lawCode=CIV">
-								<i>California Civil Code Section 1798.83, </i>
+								<i>California Civil Code Section 1798.83,</i>
 							</a>
-							also known as the “Shine the Light” law, permits our users who are
+							{" "}also known as the “Shine the Light” law, permits our users who are
 							California residents to request and obtain from us, once a year,
 							and free of charge, information about categories of personal
 							information (if any) we disclosed to third-parties for direct

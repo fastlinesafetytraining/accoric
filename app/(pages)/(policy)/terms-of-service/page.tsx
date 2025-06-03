@@ -306,7 +306,7 @@ export default function Page() {
 						our network, you thus agree to comply with all applicable export and
 						import laws, statutes and regulations, including, but not limited
 						to, the Export Administration Regulations ({' '}
-						<a href=" http://www.access.gpo.gov/bis/ear/ear_data.html">
+						<a href="http://www.access.gpo.gov/bis/ear/ear_data.html">
 							{' '}
 							http://www.access.gpo.gov/bis/ear/ear_data.html
 						</a>{' '}
@@ -321,8 +321,8 @@ export default function Page() {
 						<li>
 							are not on the list of prohibited individuals which may be
 							identified on any government export exclusion report (
-							<a href=" http://www.bis.doc.gov/complianceandenforcement/liststocheck.htm">
-								http://www.bis.doc.gov/complianceandenforcement/liststocheck.htm
+							<a href="http://www.bis.doc.gov/complianceandenforcement/liststocheck.html">
+								http://www.bis.doc.gov/complianceandenforcement/liststocheck.html
 							</a>{' '}
 							) nor a member of any other government which may be part of an
 							export-prohibited country identified in applicable export and
