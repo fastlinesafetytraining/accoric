@@ -1,0 +1,114 @@
+/* Light Theme Colors */
+:root {
+	/* Global Colors */
+	--global-primary-color: oklch(0.695 0.1535 243.68);
+	--global-secondary-color: oklch(0.2034 0.13 272.93);
+	--global-accent-color: oklch(0.6 0.2 25);
+	--global-tertiary-color: oklch(0.6 0.2 240);
+	--global-light-gray: oklch(0.95 0 0);
+	--global-orange: oklch(0.8 0.15 80);
+	--global-black-to-white-color: oklch(0.2 0 0);
+	--global-white-to-black-color: oklch(0.98 0 0);
+
+	/*Header & Footer Colors*/
+	--header-footer-background-color: oklch(1 0 0);
+
+	/* Section Background Colors */
+	--page-background-color: color-mix(in oklch, var(--header-footer-background-color) 98%, grey);
+	--section-background-color: oklch(0.99 0 0);
+	--section-box-shadow: oklch(0.9 0 none) -6px -2px 16px 0px;
+	--card-background-color: oklch(0.994 0 0);
+
+	/* Typography Colors */
+	/* Heading Colors */
+	--heading-h1-color: oklch(0.2 0 0);
+	--heading-h2-color: oklch(0.2 0 0);
+	--heading-h3-color: oklch(0.2 0 0);
+	--heading-h4-color: oklch(0.2 0 0);
+	--heading-highlight-color: oklch(0.695 0.1535 243.68);
+	--heading-highlight-text-shadow: oklch(0.2034 0.13 272.93);
+
+	/* Text Colors */
+	--text-paragraph-color: oklch(0.2 0 0);
+	--list-marker-color: oklch(0.2 0 0);
+
+	/* Link Colors */
+	--link-color: oklch(0.6 0.2 240);
+	--link-color-hover: oklch(0.6 0.2 240 / 0.25);
+
+	/* Nav Colors */
+	--nav-link-color: oklch(0.2 0 0);
+
+	/* Button */
+	--primary-button-color: oklch(0.6 0.2 25 / 1);
+	--secondary-button-color: oklch(0.6 0.2 240 / 1);
+
+	/* Client Logo Filter Effect */
+	--client-logo-background-color: oklch(1 0 none / 0.75);
+	--client-logo-filter-effect: grayscale(100%);
+	--client-logo-filter-effect-hover: grayscale(0%);
+
+	/* Grayscale Filter */
+	--grayscale-filter: grayscale(0);
+
+	/* Box Shadow */
+	--box-shadow-color: oklch(0.3382 0.1582 271.28 / 22%)
+}
+
+/* Dark Theme Colors */
+[data-theme="dark"] {
+	/* Global Colors */
+	--global-primary-color: oklch(0.7 0.2 240);
+	--global-secondary-color: oklch(0.7 0.2 240);
+	--global-accent-color: oklch(0.6513 0.2 25);
+	--global-tertiary-color: oklch(0.6 0.2 240);
+	--global-light-gray: oklch(0.95 0 0);
+	--global-orange: oklch(0.8 0.15 80);
+	--global-black-to-white-color: oklch(0.98 0 0);
+	--global-white-to-black-color: oklch(0.2 0 0);
+
+	/*Header & Footer Colors*/
+	/* --header-footer-background-color: oklch(0.16 0.07 272); */
+	--header-footer-background-color: oklch(0.16 0.07 272);
+
+	/* Section Background Colors */
+	--page-background-color: color-mix(in oklch, var(--header-footer-background-color) 97%, white);
+	--section-background-color: oklch(0.53 0.0724 279.76 / 0.25);
+	--section-box-shadow: oklch(0.25 0.07 272) -6px -2px 16px 0px;
+	--card-background-color: oklch(1 0 none / 0.1);
+
+	/* Typography Colors */
+	/* Heading Colors */
+	--heading-h1-color: oklch(0.9 0 0);
+	--heading-h2-color: oklch(0.9 0 0);
+	--heading-h3-color: oklch(0.9 0 0);
+	--heading-h4-color: oklch(0.9 0 0);
+	--heading-highlight-color: oklch(0.75 0.2 240);
+	--heading-highlight-text-shadow: oklch(0.9 0 0);
+
+	/* Text Colors */
+	--text-paragraph-color: oklch(0.9 0 0);
+	--list-marker-color: oklch(0.9 0 0);
+
+	/* Link Colors */
+	--link-color: oklch(0.7 0.15 253);
+	--link-color-hover: oklch(0.6 0.2 240 / 0.25);
+
+	/* Nav Colors */
+	--nav-link-color: oklch(0.9 0 0);
+
+	/* Button */
+	--primary-button-color: oklch(0.6 0.2 25 / 1);
+	--secondary-button-color: oklch(0.6 0.2 240 / 1);
+
+	/* Client Logo Filter Effect */
+	--client-logo-background-color: oklch(1 0 none / 0.35);
+	--client-logo-filter-effect: contrast(0%) brightness(150%);
+	--client-logo-filter-effect-hover: contrast(100%) brightness(100%);
+
+	/* Grayscale Filter */
+	--grayscale-filter: grayscale(100%);
+
+	/* Box Shadow */
+	--box-shadow-color: oklch(0.65 0.06 280 / 0.22)
+} 

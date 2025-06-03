@@ -1,0 +1,14 @@
+/* Permanent Variables */
+:root {
+	color-scheme: light dark;
+
+	/* Global Colors */
+	--fixed-black: oklch(0.3 0 0);
+	--fixed-white: oklch(0.98 0 0);
+	--fixed-secondary-color: oklch(0.2034 0.13 272.93);
+}
+
+/* Button Border Radius */
+:root {
+	--button-border-radius: 3em;
+}

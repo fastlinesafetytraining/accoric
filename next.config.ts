@@ -10,7 +10,6 @@ const nextConfig: NextConfig = {
   sassOptions: {
     implementation: "sass",
     additionalData: `
-    @use "./styles/_variables.scss" as v;
     @use "./styles/_mixins.scss" as m;
     `,
   },
