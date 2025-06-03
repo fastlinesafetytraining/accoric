@@ -6,21 +6,20 @@
 		font-size: 2rem;
 		font-weight: 600;
 		margin: 1rem 0;
-		color: v.$heading-h2-color;
+		color: var(--heading-h2-color);
 	}
 	h3 {
 		font-size: 1.5rem;
 		font-weight: 500;
-		color: v.$heading-h3-color;
+		color: var(--heading-h3-color);
 	}
-
 
 	p {
 		margin: 1rem 0;
 		font-size: 1.2rem;
 		b {
 			font-weight: 600;
-			color: v.$global-accent-color;
+			color: var(--global-accent-color);
 		}
 	}
 
@@ -45,24 +44,19 @@
 	}
 
 	a {
-		color: v.$link-color;
-		text-decoration: none;
-
-		&:hover {
-			text-decoration: underline;
-		}
+		@include m.paragraph-link;
 	}
 }
 
 .policyHeader {
-	background-color: #f8f9fa;
+	@include m.blur-bright-background;
 	padding: 20px;
 	border-radius: 5px;
 	text-align: center;
 	margin-bottom: 20px;
 
 	h1 {
-		color: v.$heading-h1-color;
+		color: var(--heading-h1-color);
 		margin: 0;
 		font-size: 2.5rem;
 	}
@@ -75,11 +69,11 @@
 
 	li span {
 		font-weight: 600;
-		color: v.$global-accent-color;
+		color: var(--global-accent-color);
 	}
 
 	.quickAnswerContainer {
-		background-color: #e2e2e2;
+		@include m.blur-bright-background;
 		border-radius: 1em;
 		padding: 15px;
 		margin: 20px 0;
@@ -87,7 +81,7 @@
 		font-weight: 500;
 
 		span {
-			color: v.$text-paragraph-color;
+			color: var(--text-paragraph-color);
 			font-size: 1.2rem;
 			font-weight: 600;
 		}

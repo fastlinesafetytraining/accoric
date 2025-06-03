@@ -1,7 +1,6 @@
 @use "../keyframes.scss";
 
 .accoricDashcard {
-  background-color: #fafafa;
   padding-bottom: 100vh;
   position: relative;
   &__header {
@@ -66,7 +65,7 @@
 //       font-size: 3rem;
 //       font-weight: 800;
 //       text-shadow: -3px 3px 0 0 rgb(255, 255, 255);
-//       color: v.$global-secondary-color;
+//       color: var(--global-secondary-color);
 //       z-index: 3;
 //     }
 //   }

@@ -4,28 +4,26 @@
 .accoricManagement {
   margin: 0 auto;
   padding-bottom: 1rem;
-  section:not(:first-child) {
+  section:not(.accoricManagement__header) {
     max-width: 1200px;
     margin: 10rem auto;
-    @media (max-width: v.$mobile-breakpoint) {
-      margin: 5rem auto;
-    }
-  }
-  @media (max-width: v.$tablet-breakpoint) {
-    section:not(:first-child) {
+    @media (max-width: 1024px) {
       width: 90vw;
+    }
+    @media (max-width: 767px) {
+      margin: 5rem auto;
     }
   }
   h2 {
     font-size: clamp(2rem, 2.5vw, 5rem);
     font-weight: 800;
-    color: v.$global-secondary-color;
+    color: var(--global-secondary-color);
     text-align: center;
   }
   h3 {
     font-size: clamp(1.15rem, 1.35vw, 1.35rem);
     font-weight: 700;
-    color: v.$global-secondary-color;
+    color: var(--global-secondary-color);
   }
   p {
     font-size: clamp(1.1rem, 1.15vw, 1.15rem);
@@ -42,12 +40,12 @@
   border-radius: 5px;
   padding: 3rem 0;
   gap: 2rem;
-  background: linear-gradient(to top, #fff 50%, color.adjust(v.$global-primary-color, $lightness: 20%) 100%);
-  @media (max-width: v.$tablet-breakpoint) {
+  background: linear-gradient(to top, #fff 50%, rgba(var(--global-primary-color), 0.2) 100%);
+  @media (max-width: 1024px) {
     justify-content: flex-start;
     height: 50vh;
   }
-  @media (max-width: v.$mobile-breakpoint) {
+  @media (max-width: 767px) {
     height: 40vh;
   }
   h1 {
@@ -55,17 +53,17 @@
     text-align: center;
     letter-spacing: -0.05em;
     font-weight: 700;
-    color: v.$global-secondary-color;
-    text-shadow: 0 7px 0 0 v.$global-primary-color;
-    @media (max-width: 768px) {
-      text-shadow: 0 4px 0 0 v.$global-primary-color;
+    color: var(--global-secondary-color);
+    text-shadow: 0 7px 0 0 var(--global-primary-color);
+    @media (max-width: 767px) {
+      text-shadow: 0 4px 0 0 var(--global-primary-color);
     }
   }
   p {
     text-align: center;
     font-size: clamp(1.1rem, 2vw, 2rem);
     font-weight: 700;
-    color: v.$global-secondary-color;
+    color: var(--global-secondary-color);
   }
 }
 
@@ -75,7 +73,7 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  @media (max-width: v.$tablet-breakpoint) {
+  @media (max-width: 1024px) {
     flex-direction: column-reverse;
     align-items: center;
     height: 100%;
@@ -91,7 +89,7 @@
     animation-timeline: view();
     animation-range: -35% 40%;
     animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       animation: none;
     }
   }
@@ -103,7 +101,7 @@
     align-items: flex-start;
     gap: 1rem;
     text-align: left;
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       max-width: 100%;
     }
     h2 {
@@ -124,14 +122,14 @@
 
 .accoricManagement__features {
   height: 120vh;
-  @media (max-width: v.$tablet-breakpoint) {
+  @media (max-width: 1024px) {
     height: auto;
     overflow-x: hidden;
   }
   h3 {
     font-size: 1.5rem;
     font-weight: 500;
-    color: v.$global-secondary-color;
+    color: var(--global-secondary-color);
   }
   &__sticky {
     display: flex;
@@ -146,7 +144,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       flex-direction: column;
       gap: 3rem;
     }
@@ -158,11 +156,11 @@
       gap: 1rem;
       flex-wrap: wrap;
       overflow-x: hidden;
-      @media (max-width: v.$tablet-breakpoint) {
+      @media (max-width: 1024px) {
         max-width: 100%;
       }
       &__item {
-        background-color: color.adjust(v.$global-primary-color, $lightness: 30%);
+        background-color: color-mix(in oklch, var(--global-primary-color) 20%, transparent);
         border-radius: 2em;
         padding: 1rem;
         display: flex;
@@ -170,7 +168,7 @@
         justify-content: flex-start;
         gap: 1rem;
         width: 100%;
-        @media (max-width: v.$mobile-breakpoint) {
+        @media (max-width: 767px) {
           flex-direction: column;
           text-align: center;
         }
@@ -189,7 +187,7 @@
       object-fit: contain;
       border-radius: 0.5em;
       transform: perspective(1000px) rotateY(15deg);
-      filter: drop-shadow(-15px 10px 2px #d1d1d1);
+      filter: drop-shadow(-15px 10px 2px color-mix(in oklch, var(--global-black-to-white-color) 30%, transparent));
     }
   }
 }
@@ -207,11 +205,11 @@
     align-items: flex-start;
     justify-content: center;
     gap: 2rem;
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       width: 100%;
     }
   }
-  @media (max-width: v.$tablet-breakpoint) {
+  @media (max-width: 1024px) {
     flex-direction: column;
   }
 }
@@ -225,7 +223,7 @@
     font-size: 1.5rem;
     letter-spacing: -0.05em;
     font-weight: 500;
-    color: v.$global-secondary-color;
+    color: var(--global-secondary-color);
     text-align: center;
   }
 }
@@ -254,12 +252,14 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       flex-direction: column;
     }
     &__lottie {
+      border-radius: 50%;
       width: clamp(20px, 20vw, 200px);
       height: clamp(100px, 20vw, 200px);
+      filter: var(--grayscale-filter);
     }
     &__image1 {
       width: clamp(300px, 30vw, 350px);

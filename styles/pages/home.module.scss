@@ -1,17 +1,17 @@
 @use "../keyframes.scss";
 
 .homePage {
-  @media (max-width: v.$tablet-breakpoint) {
+  @media (max-width: 1024px) {
     padding: 1rem;
   }
   section:not(.heroSection) {
     min-height: 80vh;
     margin: 0 auto 5rem auto;
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       width: 100%;
       border-radius: 1em;
       padding: 1rem;
-      box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+      box-shadow: var(--section-box-shadow);
     }
   }
 }
@@ -35,25 +35,25 @@
     justify-content: center;
     align-items: center;
     width: clamp(450px, 50%, 840px);
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       width: clamp(450px, 100%, 840px);
     }
     h1 {
       font-weight: 900;
-      color: v.$global-secondary-color;
+      color: var(--global-secondary-color);
       line-height: clamp(2.5rem, 5vw, 5rem);
       padding: 0 1rem;
-      @media (max-width: v.$mobile-breakpoint) {
+      @media (max-width: 767px) {
         text-align: center;
       }
       .heroTitle__first {
         font-size: clamp(5rem, 10vw, 12.5rem);
       }
       .heroTitle__highlight {
-        color: v.$global-primary-color;
+        color: var(--heading-highlight-color);
         font-size: clamp(3rem, 5.667vw, 6.8rem);
         font-style: italic;
-        text-shadow: -5px 5px 0 v.$global-secondary-color;
+        text-shadow: -5px 5px 0  var(--heading-highlight-text-shadow);
       }
       .heroTitle__last {
         font-size: clamp(2rem, 3.75vw, 3.75rem);
@@ -70,7 +70,7 @@
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: 1fr;
       gap: 3rem;
-      @media (max-width: v.$tablet-breakpoint) {
+      @media (max-width: 1024px) {
         gap: 1rem;
         max-width: 300px;
         grid-template-columns: 1fr;
@@ -97,7 +97,7 @@
       height: 60%;
       border-radius: 50%;
       filter: blur(5rem);
-      background-color: v.$global-primary-color;
+      background-color: var(--global-primary-color);
       z-index: 1;
     }
     &::after {
@@ -130,7 +130,7 @@
   }
   p {
     font-size: 1.5rem;
-    color: v.$global-secondary-color;
+    color: var(--global-secondary-color);
     margin: 1rem 0;
   }
 }
@@ -158,12 +158,12 @@
   }
 
   .dashcardContainer {
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       flex-direction: column-reverse;
     }
   }
   .accoricManagementContainer {
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       flex-direction: column;
     }
   }
@@ -180,7 +180,7 @@
     border-radius: clamp(1em, 2vw, 2em);
     box-shadow: 0 0 10px 0 rgba(112, 112, 112, 0.1);
     img {
-      // filter: drop-shadow(0 0 30px v.$global-primary-color);
+      // filter: drop-shadow(0 0 30px var(--global-primary-color));
       border-radius: clamp(1em, 1.5vw, 1.5em);
       position: relative;
       &::before {
@@ -190,12 +190,12 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: v.$global-primary-color;
+        background-color: var(--global-primary-color);
         opacity: 0.5;
         z-index: 3;
       }
     }
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       width: 100%;
       box-shadow: none;
     }
@@ -207,7 +207,7 @@
     justify-content: center;
     align-items: flex-start;
     max-width: 60%;
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       max-width: 100%;
     }
     a {
@@ -219,12 +219,13 @@
         content: "";
         width: 100%;
         height: 2px;
-        background-color: black;
+        background-color: var(--global-black-to-white-color);
         position: absolute;
         bottom: 0;
         left: 0;
         transition: all 0.2s ease-in-out;
       }
+
       svg {
         margin: 0 0.25rem;
         transition: all 0.2s ease-in-out;
@@ -256,16 +257,16 @@
     h3 {
       font-size: clamp(1.25rem, 2vw, 1.5rem);
       font-weight: 900;
-      color: v.$global-accent-color;
+      color: var(--global-accent-color);
     }
     h4 {
       font-size: clamp(1.25rem, 2vw, 1.5rem);
       font-weight: 900;
-      color: v.$global-secondary-color;
+      color: var(--global-secondary-color);
     }
     p {
       font-size: clamp(1rem, 1.5vw, 1.2rem);
-      color: v.$text-paragraph-color;
+      color: var(--text-paragraph-color);
     }
   }
 }
@@ -286,7 +287,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       flex-direction: column;
     }
     .aboutAccoricContent {
@@ -294,15 +295,15 @@
       p {
         font-size: clamp(1.1rem, 1.5vw, 1.2rem);
         margin: 3rem 0;
-        color: v.$text-paragraph-color;
+        color: var(--text-paragraph-color);
         text-indent: 0.5rem;
         span {
           font-size: clamp(1.2rem, 2vw, 1.5rem);
           font-weight: 900;
-          color: v.$global-secondary-color;
+          color: var(--global-secondary-color);
         }
       }
-      @media (max-width: v.$tablet-breakpoint) {
+      @media (max-width: 1024px) {
         width: 100%;
       }
     }
@@ -314,7 +315,7 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      @media (max-width: v.$tablet-breakpoint) {
+      @media (max-width: 1024px) {
         width: 80%;
       }
       .aboutAccoricImage_large {
@@ -333,13 +334,13 @@
         font-size: clamp(1rem, 1.5vw, 1.25rem);
         font-weight: 600;
         text-align: center;
-        color: v.$global-secondary-color;
+        color: var(--fixed-secondary-color);
       }
       .feature__one {
         top: 25%;
         left: -15%;
         animation: hover 9s infinite ease-in-out;
-        @media (max-width: v.$mobile-breakpoint) {
+        @media (max-width: 767px) {
           top: 5%;
           left: -10%;
         }
@@ -348,7 +349,7 @@
         top: -5%;
         left: 30%;
         animation: hover 10s infinite ease-in-out;
-        @media (max-width: v.$mobile-breakpoint) {
+        @media (max-width: 767px) {
           top: -30%;
           left: 30%;
         }
@@ -357,7 +358,7 @@
         top: 15%;
         right: -15%;
         animation: hover2 10s infinite ease-in-out;
-        @media (max-width: v.$mobile-breakpoint) {
+        @media (max-width: 767px) {
           top: 25%;
           right: -10%;
         }
@@ -389,18 +390,18 @@
     bottom: 0;
     left: -30%;
     border-radius: 50%;
-    width: 50%;
-    height: 100%;
-    background-color: v.$global-primary-color;
+    width: 45%;
+    height: 95%;
+    box-shadow: 0 0 40px 0 var(--box-shadow-color);
     z-index: 1;
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       bottom: -30%;
       left: 0;
       height: 50%;
       width: 100%;
     }
-  }
-  @media (max-width: v.$tablet-breakpoint) {
+  } 
+  @media (max-width: 1024px) {
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -412,7 +413,7 @@
     flex-direction: column;
     gap: 2rem;
     z-index: 2;
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       width: 90%;
     }
     .testimonial {
@@ -420,13 +421,12 @@
       display: flex;
       flex-direction: column;
       padding: 1rem;
-      background: rgba(255, 255, 255, 0.75);
-      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
+      box-shadow: 0 8px 32px 0 var(--box-shadow-color);
       border-radius: 10px;
       border: 1px solid rgba(255, 255, 255, 0.18);
-      @media (max-width: v.$mobile-breakpoint) {
+      background-color: var(--card-background-color);
+      @include m.blur-bright-background;
+      @media (max-width: 767px) {
         max-width: 100%;
       }
       .testimonial__author {
@@ -435,11 +435,16 @@
         align-items: center;
         gap: 1rem;
         font-weight: 700;
-        color: v.$heading-h3-color;
-      }
+        color: var(--global-h3-color);
+        .testimonial__author__logo {
+          background-color: var(--fixed-white);
+          border-radius: 50%;
+          box-shadow: 0px 8px 20px -10px var(--global-black-to-white-color);
+        }
+    }
       .testimonial__quote {
         font-size: 1rem;
-        color: v.$global-secondary-color;
+        color: var(--text-paragraph-color);
         margin: 1rem 0;
       }
 
@@ -464,10 +469,10 @@
     gap: 1rem;
     h2 {
       font-size: clamp(3rem, 5vw, 6rem);
-      color: v.$global-secondary-color;
+      color: var(--global-secondary-color);
       font-weight: 900;
     }
-    @media (max-width: v.$tablet-breakpoint) {
+    @media (max-width: 1024px) {
       width: 90%;
     }
   }

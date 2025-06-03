@@ -1,6 +1,5 @@
 @use "sass:color";
 @use "./keyframes.scss";
-@use "./base.scss";
 
 /* Button Styles */
 .siteButton {
@@ -9,7 +8,7 @@
 	font-weight: 600;
 	background-size: 200% 100%;
 	padding: clamp(0.5rem, 1.5vw, 0.75rem) clamp(1rem, 4vw, 2.75rem);
-	border-radius: v.$button-border-radius;
+	border-radius: var(--button-border-radius);
 	z-index: 2;
 	transition: all 0.2s ease-in-out;
 	display: flex;
@@ -24,31 +23,31 @@
 	}
 	&--primary {
 		color: white;
-		background: v.$primary-button-color;
-		border: 3px solid v.$primary-button-color;
+		background: var(--primary-button-color);
+		border: 3px solid var(--primary-button-color);
 
 		&:hover,
 		&:active {
 			color: white;
-			box-shadow: 0 0 0 5px color.adjust(v.$primary-button-color, $alpha: -0.5);
+			box-shadow: 0 0 0 5px color-mix(in oklch, var(--primary-button-color) 50%, transparent);
+
 		}
 	}
 
 	&--secondary {
-		color: v.$secondary-button-color;
-		background-color: white;
-		border: 3px solid v.$secondary-button-color;
+		color: var(--secondary-button-color);
+		background-color: var(--global-light-gray);
+		border: 3px solid var(--global-light-gray);
 
 		&::before {
 			transform: scaleX(0) scaleY(0);
-			background: v.$secondary-button-color;
+			background: var(--secondary-button-color);
 		}
 
 		&:hover,
 		&:active {
-			color: v.$secondary-button-color;
-			box-shadow: 0 0 0 5px
-				color.adjust(v.$secondary-button-color, $alpha: -0.5);
+			color: var(--secondary-button-color);
+			box-shadow: 0 0 0 5px color-mix(in oklch, var(--secondary-button-color) 50%, transparent);
 		}
 	}
 }
@@ -60,7 +59,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	@media (max-width: v.$mobile-breakpoint) {
+	@media (max-width: 767px) {
 		display: none;
 	}
 	&__menu {
@@ -79,7 +78,7 @@
 			&__Link {
 				padding: 2rem 1rem;
 				background-color: transparent;
-				color: v.$nav-link-color;
+				color: var(--nav-link-color);
 				transition: all 300ms ease-in;
 				position: relative;
 				z-index: 2;
@@ -87,20 +86,18 @@
 					color: white;
 				}
 				&::before {
+					content: "";
 					position: absolute;
 					bottom: 0;
 					left: 0;
 					transform: scaleX(0);
 					transition: all 300ms ease-in;
-					content: "";
 					display: block;
 					width: 100%;
 					height: 2px;
 					z-index: -1;
-					background-color: color.adjust(
-						v.$global-primary-color,
-						$lightness: -10%
-					);
+					background-color: var(--global-primary-color);
+					backdrop-filter: brightness(1.1);
 				}
 				&:hover::before {
 					transform: scaleX(1);
@@ -108,12 +105,9 @@
 						navigation-menu-background;
 				}
 				&:active {
-					transform: scale(0.9);
-					background-color: color.adjust(
-						v.$global-primary-color,
-						$lightness: -10%
-					);
 					color: white;
+					transform: scale(0.9);
+					background-color: var(--global-primary-color);
 				}
 			}
 		}
@@ -123,6 +117,21 @@
 /*Mobile Navigation Bar*/
 
 .mobileNavBar {
+	&__openIcon, &__drawerTitle__closeIcon {
+		font-size: 3rem;
+		aspect-ratio: 1/1;
+		font-weight: 600;
+		color: var(--global-secondary-color);
+		cursor: pointer;
+		border: 1px solid var(--global-secondary-color);
+		border-radius: 0.25em;
+		padding: 0.5rem;
+		z-index: 2;
+		&:hover {
+			background-color: var(--global-secondary-color);
+			color: var(--fixed-white);
+		}
+	}
 	&__drawerTitle {
 		display: flex;
 		flex-direction: row-reverse;
@@ -135,25 +144,16 @@
 			span {
 				font-size: 2rem;
 				font-weight: 700;
-				color: v.$global-primary-color;
-				text-shadow: 0 1px 0 black;
+				color: var(--global-primary-color);
+				text-shadow: 0 1px 0 var(--fixed-black);
 			}
 		}
-		&__closeIcon {
-			font-size: 2rem;
-			aspect-ratio: 1/1;
-			font-weight: 600;
-			color: v.$global-secondary-color;
-			cursor: pointer;
-			border: 1px solid v.$global-secondary-color;
-			border-radius: 0.25em;
-			padding: 0.5rem;
-			z-index: 2;
-			&:hover {
-				background-color: v.$global-secondary-color;
-				color: #fff;
-			}
-		}
+	}
+	&__drawerFooter {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0.5rem;
 	}
 	&__menu {
 		margin-bottom: 1rem;
@@ -161,20 +161,20 @@
 			font-size: clamp(1.25rem, 2vw, 1.5rem);
 			font-weight: 600;
 			padding: 1rem 0;
-			border-bottom: 1px solid v.$global-light-gray;
+			border-bottom: 1px solid var(--global-light-gray);
 			text-align: right;
 			&:last-child {
 				border-bottom: none;
 			}
 			&__link {
-				color: v.$global-secondary-color;
+				color: var(--global-secondary-color);
 				&:hover {
-					color: v.$global-primary-color;
+					color: var(--global-primary-color);
 				}
 			}
 		}
 	}
-	@media (min-width: v.$mobile-breakpoint) {
+	@media (min-width: 767px) {
 		display: none;
 	}
 }
@@ -183,7 +183,7 @@
 .clientContainer {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 0 2rem;
+	gap: 1rem;
 	max-width: 1000px;
 	margin: 2rem auto;
 	justify-content: center;
@@ -194,10 +194,12 @@
 	.clientImage {
 		width: clamp(100px, 15vw, 200px);
 		border-radius: 1rem;
-		filter: grayscale(100%);
+		filter: var(--client-logo-filter-effect);
+		background-color: var(--client-logo-background-color);
+		border: 1px solid oklch(1 0 none / 0.25);
 		transition: all 0.3s ease-in-out;
 		&:hover {
-			filter: grayscale(0%);
+			filter: var(--client-logo-filter-effect-hover);
 			transform: scale(1.1);
 		}
 	}
@@ -205,7 +207,8 @@
 
 /*Contact CTA*/
 .contactCTA {
-	background-color: color.adjust(v.$global-primary-color, $lightness: 40%);
+	background-color: color-mix(in oklch, var(--global-primary-color) 10%, white);
+	backdrop-filter: brightness(1.1);
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -214,7 +217,7 @@
 	margin: 1rem auto !important;
 	max-width: 1500px;
 	max-height: 150px;
-	@media (max-width: v.$mobile-breakpoint) {
+	@media (max-width: 767px) {
 		max-width: 90vw;
 		max-height: none;
 		padding: 1rem 2rem;
@@ -226,10 +229,10 @@
 	h2 {
 		font-size: clamp(1.25rem, 2vw, 2rem) !important;
 		margin: 0 !important;
-		color: v.$global-secondary-color !important;
+		color: var(--fixed-secondary-color) !important;
 		font-weight: 700 !important;
 		line-height: 1.5 !important;
-		@media (max-width: v.$mobile-breakpoint) {
+		@media (max-width: 767px) {
 			margin: 2rem 0 !important;
 		}
 	}
@@ -237,19 +240,19 @@
 		font-size: clamp(1.1rem, 1.2vw, 1.4rem) !important;
 		letter-spacing: -0.05em !important;
 		font-weight: 500 !important;
-		color: v.$global-secondary-color !important;
+		color: var(--fixed-secondary-color) !important;
 		margin: 0 !important;
 	}
 	a {
 		margin: 0 1rem 0 0 !important;
 		padding: clamp(0.5rem, 1vw, 1em) clamp(1rem, 2vw, 2rem);
-		color: #fff !important;
+		color: var(--fixed-white);
 	}
 	&__imageContainer {
 		width: 400px;
 		height: 150px;
 		position: relative;
-		@media (max-width: v.$mobile-breakpoint) {
+		@media (max-width: 767px) {
 			margin: 0 auto;
 		}
 		&::before {
@@ -258,13 +261,13 @@
 			transform: translate(-50%, -50%) rotate(-10deg);
 			top: 0;
 			right: 0;
-			width: 3vw;
+			width: 2.5vw;
 			height: 100vh;
 			z-index: 1;
-			background-color: color.adjust(v.$global-primary-color, $lightness: 20%);
-			box-shadow: 3vw 0 0 0
-				color.adjust(v.$global-primary-color, $lightness: 30%);
-			@media (max-width: v.$mobile-breakpoint) {
+			background-color: color-mix(in oklch, var(--global-primary-color) 50%, white);
+			backdrop-filter: brightness(1.1);
+			box-shadow: 2.5vw 0 0 0 color-mix(in oklch, var(--global-primary-color) 40%, white);
+			@media (max-width: 767px) {
 				transform: translate(-20vw, -30%) rotate(-90deg);
 			}
 		}
@@ -290,8 +293,8 @@
 	object-fit: cover;
 	border-radius: 1em;
 	margin-top: 2rem;
-	box-shadow: 10px 10px 2px 0 v.$global-secondary-color;
-	@media (max-width: v.$tablet-breakpoint) {
+	box-shadow: 10px 10px 2px 0 var(--global-secondary-color);
+	@media (max-width: 1024px) {
 		min-width: 100%;
 	}
 }
@@ -302,7 +305,7 @@
 	flex-direction: column;
 	justify-content: center;
 	backdrop-filter: blur(10px);
-	background-color: color.adjust(v.$global-primary-color, $lightness: 40%);
+	background-color: rgba(var(--global-primary-color), 0.4);
 	border-radius: 1em;
 	margin: 1rem auto;
 	padding: 2rem;
@@ -311,20 +314,19 @@
 		font-size: clamp(1.5rem, 2vw, 2rem);
 		font-weight: 600;
 		margin: 0;
-		color: v.$global-secondary-color;
+		color: var(--heading-h2-color);
 		span {
-			color: v.$global-secondary-color;
+			color: var(--global-secondary-color);
 		}
 	}
 	p {
-		color: v.$global-secondary-color;
 		font-size: clamp(1rem, 1vw, 1.2rem);
 	}
 	p:last-child {
 		text-align: right;
 	}
 	a {
-		color: v.$global-primary-color;
+		color: var(--global-primary-color);
 		&:hover {
 			text-decoration: underline;
 		}
@@ -342,10 +344,10 @@
 		}
 		&__input {
 			svg {
-				color: v.$global-secondary-color;
+				color: var(--global-secondary-color);
 			}
 			width: 45%;
-			@media (max-width: v.$mobile-breakpoint) {
+			@media (max-width: 767px) {
 				width: 100%;
 			}
 		}
@@ -356,7 +358,7 @@
 				margin: 0;
 			}
 			&__slider {
-				@media (max-width: v.$mobile-breakpoint) {
+				@media (max-width: 767px) {
 					display: none;
 				}
 			}
@@ -366,7 +368,7 @@
 				text-align: center;
 				margin: 1rem 0;
 				gap: 1rem;
-				@media (max-width: v.$tablet-breakpoint) {
+				@media (max-width: 1024px) {
 					grid-template-columns: repeat(3, 1fr);
 				}
 				label {
@@ -375,16 +377,37 @@
 					&::before {
 						display: none;
 					}
-					@media (max-width: v.$mobile-breakpoint) {
-						color: v.$global-secondary-color;
+					@media (max-width: 767px) {
+						color: var(--global-secondary-color);
 					}
 				}
 			}
+			&__cost {
+				font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+			}
 		}
-		&__button {
+		&__buttonContainer {
 			width: 100%;
 			button {
 				float: right;
+			}
+		}
+		&__button {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 0.5rem;
+			background-color: var(--primary-button-color);
+			color: var(--fixed-white);
+			border: none;
+			border-radius: var(--button-border-radius);
+			padding: 0.5rem 1rem;
+			font-size: clamp(1rem, 1.5vw, 1.2rem);
+			font-weight: 600;
+			transition: all 0.2s ease-in-out;
+			cursor: pointer;
+			&:hover {
+				box-shadow: 0 0 0 5px color-mix(in oklch, var(--primary-button-color) 50%, transparent);
 			}
 		}
 	}
@@ -401,17 +424,18 @@
 		font-size: clamp(1.5rem, 2vw, 2rem);
 		font-weight: 600;
 		margin: 1rem 0;
-		color: v.$global-secondary-color;
+		color: var(--heading-h2-color);
 	}
 	.faqQuestion {
 		font-weight: 600;
+		color: var(--text-paragraph-color);
 		font-size: clamp(1rem, 1.5vw, 1.1rem);
 	}
 	.faqAnswer {
 		font-size: clamp(1rem, 1.5vw, 1.1rem);
 		text-align: start;
 		font-weight: 500;
-		color: v.$global-secondary-color;
+		color: var(--text-paragraph-color);
 	}
 }
 
@@ -429,7 +453,7 @@
 	p {
 		font-size: clamp(1rem, 3vw, 1.5rem);
 		font-weight: 600;
-		color: v.$global-secondary-color;
+		color: var(--global-secondary-color);
 		margin: 0.5rem 0;
 	}
 	&__cardContainer {
@@ -439,26 +463,26 @@
 		align-items: stretch;
 		gap: clamp(1rem, 2vw, 3rem) clamp(1rem, 2vw, 3rem);
 		padding: 5% 0;
-		@media (max-width: v.$mobile-breakpoint) {
+		@media (max-width: 767px) {
 			flex-direction: column;
 		}
 
 		&__card {
 			border-radius: 1em;
-			background-color: #fdfdfd;
-			box-shadow: 0 0 5px 0 #ddd;
+			background-color: var(--card-background-color);
+			box-shadow: 0 0 5px 0 var(--box-shadow-color);
 			padding: 1rem;
 			text-align: center;
 			width: 33%;
-			@media (max-width: v.$tablet-breakpoint) {
+			@media (max-width: 1024px) {
 				width: 100%;
 			}
 			svg {
 				margin: 1rem auto;
 				font-size: clamp(2rem, 15vw, 4rem);
 				border-radius: 50%;
-				color: v.$global-secondary-color;
-				background-color: #fff;
+				color: var(--global-secondary-color);
+				@include m.blur-bright-background;
 				box-shadow: 0 0 10px 0 rgba(112, 112, 112, 0.1);
 				padding: 1rem;
 				overflow: visible;
@@ -472,25 +496,29 @@
 				margin-top: 1rem;
 				font-size: 1.3rem;
 				font-weight: 700;
-				color: v.$global-secondary-color;
+				color: var(--global-secondary-color);
 			}
 			h4 {
 				margin-top: 1rem;
 				margin-bottom: 0.25rem;
 				font-size: 1.3rem;
 				font-weight: 600;
-				color: #2b2b2b;
+				color: var(--heading-h4-color);
+			}
+			div {
+				margin-bottom: 3vh;
 			}
 			p,
 			a {
+				margin: 0 !important;
 				font-weight: 400;
-				font-size: clamp(1.2rem, 2vw, 1.4rem);
+				font-size: clamp(1.2rem, 2vw, 1.25rem);
 			}
 			p {
-				color: v.$text-paragraph-color;
+				color: var(--text-paragraph-color);
 			}
 			a {
-				color: v.$link-color;
+				color: var(--link-color);
 			}
 		}
 	}
@@ -500,7 +528,7 @@
 
 .supportSidebar {
 	height: fit-content;
-	background-color: white;
+	background-color: var(--section-background-color);
 	border-radius: 8px;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 	padding: 0.25rem;
@@ -516,7 +544,7 @@
 	}
 	&__nav {
 		h3 {
-			color: #2c3e50;
+			color: var(--global-secondary-color);
 			font-size: 1.1rem;
 			font-weight: 600;
 			margin-bottom: 1rem;
@@ -528,11 +556,11 @@
 			padding: 0;
 			li {
 				margin: 0.25rem 0;
-				// padding: 1rem 1.5rem;
 				border-radius: 0.5rem;
-				color: #4a5568;
-				transition: all 0.2s ease-in-out;
+				color: var(--nav-link-color);
+				transition: all 0.1s ease-in-out;
 				position: relative;
+				backdrop-filter: none;
 				&::before {
 					content: "";
 					position: absolute;
@@ -541,19 +569,18 @@
 					display: block;
 					width: 90%;
 					height: 1px;
-					background-color: #e2e8f0;
+					background-color: var(--global-light-gray);
 				}
 				&:last-child::before {
 					height: 0;
 				}
 				&:hover {
-					background-color: #f5f5f5;
+					@include m.blur-bright-background;
 				}
 				&.active {
-					background-color: #dce8f894;
-					color: v.$global-primary-color;
+					background-color: color-mix(in oklch, var(--global-primary-color) 10%, transparent);
+					color: var(--global-primary-color);
 				}
-
 				a {
 					text-decoration: none;
 					font-size: 1.1rem;
@@ -563,6 +590,22 @@
 				}
 			}
 		}
+	}
+	&__mobileDropdownButton {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		text-align: left;
+		gap: 0.5rem;
+		font-size: 1.2rem;
+		font-weight: 600;
+		color: var(--global-secondary-color);
+		cursor: pointer;
+		border: 1px solid var(--global-secondary-color);
+		border-radius: 0.25em;
+		padding: 0.5rem;
+		z-index: 2;
 	}
 }
 
@@ -589,3 +632,4 @@
 		}
 	}
 }
+

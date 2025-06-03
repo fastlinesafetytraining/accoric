@@ -1,5 +1,11 @@
-
-
+@keyframes loadingFadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 /*Navigation menu background animation*/
 @keyframes navigation-menu-background {
     0% {
