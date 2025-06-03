@@ -5,9 +5,10 @@ import {
 	WhySection,
 } from "@containers/about-us-page";
 import { ContactCTA, ContactCards } from "@components/UI";
+import type { Metadata } from "next";
 import styles from "@styles/pages/aboutUs.module.scss";
 
-export const metadata = {
+export const metadata: Metadata = {
 	title: "About Us | Accoric",
 	description:
 		"Learn more about Accoric and our mission to simplify certification tracking while ensuring maximum security and efficiency.",
