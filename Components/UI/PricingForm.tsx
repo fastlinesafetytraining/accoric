@@ -7,9 +7,9 @@ import {
 	radioOptions,
 } from "@/libs/utils/const/pricingFormData";
 import toast from "react-hot-toast";
-import { Form, Input, Button, Slider, Radio, ConfigProvider } from "antd";
+import { Form, Input, Slider, Radio } from "antd";
 import styles from "@styles/component.module.scss";
-
+import { LuSend } from "react-icons/lu";
 export default function PricingForm() {
 	const [form] = Form.useForm();
 	const [selectedValue, setSelectedValue] = useState<number>(5);
@@ -70,24 +70,6 @@ export default function PricingForm() {
 			<h2>Pricing Form</h2>
 			<p>Please fill out the form below to get a quote for your company.</p>
 			<p>Required Fields are marked with an asterisk (*)</p>
-			<ConfigProvider
-				theme={{
-					components: {
-						Input: {
-							activeBorderColor: "#0c0050",
-							hoverBorderColor: "#0c0050",
-						},
-						Slider: {
-							trackBg: "#0c0050",
-							trackHoverBg: "#0c0050",
-						},
-						Radio: {
-							buttonSolidCheckedBg: "#0c0050",
-							buttonSolidCheckedHoverBg: "#0c0050",
-						},
-					},
-				}}
-			>
 				<Form
 					form={form}
 					className={styles.pricingForm}
@@ -106,6 +88,7 @@ export default function PricingForm() {
 							rules={field.rules}
 						>
 							<Input
+								variant="filled"
 								size='large'
 								prefix={field.prefix}
 								placeholder={field.placeholder}
@@ -154,21 +137,17 @@ export default function PricingForm() {
 							</p>
 						</div>
 					</Form.Item>
-					<Form.Item className={styles.pricingForm__button}>
-						<Button
-							type='primary'
-							style={{ backgroundColor: "#ce2029" }}
-							htmlType='submit'
-						>
+					<Form.Item className={styles.pricingForm__buttonContainer}>
+						<button type='submit' className={styles.pricingForm__button}>
 							Submit
-						</Button>
+							<LuSend />
+						</button>
 					</Form.Item>
 				</Form>
 				<p>
 					We&apos;ll collect this information subject to our{" "}
 					<a href='/privacy-policy'>Privacy Policy</a>.
 				</p>
-			</ConfigProvider>
 		</div>
 	);
 }
