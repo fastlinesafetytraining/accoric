@@ -69,12 +69,12 @@ export default function SyncDashcard() {
   return (
     <section ref={boxRef} className={styles.accoricManagement__content__3}>
       <div className={styles.accoricManagement__content__3__sticky}>
-        <h2>Sync Stright to your DASHcard</h2>
+        <h2>Sync Straight to your DashCard</h2>
         <p>
-          Create a professional profile for your company by equipping each worker with an Accoric NFC DashCARD branded with your company logo.
+          Create a professional profile for your company by equipping each worker with an Accoric NFC DashCard branded with your company logo.
         </p>
         <p>
-          Each DashCARD uses NFC technology. Scannable by any smartphone, An employees&apos; profile pages on Accoric Management are paired with each worker&apos;s individual DashCARD. Making Certifications and other documentation available on-site when the card
+          Each DashCard uses NFC technology. Scannable by any smartphone, an employees&apos; profile pages on Accoric Management are paired with each worker&apos;s individual DashCard. Making certifications and other documentation available on-site when the card is scanned.
         </p>
         <div className={styles.accoricManagement__content__3__content}>
           <Image

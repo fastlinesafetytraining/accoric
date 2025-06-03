@@ -22,14 +22,14 @@ export default function Page() {
         </section>
         <section className={styles.accoricManagement__content__1}>
           <div className={styles.accoricManagement__content__1__text}>
-            <h2>Involve in your company&apos;s compliance</h2>
+            <h2>Involved in your company&apos;s compliance</h2>
             <p>
               From digitizing documents and creating your account for you, to reminding you of certification
               expirations, we have you covered. We also help ensure everyone has what they need while on the job.
             </p>
           <h2>Accoric Management</h2>
           <p>
-            Centralizes your workforce&apos;s certifications, training, and more. Offers real-time certification verification with DashCARDs, streamlines renewal reminders with custom report generation, and provides valuable analytics via spreadsheet reports to identify potential gaps in training.
+            Centralizes your workforce&apos;s certifications, training, and more. Offers real-time certification verification with DashCards, streamlines renewal reminders with custom report generation, and provides valuable analytics via spreadsheet reports to identify potential gaps in training.
           </p>
           </div>
           <Image
@@ -67,7 +67,7 @@ export default function Page() {
           <h2>Never miss a certification deadline again</h2>
           <p>
             Save time and money by automating your certification reminders.
-            <br />A solution to make sure that you fleet is always compliant and
+            <br />A solution to make sure that your fleet is always compliant and
             reduce project fallbacks
           </p>
           <VideoPlayer
