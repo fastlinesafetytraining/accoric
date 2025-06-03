@@ -41,7 +41,7 @@ export default function Page() {
           />          
         </section>
         <section className={styles.accoricManagement__pastClients}>
-          <h2>Join the many companies that have trusted us to manage their workforce</h2>
+          <h2>Join the many companies that have trusted us to manage their workforce.</h2>
           <PastClients />
         </section>
         <Features />
