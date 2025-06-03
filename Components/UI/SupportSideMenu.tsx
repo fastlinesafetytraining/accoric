@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import { LuChevronDown } from "react-icons/lu";
-import { Drawer, Button } from "antd";
+import { Drawer } from "antd";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import supportMenu from "@/libs/utils/const/routes";
@@ -16,9 +16,10 @@ export default function SupportSideMenu() {
 	
 		return (
 			<>
-			<Button block size="large" style={{ fontSize: "1.2rem" }} iconPosition="end" icon={<LuChevronDown />} onClick={() => setMenuActive(true)}>
-				Menu
-			</Button>
+			<button className={styles.supportSidebar__mobileDropdownButton} onClick={() => setMenuActive(true)}>
+				<span>Menu</span>
+				<LuChevronDown />
+			</button>
 			<Drawer height={`70%`} placement="bottom" open={menuActive} onClose={() => setMenuActive(false)}>
 				<DesktopMenu />
 			</Drawer>
