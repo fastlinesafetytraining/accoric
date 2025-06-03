@@ -21,7 +21,7 @@ export default async function FAQ({ items }: FAQProps) {
     children: <p className={styles.faqAnswer}>{item.answer}</p>
   }));
 
-  // Generate JSON-LD schema
+  // Generates JSON-LD schema
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -49,7 +49,7 @@ export default async function FAQ({ items }: FAQProps) {
           size='large'
           items={faqItems}
           accordion
-          style={{ backgroundColor: '#fdfdfd' }}
+          bordered={false}
         />
       </div>
     </>
