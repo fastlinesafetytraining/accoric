@@ -1,55 +1,27 @@
 import React from "react";
 import Image from "next/image";
-import { Avatar } from "antd";
+import testimonials from "@/libs/utils/const/testimonials";
 import styles from "@styles/pages/home.module.scss";
 
 export default function index() {
 	return (
 		<section className={styles.testimonialsSection}>
 			<div className={styles.testimonialsContainer}>
-				<div className={styles.testimonial}>
-					<div className={styles.testimonial__author}>
-						<h3>Justin A.</h3>
+				{testimonials.map((testimonial, index) => (
+					<div className={styles.testimonial} key={index}>
+						<div className={styles.testimonial__author}>
+							<Image
+								src={testimonial.companyLogo}
+								alt={testimonial.companyName}
+								width={50}
+								height={50}
+								className={styles.testimonial__author__logo}
+							/>
+							<h3>{testimonial.author}</h3>
+						</div>
+						<em className={styles.testimonial__quote}>{testimonial.quote}</em>
 					</div>
-					<em className={styles.testimonial__quote}>
-						Accoric Management has empowered Related Services LLC to{" "}
-						<b>proactively manage employee credentials</b> and{" "}
-						<b>certification status</b>, a significant improvement. We highly
-						recommend it.
-					</em>
-				</div>
-				<div className={styles.testimonial}>
-					<div className={styles.testimonial__author}>
-						<Avatar
-							alt='Champions Specialty'
-							size={"large"}
-							src='Images/client-logos/champion-scc-logo.webp'
-						/>
-						<h3>Amel H.</h3>
-					</div>
-					<em className={styles.testimonial__quote}>
-						Accoric Management&apos;s capabilities have enabled Champion
-						Painting&apos;s management team to bid and{" "}
-						<b>pre-plan projects more efficiently</b> with{" "}
-						<b>easy access to all employee training credentials</b>.
-					</em>
-				</div>
-				<div className={styles.testimonial}>
-					<div className={styles.testimonial__author}>
-						<Avatar
-							alt='Millbrook Fire'
-							size={"large"}
-							src='/Images/client-logos/millbrook-logo.webp'
-						/>
-						<h3>Nick D.</h3>
-					</div>
-					<em className={styles.testimonial__quote}>
-						With Accoric Management&apos;s unparalleled safety management and
-						proactive approach to certifications, we&apos;ve experienced
-						significantly downtime prevention. It&apos;s an investment that{" "}
-						<b>pays for itself in the first month!</b>
-					</em>
-				</div>
+				))}
 			</div>
 			<div className={styles.testimonialContent}>
 				<Image
