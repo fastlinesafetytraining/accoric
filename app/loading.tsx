@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex } from "antd";
 import GridLoader from "react-spinners/GridLoader";
-import { globalPrimaryColor } from "@styles/scss-vars";
+import { globalPrimaryColor } from "@/styles/exportVariables";
 
 const Loading: React.FC = () => {
 	return (
