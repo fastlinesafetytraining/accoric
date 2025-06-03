@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { SiteButton, NavBar } from ".";
+import { SiteButton, NavBar, ThemeToggle } from ".";
 import { LuUser } from "react-icons/lu";
 import "@styles/globals.css";
 
@@ -19,16 +19,19 @@ export default function Header() {
 				/>
 			</Link>
 			<NavBar />
-			<SiteButton
-				type='primary'
-				className='login-button'
-				href='https://accoricmgt.com/'
-				title='Login'
-				icon={<LuUser />}
-				iconPosition='left'
-			>
-				Login
-			</SiteButton>
+			<div className='flex items-center gap-4 header-buttons'>
+				<ThemeToggle />
+				<SiteButton
+					type='primary'
+					className='login-button'
+					href='https://accoricmgt.com/'
+					title='Login'
+					icon={<LuUser />}
+					iconPosition='left'
+				>
+					Login
+				</SiteButton>
+			</div>
 		</header>
 	);
 }

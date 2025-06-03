@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { LuLinkedin, LuExternalLink } from 'react-icons/lu';
+import { ThemeToggle } from '.';
+import { FaLinkedin } from 'react-icons/fa';
+import { LuExternalLink } from 'react-icons/lu';
 import '@styles/globals.css';
 
 export default function Footer() {
@@ -17,7 +19,7 @@ export default function Footer() {
 						className="w-30"
 					/>
 					<h2>Accoric</h2>
-					<p className="text-sm text-gray-500 mt-2">
+					<p className="text-sm mt-2">
 						Accoric is a leading provider of innovative solutions for safety and
 						compliance.
 					</p>
@@ -27,7 +29,7 @@ export default function Footer() {
 							target="_blank"
 							rel="noopener noreferrer"
 						>
-							<LuLinkedin className="text-3xl" />
+							<FaLinkedin className="text-3xl" />
 						</Link>
 					</div>
 				</div>
@@ -77,6 +79,7 @@ export default function Footer() {
 					<p>
 						<b>100% MADE IN THE USA</b>
 					</p>
+					<ThemeToggle />
 				</div>
 			</div>
 			<div className="bottom-footer">
