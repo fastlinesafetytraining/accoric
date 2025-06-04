@@ -4,8 +4,11 @@
 @import "./themes.css";
 
 * {
-	transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out,
-		text-shadow 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+	transition:
+		color 0.3s ease-in-out,
+		background-color 0.3s ease-in-out,
+		text-shadow 0.3s ease-in-out,
+		box-shadow 0.3s ease-in-out;
 }
 
 /* Body Styling */
@@ -245,4 +248,9 @@ footer .bottom-footer {
 	100% {
 		transform: rotate(360deg);
 	}
+}
+
+.theme-toggle-button .ant-segmented-item-label {
+	display: flex;
+	align-items: center;
 }

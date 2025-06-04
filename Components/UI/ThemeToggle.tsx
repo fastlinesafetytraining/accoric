@@ -1,13 +1,11 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Segmented } from "antd";
 import { LuSun, LuMoon, LuMonitor } from "react-icons/lu";
-import { useTernaryDarkMode, useInterval } from "usehooks-ts";
+import { useTernaryDarkMode } from "usehooks-ts";
 import type { TernaryDarkMode } from "usehooks-ts";
 
 export default function ThemeToggle() {
-	const [isLoading, setIsLoading] = useState(true);
-
 	const { isDarkMode, ternaryDarkMode, setTernaryDarkMode } =
 		useTernaryDarkMode();
 
@@ -35,31 +33,21 @@ export default function ThemeToggle() {
 		root.setAttribute("data-theme", isDarkMode ? "dark" : "light");
 	}, [isDarkMode]);
 
-	useInterval(() => {
-		setIsLoading(false);
-	}, 1000);
-
 	return (
-		<>
-			{isLoading ? (
-				null
-			) : (
-				<Segmented
-					suppressHydrationWarning
-					shape='round'
-					options={themeOptions}
-					defaultValue='system'
-					value={ternaryDarkMode}
-					aria-label='Theme Toggle Switch'
-					onChange={handleThemeChange}
-					className="theme-toggle-button"
-					style={{
-						margin: "1rem",
-						fontSize: "1.5rem",
-						padding: "0.5rem",
-					}}
-				/>
-			)}
-		</>
+		<Segmented
+			suppressHydrationWarning
+			shape='round'
+			options={themeOptions}
+			defaultValue='system'
+			value={ternaryDarkMode}
+			aria-label='Theme Toggle Switch'
+			onChange={handleThemeChange}
+			className="theme-toggle-button"
+			style={{
+				margin: "1rem",
+				fontSize: "1rem",
+				padding: "0.5rem",
+			}}
+		/>
 	);
 }
