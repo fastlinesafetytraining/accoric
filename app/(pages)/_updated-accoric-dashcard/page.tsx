@@ -35,7 +35,7 @@ export default function Page() {
         <h2>Share your certifications</h2>
       </section>
       <section>
-        <h2>Pair your dashcard with Accoric Management</h2>
+        <h2>Pair your DashCard with Accoric Management</h2>
       </section>
       <ContactCTA />
     </main>

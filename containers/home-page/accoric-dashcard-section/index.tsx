@@ -17,7 +17,7 @@ export default function index() {
 				</div>
 				<div className={styles.dashcardContent}>
 					<h2>
-						<span className={styles.headingHighlight}>Dash</span>card
+						<span className={styles.headingHighlight}>Dash</span>Card
 					</h2>
 					<p>All Your Certifications. One Card.</p>
 					<div className={styles.dashcardFeatures}>

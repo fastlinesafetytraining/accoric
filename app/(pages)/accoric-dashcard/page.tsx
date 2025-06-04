@@ -4,8 +4,8 @@ import { Metadata } from "next";
 import styles from "@styles/pages/accoricDashcard.module.scss";
 
 export const metadata: Metadata = {
-	title: "Accoric Dashcard | Accoric",
-	description: "Accoric Dashcard",
+	title: "Accoric DashCard | Accoric",
+	description: "Accoric DashCard",
 };
 
 export default function Page() {
