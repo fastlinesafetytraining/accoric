@@ -19,10 +19,10 @@ export default function Page() {
 				<div aria-label="Terms of Service Introduction">
 					<p>
 						Please read the following terms of use agreement carefully. By
-						Accessing or using our sites and our services, you hearby agree to
+						Accessing or using our sites and our services, you hereby agree to
 						be bound by the terms and all terms incorporated herein by
-						refrfence. If you do not expressly agree to all the terms and
-						conditions, then please do not acess or use our sites or our
+						reference. If you do not expressly agree to all the terms and
+						conditions, then please do not access or use our sites or our
 						services.
 					</p>
 				</div>
@@ -95,7 +95,7 @@ export default function Page() {
 					<p>
 						Every member’s registration data and various other personal
 						information is strictly protected by the out Online Privacy Policy
-						(see the full Privacy Policy at www.accoric.com/privacypolicy). As a
+						(see the full Privacy Policy at www.accoric.com/privacy-policy). As a
 						member, you herein consent to the collection and use of the
 						information provided, including the transfer of information within
 						the United States and/or other countries for storage, processing or
@@ -813,11 +813,11 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Copyright or Intellectual Property Infrigement Claims and Notice Procedures"
+					aria-label="Copyright or Intellectual Property Infringement Claims and Notice Procedures"
 					className={styles.policyContentSection}
 				>
 					<h2>
-						Copyright or Intellectual Property Infrigement Claims and Notice
+						Copyright or Intellectual Property Infringement Claims and Notice
 						Procedures
 					</h2>
 					<p>

@@ -17,19 +17,19 @@ export default function Features() {
 
 	const features = [
 		{
-			Lottieicon: snapshotLottie,
+			LottieIcon: snapshotLottie,
 			title: "Snapshot of your workforce",
 			description:
-				"Easily monitor your emplpoyees' certifications with a user-friendly dashboard.",
+				"Easily monitor your employees' certifications with a user-friendly dashboard.",
 		},
 		{
-			Lottieicon: automationLottie,
+			LottieIcon: automationLottie,
 			title: "Automated reminders",
 			description:
 				"Never miss a certification deadline again with our automated reminder system.",
 		},
 		{
-			Lottieicon: notificationsLottie,
+			LottieIcon: notificationsLottie,
 			title: "Customizable notifications",
 			description:
 				"Tailor your notifications to your specific needs and preferences.",
@@ -79,7 +79,7 @@ export default function Features() {
 								className={`${styles.accoricManagement__features__content__list__item} managementFeatureItem`}
 							>
 								<LottieComponent
-									animationData={feature.Lottieicon}
+									animationData={feature.LottieIcon}
 									className={
 										styles.accoricManagement__features__content__list__item__icon
 									}

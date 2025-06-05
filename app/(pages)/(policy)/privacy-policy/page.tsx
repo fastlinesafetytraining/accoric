@@ -378,7 +378,7 @@ export default function PrivacyPolicyPage() {
 							<span>Communicate and Chat with Users</span>
 						</li>
 						<li>
-							<span> Content Optimizaton</span>
+							<span> Content Optimization</span>
 						</li>
 						<li>
 							<span>Data Backup and Security</span>

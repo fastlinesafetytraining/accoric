@@ -16,7 +16,7 @@ export const faqItems = [
     {
       question: "Do I have to send you my data?",
       answer:
-        "No, it is not required for you to send us your data. You can set up your account on your own. However, our speciality is setting up your account for you, so all you have to do is sign into a fully set up account. We receive your data in strict compliance with our privacy policy, and we never share it with any third parties.",
+        "No, it is not required for you to send us your data. You can set up your account on your own. However, our specialty is setting up your account for you, so all you have to do is sign into a fully set up account. We receive your data in strict compliance with our privacy policy, and we never share it with any third parties.",
     },
     {
       question: "Do I Pay for inactive employees?",
