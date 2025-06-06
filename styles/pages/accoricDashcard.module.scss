@@ -1,89 +1,152 @@
 @use "../keyframes.scss";
 
 .accoricDashcard {
-  padding-bottom: 100vh;
-  position: relative;
-  &__header {
-    height: 90vh;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 5;
-    overflow: hidden;
-    &__h2, &__h1 {
-      display: flex;
-      gap: 10vw;
-      font-size: clamp(2rem, 10vw, 7rem);
-      font-weight: 700;
-      text-wrap: nowrap;
-      padding-bottom: 5vh;
-      span {
-        text-wrap: nowrap;
-        text-shadow: 0px 3px 0px #b2a98f,
-        0px 14px 10px rgba(0,0,0,0.15),
-        0px 24px 2px rgba(0,0,0,0.1),
-        0px 34px 30px rgba(0,0,0,0.1);
-      }
-    }
-    &__h1 {
-      color: #ffefc0;
-      margin-bottom: 5vh;
-      z-index: 4;
-      animation: 35s linear alternate infinite carouselLeft;
-    }
-    &__h2 {
-      margin-top: 15vh;
-      animation: 35s linear alternate infinite carouselRight;
-    }
+	padding-bottom: 100vh;
+	position: relative;
+	scroll-behavior: smooth;
+	// background: radial-gradient(
+	// 	circle at 50% 50%,
+	// 	var(--dashcard-section-odd-background-color),
+	// 	var(--global-white-to-black-color),
+	// 	var(--dashcard-section-odd-background-color),
+	// 	var(--global-white-to-black-color)
+	// );
 
-  }
+	section {
+		padding: clamp(1rem, 5vw, 2.5rem) clamp(1rem, 5vw, 3.5rem);
+		height: 150vh;
+		gap: 2rem;
+		z-index: -1;
+	}
+	h1, h2 {
+		position: relative;
+		&::after {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 3px;
+			background-color: var(--global-primary-color);
+			z-index: -1;
+		}
+	}
+
+	h1 {
+		font-size: clamp(2rem, 5vw, 3.5rem);
+		font-weight: 900;
+		color: var(--heading-h1-color);
+		position: relative;
+	}
+	h2 {
+		margin: 1rem;
+		font-size: clamp(2rem, 3.5vw, 2.3rem);
+		font-weight: 800;
+		color: var(--heading-h2-color);
+	}
+	h3 {
+		font-size: clamp(1.5rem, 3vw, 2rem);
+		font-weight: 700;
+		color: var(--heading-h3-color);
+	}
+	p {
+		font-size: clamp(1rem, 2vw, 1.5rem);
+		font-weight: 500;
+	}
+	h1,
+	h2,
+	p,
+	input,
+	a,
+	button {
+		z-index: 3;
+	}
+	&__sticky {
+		position: sticky;
+		top: 20%;
+		bottom: 10%;
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		@media (max-width: 1024px) {
+			top: 12%;
+			bottom: 12%;
+		}
+	}
+	&__content {
+		max-width: 30%;
+		@media (max-width: 1024px) {
+			max-width: 100%;
+		}
+	}
+	&__splineContainer {
+		position: sticky;
+		position: -webkit-sticky;
+		top: 10%;
+		left: 50%;
+		width: 50vw;
+		transform: translateX(-50%);
+		height: 100vh;
+		margin-bottom: -100vh;
+		animation: loadIn3D 3s ease-in-out;
+		animation-delay: 1s;
+
+	}
+	&__anchor {
+		margin-right: 2.5%;
+		display: flex;
+		position: sticky;
+		top: 15%;
+		float: right;
+		z-index: 5;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	&__hero {
+		display: flex;
+		justify-content: space-between;
+		height: 100vh;
+		&__cta {
+			width: 29%;
+		}
+	}
+
+	&__whoIsItFor {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	&__feature {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	&__callToAction {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		&__formContainer {
+			display: flex;
+		}
+		&__form {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-start;
+			gap: 1rem;
+			position: relative;
+			z-index: 4;
+			input {
+				width: 100%;
+			}
+		}
+	}
+	&__blurb {
+		position: sticky;
+		top: 10%;
+		text-align: center;
+	}
 }
-.accoricDashcard__splineContainer {
-  position: sticky;
-  position: -webkit-sticky;
-  top: 10%;
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
-  margin-bottom: -100vh;
-}
-
-//   section {
-//     height: 150vh;
-//     display: flex;
-//     flex-direction: column;
-//     gap: 2rem;
-//     z-index: 1;
-
-//     h2 {
-//       margin-top: 10%;
-//       margin-bottom: 10%;
-//       position: sticky;
-//       top: 20%;
-//       text-align: center;
-//       font-size: 3rem;
-//       font-weight: 800;
-//       text-shadow: -3px 3px 0 0 rgb(255, 255, 255);
-//       color: var(--global-secondary-color);
-//       z-index: 3;
-//     }
-//   }
-//   section:nth-child(even) {
-//     background-color: #b0dfff;
-//   }
-//   section:nth-child(7) {
-//     h2 {
-//       margin-bottom: 45%;
-//     }
-//   }
-// }
-
-// .accoricDashcard__videoPlayer {
-//   margin-left: 5%;
-//   width: 35vw;
-//   height: 35vh;
-//   z-index: 2;
-// }
-
-

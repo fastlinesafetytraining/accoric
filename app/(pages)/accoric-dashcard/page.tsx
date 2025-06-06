@@ -1,43 +1,33 @@
 import React from "react";
-import Spline from "@splinetool/react-spline/next";
-import { Metadata } from "next";
+import { SplineDashcard, SideBarAnchor, Hero, Features, WhoIsItFor, CallToAction, Blurb } from "@/containers/accoric-dashcard";
+import type { Metadata } from "next";
 import styles from "@styles/pages/accoricDashcard.module.scss";
 
 export const metadata: Metadata = {
 	title: "Accoric DashCard | Accoric",
 	description: "Accoric DashCard",
+	openGraph: {
+		title: "Accoric DashCard",
+		description:
+			"Accoric DashCard is the one card for the pros to combine all their certifications into one place with smart alerts and expiration reminders.",
+		type: "website",
+		locale: "en_US",
+		siteName: "Accoric",
+	},
 };
+
+
 
 export default function Page() {
 	return (
 		<main className={styles.accoricDashcard}>
-      <div className={styles.accoricDashcard__splineContainer}>
-        <Spline
-          scene='https://prod.spline.design/KURjrdKU-bE194jq/scene.splinecode'
-        />
-      </div>
-				<section className={styles.accoricDashcard__header}>
-					<h1 className={styles.accoricDashcard__header__h1}>
-						<span>Accoric Product</span>
-						<span>Accoric Product</span>
-						<span>Accoric Product</span>
-						<span>Accoric Product</span>
-						<span>Accoric Product</span>
-						<span>Accoric Product</span>
-						<span>Accoric Product</span>
-						<span>Accoric Product</span>
-					</h1>
-					<h2 className={styles.accoricDashcard__header__h2}>
-						<span>Coming Soon...</span>
-						<span>Coming Soon...</span>
-						<span>Coming Soon...</span>
-						<span>Coming Soon...</span>
-						<span>Coming Soon...</span>
-						<span>Coming Soon...</span>
-						<span>Coming Soon...</span>
-						<span>Coming Soon...</span>
-					</h2>
-				</section>
+			<SideBarAnchor />
+			<SplineDashcard />
+			<Hero />
+			<Features />
+			<WhoIsItFor />
+			<CallToAction />
+			<Blurb />			
 		</main>
 	);
 }

@@ -21,8 +21,8 @@
 
 	/* Typography Colors */
 	/* Heading Colors */
-	--heading-h1-color: oklch(0.2 0 0);
-	--heading-h2-color: oklch(0.2 0 0);
+	--heading-h1-color: oklch(0.2 0.13 272);
+	--heading-h2-color: oklch(0.2 0.13 272);
 	--heading-h3-color: oklch(0.2 0 0);
 	--heading-h4-color: oklch(0.2 0 0);
 	--heading-highlight-color: oklch(0.695 0.1535 243.68);
@@ -52,7 +52,10 @@
 	--grayscale-filter: grayscale(0);
 
 	/* Box Shadow */
-	--box-shadow-color: oklch(0.3382 0.1582 271.28 / 22%)
+	--box-shadow-color: oklch(0.3382 0.1582 271.28 / 22%);
+
+	/*Accoric Dashcard Colors*/
+	--dashcard-section-odd-background-color: oklch(0.82 0.0949 252.27);
 }
 
 /* Dark Theme Colors */
@@ -109,5 +112,8 @@
 	--grayscale-filter: grayscale(100%);
 
 	/* Box Shadow */
-	--box-shadow-color: oklch(0.65 0.06 280 / 0.22)
+	--box-shadow-color: oklch(0.65 0.06 280 / 0.22);
+
+	/*Accoric Dashcard Colors*/
+	--dashcard-section-odd-background-color: oklch(0.29 0.0777 276.32);
 } 
