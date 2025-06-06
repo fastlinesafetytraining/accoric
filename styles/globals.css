@@ -35,7 +35,7 @@ header {
 	top: 0;
 	left: 0;
 	box-shadow: 0 0 10px 0 var(--global-white-to-black);
-	z-index: 10;
+	z-index: 20;
 }
 
 @media (max-width: 1024px) {
@@ -61,6 +61,7 @@ footer {
 	align-items: center;
 	background: var(--header-footer-background-color);
 	color: var(--text-paragraph-color);
+	z-index: 20;
 }
 
 footer .footer-main-content-container {
