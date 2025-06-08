@@ -632,3 +632,15 @@
 	}
 }
 
+.dashcardForm {
+	width: 60%;
+	@media (max-width: 767px) {
+		width: 100%;
+	}
+	button {
+		width: 30%;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+}
