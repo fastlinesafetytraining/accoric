@@ -15,7 +15,7 @@ const features: { title: string; description: string; }[] = [
 	{
 		title: "Works Anywhere",
 		description:
-			"Use it wherever you work—it&apos;s yours, not your company&apos;s.",
+			"Use it wherever you work—it's yours, not your company's.",
 	},
 	{
 		title: "Always Up to Date",
