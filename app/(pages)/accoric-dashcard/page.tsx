@@ -21,13 +21,15 @@ export const metadata: Metadata = {
 export default function Page() {
 	return (
 		<main className={styles.accoricDashcard}>
-			<SideBarAnchor />
+			<div className={styles.accoricDashcard__info}>
+				<Hero />
+				<Features />
+				<WhoIsItFor />
+				<CallToAction />
+				<Blurb />			
+			</div>
 			<SplineDashcard />
-			<Hero />
-			<Features />
-			<WhoIsItFor />
-			<CallToAction />
-			<Blurb />			
+			<SideBarAnchor />
 		</main>
 	);
 }

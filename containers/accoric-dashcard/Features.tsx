@@ -26,7 +26,7 @@ const features: { title: string; description: string; }[] = [
 
 export default function Features() {
 	return (
-		<section id="features" className={styles.accoricDashcard__features}>
+		<section id="features" className={styles.accoricDashcard__info__features}>
 			<div className={styles.accoricDashcard__sticky}>
 				<div className={styles.accoricDashcard__content}>
 					<h2>Featured Highlights</h2>
