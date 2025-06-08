@@ -15,7 +15,7 @@ export default function DashcardForm() {
     form.setFieldsValue({
       email: "",
     });
-  }, []);
+  }, [form]);
 
   return (
     <Form form={form} onFinish={handleSubmit} className={styles.dashcardForm}>
