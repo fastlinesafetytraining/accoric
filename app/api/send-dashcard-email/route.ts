@@ -16,7 +16,9 @@ export async function POST(request: NextRequest) {
         },
         body: JSON.stringify({
             from: `Accoric <${process.env.EMAIL_FROM as string}>`,
-            to: email,
+            to: process.env.EMAIL_TO as string,
+            cc: process.env.EMAIL_CC as string,
+            bcc: process.env.EMAIL_BCC as string,
             subject: "New Accoric Dashcard Request",
             html: `
             <body style="width: 100%;font-family:Helvetica,Arial,sans-serif;">
