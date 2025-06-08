@@ -16,7 +16,7 @@ export default function PricingForm() {
 	const [priceValue, setPriceValue] = useState<string>("$799/Year");
 
 	const handleSubmit = async () => {
-		const response = await fetch("/api/send", {
+		const response = await fetch("/api/send-pricing", {
 			method: "POST",
 			body: JSON.stringify(form.getFieldsValue()),
 		});
