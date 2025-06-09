@@ -13,11 +13,9 @@
   }
 
   section {
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
       gap: 2rem;
       height: 150vh;
-      padding: clamp(1rem, 5vw, 2.5rem) clamp(1rem, 5vw, 3.5rem);
+      padding: clamp(1rem, 5vw, 2.5rem) clamp(1rem, 2vw, 3.5rem);
   }
 
   h1,
@@ -44,19 +42,19 @@
   }
 
   h2 {
-      font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+      font-size: clamp(1.75rem, 3vw, 2.25rem);
       font-weight: 800;
       color: var(--heading-h2-color);
   }
 
   h3 {
-      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-size: clamp(1.5rem, 1.5vw, 2rem);
       font-weight: 700;
       color: var(--heading-h3-color);
   }
 
   p {
-      font-size: clamp(1rem, 2vw, 1.5rem);
+      font-size: clamp(1rem, 1.3vw, 1.4rem);
       font-weight: 500;
   }
 
@@ -75,7 +73,7 @@
       gap: 2rem;
       position: sticky;
       z-index: 3;
-      top: 20%;
+      top: 15%;
       bottom: 10%;
       width: 100%;
     @media (max-width: 767px) {
@@ -87,12 +85,13 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      gap: clamp(0.5rem, 2vw, 1rem);
+      gap: clamp(0.5rem, 3vw, 1rem);
+      min-height: 350px;
       padding: 1rem;
-      background-color: var(--card-background-color);
       border-radius: 1rem;
-    @media (max-width: 767px) {
-        box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+      @media (max-width: 767px) {
+        background-color: var(--card-background-color);
+        box-shadow: 0 10px 10px 0 var(--box-shadow-color);
     }
   }
 
@@ -111,8 +110,6 @@
   }
 
   &__info {
-      scroll-snap-type: y mandatory;
-      overflow-y: auto;
       width: 40%;
     @media (max-width: 767px) {
         width: 100%;
