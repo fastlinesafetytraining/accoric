@@ -28,7 +28,7 @@ ignorePaths:
 
 words: 
     # technical words
-        - splinetool
+    - splinetool
     - lenis
     - gsap
     - GSAP
