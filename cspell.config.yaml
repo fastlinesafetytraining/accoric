@@ -1,0 +1,53 @@
+---
+$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
+
+globRoot: './'
+
+# Specific rules
+
+# ignore import paths
+# ignoreImports: true
+checkComments: true
+
+
+# skip excluded files
+
+useGitignore: true
+gitignoreRoot: './'
+
+# the paths are relative to the location of this file
+
+ignorePaths: 
+    #specific files and directories which don't need to be checked
+    - '**/Env.ts'
+    - 'node_modules'
+    - 'package-lock.json'
+    - 'package.json'
+
+# note: you need to run the linter after changing words
+
+words: 
+    # technical words
+        - splinetool
+    - lenis
+    - gsap
+    - GSAP
+    - lerp
+    - bgcolor
+    - cellspacing
+    - usehooks
+    - apos
+    
+
+    # project specific words
+    - accoric
+    - Dashcard
+    - Broadhollow
+    - Ercolano
+    - Millbrook
+    - tradesperson
+    - RORI
+    - cybercriminals
+    - gifs
+    - pcms
+...
