@@ -28,6 +28,7 @@ export default function SplineDashcard() {
 					autoPlay
 					loop
 					muted
+					className={styles.accoricDashcard__splineContainer__fallback}
 				>
 					<source
 						src='/videos/accoric-dashcard-fallback-video.mp4'
