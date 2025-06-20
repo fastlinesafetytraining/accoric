@@ -121,6 +121,10 @@
 				var(--page-background-color) 60%,
 				transparent 100%
 			);
+			&__fallback {
+				position: relative;
+				top: 35%;
+			}
 		}
 	}
 
