@@ -6,6 +6,9 @@
 	--fixed-black: oklch(0.3 0 0);
 	--fixed-white: oklch(0.98 0 0);
 	--fixed-secondary-color: oklch(0.2034 0.13 272.93);
+
+	/* Fonts */
+	--h1-font-family: 'Outfit', sans-serif;
 }
 
 /* Button Border Radius */
