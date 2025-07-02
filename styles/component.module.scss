@@ -199,6 +199,7 @@
 		border: 1px solid oklch(1 0 none / 0.25);
 		transition: all 0.3s ease-in-out;
 		&:hover {
+			background-color: var(--client-logo-background-color-hover);
 			filter: var(--client-logo-filter-effect-hover);
 			transform: scale(1.1);
 		}
