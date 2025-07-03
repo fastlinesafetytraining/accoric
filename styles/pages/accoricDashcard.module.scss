@@ -72,6 +72,8 @@
 		z-index: 3;
 	}
 
+	/* Sticky Container Styles */
+
 	&__sticky {
 		display: flex;
 		flex-direction: column;
@@ -100,6 +102,8 @@
 		}
 	}
 
+	/* Spline Container Styles */
+
 	&__splineContainer {
 		position: sticky;
 		top: 8%;
@@ -127,6 +131,8 @@
 			}
 		}
 	}
+
+	/* Section Styles */
 
 	&__info {
 		width: 40%;

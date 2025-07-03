@@ -1,5 +1,5 @@
 import React from "react";
-import { SplineDashcard, SideBarAnchor, Hero, Features, WhoIsItFor, CallToAction, Blurb } from "@/containers/accoric-dashcard";
+import { SplineDashcard, SideBarAnchor, Hero, Features, WhoIsItFor, CallToAction, Blurb, Pricing } from "@/containers/accoric-dashcard";
 import type { Metadata } from "next";
 import styles from "@styles/pages/accoricDashcard.module.scss";
 
@@ -25,6 +25,7 @@ export default function Page() {
 				<Hero />
 				<Features />
 				<WhoIsItFor />
+				<Pricing />
 				<CallToAction />
 				<Blurb />			
 			</div>

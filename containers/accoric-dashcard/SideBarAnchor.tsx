@@ -21,11 +21,16 @@ export default function SideBarAnchor() {
         },
         {
             key: "4",
+            href: "#pricing",
+            title: "Pricing",
+        },
+        {
+            key: "5",
             href: "#register",
             title: "Register",
         },
         {
-            key: "5",
+            key: "6",
             href: "#conclusion",
             title: "Conclusion",
         },
