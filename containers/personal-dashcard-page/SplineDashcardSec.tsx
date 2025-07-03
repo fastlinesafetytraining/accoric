@@ -5,7 +5,7 @@ import hasWebGlSupport from "@/libs/utils/checkWebGl";
 import styles from "@styles/pages/accoricDashcard.module.scss";
 import Spline from "@splinetool/react-spline";
 
-export default function SplineDashcard() {
+export default function SplineDashcardSec() {
 	const [isWebGLSupported, setIsWebGLSupported] = useState(false);
 	const [isLoading, setLoading] = useState(true);
 
