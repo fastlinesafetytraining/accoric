@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
             to: process.env.EMAIL_TO as string,
             cc: process.env.EMAIL_CC as string,
             bcc: process.env.EMAIL_BCC as string,
-            subject: "New Accoric Dashcard Request",
+            subject: "New Accoric Dashcard Request from " + email,
             html: `
             <body style="width: 100%;font-family:Helvetica,Arial,sans-serif;">
             <table border="0" max-width="600px" margin="0 auto" bgcolor="#ffffff" cellpadding="0" cellspacing="0">
