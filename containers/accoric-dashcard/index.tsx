@@ -5,3 +5,4 @@ export { default as Features } from "./Features";
 export { default as WhoIsItFor } from "./WhoIsItFor";
 export { default as CallToAction } from "./CallToAction";
 export { default as Blurb } from "./Blurb";
+export { default as Pricing } from "./Pricing";

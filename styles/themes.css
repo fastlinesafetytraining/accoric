@@ -45,6 +45,7 @@
 
 	/* Client Logo Filter Effect */
 	--client-logo-background-color: oklch(1 0 none / 0.75);
+	--client-logo-background-color-hover: oklch(1 0 none / 0.5);
 	--client-logo-filter-effect: grayscale(100%);
 	--client-logo-filter-effect-hover: grayscale(0%);
 
@@ -105,8 +106,9 @@
 
 	/* Client Logo Filter Effect */
 	--client-logo-background-color: oklch(1 0 none / 0.35);
-	--client-logo-filter-effect: contrast(0%) brightness(150%);
-	--client-logo-filter-effect-hover: contrast(0) brightness(2);
+	--client-logo-background-color-hover: oklch(1 0 none / 0.75);
+	--client-logo-filter-effect: contrast(0) brightness(150%);
+	--client-logo-filter-effect-hover: contrast(1) brightness(110%);
 
 	/* Grayscale Filter */
 	--grayscale-filter: grayscale(100%);
