@@ -25,17 +25,17 @@ body {
 	}
 }
 
+main {
+	transform: translateY(-100px);
+	padding-top: 100px !important;
+}
+
 /* Header Styling*/
 
 header {
 	padding: 0 3rem;
 	backdrop-filter: blur(1);
-	background-color: var(--header-footer-background-color);
-	position: sticky;
-	top: 0;
-	left: 0;
 	box-shadow: 0 0 10px 0 var(--global-white-to-black);
-	z-index: 20;
 }
 
 @media (max-width: 1024px) {
