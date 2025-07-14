@@ -6,9 +6,13 @@
 	--fixed-black: oklch(0.3 0 0);
 	--fixed-white: oklch(0.98 0 0);
 	--fixed-secondary-color: oklch(0.2034 0.13 272.93);
-}
 
-/* Button Border Radius */
-:root {
+	--spacing-xs: 0.5rem;
+	--spacing-sm: 1rem;
+	--spacing-md: 2rem;
+	--spacing-lg: 3rem;
+	--spacing-xl: 4rem;
+	--spacing-xxl: 5rem;
+
 	--button-border-radius: 3em;
 }
