@@ -46,4 +46,9 @@ export const redirects: Redirect[] = [
     destination: "/terms-of-service",
     permanent: true,
   },
+   {
+    source: "/accoric-dashcard",
+    destination: "/personal-dashcard",
+    permanent: true,
+   }
 ]

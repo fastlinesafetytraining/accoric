@@ -9,8 +9,8 @@ export const navMenuItems = [
   },
   {
     key: "2",
-    label: "Accoric DashCard",
-    href: "/accoric-dashcard",
+    label: "Personal DashCard",
+    href: "/personal-dashcard",
   },
   {
     key: "3",
@@ -26,7 +26,7 @@ export const navMenuItems = [
     key: "5",
     label: "About Us",
     href: "/about-us",
-  },  
+  } 
 ];
 
 export const supportMenu: SupportMenu[] = [
