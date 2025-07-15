@@ -7,7 +7,7 @@ import { LuUser } from "react-icons/lu";
 import "@styles/globals.css";
 
 export default function Header() {
-	const [bgTransparent, setBgTransparent] = useState(true);
+	const [bgTransparent, setBgTransparent] = useState<boolean>(false);
 
 	// ** Header Background Color Change on Scroll **
 	useEffect(() => {
