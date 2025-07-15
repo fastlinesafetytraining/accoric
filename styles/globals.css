@@ -11,6 +11,10 @@
 		box-shadow 0.3s ease-in-out;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 /* Body Styling */
 body {
 	background: var(--page-background-color);
