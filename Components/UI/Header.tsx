@@ -13,7 +13,6 @@ export default function Header() {
 	useEffect(() => {
 		const handleScroll = () => {
 			setBgTransparent(window.scrollY > 100);
-			console.log(window.scrollY)
 		};
 
 		window.addEventListener("scroll", handleScroll);
