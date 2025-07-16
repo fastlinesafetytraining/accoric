@@ -1,1 +1,11 @@
-export { default as SplineDashcard } from "./SplineDashcard";
+export { default as PageBackground } from "./PageBackground";
+export { default as SplineDashcardSec } from "./SplineDashcardSec";
+export { default as SideBarAnchor } from "./SideBarAnchor";
+export { default as IntroSec } from "./IntroSec";
+export { default as YourCardSec } from "./YourCardSec";
+export { default as YourCertificationSec } from "./YourCertificationSec";
+export { default as AccessAnywhereSec } from "./AccessAnywhereSec";
+export { default as AlwaysSyncSec } from "./AlwaysSyncSec";
+export { default as ExpirationReminderSec } from "./ExpirationReminderSec";
+export { default as CallToAction } from "./CallToAction";
+export { default as FAQSec } from "./FAQSec";
