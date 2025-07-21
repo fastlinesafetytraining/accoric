@@ -1,5 +1,5 @@
 import React from "react";
-import { SideBarAnchor, PageBackground, FAQSec, CallToAction, IntroSec, YourCardSec, YourCertificationSec, AccessAnywhereSec, AlwaysSyncSec, ExpirationReminderSec, SplineDashcardSec } from "@/containers/personal-dashcard-page";
+import { SideBarAnchor, PageBackground, FAQSec, CallToAction, IntroSec, YourCardSec, YourCertificationSec, AccessAnywhereSec, AlwaysSyncSec, ExpirationReminderSec } from "@/containers/personal-dashcard-page";
 import type { Metadata } from "next";
 import styles from "@styles/pages/personalDashcard.module.scss";
 
@@ -24,14 +24,13 @@ export default function Page() {
 				<IntroSec />
 				<YourCardSec />
 				<YourCertificationSec />
-				<AccessAnywhereSec />
 				<ExpirationReminderSec />
+				<AccessAnywhereSec />
 				<AlwaysSyncSec />
 				<CallToAction />
 				<FAQSec />
 			</div>
 			<PageBackground />
-			<SplineDashcardSec />
 			<SideBarAnchor />
 		</main>
 	);
