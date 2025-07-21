@@ -57,6 +57,7 @@
 
 	/*Accoric Dashcard Colors*/
 	--dashcard-section-odd-background-color: oklch(0.82 0.0949 252.27);
+	--dashcard-side-bar-background-color: oklch(1 0 none / 0.5);
 }
 
 /* Dark Theme Colors */
@@ -118,4 +119,5 @@
 
 	/*Accoric Dashcard Colors*/
 	--dashcard-section-odd-background-color: oklch(0.29 0.0777 276.32);
+	--dashcard-side-bar-background-color: oklch(1 0 none);
 } 
