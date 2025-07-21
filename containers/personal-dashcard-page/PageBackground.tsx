@@ -1,8 +1,6 @@
 "use client";
-import React, { useRef } from "react";
-import { motion, useScroll } from "motion/react";
+import React, { useMemo } from "react";
 import styles from "@styles/pages/personalDashcard.module.scss";
-import useParallax from "@/Components/hook/useParallax";
 
 // Helper to generate a random color
 const randomColor = () => {
@@ -28,75 +26,85 @@ const randomShape = () => {
 };
 
 export default function PageBackground() {
-  const ref = useRef<HTMLDivElement>(null);
-  const random = (min: number, max: number) => {
-    return Math.random() * (max - min) + min;
-  };
+  // Vertical line matrix settings
+  const lineWidth = 2; // px
+  const numCols = 40;
 
-  const CreateShape = ({ index }: { index: number }) => {
-    const shapeType = randomShape();
-    const shapeColor = randomColor();
-    const shapeY = random(0, 100) + "%";
-    const shapeX = random(0, 100) + "%";
-    const shapeSize = random(20, 60);
-    const shapeOpacity = random(0.5, 1);
-    const parallaxDistance = random(30, 120);
-    const { scrollYProgress } = useScroll({ target: ref });
-    const y = useParallax(scrollYProgress, parallaxDistance);
-
-    let shapeStyle: React.CSSProperties = {
-      width: shapeSize,
-      height: shapeSize,
-      background: shapeType !== "triangle" ? shapeColor : "none",
-      opacity: shapeOpacity,
-      position: "absolute",
-      top: shapeY,
-      left: shapeX,
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "center",
-      zIndex: 1,
-    };
-
-    let shapeContent;
-    if (shapeType === "circle") {
-      shapeStyle.borderRadius = "50%";
-      shapeContent = null;
-    } else if (shapeType === "square") {
-      shapeStyle.borderRadius = random(0, 0.3) * shapeSize; // some squares with rounded corners
-      shapeContent = null;
-    } else if (shapeType === "triangle") {
-      // Triangle using CSS borders
-      shapeStyle = {
-        ...shapeStyle,
-        width: 0,
-        height: 0,
-        background: "none",
-        borderLeft: `${shapeSize / 2}px solid transparent`,
-        borderRight: `${shapeSize / 2}px solid transparent`,
-        borderBottom: `${shapeSize}px solid ${shapeColor}`,
-        borderRadius: 0,
-      };
-      shapeContent = null;
+  // Generate the vertical line matrix as a memoized array
+  const lines = useMemo(() => {
+    const arr = [];
+    for (let col = 0; col < numCols; col++) {
+      arr.push(
+        <div
+          key={`line-${col}`}
+          className={styles.verticalLine}
+          style={{
+            gridColumn: col + 1,
+            gridRow: 1,
+            width: lineWidth,
+            height: "100%",
+            background: "currentColor",
+            justifySelf: "center",
+          }}
+        />
+      );
     }
+    return arr;
+  }, [numCols, lineWidth]);
 
-    return (
-      <motion.div
-        key={index}
-        className="parallax-shape"
-        transition={{ duration: 1.5 }}
-        style={{ ...shapeStyle, y }}
-      >
-        {shapeContent}
-      </motion.div>
-    );
-  };
+  // Overlay random shapes
+  const numShapes = 20;
+  const overlayShapes = useMemo(() => {
+    return Array.from({ length: numShapes }).map((_, index) => {
+      const shapeType = randomShape();
+      const shapeColor = randomColor();
+      const shapeY = Math.random() * 100 + "%";
+      const shapeX = Math.random() * 100 + "%";
+      const shapeSize = Math.random() * 40 + 20; // 20-60px
+      const shapeOpacity = Math.random() * 0.5 + 0.5; // 0.5-1
+      let shapeStyle: React.CSSProperties = {
+        width: shapeSize,
+        height: shapeSize,
+        background: shapeType !== "triangle" ? shapeColor : "none",
+        opacity: shapeOpacity,
+        position: "absolute",
+        top: shapeY,
+        left: shapeX,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        zIndex: 1,
+      };
+      if (shapeType === "circle") {
+        shapeStyle = { ...shapeStyle, borderRadius: "50%" };
+      } else if (shapeType === "square") {
+        shapeStyle = { ...shapeStyle, borderRadius: `${Math.random() * 0.3 * shapeSize}px` };
+      } else if (shapeType === "triangle") {
+        shapeStyle = {
+          ...shapeStyle,
+          width: 0,
+          height: 0,
+          background: "none",
+          borderLeft: `${shapeSize / 2}px solid transparent`,
+          borderRight: `${shapeSize / 2}px solid transparent`,
+          borderBottom: `${shapeSize}px solid ${shapeColor}`,
+          borderRadius: '5px',
+        } as React.CSSProperties;
+      }
+      return (
+        <div
+          key={`shape-${index}`}
+          className={styles.parallaxShape}
+          style={shapeStyle}
+        />
+      );
+    });
+  }, [numShapes]);
 
   return (
-    <motion.div ref={ref} className={styles.pageBackground} style={{ position: "absolute", inset: 0, zIndex: -1 }}>
-      {Array.from({ length: 25 }).map((_, index) => (
-        <CreateShape key={index} index={index} />
-      ))}
-    </motion.div>
+    <div className={styles.dotMatrixBackground}>
+      <div className={styles.verticalLineGrid}>{lines}</div>
+      {overlayShapes}
+    </div>
   );
 }
