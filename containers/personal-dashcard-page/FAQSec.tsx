@@ -20,6 +20,8 @@ export default function FAQSec() {
         }
     ]
   return (
-    <FAQ items={faq} />
+    <section>
+        <FAQ items={faq} />
+    </section>
   )
 }
