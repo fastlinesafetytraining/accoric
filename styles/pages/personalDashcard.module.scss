@@ -1,0 +1,281 @@
+.personalDashcard {
+	position: relative;
+	section {
+		scroll-margin-top: 100px;
+		min-height: 120vh;
+		margin: var(--spacing-xs);
+	}
+	p {
+		font-size: clamp(1rem, 1.5vw, 1.2rem);
+		font-weight: 500;
+		line-height: 1.5;
+		margin-bottom: 1rem;
+	}
+}
+
+.splineDashcardSec {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.pageBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	overflow: hidden;
+	pointer-events: none;
+
+	.parallax-shape {
+		transition: opacity 0.5s, transform 1.5s;
+		will-change: transform, opacity;
+		box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
+	}
+}
+
+.personalDashcard__sidebar {
+	height: 0;
+	position: sticky;
+	bottom: 20%;
+	left: 0;
+	margin-left: 1vw;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-width: 1.5rem;
+	transition: all 0.5s ease-in-out;
+	a {
+		color: #00000000;
+	}
+	&:hover {
+		max-width: 150px;
+		a {
+			color: var(--global-secondary-color);
+		}
+	}
+
+	&__sticky {
+		position: sticky;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		transform: translateY(-100%) scale(0.5);
+		transition: all 0.5s ease-in-out;
+		&:hover {
+			transform: translateY(-100%) scale(1);
+		}
+		&__item {
+			font-size: clamp(0.8rem, 1vw, 0.9rem);
+			margin: var(--spacing-sm) 0;
+			background-color: var(--dashcard-side-bar-background-color);
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px);
+			border: 1px solid rgba(0, 0, 0, 0.3);
+			border-radius: 1em;
+			max-height: 1.5rem;
+			padding: 0 0.5rem;
+			overflow: hidden;
+			transition: all 0.5s ease-in-out;
+			display: flex;
+			text-wrap: nowrap;	
+			&:hover {
+				background-color: color-mix(
+					in oklch,
+					var(--global-primary-color) 20%,
+					transparent
+				);
+			}
+			&__active {
+				background-color: color-mix(
+					in oklch,
+					var(--global-primary-color) 60%,
+					transparent
+				);
+			}
+		}
+	}
+}
+
+.introSec {
+	overflow: hidden;
+	position: relative;
+	padding-top: 10vh;
+	&__hero {
+		max-width: 1400px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1rem;
+		&_text {
+			flex: 0.5;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 1rem;
+			h1 {
+				font-size: clamp(2rem, 5vw, 5rem);
+				line-height: 1.1;
+				font-weight: 700;
+				text-align: left;
+				text-shadow: -5px 5px 10px #44444469;
+				span {
+					background: linear-gradient(
+						45deg,
+						var(--global-primary-color) 60%,
+						var(--global-secondary-color)
+					);
+					-webkit-background-clip: text;
+					-webkit-text-fill-color: transparent;
+					background-clip: text;
+				}
+			}
+		}
+	}
+	&__parallax {
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding-top: 100px;
+		@media (max-width: 768px) {
+			position: relative;
+		}
+		&__item_1 {
+			position: absolute;
+			bottom: -85%;
+			left: 0;
+			width: 65vw;
+			height: 50vh;
+			background: linear-gradient(to right, #2fa5f4, #66388a);
+			border-radius: 50%;
+			filter: drop-shadow(0 0 10px #000000);
+		}
+		&__item_2 {
+			position: relative;
+			img {
+				margin: 0 auto;
+				width: 80%;
+				height: 100%;
+				position: relative;
+				bottom: 0;
+				left: 0;
+				filter: drop-shadow(0 0 10px #000000);
+			}
+			.sparks {
+				position: absolute;
+				right: 37.5%;
+				bottom: 25%;
+				width: 5px;
+				height: 15px;
+				background: linear-gradient(to bottom, #ffffff, #b1d9ff 80%);
+				border-radius: 5em;
+				box-shadow: 0 0 10px 2px #fff7b488;
+				pointer-events: none;
+				opacity: 0.85;
+				z-index: 2;
+			}
+		}
+		&__item_3 {
+			filter: drop-shadow(0 0 10px #000000);
+			position: absolute;
+			bottom: -85%;
+			right: 0;
+			width: 51vw;
+			height: 50vh;
+			background: linear-gradient(to right, #2fa5f4, #66388a);
+			border-radius: 50%;
+		}
+	}
+}
+
+.yourCertificationSec,
+.yourCardSec,
+.alwaysSyncSec,
+.expirationReminderSec,
+.accessAnywhereSec {
+	&__content {
+		color: var(--global-black-to-white-color);
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin: 0 auto;
+		max-width: 1400px;
+		padding: 2rem;
+		gap: 2rem;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
+		}
+		&__text {
+			display: flex;
+			flex-direction: column;
+			gap: var(--spacing-md);
+			flex: 0.8;
+			h2 {
+				font-size: clamp(2rem, 4vw, 4.5rem);
+				font-weight: 700;
+				line-height: 1.1;
+			}
+
+		}
+		&__img {
+			background-color: var(--global-secondary-color);
+			border-radius: 1em;
+			box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+			filter: drop-shadow(0 0 10px #000000);
+		}
+	}
+}
+
+.dotMatrixBackground {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  filter: invert(1);
+}
+
+.dotMatrixGrid {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(40, 1fr);
+  position: absolute;
+  inset: 0;
+}
+
+.dotMatrixDot {
+  background: currentColor;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.verticalLineGrid {
+  display: grid;
+  width: 100vw;
+  height: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(40, 1fr);
+  position: absolute;
+  inset: 0;
+}
+
+.verticalLine {
+  background: currentColor;
+  width: 2px;
+  height: 100%;
+  justify-self: center;
+  opacity: 0.7;
+}
