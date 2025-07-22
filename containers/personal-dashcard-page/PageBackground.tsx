@@ -8,31 +8,34 @@ export default function PageBackground() {
 	// Dot matrix settings
 	const numRows = 80;
 	const numCols = 10;
-	const dotSize = 7; // px
+	const dotSize = 5;
+
+	const parallaxSpeed = -10;
 
 	// Parallax setup
 	const { scrollYProgress } = useScroll();
+	
 	// Call useParallax a fixed number of times (20 rows)
-	const y0 = useParallax(scrollYProgress, -10 * 18);
-	const y1 = useParallax(scrollYProgress, -9 * 18);
-	const y2 = useParallax(scrollYProgress, -8 * 18);
-	const y3 = useParallax(scrollYProgress, -7 * 18);
-	const y4 = useParallax(scrollYProgress, -6 * 18);
-	const y5 = useParallax(scrollYProgress, -5 * 18);
-	const y6 = useParallax(scrollYProgress, -4 * 18);
-	const y7 = useParallax(scrollYProgress, -3 * 18);
-	const y8 = useParallax(scrollYProgress, -2 * 18);
-	const y9 = useParallax(scrollYProgress, -1 * 18);
-	const y10 = useParallax(scrollYProgress, 0 * 18);
-	const y11 = useParallax(scrollYProgress, 1 * 18);
-	const y12 = useParallax(scrollYProgress, 2 * 18);
-	const y13 = useParallax(scrollYProgress, 3 * 18);
-	const y14 = useParallax(scrollYProgress, 4 * 18);
-	const y15 = useParallax(scrollYProgress, 5 * 18);
-	const y16 = useParallax(scrollYProgress, 6 * 18);
-	const y17 = useParallax(scrollYProgress, 7 * 18);
-	const y18 = useParallax(scrollYProgress, 8 * 18);
-	const y19 = useParallax(scrollYProgress, 9 * 18);
+	const y0 = useParallax(scrollYProgress, -10 * parallaxSpeed);
+	const y1 = useParallax(scrollYProgress, -9 * parallaxSpeed);
+	const y2 = useParallax(scrollYProgress, -8 * parallaxSpeed);
+	const y3 = useParallax(scrollYProgress, -7 * parallaxSpeed);
+	const y4 = useParallax(scrollYProgress, -6 * parallaxSpeed);
+	const y5 = useParallax(scrollYProgress, -5 * parallaxSpeed);
+	const y6 = useParallax(scrollYProgress, -4 * parallaxSpeed);
+	const y7 = useParallax(scrollYProgress, -3 * parallaxSpeed);
+	const y8 = useParallax(scrollYProgress, -2 * parallaxSpeed);
+	const y9 = useParallax(scrollYProgress, -1 * parallaxSpeed);
+	const y10 = useParallax(scrollYProgress, 0 * parallaxSpeed);
+	const y11 = useParallax(scrollYProgress, 1 * parallaxSpeed);
+	const y12 = useParallax(scrollYProgress, 2 * parallaxSpeed);
+	const y13 = useParallax(scrollYProgress, 3 * parallaxSpeed);
+	const y14 = useParallax(scrollYProgress, 4 * parallaxSpeed);
+	const y15 = useParallax(scrollYProgress, 5 * parallaxSpeed);
+	const y16 = useParallax(scrollYProgress, 6 * parallaxSpeed);
+	const y17 = useParallax(scrollYProgress, 7 * parallaxSpeed);
+	const y18 = useParallax(scrollYProgress, 8 * parallaxSpeed);
+	const y19 = useParallax(scrollYProgress, 9 * parallaxSpeed);
 	const yValues = [
 		y0,
 		y1,
