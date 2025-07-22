@@ -16,9 +16,9 @@ export default function ExpirationReminderSec() {
 					className={styles.expirationReminderSec__content__text}
 					transition={{ duration: 2.0 }}
 				>
-					<h2>Never forget to renew your certificates</h2>
+					<h2>Remind Yourself <br/> Before Someone Else Does</h2>
 					<p>
-						Customize how and when your notified - Weekly, Monthly or on your term.
+						Customize reminders your way <span className={styles.expirationReminderSec__content__text__days}>30</span>, <span className={styles.expirationReminderSec__content__text__days}>60</span>, or <span className={styles.expirationReminderSec__content__text__days}>90</span> days out - whatever your preference.
 					</p>
 					<p>
 						You can also set a reminder for a specific date, and we&apos;ll send you a notification when it&apos;s time to renew.
@@ -31,6 +31,7 @@ export default function ExpirationReminderSec() {
 					alt='Construction expiration reminder using the accoric dashcard app'
 					width={600}
 					height={600}
+					sizes="(max-width: 1200px) 500px, 500px, (max-width: 768px) 300px, 300px"
 					/>
 				</motion.div>
 			</div>
