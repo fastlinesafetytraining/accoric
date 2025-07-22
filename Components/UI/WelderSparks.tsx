@@ -1,10 +1,10 @@
-'use client';
-import React, { useEffect } from 'react'
-import styles from '@styles/pages/personalDashcard.module.scss'
-import { useAnimation, motion } from 'motion/react';
+"use client";
+import React, { useEffect } from "react";
+import styles from "@styles/pages/personalDashcard.module.scss";
+import { useAnimation, motion } from "motion/react";
 
 export default function WelderSparks() {
-    const SPARKS = 20;
+	const SPARKS = 40;
 
 	function random(min: number, max: number) {
 		return Math.random() * (max - min) + min;
@@ -37,17 +37,18 @@ export default function WelderSparks() {
 		};
 		animateSparks();
 	}, [sparkControls]);
-  return (
-    <div className={styles.welderSparks}>
-      {Array.from({ length: SPARKS }).map((_, index) => (
-						<motion.div
-							key={index}
-							className={styles.sparks}
-							custom={index}
-							initial={{ opacity: 1, x: 0, y: 0, scale: 1, rotate: 0 }}
-							animate={sparkControls}
-						/>
-					))}
-    </div>
-  )
+
+	return (
+		<div className={styles.welderSparks}>
+			{Array.from({ length: SPARKS }).map((_, index) => (
+				<motion.div
+					key={index}
+					className={styles.welderSparks__sparks}
+					custom={index}
+					initial={{ opacity: 1, x: 0, y: 0, scale: 1, rotate: 0 }}
+					animate={sparkControls}
+				/>
+			))}
+		</div>
+	);
 }
