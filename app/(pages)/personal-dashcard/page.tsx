@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function Page() {
 	return (
 		<main className={styles.personalDashcard}>
-			<div className={styles.personalDashcard__info}>
+			<div className={styles.personalDashcard__sections}>
 				<IntroSec />
 				<YourCardSec />
 				<YourCertificationSec />
