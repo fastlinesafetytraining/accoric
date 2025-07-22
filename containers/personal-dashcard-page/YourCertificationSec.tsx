@@ -13,7 +13,7 @@ export default function YourCertificationSec() {
 					</p>
 				</div>
 				<Image
-					src='/images/personal-dashcard/certification-screen.png'
+					src='/images/personal-dashcard/certification-screen.webp'
 					width={600}
 					height={600}
 					alt='your certification'
