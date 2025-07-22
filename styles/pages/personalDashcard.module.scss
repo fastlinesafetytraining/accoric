@@ -1,106 +1,108 @@
 .personalDashcard {
 	position: relative;
-	section {
-		scroll-margin-top: 100px;
-		min-height: 120vh;
-		margin: var(--spacing-xs);
-	}
-	p {
-		font-size: clamp(1rem, 1.5vw, 1.2rem);
-		font-weight: 500;
-		line-height: 1.5;
-		margin-bottom: 1rem;
-	}
-}
-
-.splineDashcardSec {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-
-.pageBackground {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	overflow: hidden;
-	pointer-events: none;
-
-	.parallax-shape {
-		transition: opacity 0.5s, transform 1.5s;
-		will-change: transform, opacity;
-		box-shadow: 0 2px 8px 0 rgba(0,0,0,0.04);
-	}
-}
-
-.personalDashcard__sidebar {
-	height: 0;
-	position: sticky;
-	bottom: 20%;
-	left: 0;
-	margin-left: 1vw;
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	max-width: 1.5rem;
-	transition: all 0.5s ease-in-out;
-	a {
-		color: #00000000;
-	}
-	&:hover {
-		max-width: 150px;
-		a {
-			color: var(--global-secondary-color);
+	&__sections {
+		section {
+			scroll-margin-top: 100px;
+			min-height: 120vh;
+			margin: var(--spacing-xs);
+		}
+		p {
+			font-size: clamp(1rem, 1.5vw, 1.2rem);
+			font-weight: 500;
+			line-height: 1.5;
+			margin-bottom: 1rem;
 		}
 	}
-
-	&__sticky {
+	&__sidebar {
+		height: 0;
 		position: sticky;
-		top: 0;
+		bottom: 20%;
 		left: 0;
+		margin-left: 1vw;
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
-		transform: translateY(-100%) scale(0.5);
+		max-width: 1.5rem;
 		transition: all 0.5s ease-in-out;
-		&:hover {
-			transform: translateY(-100%) scale(1);
+		a {
+			color: #00000000;
 		}
-		&__item {
-			font-size: clamp(0.8rem, 1vw, 0.9rem);
-			margin: var(--spacing-sm) 0;
-			background-color: var(--dashcard-side-bar-background-color);
-			backdrop-filter: blur(10px);
-			-webkit-backdrop-filter: blur(10px);
-			border: 1px solid rgba(0, 0, 0, 0.3);
-			border-radius: 1em;
-			max-height: 1.5rem;
-			padding: 0 0.5rem;
-			overflow: hidden;
-			transition: all 0.5s ease-in-out;
-			display: flex;
-			text-wrap: nowrap;	
-			&:hover {
-				background-color: color-mix(
-					in oklch,
-					var(--global-primary-color) 20%,
-					transparent
-				);
+		&:hover {
+			max-width: 150px;
+			a {
+				color: var(--global-secondary-color);
 			}
-			&__active {
-				background-color: color-mix(
-					in oklch,
-					var(--global-primary-color) 60%,
-					transparent
-				);
+		}
+
+		&__sticky {
+			position: sticky;
+			top: 0;
+			left: 0;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			transform: translateY(-100%) scale(0.5);
+			transition: all 0.5s ease-in-out;
+			&:hover {
+				transform: translateY(-100%) scale(1);
+			}
+			&__item {
+				font-size: clamp(0.8rem, 1vw, 0.9rem);
+				margin: var(--spacing-sm) 0;
+				background-color: var(--dashcard-side-bar-background-color);
+				backdrop-filter: blur(10px);
+				-webkit-backdrop-filter: blur(10px);
+				border: 1px solid rgba(0, 0, 0, 0.3);
+				border-radius: 1em;
+				max-height: 1.5rem;
+				padding: 0 0.5rem;
+				overflow: hidden;
+				transition: all 0.5s ease-in-out;
+				display: flex;
+				text-wrap: nowrap;
+				&:hover {
+					background-color: color-mix(
+						in oklch,
+						var(--global-primary-color) 20%,
+						transparent
+					);
+				}
+				&__active {
+					background-color: color-mix(
+						in oklch,
+						var(--global-primary-color) 60%,
+						transparent
+					);
+				}
 			}
 		}
 	}
+}
+
+.dotMatrixBackground {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	pointer-events: none;
+	filter: invert(1);
+}
+
+.dotMatrixGrid {
+	display: grid;
+	width: 100vw;
+	height: 100%;
+	grid-template-rows: repeat(80, 1fr);
+	grid-template-columns: repeat(10, 1fr);
+	position: absolute;
+	inset: 0;
+}
+
+.dotMatrixDot {
+	background: currentColor;
+	border-radius: 50%;
+	opacity: 0.7;
 }
 
 .introSec {
@@ -225,57 +227,12 @@
 				font-weight: 700;
 				line-height: 1.1;
 			}
-
 		}
 		&__img {
 			background-color: var(--global-secondary-color);
 			border-radius: 1em;
-			box-shadow: 0 0 10px 0 rgba(0,0,0,0.1);
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
 			filter: drop-shadow(0 0 10px #000000);
 		}
 	}
-}
-
-.dotMatrixBackground {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  pointer-events: none;
-  filter: invert(1);
-}
-
-.dotMatrixGrid {
-  display: grid;
-  width: 100vw;
-  height: 100vh;
-  grid-template-rows: repeat(20, 1fr);
-  grid-template-columns: repeat(40, 1fr);
-  position: absolute;
-  inset: 0;
-}
-
-.dotMatrixDot {
-  background: currentColor;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-
-.verticalLineGrid {
-  display: grid;
-  width: 100vw;
-  height: 100%;
-  grid-template-rows: 1fr;
-  grid-template-columns: repeat(40, 1fr);
-  position: absolute;
-  inset: 0;
-}
-
-.verticalLine {
-  background: currentColor;
-  width: 2px;
-  height: 100%;
-  justify-self: center;
-  opacity: 0.7;
 }
