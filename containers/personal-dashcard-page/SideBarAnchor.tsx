@@ -22,13 +22,13 @@ export default function SideBarAnchor() {
 		},
 		{
 			key: "4",
-			href: "#accessFromAnywhere",
-			title: "Access Anywhere",
+			href: "#reminders",
+			title: "Reminders",
 		},
 		{
 			key: "5",
-			href: "#reminders",
-			title: "Reminders",
+			href: "#accessFromAnywhere",
+			title: "Access Anywhere",
 		},
 		{
 			key: "6",
