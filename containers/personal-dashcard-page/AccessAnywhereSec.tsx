@@ -12,11 +12,6 @@ export default function AccessAnywhereSec() {
 		[0, 0.08, 0.7, 0.85],
 		[0, 1, 1, 0]
 	);
-	const opacity2 = useTransform(
-		scrollYProgress,
-		[0, 0.08, 0.7, 0.85],
-		[0, 1, 1, 0]
-	);
 	return (
 		<section ref={ref} id='accessFromAnywhere' className={styles.accessAnywhereSec}>
 			<div className={styles.accessAnywhereSec__content}>
@@ -39,8 +34,7 @@ export default function AccessAnywhereSec() {
 					</p>
 					<p>Access your certifications instantly, anywhere you go.</p>
 				</motion.div>
-				<motion.div
-					style={{ opacity: opacity2 }}
+				<div
 					className={styles.accessAnywhereSec__content__assetContainer}
 				>
 					<Image
@@ -50,7 +44,7 @@ export default function AccessAnywhereSec() {
 						alt='access anywhere'
 						sizes='(max-width: 1200px) 500px, 500px, (max-width: 768px) 300px, 300px'
 					/>
-				</motion.div>
+				</div>
 			</div>
 		</section>
 	);

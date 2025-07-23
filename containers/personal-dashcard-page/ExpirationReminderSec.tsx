@@ -12,11 +12,6 @@ export default function ExpirationReminderSec() {
 		[0, 0.08, 0.7, 0.85],
 		[0, 1, 1, 0]
 	);
-	const opacity2 = useTransform(
-		scrollYProgress,
-		[0, 0.08, 0.7, 0.85],
-		[0, 1, 1, 0]
-	);
 	return (
 		<section ref={ref} id='reminders' className={styles.expirationReminderSec}>
 			<div className={styles.expirationReminderSec__content}>
@@ -47,7 +42,7 @@ export default function ExpirationReminderSec() {
 						you a notification when it&apos;s time to renew.
 					</p>
 				</motion.div>
-				<motion.div
+				<div
 					className={styles.expirationReminderSec__content__assetContainer}
 				>
 					<Image
@@ -57,7 +52,7 @@ export default function ExpirationReminderSec() {
 						height={600}
 						sizes='(max-width: 1200px) 500px, 500px, (max-width: 768px) 300px, 300px'
 					/>
-				</motion.div>
+				</div>
 			</div>
 		</section>
 	);

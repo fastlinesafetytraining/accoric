@@ -12,12 +12,6 @@ export default function YourCertificationSec() {
 		[0, 0.08, 0.7, 0.85],
 		[0, 1, 1, 0]
 	);
-	const opacity2 = useTransform(
-		scrollYProgress,
-		[0, 0.08, 0.7, 0.85],
-		[0, 1, 1, 0]
-	);
-
 	return (
 		<section ref={ref} id='yourCertification' className={styles.yourCertificationSec}>
 			<div className={styles.yourCertificationSec__content}>
@@ -32,8 +26,7 @@ export default function YourCertificationSec() {
 						delete, and send them to anyone right from the app.
 					</p>
 				</motion.div>
-				<motion.div
-					style={{ opacity: opacity2 }}
+				<div
 					className={styles.yourCertificationSec__content__assetContainer}
 				>
 					<Image
@@ -43,7 +36,7 @@ export default function YourCertificationSec() {
 						alt='your certification'
 						sizes="(max-width: 1200px) 500px, 500px, (max-width: 768px) 300px, 300px"
 					/>
-				</motion.div>
+				</div>
 			</div>
 		</section>
 	);

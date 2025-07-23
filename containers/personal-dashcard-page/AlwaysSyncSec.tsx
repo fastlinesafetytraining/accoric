@@ -15,11 +15,6 @@ export default function AlwaysSyncSec() {
 		[0, 0.08, 0.7, 0.85],
 		[0, 1, 1, 0]
 	);
-	const opacity2 = useTransform(
-		scrollYProgress,
-		[0, 0.08, 0.7, 0.85],
-		[0, 1, 1, 0]
-	);
 
 	return (
 		<section ref={ref} id='alwaysSync' className={styles.alwaysSyncSec}>
@@ -34,8 +29,7 @@ export default function AlwaysSyncSec() {
 						certificate, it will be linked to your card in realtime.
 					</p>
 				</motion.div>
-				<motion.div
-					style={{ opacity: opacity2 }}
+				<div
 					className={styles.alwaysSyncSec__content__assetContainer}
 				>
 					<Image
@@ -45,7 +39,7 @@ export default function AlwaysSyncSec() {
 						alt='always sync'
 						sizes='(max-width: 1200px) 500px, 500px, (max-width: 768px) 300px, 300px'
 					/>
-				</motion.div>
+				</div>
 			</div>
 		</section>
 	);

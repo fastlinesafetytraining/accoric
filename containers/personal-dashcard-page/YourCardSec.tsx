@@ -15,11 +15,6 @@ export default function YourCardSec() {
 		[0, 0.08, 0.7, 0.85],
 		[0, 1, 1, 0]
 	);
-	const opacity2 = useTransform(
-		scrollYProgress,
-		[0, 0.08, 0.7, 0.85],
-		[0, 1, 1, 0]
-	);
 
 	return (
 		<section ref={ref} id='yourCard' className={styles.yourCardSec}>
@@ -44,8 +39,7 @@ export default function YourCardSec() {
 						training certifications with anyone, anywhere.
 					</p>
 				</motion.div>
-				<motion.div
-					style={{ opacity: opacity2 }}
+				<div
 					className={styles.yourCardSec__content__assetContainer}
 				>
 					<Image
@@ -53,8 +47,9 @@ export default function YourCardSec() {
 						width={600}
 						height={600}
 						alt='your card'
+						sizes='(max-width: 1200px) 500px, 500px, (max-width: 768px) 300px, 300px'
 					/>
-				</motion.div>
+				</div>
 			</div>
 		</section>
 	);
