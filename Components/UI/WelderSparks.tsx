@@ -4,7 +4,7 @@ import styles from "@styles/pages/personalDashcard.module.scss";
 import { useAnimation, motion } from "motion/react";
 
 export default function WelderSparks() {
-	const SPARKS = 40;
+	const SPARKS = 80;
 
 	function random(min: number, max: number) {
 		return Math.random() * (max - min) + min;
@@ -17,8 +17,8 @@ export default function WelderSparks() {
 			while (true) {
 				await sparkControls.start(() => {
 					const angle = random(180, 270);
-					const distance = random(60, 200);
-					const duration = random(0.4, 1.2);
+					const distance = random(60, 1000);
+					const duration = random(0.4, 1.5);
 					const delay = random(0, 0.5);
 					const radians = (angle * Math.PI) / 180;
 					const x = Math.cos(radians) * distance;
