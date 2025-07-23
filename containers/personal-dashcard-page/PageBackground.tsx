@@ -10,7 +10,7 @@ export default function PageBackground() {
 	const numCols = 10;
 	const dotSize = 5;
 
-	const parallaxSpeed = -10;
+	const parallaxSpeed = -20;
 
 	// Parallax setup
 	const { scrollYProgress } = useScroll();
@@ -27,37 +27,7 @@ export default function PageBackground() {
 	const y8 = useParallax(scrollYProgress, -2 * parallaxSpeed);
 	const y9 = useParallax(scrollYProgress, -1 * parallaxSpeed);
 	const y10 = useParallax(scrollYProgress, 0 * parallaxSpeed);
-	const y11 = useParallax(scrollYProgress, 1 * parallaxSpeed);
-	const y12 = useParallax(scrollYProgress, 2 * parallaxSpeed);
-	const y13 = useParallax(scrollYProgress, 3 * parallaxSpeed);
-	const y14 = useParallax(scrollYProgress, 4 * parallaxSpeed);
-	const y15 = useParallax(scrollYProgress, 5 * parallaxSpeed);
-	const y16 = useParallax(scrollYProgress, 6 * parallaxSpeed);
-	const y17 = useParallax(scrollYProgress, 7 * parallaxSpeed);
-	const y18 = useParallax(scrollYProgress, 8 * parallaxSpeed);
-	const y19 = useParallax(scrollYProgress, 9 * parallaxSpeed);
-	const yValues = [
-		y0,
-		y1,
-		y2,
-		y3,
-		y4,
-		y5,
-		y6,
-		y7,
-		y8,
-		y9,
-		y10,
-		y11,
-		y12,
-		y13,
-		y14,
-		y15,
-		y16,
-		y17,
-		y18,
-		y19,
-	];
+	const yValues = useMemo(() => [y0, y1, y2, y3, y4, y5, y6, y7, y8, y9, y10], [y0, y1, y2, y3, y4, y5, y6, y7, y8, y9, y10]);
 
 	// Generate the dot matrix as a memoized array
 	const dots = useMemo(() => {
