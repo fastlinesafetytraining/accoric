@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
+import { LuBell } from "react-icons/lu";
 import { motion, useScroll, useTransform } from "motion/react";
 import styles from "@styles/pages/personalDashcard.module.scss";
 
@@ -12,6 +13,11 @@ export default function ExpirationReminderSec() {
 		[0, 0.08, 0.7, 0.85],
 		[0, 1, 1, 0]
 	);
+	const opacity2 = useTransform(
+		scrollYProgress,
+		[0, 0.08, 0.7, 0.85],
+		[0, 1, 1, 0.5]
+	);
 	return (
 		<section ref={ref} id='reminders' className={styles.expirationReminderSec}>
 			<div className={styles.expirationReminderSec__content}>
@@ -22,8 +28,12 @@ export default function ExpirationReminderSec() {
 					<h2>
 						Remind Yourself <br /> Before Someone Else Does
 					</h2>
+					<h3>
+						<LuBell />
+						Customize reminders your way.
+					</h3>
 					<p>
-						Customize reminders your way{" "}
+						Whether it&apos;s{" "}
 						<span className={styles.expirationReminderSec__content__text__days}>
 							30
 						</span>
@@ -35,14 +45,15 @@ export default function ExpirationReminderSec() {
 						<span className={styles.expirationReminderSec__content__text__days}>
 							90
 						</span>{" "}
-						days out - whatever your preference.
+						days out, or whatever your preference.
 					</p>
 					<p>
 						You can also set a reminder for a specific date, and we&apos;ll send
 						you a notification when it&apos;s time to renew.
 					</p>
 				</motion.div>
-				<div
+				<motion.div
+					style={{ opacity: opacity2 }}
 					className={styles.expirationReminderSec__content__assetContainer}
 				>
 					<Image
@@ -52,7 +63,7 @@ export default function ExpirationReminderSec() {
 						height={600}
 						sizes='(max-width: 1200px) 500px, 500px, (max-width: 768px) 300px, 300px'
 					/>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);

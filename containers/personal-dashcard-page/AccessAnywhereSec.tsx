@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "motion/react";
+import { LuShieldCheck } from "react-icons/lu";
 import styles from "@styles/pages/personalDashcard.module.scss";
 
 export default function AccessAnywhereSec() {
@@ -11,6 +12,11 @@ export default function AccessAnywhereSec() {
 		scrollYProgress,
 		[0, 0.08, 0.7, 0.85],
 		[0, 1, 1, 0]
+	);
+	const opacity2 = useTransform(
+		scrollYProgress,
+		[0, 0.02, 0.6, 0.85],
+		[0, 1, 1, 0.5]
 	);
 	return (
 		<section ref={ref} id='accessFromAnywhere' className={styles.accessAnywhereSec}>
@@ -23,18 +29,22 @@ export default function AccessAnywhereSec() {
 						When you need them,
 						<br /> they&apos;ll be there.
 					</h2>
+					<h3>
+						<LuShieldCheck />
+						Your commitment demands protection.
+					</h3>
 					<p>
-						You work too hard to be caught off guard. With instant access to
-						every certification, the Personal DashCard helps you stay ready and
-						respected, whenever you have to prove you&apos;re certified.
+						With instant access to
+						every certification. The Personal DashCard helps you stay ready and
+						respected.
 					</p>
 					<p>
 						With a simple tap of your card, you can access your certifications
 						instantly, anywhere you go.
 					</p>
-					<p>Access your certifications instantly, anywhere you go.</p>
 				</motion.div>
-				<div
+				<motion.div
+					style={{ opacity: opacity2 }}
 					className={styles.accessAnywhereSec__content__assetContainer}
 				>
 					<Image
@@ -44,7 +54,7 @@ export default function AccessAnywhereSec() {
 						alt='access anywhere'
 						sizes='(max-width: 1200px) 500px, 500px, (max-width: 768px) 300px, 300px'
 					/>
-				</div>
+				</motion.div>
 			</div>
 		</section>
 	);
