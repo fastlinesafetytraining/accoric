@@ -57,11 +57,7 @@ export default function PrivacyPolicyPage() {
 		{
 			href: "#how-can-you-contact-us-about-this-policy",
 			label: "How can you contact us about this policy?",
-		},
-		{
-			href: "#sms-and-email-communication",
-			label: "SMS and Email Communication",
-		},
+		}
 	];
 
 	return (
@@ -683,46 +679,6 @@ export default function PrivacyPolicyPage() {
 							systems.
 						</p>
 					</div>
-				</div>
-				<div
-					id='sms-and-email-communication'
-					className={styles.policyContentSection}
-				>
-					<h2>SMS and Email Communication</h2>
-					<p>
-						By using the Accoric Personal DashCard platform, you agree that we
-						may send you SMS (text) messages and emails related to your account
-						activity. These communications may include:
-					</p>
-					<ul>
-						<li>
-							<span>One-time passcode (OTP) for login and authentication</span>
-						</li>
-						<li>
-							<span>Notifications regarding certification expiration dates and
-							renewals</span>
-						</li>
-						<li>
-							<span>Service-related updates or feature alerts</span>
-						</li>
-					</ul>
-					<p>
-						You may manage your preferences for non-essential notifications
-						(such as reminders) within the app settings. Some messages—such as
-						account verification codes—are considered essential and cannot be
-						opted out of while maintaining an active account.
-					</p>
-					<p>
-						Standard messaging and data rates may apply. You are responsible for
-						any charges imposed by your carrier for receiving these
-						communications.
-					</p>
-
-					<p>
-						You agree to provide accurate contact information and to update it
-						as necessary to ensure uninterrupted delivery of services tied to
-						your account.
-					</p>
 				</div>
 
 				<div
