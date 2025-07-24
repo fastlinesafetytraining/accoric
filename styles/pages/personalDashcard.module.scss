@@ -17,7 +17,7 @@
 		position: sticky;
 		bottom: 20%;
 		left: 0;
-		margin-left: 1vw;
+		margin-left: 1.5vw;
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
@@ -130,17 +130,21 @@
 				align-items: center;
 			}
 			h1 {
-				font-size: clamp(2rem, 9vw, 20vw);
+				font-size: clamp(2rem, 8.5vw, 10vw);
 				line-height: 0.8;
 				font-weight: 700;
 				text-align: left;
 				letter-spacing: -0.05em;
 				padding-top: 10vh;
+				margin-bottom: 5vh;
+				color: var(--global-secondary-color);
 				span {
+					font-style: italic;
+					filter: drop-shadow(-0.4vw 0.4vw 0 var(--heading-highlight-text-shadow));
 					background: linear-gradient(
 						45deg,
-						var(--global-primary-color) 60%,
-						var(--global-secondary-color)
+						var(--global-primary-color),
+						var(--global-tertiary-color)
 					);
 					background-clip: text;
 					-webkit-text-fill-color: transparent;
@@ -155,9 +159,8 @@
 			min-height: 500px;
 			&__img {
 				position: relative;
-				z-index: 3;
+				z-index: 4;
 				border-radius: 30%;
-				filter: drop-shadow(0 0 10px rgb(255, 255, 255));
 			}
 			&__imgBackground {
 				position: absolute;
@@ -175,7 +178,7 @@
 	position: absolute;
 	bottom: 25%;
 	left: 18%;
-	z-index: 4;
+	z-index: 3;
 	&__sparks {
 		right: 34%;
 		bottom: 23%;
@@ -251,3 +254,31 @@
 	}
 }
 
+.pricingSec {
+	&__content {
+		max-width: 1400px;
+		margin: 0 auto;
+		padding: var(--spacing-md);
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		h2 {
+			font-size: clamp(2rem, 3vw, 4.2rem);
+			font-weight: 700;
+			line-height: 1.1;
+		}
+		&__cards {
+			display: flex;
+			align-items: center;
+			border-radius: 1em;
+			background-color: var(--global-secondary-color);
+			color: var(--fixed-white);
+			div {
+				padding: var(--spacing-md);
+				h3 {
+					font-size: clamp(1rem, 1.5vw, 1.2rem);
+				}
+			}
+		}
+	}
+}
