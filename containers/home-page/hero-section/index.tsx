@@ -15,7 +15,7 @@ export default function index() {
 						<span className={styles.heroTitle__highlight}>CERTIFICATES </span>
 						<br />
 						<span className={styles.heroTitle__last}>
-							Stored Into One Location
+							Stored in One Location
 						</span>
 					</h1>
 					<div className={styles.heroButtons}>
