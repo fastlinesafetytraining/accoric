@@ -9,7 +9,7 @@ export const navMenuItems = [
   },
   {
     key: "2",
-    label: "Personal DashCard",
+    label: "Personal DASHcard™",
     href: "/personal-dashcard",
   },
   {
