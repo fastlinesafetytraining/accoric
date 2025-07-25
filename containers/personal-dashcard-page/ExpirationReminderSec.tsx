@@ -25,31 +25,30 @@ export default function ExpirationReminderSec() {
 					style={{ opacity }}
 					className={styles.expirationReminderSec__content__text}
 				>
-					<h2>
+					<h2 className={styles.expirationReminderSec__content__text__heading}>
 						Remind Yourself <br /> Before Someone Else Does
 					</h2>
-					<h3>
+					<h3 className={styles.expirationReminderSec__content__text__subHeading}>
 						<LuBell />
 						Customize reminders your way.
 					</h3>
 					<p>
 						Whether it&apos;s{" "}
-						<span className={styles.expirationReminderSec__content__text__days}>
+						<span className={styles.expirationReminderSec__content__text__highlight}>
 							30
 						</span>
 						,{" "}
-						<span className={styles.expirationReminderSec__content__text__days}>
+						<span className={styles.expirationReminderSec__content__text__highlight}>
 							60
 						</span>
 						, or{" "}
-						<span className={styles.expirationReminderSec__content__text__days}>
+						<span className={styles.expirationReminderSec__content__text__highlight}>
 							90
 						</span>{" "}
 						days out, or whatever your preference.
 					</p>
 					<p>
-						You can also set a reminder for a specific date, and we&apos;ll send
-						you a notification when it&apos;s time to renew.
+						In a fast-paced industry, you can&apos;t afford to be pulled off a job and lose income. Customized reminders let you know when it&apos;s time to renew.
 					</p>
 				</motion.div>
 				<motion.div

@@ -29,18 +29,16 @@ export default function YourCardSec() {
 					className={styles.yourCardSec__content__text}
 					style={{ opacity }}
 				>
-					<h2>Your Personal Dashcard™</h2>
-					<h3>
+					<h2 className={styles.yourCardSec__content__text__heading}>Your Personal DASHcard™</h2>
+					<h3 className={styles.yourCardSec__content__text__subHeading}>
 						<IoIdCard />
-						The household tool in total in certification management.
+						Your household tool in total in certification management.
 					</h3>
 					<p>
-						For the first time, this is a tool that&apos;s built for you and
-						owned by you.{" "}
+						For the first time, you have a tool that&apos;s built for you, owned by you, and controlled by you.
 					</p>
 					<p>
-						With NFC and QR technology, you can easily scan and share your
-						training certifications with anyone, anywhere.
+						Built with technology that lets you scan, view, and share your training certifications with anyone, anywhere, anytime.
 					</p>
 				</motion.div>
 				<motion.div

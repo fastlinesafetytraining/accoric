@@ -4,7 +4,7 @@ import styles from "@styles/pages/personalDashcard.module.scss";
 import { useAnimation, motion } from "motion/react";
 
 export default function WelderSparks() {
-	const SPARKS = 80;
+	const SPARKS = 100;
 
 	function random(min: number, max: number) {
 		return Math.random() * (max - min) + min;

@@ -29,16 +29,16 @@ export default function AlwaysSyncSec() {
 					style={{ opacity }}
 					className={styles.alwaysSyncSec__content__text}
 				>
-					<h2>Reliable and Reassuring</h2>
-					<h3>
+					<h2 className={styles.alwaysSyncSec__content__text__heading}>Reliable and Reassuring</h2>
+					<h3 className={styles.alwaysSyncSec__content__text__subHeading}>
 						<TbAlertHexagonOff />
 						No more second guessing.
 					</h3>
 					<p>
-						Your Personal DashCard stays updated in real time as soon as you upload a new certification to the app, its instantly reflected on your physical card.
+						Your Personal DASHcard™ updates in real time as soon as you upload a new certification to the app, it&apos;s instantly reflected on your physical card.
 					</p>
 					<p>
-						You&apos;ll always have the most accurate, verified version of your credentials. We&apos;re protecting what keeps you working — and you work for.
+						For your Personal DASHcard™ updates in realtime. Upload a certification on the app, and it&apos;s instantly reflected on your personal DASHcard™.
 					</p>
 				</motion.div>
 				<motion.div
@@ -46,7 +46,7 @@ export default function AlwaysSyncSec() {
 					className={styles.alwaysSyncSec__content__assetContainer}
 				>
 					<Image
-						src='/images/personal-dashcard/your-personal-dashcard.webp'
+						src='/images/personal-dashcard/reliable.webp'
 						width={600}
 						height={600}
 						alt='always sync'

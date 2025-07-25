@@ -1,6 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import Image from "next/image";
+import { FlipText } from "@/Components/UI";
 import { motion, useScroll, useTransform } from "motion/react";
 import { LuShieldCheck } from "react-icons/lu";
 import styles from "@styles/pages/personalDashcard.module.scss";
@@ -25,17 +26,17 @@ export default function AccessAnywhereSec() {
 					style={{ opacity }}
 					className={styles.accessAnywhereSec__content__text}
 				>
-					<h2>
+					<h2 className={styles.accessAnywhereSec__content__text__heading}>
 						When you need them,
 						<br /> they&apos;ll be there.
 					</h2>
-					<h3>
+					<h3 className={styles.accessAnywhereSec__content__text__subHeading}>
 						<LuShieldCheck />
-						Your commitment demands protection.
+						Your commitment demands <FlipText text={['protection', 'management', 'verification', 'communication']} />.
 					</h3>
 					<p>
 						With instant access to
-						every certification. The Personal DashCard helps you stay ready and
+						every certification. The Personal DASHcard™ helps you stay ready and
 						respected.
 					</p>
 					<p>
@@ -48,7 +49,7 @@ export default function AccessAnywhereSec() {
 					className={styles.accessAnywhereSec__content__assetContainer}
 				>
 					<Image
-						src='/images/checking-current-certifications.webp'
+						src='/images/personal-dashcard/access-anywhere.webp'
 						width={600}
 						height={600}
 						alt='access anywhere'

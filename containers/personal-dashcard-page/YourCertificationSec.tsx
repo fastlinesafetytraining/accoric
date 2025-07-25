@@ -25,18 +25,17 @@ export default function YourCertificationSec() {
 					style={{ opacity }}
 					className={styles.yourCertificationSec__content__text}
 				>
-					<h2>Proof on Demand</h2>
-					<h3>
+					<h2 className={styles.yourCertificationSec__content__text__heading}>Proof on Demand</h2>
+					<h3 className={styles.yourCertificationSec__content__text__subHeading}>
 						<PiCertificateDuotone />
-						Your certification&apos;s in check.
+						Your certifications in check.
 					</h3>
 					<p>
 						All stored
-						digitally in the app, always ready when you need them. <br /> View,
-						delete, and send them to anyone right from the app.
+						digitally, always ready when you need them. <br /> View, delete, and send them to anyone right from the app.
 					</p>
 					<p>
-						Whether you&apos;re getting on a job site or switching your companies, your certifications are ready to go. The Personal DashCard makes it effortless to stay covered and stay working.
+						Whether you&apos;re on the job site or switching companies, your certifications are ready to go. The Personal DASHcard™ makes it effortless to stay covered and stay working.
 					</p>
 				</motion.div>
 				<motion.div
