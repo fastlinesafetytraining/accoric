@@ -3,13 +3,18 @@ import React, { Suspense } from "react";
 import { ReactLenis } from "lenis/react";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
-import { Open_Sans } from "next/font/google";
+import { Open_Sans, Anton } from "next/font/google";
 import { Header, Footer } from "@components/UI";
 import type { Metadata, Viewport } from "next";
 import Provider from "./provider";
 import "@styles/globals.css";
 
 const openSans = Open_Sans({ subsets: ["latin"] });
+const anton = Anton({ 
+	weight: "400",
+	subsets: ["latin"],
+	variable: "--font-anton"
+});
 
 export const viewport: Viewport = {
 	width: "device-width",
@@ -52,7 +57,7 @@ export default function RootLayout({
 	return (
 		<ReactLenis root options={lenisOptions}>
 			<html lang='en'>
-				<body className={openSans.className}>
+				<body className={`${openSans.className} ${anton.variable}`}>
 					<Provider>
 						<Suspense fallback={null}>
 							<Header />
