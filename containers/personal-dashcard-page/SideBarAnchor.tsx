@@ -37,8 +37,13 @@ export default function SideBarAnchor() {
 		},
 		{
 			key: "7",
-			href: "#register",
-			title: "Register",
+			href: "#pricing",
+			title: "Pricing",
+		},
+		{
+			key: "8",
+			href: "#download",
+			title: "Download",
 		},
 	], []);
 

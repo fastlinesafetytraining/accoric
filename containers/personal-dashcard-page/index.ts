@@ -7,5 +7,6 @@ export { default as YourCertificationSec } from "./YourCertificationSec";
 export { default as AccessAnywhereSec } from "./AccessAnywhereSec";
 export { default as AlwaysSyncSec } from "./AlwaysSyncSec";
 export { default as ExpirationReminderSec } from "./ExpirationReminderSec";
-export { default as CallToAction } from "./CallToAction";
+export { default as CallToActionSec } from "./CallToActionSec";
 export { default as FAQSec } from "./FAQSec";
+export { default as PricingSec } from "./PricingSec";
