@@ -56,8 +56,9 @@
 	--box-shadow-color: oklch(0.3382 0.1582 271.28 / 22%);
 
 	/*Accoric Dashcard Colors*/
+	--dashcard-title-color: oklch(0.2 0.13 272);
 	--dashcard-side-bar-background-color: oklch(1 0 none / 0.5);
-	--dashcard-hero-spark-color: lch(77.75% 38.13 244.29);
+	--dashcard-hero-spark-color: lch(77.24% 82.42 76.86);
 }
 
 /* Dark Theme Colors */
@@ -118,6 +119,7 @@
 	--box-shadow-color: oklch(0.65 0.06 280 / 0.22);
 
 	/*Accoric Dashcard Colors*/
+	--dashcard-title-color: oklch(0.9 0 0);
 	--dashcard-side-bar-background-color: oklch(1 0 none);
 	--dashcard-hero-spark-color: lch(90.81% 20.2 224.42);
 } 
