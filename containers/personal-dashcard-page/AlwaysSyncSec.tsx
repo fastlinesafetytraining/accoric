@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef } from "react";
-import Image from "next/image";
+import { SplineScene } from "@/Components/UI";
 import { TbAlertHexagonOff } from "react-icons/tb";
 import { motion, useScroll, useTransform } from "motion/react";
 import styles from "@styles/pages/personalDashcard.module.scss";
@@ -9,7 +9,7 @@ export default function AlwaysSyncSec() {
 	const ref = useRef<HTMLDivElement>(null);
 	const { scrollYProgress } = useScroll({
 		target: ref,
-		offset: ["start 40%", "end 80%"],
+		offset: ["start 60%", "end 80%"],
 	});
 	const opacity = useTransform(
 		scrollYProgress,
@@ -38,20 +38,14 @@ export default function AlwaysSyncSec() {
 						Your Personal DASHcard™ updates in real time as soon as you upload a new certification to the app, it&apos;s instantly reflected on your physical card.
 					</p>
 					<p>
-						For your Personal DASHcard™ updates in realtime. Upload a certification on the app, and it&apos;s instantly reflected on your personal DASHcard™.
+						Your Personal DASHcard™ updates in realtime. Upload a certification on the app, and it&apos;s instantly reflected when you scan your card.
 					</p>
 				</motion.div>
 				<motion.div
 					style={{ opacity: opacity2 }}
 					className={styles.alwaysSyncSec__content__assetContainer}
 				>
-					<Image
-						src='/images/personal-dashcard/reliable.webp'
-						width={600}
-						height={600}
-						alt='always sync'
-						sizes='(max-width: 1200px) 500px, 500px, (max-width: 768px) 300px, 300px'
-					/>
+					<SplineScene sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_5 as string} alt='always sync' fallbackImage='/Images/personal-dashcard/reliable.webp' width={600} height={600} />
 				</motion.div>
 			</div>
 		</section>

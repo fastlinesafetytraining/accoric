@@ -1,13 +1,13 @@
 "use client";
 import React, { useRef } from "react";
-import Image from "next/image";
+import { SplineScene } from "@/Components/UI";
 import { LuBell } from "react-icons/lu";
 import { motion, useScroll, useTransform } from "motion/react";
 import styles from "@styles/pages/personalDashcard.module.scss";
 
 export default function ExpirationReminderSec() {
 	const ref = useRef<HTMLDivElement>(null);
-	const { scrollYProgress } = useScroll({ target: ref, offset: ["start 40%", "end 80%"] });
+	const { scrollYProgress } = useScroll({ target: ref, offset: ["start 60%", "end 80%"] });
 	const opacity = useTransform(
 		scrollYProgress,
 		[0, 0.08, 0.7, 0.85],
@@ -55,13 +55,7 @@ export default function ExpirationReminderSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.expirationReminderSec__content__assetContainer}
 				>
-					<Image
-						src='/images/personal-dashcard/reminder-screen.webp'
-						alt='Construction expiration reminder using the accoric dashcard app'
-						width={600}
-						height={600}
-						sizes='(max-width: 1200px) 500px, 500px, (max-width: 768px) 300px, 300px'
-					/>
+					<SplineScene sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_3 as string} alt='Construction expiration reminder using the accoric dashcard app' fallbackImage='/Images/personal-dashcard/reminder-screen.webp' width={600} height={600} />
 				</motion.div>
 			</div>
 		</section>
