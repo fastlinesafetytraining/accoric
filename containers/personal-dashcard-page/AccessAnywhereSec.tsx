@@ -31,7 +31,7 @@ export default function AccessAnywhereSec() {
 					</h2>
 					<h3 className={styles.accessAnywhereSec__content__text__subHeading}>
 						<LuShieldCheck />
-						Your commitment demands <FlipText text={['protection', 'management', 'verification', 'communication']} delay={2000} />
+						Your commitment demands <FlipText texts={['protection', 'management', 'verification', 'communication']} />
 					</h3>
 					<p>
 						With instant access to
