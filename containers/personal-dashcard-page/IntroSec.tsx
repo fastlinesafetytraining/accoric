@@ -1,38 +1,20 @@
 "use client";
-import React, { useRef } from "react";
-import Image from "next/image";
-import { motion, useScroll, useTransform } from "motion/react";
+import React from "react";
+import { SplineScene } from "@/Components/UI";
 import styles from "@styles/pages/personalDashcard.module.scss";
 import SiteButton from "@/Components/UI/SiteButton";
-import WelderSparks from "@/Components/UI/WelderSparks";
 
 export default function IntroSec() {
-	const ref = useRef<HTMLDivElement>(null);
-	const { scrollYProgress } = useScroll({
-		target: ref,
-		offset: ["start 0%", "end 80%"],
-	});
-
 	return (
-		<section ref={ref} id='introduction' className={styles.introSec}>
+		<section id='introduction' className={styles.introSec}>
 			<div className={styles.introSec__content}>
-				<motion.div
-					initial={{ opacity: 0, x: -100 }}
-					animate={{ opacity: 1, x: 0 }}
-					transition={{ duration: 0.5 }}
-					className={styles.introSec__content__text}
-				>
-					<motion.h1
-						initial={{ opacity: 0, x: -100 }}
-						animate={{ opacity: 1, x: 0 }}
-						transition={{ duration: 0.5, staggerChildren: 0.5 }}
-						exit={{ opacity: 0, y: 100 }}
-					>
+				<div className={styles.introSec__content__text}>
+					<h1>
 						You
 						<br /> <span>Provide.</span>
 						<br /> We
 						<br /> <span>Protect.</span>
-					</motion.h1>
+					</h1>
 					<p>
 						With NYC&apos;s first personal certification tracker,
 						<br /> we&apos;re protecting what lets you work — and what you work
@@ -43,22 +25,14 @@ export default function IntroSec() {
 							Sign Up
 						</SiteButton>
 					</div>
-				</motion.div>
+				</div>
 				<div className={styles.introSec__content__assetContainer}>
-					<Image
-						className={styles.introSec__content__assetContainer__img}
-						src='/Images/personal-dashcard/welder-image.webp'
-						alt='welder-image'
-						width={700}
-						height={700}
-					/>
-					<WelderSparks />
-					<Image
-						className={styles.introSec__content__assetContainer__imgBackground}
-						src='/Images/personal-dashcard/welding-background.webp'
-						alt='welder-image'
-						width={700}
-						height={700}
+					<SplineScene
+						sceneId='https://prod.spline.design/9vosgMmaV6tS5Vqv/scene.splinecode'
+						alt='Construction worker holding a child with arms looking at the construction site background'
+						fallbackImage='/Images/personal-dashcard/hero-image.png'
+						width={600}
+						height={600}
 					/>
 				</div>
 			</div>
