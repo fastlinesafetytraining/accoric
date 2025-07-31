@@ -28,7 +28,7 @@ export default function IntroSec() {
 				</div>
 				<div className={styles.introSec__content__assetContainer}>
 					<SplineScene
-						sceneId='https://prod.spline.design/9vosgMmaV6tS5Vqv/scene.splinecode'
+						sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_HERO as string}
 						alt='Construction worker holding a child with arms looking at the construction site background'
 						fallbackImage='/Images/personal-dashcard/hero-image.png'
 						width={600}
