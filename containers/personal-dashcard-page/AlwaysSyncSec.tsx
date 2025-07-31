@@ -38,7 +38,7 @@ export default function AlwaysSyncSec() {
 						Your Personal DASHcard™ updates in real time as soon as you upload a new certification to the app, it&apos;s instantly reflected on your physical card.
 					</p>
 					<p>
-						Your Personal DASHcard™ updates in realtime. Upload a certification on the app, and it&apos;s instantly reflected when you scan your card.
+						Upload a certification on the app, and it&apos;s instantly reflected when you scan your card.
 					</p>
 				</motion.div>
 				<motion.div

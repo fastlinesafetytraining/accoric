@@ -12,8 +12,8 @@ export default function CallToActionSec() {
         </h2>
         <Divider size="small" />
         <p className={styles.callToActionSec__content__paragraph}>
-          Download the Accoric DASHcard app now to get started. Sign in with your Accoric account and start using your DASHcard.
-          Available on the App Store and Google Play.<br/>
+          Download the Accoric Personal DASHcard app now to get started. <br />
+          Available on the App Store and Google Play.
         </p>
         <span className={styles.callToActionSec__content__paragraph__note}>
           (Click the image below to be redirected to the App Store or Google Play)

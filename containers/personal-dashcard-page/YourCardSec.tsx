@@ -35,7 +35,7 @@ export default function YourCardSec() {
 						Your universal tool in total certification management.
 					</h3>
 					<p>
-						For the first time, you have a tool that&apos;s built for you, owned by you, and controlled by you.
+						For the first time, you have a tool that&apos;s <span className={styles.yourCardSec__content__text__highlight}>built</span> for you, <span className={styles.yourCardSec__content__text__highlight}>owned</span> by you, and <span className={styles.yourCardSec__content__text__highlight}>controlled</span> by you.
 					</p>
 					<p>
 						Built with technology that lets you scan, view, and share your training certifications with anyone, anywhere, anytime.
