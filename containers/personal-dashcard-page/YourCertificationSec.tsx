@@ -47,7 +47,7 @@ export default function YourCertificationSec() {
 					</p>
 					<p>
 						Store any type of certification, regardless of anywhere
-						it&apos;s from. This is a universal certification tracking tool. If you&apos;ve got a certification, you can track it.
+						it&apos;s from. This is a universal certification tracking tool. <span className={styles.yourCertificationSec__content__text__highlight}>If you&apos;ve got a certification, you can track it.</span>
 					</p>
 					<p>
 						Whether you&apos;re on the job site or switching companies, your
