@@ -40,7 +40,7 @@
     }
     h1 {
       font-weight: 900;
-      color: var(--global-secondary-color);
+      color: var(--heading-color);
       line-height: clamp(2.5rem, 5vw, 5rem);
       padding: 0 1rem;
       @media (max-width: 767px) {

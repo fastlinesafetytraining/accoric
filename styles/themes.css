@@ -21,6 +21,7 @@
 
 	/* Typography Colors */
 	/* Heading Colors */
+	--heading-color: oklch(0.2 0.13 272);
 	--heading-h1-color: oklch(0.2 0.13 272);
 	--heading-h2-color: oklch(0.2 0.13 272);
 	--heading-h3-color: oklch(0.2 0 0);
@@ -87,6 +88,7 @@
 
 	/* Typography Colors */
 	/* Heading Colors */
+	--heading-color: oklch(0.9 0 0);
 	--heading-h1-color: oklch(0.9 0 0);
 	--heading-h2-color: oklch(0.9 0 0);
 	--heading-h3-color: oklch(0.9 0 0);
