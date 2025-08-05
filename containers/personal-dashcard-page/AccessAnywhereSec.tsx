@@ -47,7 +47,7 @@ export default function AccessAnywhereSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.accessAnywhereSec__content__assetContainer}
 				>
-					<SplineScene sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_4 as string} alt='access anywhere' fallbackImage='/Images/personal-dashcard/access-anywhere.webp' width={600} height={600} />
+					<SplineScene className={styles.accessAnywhereSec__content__assetContainer__spline} sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_4 as string} alt='access anywhere' fallbackImage='/Images/personal-dashcard/access-anywhere.webp' width={600} height={600} />
 				</motion.div>
 			</div>
 		</section>

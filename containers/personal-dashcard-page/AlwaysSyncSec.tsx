@@ -45,7 +45,7 @@ export default function AlwaysSyncSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.alwaysSyncSec__content__assetContainer}
 				>
-					<SplineScene sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_5 as string} alt='always sync' fallbackImage='/Images/personal-dashcard/reliable.webp' width={600} height={600} />
+					<SplineScene className={styles.alwaysSyncSec__content__assetContainer__spline} sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_5 as string} alt='always sync' fallbackImage='/Images/personal-dashcard/reliable.webp' width={600} height={600} />
 				</motion.div>
 			</div>
 		</section>

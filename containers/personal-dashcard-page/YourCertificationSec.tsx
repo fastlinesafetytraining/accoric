@@ -60,6 +60,7 @@ export default function YourCertificationSec() {
 					className={styles.yourCertificationSec__content__assetContainer}
 				>
 					<SplineScene
+						className={styles.yourCertificationSec__content__assetContainer__spline}
 						sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_2 as string}
 						alt='your certifications stored digitally always ready when you need them'
 						fallbackImage='/Images/personal-dashcard/certification-screen.webp'

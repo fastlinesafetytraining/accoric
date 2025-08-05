@@ -28,6 +28,7 @@ export default function IntroSec() {
 				</div>
 				<div className={styles.introSec__content__assetContainer}>
 					<SplineScene
+						className={styles.introSec__content__assetContainer__spline}
 						sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_HERO as string}
 						alt='Construction worker holding a child with arms looking at the construction site background'
 						fallbackImage='/Images/personal-dashcard/hero-image.png'

@@ -45,7 +45,7 @@ export default function YourCardSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.yourCardSec__content__assetContainer}
 				>
-					<SplineScene sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_1 as string} fallbackImage="/Images/personal-dashcard/your-personal-dashcard.webp" alt="Your Personal DASHcard with your Information ready to go anytime" width={600} height={600} />
+					<SplineScene className={styles.yourCardSec__content__assetContainer__spline} sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_1 as string} fallbackImage="/Images/personal-dashcard/your-personal-dashcard.webp" alt="Your Personal DASHcard with your Information ready to go anytime" width={600} height={600} />
 				</motion.div>
 			</div>
 		</section>

@@ -55,7 +55,7 @@ export default function ExpirationReminderSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.expirationReminderSec__content__assetContainer}
 				>
-					<SplineScene sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_3 as string} alt='Construction expiration reminder using the accoric dashcard app' fallbackImage='/Images/personal-dashcard/reminder-screen.webp' width={600} height={600} />
+					<SplineScene className={styles.expirationReminderSec__content__assetContainer__spline} sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_3 as string} alt='Construction expiration reminder using the accoric dashcard app' fallbackImage='/Images/personal-dashcard/reminder-screen.webp' width={600} height={600} />
 				</motion.div>
 			</div>
 		</section>
