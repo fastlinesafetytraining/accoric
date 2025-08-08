@@ -36,7 +36,7 @@ export default function PricingSec() {
 							<li>Cancel Subscription Anytime</li>
 						</ul>
 						<SiteButton
-							href='/personal-dashcard'
+							href='/sign-up/personal-dashcard'
 							title='Sign Up'
 							type='primary'
 						>
