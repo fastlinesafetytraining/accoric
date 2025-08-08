@@ -1,0 +1,46 @@
+.signUpPage {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    box-sizing: border-box;
+    gap: 1.25em;
+    margin-top: 2rem;
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        backdrop-filter: blur(10px) contrast(0.95);
+        border-radius: 1em;
+        padding: 2em;
+        flex: 0 0 0.5;
+        color: var(--heading-color);
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 1em;
+        }
+    }
+    &__divider {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1px;
+            height: 100%;
+            backdrop-filter: blur(10px) contrast(0.8);
+            @media (max-width: 768px) {
+                width: 100%;
+                height: 1px;
+            }
+        }
+    }
+    img {
+        flex: 0 0 0.5;
+        border-radius: 1em;
+    }
+}
