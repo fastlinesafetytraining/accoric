@@ -50,6 +50,9 @@ export default async function FAQ({ items }: FAQProps) {
           items={faqItems}
           accordion
           bordered={false}
+          style={{
+            backdropFilter: "blur(40px)",
+          }}
         />
       </div>
     </>

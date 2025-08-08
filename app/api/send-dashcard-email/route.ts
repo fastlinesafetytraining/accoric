@@ -2,11 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 
 interface DashcardEmailInputProps {
     email: string;
+    fullName: string;
+    phone: string;
 }
 
 
 export async function POST(request: NextRequest) {
-    const {email} = (await request.json()) as DashcardEmailInputProps;
+    const {email, fullName, phone} = (await request.json()) as DashcardEmailInputProps;
 
     const res = await fetch("https://api.resend.com/emails", {
         method: "POST",
@@ -19,7 +21,7 @@ export async function POST(request: NextRequest) {
             to: process.env.EMAIL_TO as string,
             cc: process.env.EMAIL_CC as string,
             bcc: process.env.EMAIL_BCC as string,
-            subject: "New Accoric Dashcard Request from " + email,
+            subject: "New Accoric Dashcard Request from " + fullName,
             html: `
             <body style="width: 100%;font-family:Helvetica,Arial,sans-serif;">
             <table border="0" max-width="600px" margin="0 auto" bgcolor="#ffffff" cellpadding="0" cellspacing="0">
@@ -49,8 +51,22 @@ export async function POST(request: NextRequest) {
                 </tr>
                 <tr>
                     <td>
+                        <p style="font-size: 16px; font-weight: 400; color: #333333;">
+                            Full Name: ${fullName}
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <p style="font-size: 16px; font-weight: 400; color: #333333; background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
-                            ${email}
+                            Email: ${email}
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p style="font-size: 16px; font-weight: 400; color: #333333;">
+                            Phone: ${phone}
                         </p>
                     </td>
                 </tr>
