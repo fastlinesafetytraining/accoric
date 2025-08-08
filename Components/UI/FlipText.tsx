@@ -64,6 +64,7 @@ export default function FlipText({
 	const style: React.CSSProperties = {
 		display: "flex",
 		height: isHeightCalculated ? `${wordHeight}px` : "auto",
+		width: '-webkit-fill-available',
 		flexDirection: "column",
 		gap: "0.5rem",
 		position: "relative",
