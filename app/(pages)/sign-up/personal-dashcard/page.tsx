@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import { Toaster } from "react-hot-toast";
 import CardSignUpForm from "@/Components/UI/CardSignUpForm";
 import styles from "@/styles/pages/signUp.module.scss";
 
@@ -12,6 +13,7 @@ export const metadata = {
 export default function PersonalDashcardSignUp() {
 	return (
 		<main className={styles.signUpPage}>
+			<Toaster />
 			<div className={styles.signUpPage__content}>
 				<h1>Sign Up for the Personal DASHcard</h1>
 				<p>Be a part of the future of Construction Card Management</p>
