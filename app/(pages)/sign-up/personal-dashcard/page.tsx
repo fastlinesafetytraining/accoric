@@ -13,7 +13,7 @@ export const metadata = {
 export default function PersonalDashcardSignUp() {
 	return (
 		<main className={styles.signUpPage}>
-			<Toaster />
+			<Toaster containerStyle={{ top: "100px" }} />
 			<div className={styles.signUpPage__content}>
 				<h1>Sign Up for the Personal DASHcard</h1>
 				<h2>Nobody protects your certifications like you do.</h2>
