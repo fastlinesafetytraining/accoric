@@ -51,7 +51,7 @@ export async function POST(request: NextRequest) {
                 </tr>
                 <tr>
                     <td>
-                        <p style="font-size: 16px; font-weight: 400; color: #333333;">
+                        <p style="font-size: 16px; font-weight: 400; color: #333333; background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
                             Full Name: ${fullName}
                         </p>
                     </td>
@@ -65,7 +65,7 @@ export async function POST(request: NextRequest) {
                 </tr>
                 <tr>
                     <td>
-                        <p style="font-size: 16px; font-weight: 400; color: #333333;">
+                        <p style="font-size: 16px; font-weight: 400; color: #333333; background-color: #f0f0f0; padding: 10px; border-radius: 5px;">
                             Phone: ${phone}
                         </p>
                     </td>
