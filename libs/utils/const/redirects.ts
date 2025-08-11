@@ -12,6 +12,11 @@ export const redirects: Redirect[] = [
     permanent: true,
   },
   {
+    source: "/Home/DashCardPage",
+    destination: "/accoric-dashcard",
+    permanent: true,
+  },
+  {
     source: "/Home/ManagementPage",
     destination: "/accoric-management",
     permanent: true,
