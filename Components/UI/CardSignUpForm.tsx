@@ -1,6 +1,6 @@
 "use client";
 import "@ant-design/v5-patch-for-react-19";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import toast from "react-hot-toast";
 import { LuMail, LuPhone, LuUser } from "react-icons/lu";
 import { Input, Form, Button } from "antd";
