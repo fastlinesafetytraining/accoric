@@ -8,7 +8,7 @@
   padding: 0 1rem;
   gap: 2rem;
   &__content {
-    border-radius: 1em;
+    border-radius: var(--border-box-radius);
   }
   section {
     display: flex;
@@ -22,12 +22,11 @@
     width: 75vw;
     min-height: 80vh;
     margin: 0 auto 5rem auto;
-    border-radius: 1em;
+    border-radius: var(--border-box-radius);
     @media (max-width: 1024px) {
       width: 100%;
-      border-radius: 1em;
       padding: 1rem;
-      box-shadow: var(--section-box-shadow);
+      border: var(--box-border-color);
     }
   }
 
@@ -54,7 +53,7 @@
 
 .section_highlight {
   padding: 1rem;
-  border-radius: 1em;
+  border-radius: var(--border-box-radius);
 }
 
 .aboutUs__hero {
@@ -98,17 +97,16 @@
   }
   &__imageContainer {
     background-color: var(--global-tertiary-color);
-    border-radius: 2em;
+    border-radius: calc(var(--border-box-radius) * 1.25);
     padding: 2rem;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border: var(--box-border-color);
     transition: transform 0.5s ease-in-out;
     margin: 1rem;
     img {
       border-radius: 50%;
-      border: 3px solid #fff;
       height: 400px;
       width: 400px;
-      box-shadow: 0 0 20px 0 #eee;
+      border: 5px solid var(--fixed-white);
       @media (max-width: 767px) {
         height: 250px;
         width: 250px;
@@ -149,7 +147,7 @@
   }
   &__stickyContainer {
     position: sticky;
-    top: 20%;
+    top: 30%;
     left: 0;
   }
   &__container {
@@ -181,7 +179,7 @@
       background-color: var(--global-light-gray);
       border-radius: 50%;
       padding: 1rem;
-      box-shadow: 0 0 5px 0 rgb(238, 238, 238);
+      border: 5px solid var(--global-primary-color);
       animation: zoomIn ease-in-out;
       animation-timeline: view();
       animation-range: 0 40%;

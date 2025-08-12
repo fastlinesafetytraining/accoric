@@ -12,8 +12,9 @@
         display: flex;
         flex-direction: column;
         max-width: 600px;
-        backdrop-filter: blur(10px) contrast(0.95);
-        border-radius: 1em;
+        background-color: var(--section-backdrop-color);
+        border: var(--box-border-color);
+        border-radius: var(--border-box-radius);
         padding: 2em;
         color: var(--heading-color);
         h1 {
@@ -50,6 +51,6 @@
         }
     }
     img {
-        border-radius: 1em;
+        border-radius: var(--border-box-radius);
     }
 }

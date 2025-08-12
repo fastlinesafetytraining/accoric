@@ -48,9 +48,8 @@
 }
 
 .policyHeader {
-	@include m.blur-bright-background;
+	background-color: var(--section-backdrop-color);
 	padding: 20px;
-	border-radius: 5px;
 	text-align: center;
 	margin-bottom: 20px;
 
@@ -72,13 +71,12 @@
 	}
 
 	.quickAnswerContainer {
-		@include m.blur-bright-background;
-		border-radius: 1em;
+		background-color: var(--section-backdrop-color);
+		border: var(--box-border-color);
+		border-radius: var(--border-box-radius);
 		padding: 15px;
 		margin: 20px 0;
-		box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
 		font-weight: 500;
-
 		span {
 			color: var(--text-paragraph-color);
 			font-size: 1.2rem;

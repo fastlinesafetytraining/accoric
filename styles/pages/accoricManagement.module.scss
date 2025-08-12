@@ -37,7 +37,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
   padding: 3rem 0;
   gap: 2rem;
   background: linear-gradient(to top, #fff 50%, rgba(var(--global-primary-color), 0.2) 100%);
@@ -81,7 +80,6 @@
     min-width: 300px;
     min-height: 400px;
     object-fit: contain;
-    border-radius: 0.5em;
     margin: 0 1rem;
     padding: 0 1rem;
     animation: AccoricManagementHeroImage ease-in-out;
@@ -137,7 +135,7 @@
     justify-content: center;
     gap: 2rem;
     position: sticky;
-    top: 15%;
+    top: 25%;
   }
   &__content {
     display: flex;
@@ -160,7 +158,7 @@
       }
       &__item {
         background-color: color-mix(in oklch, var(--global-primary-color) 20%, transparent);
-        border-radius: 2em;
+        border-radius: var(--border-box-radius);
         padding: 1rem;
         display: flex;
         align-items: center;
@@ -184,7 +182,6 @@
     &__image {
       padding-left: 5%;
       object-fit: contain;
-      border-radius: 0.5em;
       transform: perspective(1000px) rotateY(15deg);
       filter: drop-shadow(-15px 10px 2px color-mix(in oklch, var(--global-black-to-white-color) 30%, transparent));
     }

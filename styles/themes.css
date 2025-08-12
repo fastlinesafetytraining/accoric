@@ -14,8 +14,10 @@
 	--header-footer-background-color: oklch(1 0 0);
 
 	/* Section Background Colors */
-	--page-background-color: color-mix(in oklch, var(--header-footer-background-color) 98%, grey);
+	--page-background-color: color-mix(in oklch, var(--header-footer-background-color) 98%, oklch(0 0 0));
 	--section-background-color: oklch(0.99 0 0);
+	--section-backdrop-color: oklch(1 0 0);
+	--hover-backdrop-color: oklch(0.9 0 0);
 	--section-box-shadow: oklch(0.9 0 none) -6px -2px 16px 0px;
 	--card-background-color: oklch(0.994 0 0);
 
@@ -56,6 +58,9 @@
 	/* Box Shadow */
 	--box-shadow-color: oklch(0.3382 0.1582 271.28 / 22%);
 
+	/* Border Colors */
+	--box-border-color: 2px solid oklch(0.9 0 none);
+
 	/*Accoric Dashcard Colors*/
 	--dashcard-title-color: oklch(0.2 0.13 272);
 	--dashcard-side-bar-background-color: oklch(1 0 none / 0.5);
@@ -81,8 +86,9 @@
 	--header-footer-background-color: oklch(0.16 0.07 272);
 
 	/* Section Background Colors */
-	--page-background-color: color-mix(in oklch, var(--header-footer-background-color) 97%, white);
+	--page-background-color: color-mix(in oklch, var(--header-footer-background-color) 98%, oklch(1 0 0));
 	--section-background-color: oklch(0.53 0.0724 279.76 / 0.25);
+	--section-backdrop-color: oklch(0.3 0.05 276);
 	--section-box-shadow: oklch(0.25 0.07 272) -6px -2px 16px 0px;
 	--card-background-color: oklch(0.27 0.06 275);
 
@@ -122,6 +128,9 @@
 
 	/* Box Shadow */
 	--box-shadow-color: oklch(0.65 0.06 280 / 0.22);
+
+	/* Border Colors */
+	--box-border-color: 2px solid oklch(0.4 0.05 276);
 
 	/*Accoric Dashcard Colors*/
 	--dashcard-title-color: oklch(0.9 0 0);
