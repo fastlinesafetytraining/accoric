@@ -15,4 +15,20 @@
 	--spacing-xxl: 5rem;
 
 	--button-border-radius: 3em;
+
+	/*Font Size*/
+	--heading-h1-font-size: clamp(40px, 3vw, 56px);
+	--heading-h2-font-size: clamp(28px, 3vw, 36px);
+	--heading-h3-font-size: clamp(20px, 1.5vw, 24px);
+	--heading-h4-font-size: clamp(16px, 1.3vw, 20px);
+	--heading-h5-font-size: clamp(14px, 1.3vw, 18px);
+	--paragraph-font-size: clamp(1rem, 0.9vw, 1.125rem);
+
+	/*Spacing*/
+	--spacing-small: 0.5rem;
+	--spacing-medium: 1rem;
+	--spacing-large: 2rem;
+
+	/*Icon Size*/
+	--icon-size: clamp(24px, 2vw, 32px);
 }
