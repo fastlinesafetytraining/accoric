@@ -1,15 +1,6 @@
-import HeroSection from "./hero-section";
-import AccoricManagementSection from "./accoric-management-section";
-import AccoricDashcardSection from "./accoric-dashcard-section";
-import ClientSection from "./client-section";
-import TestimonialSection from "./testimonial-section";
-import AboutSection from "./about-section";
-
-export {
-  HeroSection,
-  AccoricManagementSection,
-  AccoricDashcardSection,
-  ClientSection,
-  TestimonialSection,
-  AboutSection,
-};
+export {default as HeroSection} from "./hero-section";
+export {default as AccoricManagementSection} from "./accoric-management-section";
+export {default as AccoricDashcardSection} from "./accoric-dashcard-section";
+export {default as ClientSection} from "./client-section";
+export {default as TestimonialSection} from "./testimonial-section";
+export {default as AboutSection} from "./about-section";
