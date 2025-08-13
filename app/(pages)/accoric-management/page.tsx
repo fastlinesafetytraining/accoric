@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "@styles/pages/accoricManagement.module.scss";
-import { VideoPlayer, ContactCTA, FAQ, PastClients } from "@components/UI";
+import { DotPatternBackground, VideoPlayer, ContactCTA, FAQ, PastClients } from "@components/UI";
 import { Features, SyncDashcard, faq } from "./pageData";
 import type { Metadata } from "next";
 
@@ -14,6 +14,7 @@ export default function Page() {
 
   return (
       <main className={styles.accoricManagement}>
+        <DotPatternBackground />
         <section className={styles.accoricManagement__header}>
           <h1>Accoric Management</h1>
           <p>
