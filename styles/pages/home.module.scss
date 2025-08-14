@@ -12,6 +12,7 @@
       border-radius: var(--border-box-radius);
       padding: 1rem;
       border: var(--box-border-color);
+      background-color: var(--page-background-color);
     }
   }
 }
@@ -390,6 +391,7 @@
     border-radius: 50%;
     width: 45%;
     height: 95%;
+    background-color: var(--page-background-color);
     box-shadow: 0 0 40px 0 var(--box-shadow-color);
     z-index: 1;
     @media (max-width: 1024px) {
