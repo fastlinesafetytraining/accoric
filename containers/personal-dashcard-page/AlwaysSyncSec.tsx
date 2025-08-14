@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef } from "react";
-import { SplineScene } from "@/Components/UI";
 import { TbAlertHexagonOff } from "react-icons/tb";
 import { motion, useScroll, useTransform } from "motion/react";
 import styles from "@styles/pages/personalDashcard.module.scss";
@@ -45,7 +44,7 @@ export default function AlwaysSyncSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.alwaysSyncSec__content__assetContainer}
 				>
-					<SplineScene className={styles.alwaysSyncSec__content__assetContainer__spline} sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_5 as string} alt='always sync' fallbackImage='/Images/personal-dashcard/reliable.webp' width={600} height={600} />
+					<video src="/videos/personal-dashcard/pd-5.mp4" autoPlay loop muted playsInline />
 				</motion.div>
 			</div>
 		</section>

@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef } from "react";
-import { SplineScene } from "@/Components/UI";
 import { LuBell } from "react-icons/lu";
 import { motion, useScroll, useTransform } from "motion/react";
 import styles from "@styles/pages/personalDashcard.module.scss";
@@ -55,7 +54,7 @@ export default function ExpirationReminderSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.expirationReminderSec__content__assetContainer}
 				>
-					<SplineScene className={styles.expirationReminderSec__content__assetContainer__spline} sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_3 as string} alt='Construction expiration reminder using the accoric dashcard app' fallbackImage='/Images/personal-dashcard/reminder-screen.webp' width={600} height={600} />
+					<video src="/videos/personal-dashcard/pd-3.mp4" autoPlay loop muted playsInline />
 				</motion.div>
 			</div>
 		</section>

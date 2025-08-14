@@ -3,7 +3,6 @@ import React, { useRef } from "react";
 import { PiCertificateDuotone } from "react-icons/pi";
 import { useScroll, motion, useTransform } from "motion/react";
 import styles from "@styles/pages/personalDashcard.module.scss";
-import { SplineScene } from "@/Components/UI";
 
 export default function YourCertificationSec() {
 	const ref = useRef<HTMLDivElement>(null);
@@ -59,14 +58,7 @@ export default function YourCertificationSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.yourCertificationSec__content__assetContainer}
 				>
-					<SplineScene
-						className={styles.yourCertificationSec__content__assetContainer__spline}
-						sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_2 as string}
-						alt='your certifications stored digitally always ready when you need them'
-						fallbackImage='/Images/personal-dashcard/certification-screen.webp'
-						width={600}
-						height={600}
-					/>
+					<video src="/videos/personal-dashcard/pd-2.mp4" autoPlay loop muted playsInline />
 				</motion.div>
 			</div>
 		</section>

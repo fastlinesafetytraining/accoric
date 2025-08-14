@@ -291,6 +291,11 @@
 					}
 				}
 			}
+			video {
+				aspect-ratio: 1/1;
+				border-radius: var(--border-box-radius);
+				overflow: hidden;
+			}
 			img {
 				aspect-ratio: 1/1;
 				width: 30vw;

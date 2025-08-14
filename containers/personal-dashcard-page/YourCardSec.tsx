@@ -1,6 +1,5 @@
 "use client";
 import React, { useRef } from "react";
-import { SplineScene } from "@/Components/UI";
 import { IoIdCard } from "react-icons/io5";
 import { useScroll, motion, useTransform } from "motion/react";
 import styles from "@styles/pages/personalDashcard.module.scss";
@@ -45,7 +44,7 @@ export default function YourCardSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.yourCardSec__content__assetContainer}
 				>
-					<SplineScene className={styles.yourCardSec__content__assetContainer__spline} sceneId={process.env.NEXT_PUBLIC_DASHCARD_SCENE_1 as string} fallbackImage="/Images/personal-dashcard/your-personal-dashcard.webp" alt="Your Personal DASHcard with your Information ready to go anytime" width={600} height={600} />
+					<video src="/videos/personal-dashcard/pd-1.mp4" autoPlay loop muted playsInline />
 				</motion.div>
 			</div>
 		</section>
