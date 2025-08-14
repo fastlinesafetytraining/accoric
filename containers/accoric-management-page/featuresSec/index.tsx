@@ -12,7 +12,7 @@ import {
 	snapshotLottie,
 } from "@/public/lottie";
 
-export default function Features() {
+export default function FeaturesSec() {
 	const boxRef = useRef(null);
 
 	const features = [

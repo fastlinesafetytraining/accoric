@@ -8,7 +8,7 @@ import styles from "@styles/pages/accoricManagement.module.scss";
 import { LottieComponent } from "@components/UI";
 import { nfcLottie } from "@/public/lottie";
 
-export default function SyncDashcard() {
+export default function SyncDashcardSec() {
   const boxRef = useRef(null);
   gsap.registerPlugin(ScrollTrigger);
 
