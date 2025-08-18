@@ -31,63 +31,63 @@ export const navMenuItems = [
 
 export const supportMenu: SupportMenu[] = [
 	{
-		sectionTitle: "Product Support",
+		sectionTitle: "Explore Topics for Accoric Management Support",
 		sectionItems: [
 			{
 				title: "Using The Employee Table",
-				link: "/support/using-the-employee-table",
+				link: "/support/accoric-management/using-the-employee-table",
 			},
 			{
 				title: "Searching For Employees",
-				link: "/support/searching-for-employees",
+				link: "/support/accoric-management/searching-for-employees",
 			},
 			{
 				title: "Adding Employees",
-				link: "/support/adding-employees",
+				link: "/support/accoric-management/adding-employees",
 			},
 			{
 				title: "Adding Certifications",
-				link: "/support/adding-certifications",
+				link: "/support/accoric-management/adding-certifications",
 			},
 			{
 				title: "Updating Employees",
-				link: "/support/updating-employees",
+				link: "/support/accoric-management/updating-employees",
 			},
 			{
 				title: "Using Expired Certification Table",
-				link: "/support/using-expired-certification-table",
+				link: "/support/accoric-management/using-expired-certification-table",
 			},
 			{
 				title: "Active/Inactive Employees",
-				link: "/support/active-or-inactive-employees",
+				link: "/support/accoric-management/active-or-inactive-employees",
 			},
 			{
 				title: "Using Notes",
-				link: "/support/using-notes",
+				link: "/support/accoric-management/using-notes",
 			},
 			{
 				title: "Using Categories",
-				link: "/support/using-categories",
+				link: "/support/accoric-management/using-categories",
 			},
 			{
 				title: "Generating Spreadsheets",
-				link: "/support/generating-spreadsheets",
+				link: "/support/accoric-management/generating-spreadsheets",
 			},
 			{
 				title: "Secondary Users",
-				link: "/support/secondary-users",
+				link: "/support/accoric-management/secondary-users",
 			},
 			{
 				title: "Forgot Password",
-				link: "/support/forgot-password",
+				link: "/support/accoric-management/forgot-password",
 			},
 			{
 				title: "Creating Automated Email Reminders",
-				link: "/support/creating-automated-email-reminders",
+				link: "/support/accoric-management/creating-automated-email-reminders",
 			},
 			{
 				title: "Viewing, Requesting, and Deleting Dashcards",
-				link: "/support/viewing-requesting-and-deleting-dashcards",
+				link: "/support/accoric-management/viewing-requesting-and-deleting-dashcards",
 			},
 		],
 	},
