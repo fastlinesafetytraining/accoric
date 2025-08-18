@@ -56,7 +56,7 @@ export default function SupportSideMenu() {
 	useEffect(() => {
 		if (pathname) {
 			document.querySelectorAll(`.${styles.supportSidebar__nav} li`).forEach((link) => {
-				if (link.getAttribute("value")?.includes(pathname)) {
+				if (link.getAttribute("value") === pathname) {
 					link.classList.add(styles.active);
 				} else {
 					link.classList.remove(styles.active);
