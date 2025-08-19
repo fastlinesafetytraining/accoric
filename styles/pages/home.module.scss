@@ -178,7 +178,7 @@
     margin: 0 1rem;
     padding: clamp(0.5rem, 1vw, 1rem);
     border-radius: var(--border-box-radius);
-    border: var(--box-border-color);
+    background-color: var(--card-background-color);
     img {
       border-radius: var(--border-box-radius);
       position: relative;
@@ -319,6 +319,7 @@
       }
       .aboutAccoricImage_large {
         width: 500px;
+        background-color: var(--card-background-color);
         border-radius: var(--border-box-radius);
         border: var(--box-border-color);
       }

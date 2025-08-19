@@ -471,7 +471,6 @@
 		&__card {
 			border-radius: var(--border-box-radius);
 			background-color: var(--card-background-color);
-			border: var(--box-border-color);
 			padding: 1rem;
 			text-align: center;
 			width: 33%;
@@ -528,22 +527,20 @@
 /*Support Side Menu*/
 
 .supportSidebar {
-	height: fit-content;
 	background-color: var(--section-background-color);
 	border-radius: var(--border-box-radius);
-	border: var(--box-border-color);
 	padding: var(--spacing-xs);
-	&::-webkit-scrollbar {
-		width: 10px;
-	}
-	&::-webkit-scrollbar-thumb {
-		background-color: #e2e8f0;
-		border-radius: calc(var(--border-box-radius) * 0.5);
-	}
-	&::-webkit-scrollbar-thumb:hover {
-		background-color: #e2e8f0;
-	}
 	&__nav {
+		&::-webkit-scrollbar {
+			width: 4px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: #e2e8f0;
+			border-radius: calc(var(--border-box-radius) * 0.5);
+		}
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: #e2e8f0;
+		}
 		h3 {
 			color: var(--global-secondary-color);
 			font-size: 1.1rem;
@@ -576,7 +573,7 @@
 					height: 0;
 				}
 				&:hover {
-					background-color: var(--section-backdrop-color);
+					background-color: var(--hover-background-color);
 				}
 				&.active {
 					background-color: color-mix(in oklch, var(--global-primary-color) 10%, transparent);
@@ -587,7 +584,7 @@
 					font-size: 1.1rem;
 					transition: color 0.2s ease;
 					display: block;
-					padding: 1rem 1.5rem;
+					padding: var(--spacing-xs) var(--spacing-sm);
 				}
 			}
 		}
