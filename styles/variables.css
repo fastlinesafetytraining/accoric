@@ -7,11 +7,26 @@
 	--fixed-white: oklch(0.98 0 0);
 	--fixed-secondary-color: oklch(0.2034 0.13 272.93);
 
-	/* Fonts */
-	--h1-font-family: 'Outfit', sans-serif;
-}
+	/*Spacing*/
+	--spacing-xxs: 0.25rem;
+	--spacing-xs: 0.5rem;
+	--spacing-sm: 1rem;
+	--spacing-md: 2rem;
+	--spacing-lg: 3rem;
+	--spacing-xl: 4rem;
+	--spacing-xxl: 5rem;
 
-/* Button Border Radius */
-:root {
-	--button-border-radius: 3em;
+	--border-box-radius: 1em;
+	--border-button-radius: 3em;
+
+	/*Font Size*/
+	--heading-h1-font-size: clamp(40px, 3vw, 56px);
+	--heading-h2-font-size: clamp(28px, 3vw, 36px);
+	--heading-h3-font-size: clamp(20px, 1.5vw, 24px);
+	--heading-h4-font-size: clamp(16px, 1.3vw, 20px);
+	--heading-h5-font-size: clamp(14px, 1.3vw, 18px);
+	--paragraph-font-size: clamp(1rem, 0.9vw, 1.125rem);
+
+	/*Icon Size*/
+	--icon-size: clamp(24px, 2vw, 32px);
 }

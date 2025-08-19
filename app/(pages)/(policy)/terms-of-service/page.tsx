@@ -1,10 +1,11 @@
-import React from 'react';
-import type { Metadata } from 'next';
-import styles from '@styles/pages/policyPage.module.scss';
+import React from "react";
+import type { Metadata } from "next";
+import styles from "@styles/pages/policyPage.module.scss";
 
 export const metadata: Metadata = {
-	title: 'Terms of Service | Policy | Accoric',
-	description: 'Read our Terms of Service to understand your rights and responsibilities when using our services.',
+	title: "Terms of Service | Policy | Accoric",
+	description:
+		"Read our Terms of Service to understand your rights and responsibilities when using our services.",
 };
 
 export default function Page() {
@@ -16,7 +17,7 @@ export default function Page() {
 			</div>
 
 			<div className={styles.policyContent}>
-				<div aria-label="Terms of Service Introduction">
+				<div aria-label='Terms of Service Introduction'>
 					<p>
 						Please read the following terms of use agreement carefully. By
 						Accessing or using our sites and our services, you hereby agree to
@@ -30,7 +31,7 @@ export default function Page() {
 				<hr />
 
 				<div
-					aria-label="accepted-of-terms"
+					aria-label='accepted-of-terms'
 					className={styles.policyContentSection}
 				>
 					<h2>Accepted of Terms</h2>
@@ -46,7 +47,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Description of Website Services Offered"
+					aria-label='Description of Website Services Offered'
 					className={styles.policyContentSection}
 				>
 					<h2>Description of Website Services Offered</h2>
@@ -88,21 +89,21 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Privacy Policy"
+					aria-label='Privacy Policy'
 					className={styles.policyContentSection}
 				>
 					<h2>Privacy Policy</h2>
 					<p>
 						Every member’s registration data and various other personal
 						information is strictly protected by the out Online Privacy Policy
-						(see the full Privacy Policy at www.accoric.com/privacy-policy). As a
-						member, you herein consent to the collection and use of the
+						(see the full Privacy Policy at www.accoric.com/privacy-policy). As
+						a member, you herein consent to the collection and use of the
 						information provided, including the transfer of information within
 						the United States and/or other countries for storage, processing or
 						use by us or our subsidiaries and affiliates.
 					</p>
 				</div>
-				<div aria-label="Conduct" className={styles.policyContentSection}>
+				<div aria-label='Conduct' className={styles.policyContentSection}>
 					<h2>Conduct</h2>
 					<p>
 						As a user of the Site, you herein acknowledge, understand and agree
@@ -277,7 +278,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Interstate Communication"
+					aria-label='Interstate Communication'
 					className={styles.policyContentSection}
 				>
 					<h2>Interstate Communication</h2>
@@ -292,7 +293,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Cautions For Global Use and Export and Import Compliance"
+					aria-label='Cautions For Global Use and Export and Import Compliance'
 					className={styles.policyContentSection}
 				>
 					<h2>Cautions For Global Use and Export and import compliance</h2>
@@ -305,25 +306,25 @@ export default function Page() {
 						the United States and possibly other countries. Through the use of
 						our network, you thus agree to comply with all applicable export and
 						import laws, statutes and regulations, including, but not limited
-						to, the Export Administration Regulations ({' '}
-						<a href="http://www.access.gpo.gov/bis/ear/ear_data.html">
-							{' '}
+						to, the Export Administration Regulations ({" "}
+						<a href='http://www.access.gpo.gov/bis/ear/ear_data.html'>
+							{" "}
 							http://www.access.gpo.gov/bis/ear/ear_data.html
-						</a>{' '}
+						</a>{" "}
 						), as well as the sanctions control program of the United States (
-						<a href="http://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx">
-							{' '}
-							http://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx{' '}
-						</a>{' '}
+						<a href='http://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx'>
+							{" "}
+							http://www.treasury.gov/resource-center/sanctions/Programs/Pages/Programs.aspx{" "}
+						</a>{" "}
 						). Furthermore, you state and pledge that you:
 					</p>
 					<ol>
 						<li>
 							are not on the list of prohibited individuals which may be
 							identified on any government export exclusion report (
-							<a href="http://www.bis.doc.gov/complianceandenforcement/liststocheck.html">
+							<a href='http://www.bis.doc.gov/complianceandenforcement/liststocheck.html'>
 								http://www.bis.doc.gov/complianceandenforcement/liststocheck.html
-							</a>{' '}
+							</a>{" "}
 							) nor a member of any other government which may be part of an
 							export-prohibited country identified in applicable export and
 							import laws and regulations;
@@ -346,7 +347,7 @@ export default function Page() {
 					</ol>
 				</div>
 				<div
-					aria-label="Content Placed or Made available for company services"
+					aria-label='Content Placed or Made available for company services'
 					className={styles.policyContentSection}
 				>
 					<h2>Content Placed or Made Available For Company</h2>
@@ -402,7 +403,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Contribution to Company Website"
+					aria-label='Contribution to Company Website'
 					className={styles.policyContentSection}
 				>
 					<h2>Contributions to Company Website</h2>
@@ -436,7 +437,7 @@ export default function Page() {
 						</li>
 					</ol>
 				</div>
-				<div aria-label="Indemnity" className={styles.policyContentSection}>
+				<div aria-label='Indemnity' className={styles.policyContentSection}>
 					<h2>Indemnity</h2>
 					<p>
 						All users and/or members herein agree to insure and hold Company,
@@ -452,7 +453,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Commercial Reuse of Services"
+					aria-label='Commercial Reuse of Services'
 					className={styles.policyContentSection}
 				>
 					<h2>Commercial Reuse of Services</h2>
@@ -463,7 +464,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="User and Storage General Practices"
+					aria-label='User and Storage General Practices'
 					className={styles.policyContentSection}
 				>
 					<h2>User and Storage General Practices</h2>
@@ -499,7 +500,7 @@ export default function Page() {
 						allow us to store any and all communications on its servers.
 					</p>
 				</div>
-				<div aria-label="Modifications" className={styles.policyContentSection}>
+				<div aria-label='Modifications' className={styles.policyContentSection}>
 					<h2>Modifications</h2>
 					<p>
 						Company shall reserve the right at any time it may deem fit, to
@@ -510,13 +511,13 @@ export default function Page() {
 						discontinuance of our Services, or any part thereof.
 					</p>
 				</div>
-				<div aria-label="Termination" className={styles.policyContentSection}>
+				<div aria-label='Termination' className={styles.policyContentSection}>
 					<h2>Termination</h2>
 					<p>
 						As a member of our Site, you may cancel or terminate your account,
 						associated email address and/or access to our services by submitting
-						a cancellation or termination request to{' '}
-						<a href="mailto:info@accoric.com">info@accoric.com</a>.
+						a cancellation or termination request to{" "}
+						<a href='mailto:info@accoric.com'>info@accoric.com</a>.
 					</p>
 					<p>
 						As a member, you agree that Company may, without any prior written
@@ -577,7 +578,7 @@ export default function Page() {
 						</li>
 					</ol>
 				</div>
-				<div aria-label="Advertisers" className={styles.policyContentSection}>
+				<div aria-label='Advertisers' className={styles.policyContentSection}>
 					<h2>Advertisers</h2>
 					<p>
 						Any correspondence or business dealings with, or the participation
@@ -592,7 +593,7 @@ export default function Page() {
 						such advertisers on our website.
 					</p>
 				</div>
-				<div aria-label="links" className={styles.policyContentSection}>
+				<div aria-label='links' className={styles.policyContentSection}>
 					<h2>Links</h2>
 					<p>
 						Either Company or any third parties, may provide links to other
@@ -610,7 +611,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Proprietary Rights"
+					aria-label='Proprietary Rights'
 					className={styles.policyContentSection}
 				>
 					<h2>Proprietary Rights</h2>
@@ -649,7 +650,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Warranty Disclaimers"
+					aria-label='Warranty Disclaimers'
 					className={styles.policyContentSection}
 				>
 					<h2>Warranty Disclaimers</h2>
@@ -710,7 +711,7 @@ export default function Page() {
 					</ol>
 				</div>
 				<div
-					aria-label="Limitation of Liability"
+					aria-label='Limitation of Liability'
 					className={styles.policyContentSection}
 				>
 					<h2>Limitation of Liability</h2>
@@ -738,7 +739,7 @@ export default function Page() {
 					</ol>
 				</div>
 				<div
-					aria-label="Special Admonition Related to Financial Matters"
+					aria-label='Special Admonition Related to Financial Matters'
 					className={styles.policyContentSection}
 				>
 					<h2>Special Admonition Related to Financial Matters</h2>
@@ -760,7 +761,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Exclusion and Limitations"
+					aria-label='Exclusion and Limitations'
 					className={styles.policyContentSection}
 				>
 					<h2>Exclusion and Limitations</h2>
@@ -773,7 +774,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Third Party Beneficiaries"
+					aria-label='Third Party Beneficiaries'
 					className={styles.policyContentSection}
 				>
 					<h2>Third Party Beneficiaries</h2>
@@ -783,7 +784,7 @@ export default function Page() {
 						beneficiaries to this agreement.
 					</p>
 				</div>
-				<div aria-label="Notice" className={styles.policyContentSection}>
+				<div aria-label='Notice' className={styles.policyContentSection}>
 					<h2>Notice</h2>
 					<p>
 						Company may furnish you with notices, including those with regards
@@ -799,7 +800,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Trademark Information"
+					aria-label='Trademark Information'
 					className={styles.policyContentSection}
 				>
 					<h2>Trademark Information</h2>
@@ -813,7 +814,7 @@ export default function Page() {
 					</p>
 				</div>
 				<div
-					aria-label="Copyright or Intellectual Property Infringement Claims and Notice Procedures"
+					aria-label='Copyright or Intellectual Property Infringement Claims and Notice Procedures'
 					className={styles.policyContentSection}
 				>
 					<h2>
@@ -859,6 +860,53 @@ export default function Page() {
 							or intellectual property owner’s behalf.
 						</li>
 					</ol>
+				</div>
+				<div
+					aria-label='SMS and Email Communication'
+					className={styles.policyContentSection}
+				>
+					<h2>SMS and Email Communication</h2>
+					<p>
+						By using the Accoric Personal DashCard platform, you agree that we
+						may send you SMS (text) messages and emails related to your account
+						activity. These communications may include:
+					</p>
+					<ul>
+						<li>
+							<span>One-time passcode (OTP) for login and authentication</span>
+						</li>
+						<li>
+							<span>
+								Notifications regarding certification expiration dates and
+								renewals
+							</span>
+						</li>
+						<li>
+							<span>Service-related updates or feature alerts</span>
+						</li>
+					</ul>
+					<p>
+						You may manage your preferences for non-essential notifications
+						(such as reminders) within the app settings. Some messages—such as
+						account verification codes—are considered essential and cannot be
+						opted out of while maintaining an active account.
+					</p>
+					<p>
+						Standard messaging and data rates may apply. You are responsible for
+						any charges imposed by your carrier for receiving these
+						communications.
+					</p>
+
+					<p>
+						You agree to provide accurate contact information and to update it
+						as necessary to ensure uninterrupted delivery of services tied to
+						your account.
+					</p>
+				</div>
+				<div
+					aria-label='Copyright or Intellectual Property Infringement Claims and Notice Procedures'
+					className={styles.policyContentSection}
+				>
 					<p>
 						Our Agent for Notice of claims of copyright or other intellectual
 						property infringement can be contacted as follows:
@@ -873,11 +921,11 @@ export default function Page() {
 						<br />
 						Melville, NY 11747
 						<br />
-						Email: <a href="mailto:dmca@accoric.com">dmca@accoric.com</a>
+						Email: <a href='mailto:dmca@accoric.com'>dmca@accoric.com</a>
 					</p>
 				</div>
 				<div
-					aria-label="General Information"
+					aria-label='General Information'
 					className={styles.policyContentSection}
 				>
 					<h2>General Information</h2>
@@ -943,7 +991,7 @@ export default function Page() {
 						<br />
 						Melville, NY 11747
 						<br />
-						Email: <a href="mailto:dmca@accoric.com">dmca@accoric.com</a>
+						Email: <a href='mailto:dmca@accoric.com'>dmca@accoric.com</a>
 					</p>
 				</div>
 			</div>

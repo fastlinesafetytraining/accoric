@@ -1,97 +1,118 @@
 import { SupportMenu } from "@/types/supportMenu";
 
-
 export const navMenuItems = [
-  {
-    key: "1",
-    label: "Accoric Management",
-    href: "/accoric-management",
-  },
-  {
-    key: "2",
-    label: "Accoric DashCard",
-    href: "/accoric-dashcard",
-  },
-  {
-    key: "3",
-    label: "Pricing",
-    href: "/pricing",
-  },
-  {
-    key: "4",
-    label: "Support",
-    href: "/support",
-  },
-  {
-    key: "5",
-    label: "About Us",
-    href: "/about-us",
-  },  
+	{
+		key: "1",
+		label: "Accoric Management",
+		href: "/accoric-management",
+	},
+	{
+		key: "2",
+		label: "Personal DASHcard™",
+		href: "/personal-dashcard",
+	},
+	{
+		key: "3",
+		label: "Pricing",
+		href: "/pricing",
+	},
+	{
+		key: "4",
+		label: "Support",
+		href: "/support",
+	},
+	{
+		key: "5",
+		label: "About Us",
+		href: "/about-us",
+	},
 ];
 
 export const supportMenu: SupportMenu[] = [
 	{
-		sectionTitle: "Product Support",
+		sectionKey: "personal-dashcard",
+		sectionTitle: "Explore Topics for Personal DASHcard™ Support",
+		sectionItems: [
+			{
+				title: "Getting Started",
+				link: "/support/personal-dashcard/getting-started",
+			},
+			{
+				title: "Manage Your Certifications",
+				link: "/support/personal-dashcard/manage-your-certifications",
+			},
+			{
+				title: "Certification Reminders",
+				link: "/support/personal-dashcard/certification-reminders",
+			},
+			{
+				title: "Your DASHcard and Account",
+				link: "/support/personal-dashcard/your-dashcard-and-account",
+			},
+		],
+	},
+	{
+		sectionKey: "accoric-management",
+		sectionTitle: "Explore Topics for Accoric Management Support",
 		sectionItems: [
 			{
 				title: "Using The Employee Table",
-				link: "/support/using-the-employee-table",
+				link: "/support/accoric-management/using-the-employee-table",
 			},
 			{
 				title: "Searching For Employees",
-				link: "/support/searching-for-employees",
+				link: "/support/accoric-management/searching-for-employees",
 			},
 			{
 				title: "Adding Employees",
-				link: "/support/adding-employees",
+				link: "/support/accoric-management/adding-employees",
 			},
 			{
 				title: "Adding Certifications",
-				link: "/support/adding-certifications",
+				link: "/support/accoric-management/adding-certifications",
 			},
 			{
 				title: "Updating Employees",
-				link: "/support/updating-employees",
+				link: "/support/accoric-management/updating-employees",
 			},
 			{
 				title: "Using Expired Certification Table",
-				link: "/support/using-expired-certification-table",
+				link: "/support/accoric-management/using-expired-certification-table",
 			},
 			{
 				title: "Active/Inactive Employees",
-				link: "/support/active-or-inactive-employees",
+				link: "/support/accoric-management/active-or-inactive-employees",
 			},
 			{
 				title: "Using Notes",
-				link: "/support/using-notes",
+				link: "/support/accoric-management/using-notes",
 			},
 			{
 				title: "Using Categories",
-				link: "/support/using-categories",
+				link: "/support/accoric-management/using-categories",
 			},
 			{
 				title: "Generating Spreadsheets",
-				link: "/support/generating-spreadsheets",
+				link: "/support/accoric-management/generating-spreadsheets",
 			},
 			{
 				title: "Secondary Users",
-				link: "/support/secondary-users",
+				link: "/support/accoric-management/secondary-users",
 			},
 			{
 				title: "Forgot Password",
-				link: "/support/forgot-password",
+				link: "/support/accoric-management/forgot-password",
 			},
 			{
 				title: "Creating Automated Email Reminders",
-				link: "/support/creating-automated-email-reminders",
+				link: "/support/accoric-management/creating-automated-email-reminders",
 			},
 			{
 				title: "Viewing, Requesting, and Deleting Dashcards",
-				link: "/support/viewing-requesting-and-deleting-dashcards",
+				link: "/support/accoric-management/viewing-requesting-and-deleting-dashcards",
 			},
 		],
 	},
 ];
 
 export default supportMenu;
-

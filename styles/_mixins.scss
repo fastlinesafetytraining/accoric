@@ -76,6 +76,5 @@
 }
 
 @mixin blur-bright-background {
-    backdrop-filter: brightness(100%) contrast(75%) blur(10px);
-    -webkit-backdrop-filter: brightness(100%) contrast(75%) blur(10px);
+    background-color: var(--section-backdrop-color);
 }

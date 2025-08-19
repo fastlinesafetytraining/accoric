@@ -1,13 +1,65 @@
-import React from 'react';
-import type { Metadata } from 'next';
-import styles from '@styles/pages/policyPage.module.scss';
+import React from "react";
+import type { Metadata } from "next";
+import styles from "@styles/pages/policyPage.module.scss";
 
 export const metadata: Metadata = {
-	title: 'Privacy Policy | Policy | Accoric',
-	description: 'Read our Privacy Policy to understand how we collect, use, and protect your personal information.',
+	title: "Privacy Policy | Policy | Accoric",
+	description:
+		"Read our Privacy Policy to understand how we collect, use, and protect your personal information.",
 };
 
 export default function PrivacyPolicyPage() {
+	const tableOfContents = [
+		{
+			href: "#what-information-do-we-collect",
+			label: "What information do we collect?",
+		},
+		{
+			href: "#how-do-we-use-your-information",
+			label: "How do we use your information?",
+		},
+		{
+			href: "#will-your-information-be-shared-with-anyone",
+			label: "Will your information be shared with anyone?",
+		},
+		{
+			href: "#who-will-your-information-be-shared-with",
+			label: "Who will your information be shared with?",
+		},
+		{
+			href: "#do-we-use-cookies-and-other-tracking-technologies",
+			label: "Do we use cookies and other tracking technologies?",
+		},
+		{
+			href: "#how-long-do-we-keep-your-information",
+			label: "How long do we keep your information?",
+		},
+		{
+			href: "#how-do-we-keep-your-information-safe",
+			label: "How do we keep your information safe?",
+		},
+		{
+			href: "#what-are-your-privacy-rights",
+			label: "What are your privacy rights?",
+		},
+		{
+			href: "#controls-for-do-not-track-features",
+			label: "Controls for do-not-track features?",
+		},
+		{
+			href: "#do-california-residents-have-specific-privacy-rights",
+			label: "Do California residents have specific privacy rights?",
+		},
+		{
+			href: "#do-we-make-updates-to-this-policy",
+			label: "Do we make updates to this policy?",
+		},
+		{
+			href: "#how-can-you-contact-us-about-this-policy",
+			label: "How can you contact us about this policy?",
+		}
+	];
+
 	return (
 		<div className={styles.policyPage}>
 			<div className={styles.policyHeader}>
@@ -16,7 +68,7 @@ export default function PrivacyPolicyPage() {
 			</div>
 
 			<div className={styles.policyContent}>
-				<div aria-label="Privacy Policy Introduction">
+				<div aria-label='Privacy Policy Introduction'>
 					<p>
 						Thank you for choosing to be part of our community at RORI
 						Technologies LLC, DBA Accoric, a New York Corporation (“Company”,
@@ -24,7 +76,7 @@ export default function PrivacyPolicyPage() {
 						information and your right to privacy. If you have any questions or
 						concerns about our policy, or practices with regards to your
 						personal information, please contact us at{" "}
-						<a href="mailto:info@accoric.com">info@accoric.com</a>
+						<a href='mailto:info@accoric.com'>info@accoric.com</a>
 					</p>
 
 					<p>
@@ -52,75 +104,20 @@ export default function PrivacyPolicyPage() {
 						sharing your personal information with us.
 					</p>
 				</div>
-				<div aria-label="Table Of Content" className="tableOfContents">
+				<div aria-label='Table Of Content' className='tableOfContents'>
 					<h2>Table of Contents</h2>
-					<ol>
-						<li>
-							<a href="#what-information-do-we-collect">
-								What information do we collect?
-							</a>
-						</li>
-						<li>
-							<a href="#how-do-we-use-your-information">
-								How do we use your information?
-							</a>
-						</li>
-						<li>
-							<a href="#will-your-information-be-shared-with-anyone">
-								Will your information be shared with anyone?
-							</a>
-						</li>
-						<li>
-							<a href="#who-will-your-information-be-shared-with">
-								Who will your information be shared with?
-							</a>
-						</li>
-						<li>
-							<a href="#do-we-use-cookies-and-other-tracking-technologies">
-								Do we use cookies and other tracking technologies?
-							</a>
-						</li>
-						<li>
-							<a href="#how-long-do-we-keep-your-information">
-								How long do we keep your information?
-							</a>
-						</li>
-						<li>
-							<a href="#how-do-we-keep-your-information-safe">
-								How do we keep your information safe?
-							</a>
-						</li>
-						<li>
-							<a href="#what-are-your-privacy-rights">
-								What are your privacy rights?
-							</a>
-						</li>
-						<li>
-							<a href="#controls-for-do-not-track-features">
-								Controls for do-not-track features?
-							</a>
-						</li>
-						<li>
-							<a href="#do-california-residents-have-specific-privacy-rights">
-								Do California residents have specific privacy rights?
-							</a>
-						</li>
-						<li>
-							<a href="#do-we-make-updates-to-this-policy">
-								Do we make updates to this policy?
-							</a>
-						</li>
-						<li>
-							<a href="#how-can-you-contact-us-about-this-policy">
-								How can you contact us about this policy?
-							</a>
-						</li>
-					</ol>
+					<ul>
+						{tableOfContents.map((item) => (
+							<li key={item.href}>
+								<a href={item.href}>{item.label}</a>
+							</li>
+						))}
+					</ul>
 				</div>
 
 				<div
-					id="what-information-do-we-collect"
-					aria-label="What Information Do We Collect?"
+					id='what-information-do-we-collect'
+					aria-label='What Information Do We Collect?'
 					className={styles.policyContentSection}
 				>
 					<h2>What Information Do We Collect?</h2>
@@ -172,8 +169,8 @@ export default function PrivacyPolicyPage() {
 				</div>
 
 				<div
-					id="how-do-we-use-your-information"
-					aria-label="How do We Use Your Information?"
+					id='how-do-we-use-your-information'
+					aria-label='How do We Use Your Information?'
 					className={styles.policyContentSection}
 				>
 					<h2>How Do We Use Your Information?</h2>
@@ -212,9 +209,9 @@ export default function PrivacyPolicyPage() {
 						</li>
 						<li>
 							<span>
-								{' '}
+								{" "}
 								To send you marketing and promotional communications.
-							</span>{' '}
+							</span>{" "}
 							We and/or our third-party marketing partners may use the personal
 							information you send to us for our marketing purposes, if this is
 							in accordance with your marketing preferences. You can opt-out of
@@ -253,10 +250,42 @@ export default function PrivacyPolicyPage() {
 							Apps, products, services, marketing, and your experience.
 						</li>
 					</ol>
+					<p>
+						When you provide your mobile phone number or email address, you
+						consent to receive communications from us related to your use of the
+						Accoric Personal DashCard platform. These communications may include:
+					</p>
+					<ul>
+						<li>
+							<span>One-time passcode (OTP) for account login or verification</span>
+						</li>
+						<li>
+							<span>Reminders about upcoming certification expirations</span>
+						</li>
+						<li>
+							<span>Important account or feature updates</span>
+						</li>
+					</ul>
+					<p>
+						You may manage your preferences or opt out of non-essential reminders
+						through the notification settings within the app. Please note that
+						some essential service communications (such as authentication codes)
+						may still be sent even if you opt out of marketing or reminder
+						messages.
+					</p>
+					<p>
+						Users can control their notification preferences, including SMS and
+						email reminders, by adjusting settings within the Personal DashCard
+						app.
+					</p>
+					<p>
+						Standard messaging and data rates may apply depending on your mobile
+						carrier.
+					</p>
 				</div>
 				<div
-					id="will-your-information-be-shared-with-anyone"
-					aria-label="Will Your Information Be Shared With Anyone?"
+					id='will-your-information-be-shared-with-anyone'
+					aria-label='Will Your Information Be Shared With Anyone?'
 					className={styles.policyContentSection}
 				>
 					<h2>Will Your Information Be Shared With Anyone?</h2>
@@ -312,9 +341,10 @@ export default function PrivacyPolicyPage() {
 					<ol>
 						<li>
 							<span>
-								{' '}
-								Vendors, Consultants, and Other Third-Party Service Providers.{' '}
-							</span>{' '}
+								{" "}
+								Vendors, Consultants, and Other Third-Party Service
+								Providers.{" "}
+							</span>{" "}
 							We may share your data with third-party vendors, service
 							providers, contractors or agents who perform services for us or on
 							our behalf and require access to such information to do that work.
@@ -344,8 +374,8 @@ export default function PrivacyPolicyPage() {
 				</div>
 
 				<div
-					id="who-will-your-information-be-shared-with"
-					aria-label="Who Will Your Information Be Shared With?"
+					id='who-will-your-information-be-shared-with'
+					aria-label='Who Will Your Information Be Shared With?'
 					className={styles.policyContentSection}
 				>
 					<h2>Who Will Your Information Be Shared With?</h2>
@@ -417,8 +447,8 @@ export default function PrivacyPolicyPage() {
 				</div>
 
 				<div
-					id="do-we-use-cookies-and-other-tracking-technologies"
-					aria-label="Do We Use Cookies and Other Tracking Technologies?"
+					id='do-we-use-cookies-and-other-tracking-technologies'
+					aria-label='Do We Use Cookies and Other Tracking Technologies?'
 					className={styles.policyContentSection}
 				>
 					<h2>Do We Use Cookies and Other Tracking Technologies?</h2>
@@ -438,8 +468,8 @@ export default function PrivacyPolicyPage() {
 				</div>
 
 				<div
-					id="how-long-do-we-keep-your-information"
-					aria-label="How Long Do We Keep Your Information?"
+					id='how-long-do-we-keep-your-information'
+					aria-label='How Long Do We Keep Your Information?'
 					className={styles.policyContentSection}
 				>
 					<h2>How Long Do We Keep Your Information?</h2>
@@ -472,8 +502,8 @@ export default function PrivacyPolicyPage() {
 				</div>
 
 				<div
-					id="how-do-we-keep-your-information-safe"
-					aria-label="How Do We Keep Your Information Safe?"
+					id='how-do-we-keep-your-information-safe'
+					aria-label='How Do We Keep Your Information Safe?'
 					className={styles.policyContentSection}
 				>
 					<h2>How Do We Keep Your Information Safe?</h2>
@@ -502,8 +532,8 @@ export default function PrivacyPolicyPage() {
 				</div>
 
 				<div
-					id="what-are-your-privacy-rights"
-					aria-label="What Are Your Privacy Rights?"
+					id='what-are-your-privacy-rights'
+					aria-label='What Are Your Privacy Rights?'
 					className={styles.policyContentSection}
 				>
 					<h2>What Are Your Privacy Rights?</h2>
@@ -565,9 +595,9 @@ export default function PrivacyPolicyPage() {
 						or Apps. To opt-out of interest-based advertising by advertisers on
 						our Sites or Apps visit{" "}
 						<a
-							href="https://www.aboutads.info/choices/"
-							aria-label="About Ads opt-out tool"
-							title="AboutAds Opt-out tool"
+							href='https://www.aboutads.info/choices/'
+							aria-label='About Ads opt-out tool'
+							title='AboutAds Opt-out tool'
 						>
 							AboutAd&apos;s Opt-out tool.
 						</a>
@@ -586,8 +616,8 @@ export default function PrivacyPolicyPage() {
 				</div>
 
 				<div
-					id="controls-for-do-not-track-features"
-					aria-label="Controls For Do-Not-Track Features"
+					id='controls-for-do-not-track-features'
+					aria-label='Controls For Do-Not-Track Features'
 					className={styles.policyContentSection}
 				>
 					<h2>Controls For Do-Not-Track Features</h2>
@@ -608,12 +638,12 @@ export default function PrivacyPolicyPage() {
 				</div>
 
 				<div
-					id="do-california-residents-have-specific-privacy-rights"
-					aria-label="Do California Residents Have Specific Privacy Rights?"
+					id='do-california-residents-have-specific-privacy-rights'
+					aria-label='Do California Residents Have Specific Privacy Rights?'
 					className={styles.policyContentSection}
 				>
 					<h2>Do California Residents Have Specific Privacy Rights?</h2>
-					<div className="Content_Body">
+					<div className='Content_Body'>
 						<div className={styles.quickAnswerContainer}>
 							<i>
 								<span>In Short:</span> Yes, if you are a resident of California,
@@ -622,10 +652,10 @@ export default function PrivacyPolicyPage() {
 							</i>
 						</div>
 						<p>
-							<a href="https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.83.&lawCode=CIV">
+							<a href='https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.83.&lawCode=CIV'>
 								<i>California Civil Code Section 1798.83,</i>
-							</a>
-							{" "}also known as the “Shine the Light” law, permits our users who are
+							</a>{" "}
+							also known as the “Shine the Light” law, permits our users who are
 							California residents to request and obtain from us, once a year,
 							and free of charge, information about categories of personal
 							information (if any) we disclosed to third-parties for direct
@@ -652,19 +682,19 @@ export default function PrivacyPolicyPage() {
 				</div>
 
 				<div
-					id="do-we-make-updates-to-this-policy"
-					aria-label="Do We Make Updates To This Policy?"
+					id='do-we-make-updates-to-this-policy'
+					aria-label='Do We Make Updates To This Policy?'
 					className={styles.policyContentSection}
 				>
 					<h2>Do We Make Updates To This Policy?</h2>
-					<div className="Content_Body">
+					<div className='Content_Body'>
 						<div className={styles.quickAnswerContainer}>
 							<i>
 								<span>In Short:</span> Yes, we will update this policy as
 								necessary to stay compliant with relevant laws.
 							</i>
 						</div>
-						<div className="Content_Paragraphs">
+						<div className='Content_Paragraphs'>
 							<p>
 								We may update this Privacy Policy from time to time. The updates
 								version will be indicated by an updated “Revised” date and the
@@ -681,17 +711,17 @@ export default function PrivacyPolicyPage() {
 
 				<div
 					className={styles.policyContentSection}
-					id="how-can-you-contact-us-about-this-policy"
-					aria-label="How Can You Contact Us About This Policy?"
+					id='how-can-you-contact-us-about-this-policy'
+					aria-label='How Can You Contact Us About This Policy?'
 				>
 					<h2>How Can You Contact Us About This Policy?</h2>
 
 					<div>
 						<span>
 							If you have questions or comments about this Privacy Policy, you
-							may contact Nick Ercolano, by email at{' '}
-							<a href="mailto:info@accoric.com">info@accoric.com</a>, by phone
-							at <a href="tel:516-200-4720">516-200-4720</a> , or by post to:
+							may contact Nick Ercolano, by email at{" "}
+							<a href='mailto:info@accoric.com'>info@accoric.com</a>, by phone
+							at <a href='tel:516-200-4720'>516-200-4720</a> , or by post to:
 						</span>
 						<div>
 							<p>

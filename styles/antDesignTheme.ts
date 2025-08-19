@@ -1,5 +1,5 @@
 import type { ThemeConfig } from "antd";
-import { globalLightGray, globalSecondaryColor, globalPrimaryColor } from "./exportVariables";
+import { globalLightGray, globalSecondaryColor, globalPrimaryColor, globalBlackToWhiteColor } from "./exportVariables";
 
 const lightTheme: ThemeConfig = {
     token: {
@@ -10,7 +10,7 @@ const lightTheme: ThemeConfig = {
             trackBg: globalLightGray,
         },
         Form: {
-            labelColor: globalLightGray,
+            labelColor: globalBlackToWhiteColor,
         },
         Input: {
             activeBorderColor: "#0c0050",

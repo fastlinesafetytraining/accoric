@@ -18,16 +18,18 @@ export default function SupportPage() {
                         Welcome to our support center. Here you&apos;ll find comprehensive guides and documentation to help you start working with our products as quickly as possible.
                     </p>
                 </section>
-                <section className={styles.supportPage__content}>
-                    <h2>Explore Topics for Accoric Management</h2>
-                    <ul>
-                        {supportMenu[0].sectionItems.map((route, index) => (
-                            <li key={index}>
-                                <Link href={route.link}>{route.title}</Link>
-                            </li>
-                        ))}
-                    </ul>
-                </section>
+                {supportMenu.map((section) => (
+                    <section className={styles.supportPage__content} key={section.sectionKey}>
+                        <h2>{section.sectionTitle}</h2>
+                        <ul>
+                            {section.sectionItems.map((route, index) => (
+                                <li key={index}>
+                                    <Link href={route.link}>{route.title}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </section>
+                ))}
         </main>
     );
 }

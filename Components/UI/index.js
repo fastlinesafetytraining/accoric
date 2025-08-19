@@ -13,3 +13,6 @@ export { default as SupportSideMenu } from './SupportSideMenu';
 export { default as CompanyStats } from './CompanyStats';
 export { default as ThemeToggle } from './ThemeToggle';
 export { default as DashcardForm } from './DashcardForm';
+export { default as FlipText } from './FlipText';
+export { default as SplineScene } from './SplineScene';
+export { default as DotPatternBackground } from './DotPatternBackground';

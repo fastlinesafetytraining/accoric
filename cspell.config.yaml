@@ -37,11 +37,14 @@ words:
     - cellspacing
     - usehooks
     - apos
+    - doesn
     
 
     # project specific words
     - accoric
     - Dashcard
+    - Dashcards
+    - dashcards
     - Broadhollow
     - Ercolano
     - Millbrook

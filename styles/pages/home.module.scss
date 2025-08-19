@@ -9,15 +9,16 @@
     margin: 0 auto 5rem auto;
     @media (max-width: 1024px) {
       width: 100%;
-      border-radius: 1em;
+      border-radius: var(--border-box-radius);
       padding: 1rem;
-      box-shadow: var(--section-box-shadow);
+      border: var(--box-border-color);
+      background-color: var(--page-background-color);
     }
   }
 }
 .heroSection {
   padding: 2rem;
-  border-radius: 1rem;
+  border-radius: var(--border-box-radius);
   width: 90vw;
   margin: 2rem auto;
   .heroContainer {
@@ -40,7 +41,7 @@
     }
     h1 {
       font-weight: 900;
-      color: var(--global-secondary-color);
+      color: var(--heading-color);
       line-height: clamp(2.5rem, 5vw, 5rem);
       padding: 0 1rem;
       @media (max-width: 767px) {
@@ -176,11 +177,10 @@
     width: clamp(300px, 40%, 600px);
     margin: 0 1rem;
     padding: clamp(0.5rem, 1vw, 1rem);
-    border-radius: clamp(1em, 2vw, 2em);
-    box-shadow: 0 0 10px 0 rgba(112, 112, 112, 0.1);
+    border-radius: var(--border-box-radius);
+    background-color: var(--card-background-color);
     img {
-      // filter: drop-shadow(0 0 30px var(--global-primary-color));
-      border-radius: clamp(1em, 1.5vw, 1.5em);
+      border-radius: var(--border-box-radius);
       position: relative;
       &::before {
         content: "";
@@ -319,15 +319,16 @@
       }
       .aboutAccoricImage_large {
         width: 500px;
-        border-radius: 2rem;
-        box-shadow: 0 0 10px 0 rgba(112, 112, 112, 0.1);
+        background-color: var(--card-background-color);
+        border-radius: var(--border-box-radius);
+        border: var(--box-border-color);
       }
       .feature__one,
       .feature__two,
       .feature__three {
         background-color: #f1f1f1;
-        border-radius: 1em;
-        box-shadow: 0 0 10px 0 rgba(34, 34, 34, 0.1);
+        border-radius: var(--border-box-radius);
+        box-shadow: 0 0 10px 0 var(--box-shadow-color);
         padding: clamp(0.75rem, 1.5vw, 1rem) clamp(1.5rem, 3vw, 3rem);
         position: absolute;
         font-size: clamp(1rem, 1.5vw, 1.25rem);
@@ -364,8 +365,8 @@
       }
       .aboutAccoricImage_small {
         width: 50%;
-        border-radius: 2rem;
-        box-shadow: 0 0 10px 0 rgb(112, 112, 112);
+        border-radius: var(--border-box-radius);
+        border: var(--box-border-color);
         position: absolute;
         bottom: -10%;
         right: -20%;
@@ -391,6 +392,7 @@
     border-radius: 50%;
     width: 45%;
     height: 95%;
+    background-color: var(--page-background-color);
     box-shadow: 0 0 40px 0 var(--box-shadow-color);
     z-index: 1;
     @media (max-width: 1024px) {
@@ -421,10 +423,9 @@
       flex-direction: column;
       padding: 1rem;
       box-shadow: 0 8px 32px 0 var(--box-shadow-color);
-      border-radius: 10px;
+      border-radius: var(--border-box-radius);
       border: 1px solid rgba(255, 255, 255, 0.18);
-      background-color: var(--card-background-color);
-      @include m.blur-bright-background;
+      background-color: var(--section-backdrop-color);
       @media (max-width: 767px) {
         max-width: 100%;
       }
@@ -438,7 +439,7 @@
         .testimonial__author__logo {
           background-color: var(--fixed-white);
           border-radius: 50%;
-          box-shadow: 0px 8px 20px -10px var(--global-black-to-white-color);
+          border: var(--box-border-color);
         }
     }
       .testimonial__quote {
