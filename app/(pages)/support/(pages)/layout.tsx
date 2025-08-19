@@ -12,6 +12,7 @@ export default function SupportPage({ children }: { children: React.ReactNode })
                     <Suspense fallback={<Loading />}>
                         {children}
                     </Suspense>
+                    <p style={{ textAlign: "center" }}><span style={{ color: "var(--global-accent-color)", fontWeight: "bold" }}>Need more help?</span> Email <a href="mailto:support@accoric.com">support@accoric.com</a> &mdash; we&apos;ve got you covered.</p>
                 </article>
             </div>
         </main>

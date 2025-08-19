@@ -1,36 +1,58 @@
 import { SupportMenu } from "@/types/supportMenu";
 
-
 export const navMenuItems = [
-  {
-    key: "1",
-    label: "Accoric Management",
-    href: "/accoric-management",
-  },
-  {
-    key: "2",
-    label: "Personal DASHcard™",
-    href: "/personal-dashcard",
-  },
-  {
-    key: "3",
-    label: "Pricing",
-    href: "/pricing",
-  },
-  {
-    key: "4",
-    label: "Support",
-    href: "/support",
-  },
-  {
-    key: "5",
-    label: "About Us",
-    href: "/about-us",
-  } 
+	{
+		key: "1",
+		label: "Accoric Management",
+		href: "/accoric-management",
+	},
+	{
+		key: "2",
+		label: "Personal DASHcard™",
+		href: "/personal-dashcard",
+	},
+	{
+		key: "3",
+		label: "Pricing",
+		href: "/pricing",
+	},
+	{
+		key: "4",
+		label: "Support",
+		href: "/support",
+	},
+	{
+		key: "5",
+		label: "About Us",
+		href: "/about-us",
+	},
 ];
 
 export const supportMenu: SupportMenu[] = [
 	{
+		sectionKey: "personal-dashcard",
+		sectionTitle: "Explore Topics for Personal DASHcard™ Support",
+		sectionItems: [
+			{
+				title: "Getting Started",
+				link: "/support/personal-dashcard/getting-started",
+			},
+			{
+				title: "Manage Your Certifications",
+				link: "/support/personal-dashcard/manage-your-certifications",
+			},
+			{
+				title: "Certification Reminders",
+				link: "/support/personal-dashcard/certification-reminders",
+			},
+			{
+				title: "Your DASHcard and Account",
+				link: "/support/personal-dashcard/your-dashcard-and-account",
+			},
+		],
+	},
+	{
+		sectionKey: "accoric-management",
 		sectionTitle: "Explore Topics for Accoric Management Support",
 		sectionItems: [
 			{
@@ -94,4 +116,3 @@ export const supportMenu: SupportMenu[] = [
 ];
 
 export default supportMenu;
-
