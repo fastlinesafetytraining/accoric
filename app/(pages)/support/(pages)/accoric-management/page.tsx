@@ -13,7 +13,7 @@ export default function page() {
 		<>
 			<h1>Accoric Management Support</h1>
 			<ul>
-				{supportMenu.find(section => section.sectionTitle === "Explore Topics for Accoric Management Support")?.sectionItems.map((item, index) => (
+				{supportMenu.find(section => section.sectionKey === "accoric-management")?.sectionItems.map((item, index) => (
 					<li key={index}>
 						<Link href={item.link}>{item.title}</Link>
 					</li>
