@@ -14,18 +14,6 @@ export default function page() {
 			<p>
 				Welcome to the Personal DASHcard™ app &mdash; your all-in-one tool for managing your certifications. This guide walks you through key features so you can stay organized, avoid expired certs, and maintain full control of your credentials.
 			</p>
-			<h2>Downloading the App</h2>
-			<p>
-				Download the app from the <a href="https://apps.apple.com/us/app/personal-dashcard/id6644342220">Apple App Store</a> or <a href="https://play.google.com/store/apps/details?id=com.accoric.dashcard">Google Play Store</a>.
-			</p>
-			<h2>Creating an Account</h2>
-			<p>
-				Create an account by tapping <strong>&quot;Sign Up&quot;</strong> in the app.
-			</p>
-			<h2>Logging In</h2>
-			<p>
-				After creating an account, you can log in using your email and password.
-			</p>
 			<h2>What&apos;s the Groundswell Program?</h2>
 			<ol>
 				<li>Refer <strong>3+ coworkers</strong> to the app.</li>
