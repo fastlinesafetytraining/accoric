@@ -2,6 +2,7 @@ import "@ant-design/v5-patch-for-react-19";
 import React, { Suspense } from "react";
 import { ReactLenis } from "lenis/react";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Open_Sans, Anton } from "next/font/google";
 import { Header, Footer } from "@components/UI";
@@ -66,6 +67,7 @@ export default function RootLayout({
 						</Suspense>
 						<Analytics />
 						<GoogleAnalytics gaId={googleAnalyticsId} />
+						<SpeedInsights />
 					</Provider>
 				</body>
 			</html>
