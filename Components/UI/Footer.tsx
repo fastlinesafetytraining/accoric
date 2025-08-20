@@ -93,7 +93,7 @@ export default function Footer() {
 				</div>
 			</div>
 			<div className='bottom-footer'>
-				<p>&copy; {new Date().getFullYear()} Accoric. All rights reserved.</p>
+				<p>&copy; {new Date().getFullYear()} RORI Technologies LLC, d/b/a Accoric. All rights reserved.</p>
 				<div className='flex space-x-4'>
 					<Link href='/privacy-policy'>Privacy Policy</Link>
 					<Link href='/terms-of-service'>Terms of Service</Link>
