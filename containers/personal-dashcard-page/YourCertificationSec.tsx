@@ -58,7 +58,7 @@ export default function YourCertificationSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.yourCertificationSec__content__assetContainer}
 				>
-					<video src="/videos/personal-dashcard/pd-2.mp4" autoPlay loop muted playsInline />
+					<video src="/Videos/personal-dashcard/pd-2.mp4" autoPlay loop muted playsInline />
 				</motion.div>
 			</div>
 		</section>
