@@ -13,13 +13,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             images: [`${defaultImageUrl}`]
 		},
 		{
-			url: `${baseUrl}/pricing`,
-			lastModified: new Date().toISOString(),
-			changeFrequency: "weekly",
-			priority: 0.8,
-            images: [`${defaultImageUrl}`]
-		},
-		{
 			url: `${baseUrl}/about-us`,
 			lastModified: new Date().toISOString(),
 			changeFrequency: "weekly",

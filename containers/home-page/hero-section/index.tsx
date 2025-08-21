@@ -21,7 +21,7 @@ export default function index() {
 					<div className={styles.heroButtons}>
 						<SiteButton
 							title='See Pricing for Accoric Management'
-							href='/pricing'
+							href='/accoric-management/#pricing'
 							type='primary'
 							icon={<LuDollarSign />}
 							iconPosition='right'

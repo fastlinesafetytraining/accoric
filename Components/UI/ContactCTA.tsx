@@ -22,7 +22,7 @@ export default function ContactCTA() {
               certification.
             </p>
           </div>
-          <SiteButton type="primary" href="/pricing" title="Get Started" icon={<LuSend />} iconPosition="right">
+          <SiteButton type="primary" href="/personal-dashcard#pricing" title="Get Started" icon={<LuSend />} iconPosition="right">
             Get Started
           </SiteButton>
 		</div>

@@ -2,27 +2,22 @@ import { SupportMenu } from "@/types/supportMenu";
 
 export const navMenuItems = [
 	{
-		key: "1",
-		label: "Accoric Management",
-		href: "/accoric-management",
-	},
-	{
-		key: "2",
+		key: "personal-dashcard",
 		label: "Personal DASHcard™",
 		href: "/personal-dashcard",
 	},
 	{
-		key: "3",
-		label: "Pricing",
-		href: "/pricing",
+		key: "accoric-management",
+		label: "Accoric Management",
+		href: "/accoric-management",
 	},
 	{
-		key: "4",
+		key: "support",
 		label: "Support",
 		href: "/support",
 	},
 	{
-		key: "5",
+		key: "about-us",
 		label: "About Us",
 		href: "/about-us",
 	},
