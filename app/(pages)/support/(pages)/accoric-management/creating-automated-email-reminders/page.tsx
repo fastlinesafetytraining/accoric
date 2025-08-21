@@ -58,7 +58,7 @@ export default function Page() {
 			<Image
 				width={569}
 				height={721}
-				src='/Images/support-page-screenshots/accoric-management-new-automated-email-reminder.webp'
+				src='/images/support-page-screenshots/accoric-management-new-automated-email-reminder.webp'
 				alt='Email Reminders to send to workers based on their construction certification status'
 			/>
 			<hr />

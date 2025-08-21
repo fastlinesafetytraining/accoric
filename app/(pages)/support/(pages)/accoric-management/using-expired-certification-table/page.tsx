@@ -40,7 +40,7 @@ export default function Page() {
 				<Image
 					width={328}
 					height={309}
-					src='/Images/support-page-screenshots/accoric-management-certification-options.webp'
+					src='/images/support-page-screenshots/accoric-management-certification-options.webp'
 					alt='Actions for employee on the certifications table'
 				/>
 			</p>
@@ -63,7 +63,7 @@ export default function Page() {
 					<Image
 						width={344}
 						height={146}
-						src='/Images/support-page-screenshots/accoric-management-certification-groupings.webp'
+						src='/images/support-page-screenshots/accoric-management-certification-groupings.webp'
 						alt='Grouping Types for the certifications Table'
 					/>
 				</li>

@@ -30,7 +30,7 @@ export default function index() {
 					<Image
 						width={600}
 						height={600}
-						src='/Images/commercial-supervisor-using-accoric.webp'
+						src='/images/commercial-supervisor-using-accoric.webp'
 						alt='Commercial supervisor using accoric management software on his phone'
 						className={styles.aboutAccoricImage_large}
 					/>
@@ -46,7 +46,7 @@ export default function index() {
 					<Image
 						width={768}
 						height={432}
-						src='/Images/checking-current-certifications.webp'
+						src='/images/checking-current-certifications.webp'
 						alt='Checking current certifications using accoric NFC Dashcard'
 						className={styles.aboutAccoricImage_small}
 					/>

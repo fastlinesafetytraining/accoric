@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
             <table border="0" max-width="600px" margin="0 auto" bgcolor="#ffffff" cellpadding="0" cellspacing="0">
                 <tr>
                     <td>
-                        <img src="https://accoric.com/Images/accoric-logo.png" alt="Accoric Logo" />
+                        <img src="https://accoric.com/images/accoric-logo.png" alt="Accoric Logo" />
                     </td>
                 </tr>
                 <tr>

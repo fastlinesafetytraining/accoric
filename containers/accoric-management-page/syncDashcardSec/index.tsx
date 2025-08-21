@@ -81,7 +81,7 @@ export default function SyncDashcardSec() {
             width={350}
             height={200}
             className={`${styles.accoricManagement__content__3__content__image1} oshaCard`}
-            src="/Images/accoric-dashcard-example.webp"
+            src="/images/accoric-dashcard-example.webp"
             alt="A mockup example of accoric's dashcard"
           />
           <LottieComponent
@@ -95,7 +95,7 @@ export default function SyncDashcardSec() {
             height={505}
             id="nfcCard"
             className={`${styles.accoricManagement__content__3__content__image2} nfcCard`}
-            src="/Images/dashcard-app-preview.webp"
+            src="/images/dashcard-app-preview.webp"
             alt="A mockup example of accoric management on a mobile device"
           />
         </div>

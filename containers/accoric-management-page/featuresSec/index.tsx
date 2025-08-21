@@ -66,7 +66,7 @@ export default function FeaturesSec() {
 						width={645}
 						height={400}
 						className={styles.accoricManagement__features__content__image}
-						src='/Images/accoric-management-tablet-view.webp'
+						src='/images/accoric-management-tablet-view.webp'
 						alt='A mockup example of accoric management on a tablet device'
 					/>
 					<div

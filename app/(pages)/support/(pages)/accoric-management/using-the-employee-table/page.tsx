@@ -31,7 +31,7 @@ export default function Page() {
 				<Image
 					width={406}
 					height={150}
-					src='/Images/support-page-screenshots/accoric-management-employee-dashboard-options.webp'
+					src='/images/support-page-screenshots/accoric-management-employee-dashboard-options.webp'
 					alt='Employee Dashboard Options'
 					title='Employee Dashboard Options'
 				/>

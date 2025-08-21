@@ -33,7 +33,7 @@ export async function POST(request: NextRequest) {
 							<img
 								width="300"
 								height="100"
-								src="https://accoric.com/Images/accoric-logo.png"
+								src="https://accoric.com/images/accoric-logo.png"
 								alt="Company Logo"
 								max-width="200px"
 							/>

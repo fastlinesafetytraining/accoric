@@ -23,7 +23,7 @@ export default function Page() {
 			<Image
 				width={666}
 				height={158}
-				src='/Images/support-page-screenshots/accoric-management-search-employee-table.webp'
+				src='/images/support-page-screenshots/accoric-management-search-employee-table.webp'
 				alt='accoric management screenshot'
 			/>
 		</>

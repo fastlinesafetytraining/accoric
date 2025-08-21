@@ -31,7 +31,7 @@ export default function Pricing() {
                                     <p>Coming Soon to the Apple App Store and Google Play Store</p>
                                 </Col>
                                 <Col span={12}>
-                                    <Image src="/Images/app-store-logos.webp" alt="Apple App Store and Google Play Store" width={200} height={100} />
+                                    <Image src="/images/app-store-logos.webp" alt="Apple App Store and Google Play Store" width={200} height={100} />
                                 </Col>
                             </Row>
                         </Col>

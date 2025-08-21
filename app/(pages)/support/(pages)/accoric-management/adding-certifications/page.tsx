@@ -41,14 +41,14 @@ export default function Page() {
 			<Image
 				width={284}
 				height={208}
-				src='/Images/support-page-screenshots/accoric-management-add-certificate-one.webp'
+				src='/images/support-page-screenshots/accoric-management-add-certificate-one.webp'
 				alt='Add a Certification from the Employee Dashboard screenshot one'
 			/>
 			<hr />
 			<Image
 				width={261}
 				height={112}
-				src='/Images/support-page-screenshots/accoric-management-add-certificate-two.webp'
+				src='/images/support-page-screenshots/accoric-management-add-certificate-two.webp'
 				alt='Add a Certification from the Employee Dashboard screenshot two'
 			/>
 		</div>

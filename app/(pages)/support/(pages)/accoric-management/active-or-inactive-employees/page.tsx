@@ -31,7 +31,7 @@ export default function Page() {
 					<Image
 						width={162}
 						height={199}
-						src='/Images/support-page-screenshots/accoric-management-employee-active-status.webp'
+						src='/images/support-page-screenshots/accoric-management-employee-active-status.webp'
 						alt='Change Active Status From Dashboard'
 					/>
 				</li>
@@ -48,7 +48,7 @@ export default function Page() {
 					<Image
 						width={362}
 						height={231}
-						src='/Images/support-page-screenshots/accoric-management-update-employee-active-status.webp'
+						src='/images/support-page-screenshots/accoric-management-update-employee-active-status.webp'
 						alt='Change active status from employee profile'
 					/>
 				</li>

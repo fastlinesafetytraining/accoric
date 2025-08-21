@@ -11,7 +11,7 @@ export default function index() {
 					aria-label='Accoric Bio Image Container'
 				>
 					<Image
-						src='/Images/accoric-about-us-bio.webp'
+						src='/images/accoric-about-us-bio.webp'
 						width={1120}
 						height={1120}
 						alt='Accoric showing its innovative Accoric Management software to construction company'

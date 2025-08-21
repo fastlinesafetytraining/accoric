@@ -13,7 +13,7 @@ export default function VideoSec() {
 			</p>
 			<VideoPlayer
 				ariaLabel='A video showing expired certification liability'
-				src='/Videos/expired-certification-liability.mp4'
+				src='/videos/expired-certification-liability.mp4'
 			/>
 		</section>
 	);

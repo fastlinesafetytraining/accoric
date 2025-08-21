@@ -30,7 +30,7 @@ export default function Page() {
 			<Image
 				width={1155}
 				height={473}
-				src='/Images/support-page-screenshots/accoric-management-notes.webp'
+				src='/images/support-page-screenshots/accoric-management-notes.webp'
 				alt="Notes section of an Employee's Profile"
 			/>
 		</>

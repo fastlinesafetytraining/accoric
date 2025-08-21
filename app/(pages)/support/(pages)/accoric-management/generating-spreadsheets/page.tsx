@@ -56,7 +56,7 @@ export default function Page() {
 			<Image
 				width={662}
 				height={811}
-				src='/Images/support-page-screenshots/accoric-management-generate-spreadsheet.webp'
+				src='/images/support-page-screenshots/accoric-management-generate-spreadsheet.webp'
 				alt='generate Spreadsheet'
 			/>
 		</>

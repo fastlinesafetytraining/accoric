@@ -5,7 +5,7 @@ const testimonials: {
 	quote: React.ReactElement;
 }[] = [
 	{
-		companyLogo: "/Images/client-logos/related-services-logo.webp",
+		companyLogo: "/images/client-logos/related-services-logo.webp",
 		companyName: "Related Services LLC",
 		author: "Justin A.",
 		quote: (
@@ -15,7 +15,7 @@ const testimonials: {
 		)
 	},
 	{
-		companyLogo: "/Images/client-logos/champion-scc-logo.webp",
+		companyLogo: "/images/client-logos/champion-scc-logo.webp",
 		companyName: "Champion Painting",
 		author: "Amel H.",
 		quote: (
@@ -25,7 +25,7 @@ const testimonials: {
 		)
 	},
 	{
-		companyLogo: "/Images/client-logos/millbrook-logo.webp",
+		companyLogo: "/images/client-logos/millbrook-logo.webp",
 		companyName: "Millbrook Fire",
 		author: "Nick D.",
 		quote: (

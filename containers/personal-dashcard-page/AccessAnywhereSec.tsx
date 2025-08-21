@@ -47,7 +47,7 @@ export default function AccessAnywhereSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.accessAnywhereSec__content__assetContainer}
 				>
-					<video src="/Videos/personal-dashcard/pd-4.mp4" autoPlay loop muted playsInline />
+					<video src="/videos/personal-dashcard/pd-4.mp4" autoPlay loop muted playsInline />
 				</motion.div>
 			</div>
 		</section>

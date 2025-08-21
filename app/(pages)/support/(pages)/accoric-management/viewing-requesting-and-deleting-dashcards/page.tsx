@@ -39,7 +39,7 @@ export default function Page() {
 			<Image
 				width={345}
 				height={276}
-				src='/Images/support-page-screenshots/accoric-management-request-new-card.webp'
+				src='/images/support-page-screenshots/accoric-management-request-new-card.webp'
 				alt='Request New Card button on employee profile page'
 			/>
 		</>

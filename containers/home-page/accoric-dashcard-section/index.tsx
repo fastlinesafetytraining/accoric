@@ -11,7 +11,7 @@ export default function index() {
 					<Image
 						width={600}
 						height={600}
-						src='/Images/accoric-dashcard-sample.webp'
+						src='/images/accoric-dashcard-sample.webp'
 						alt='Accoric Management Software being used on Laptop mockup'
 					/>
 				</div>

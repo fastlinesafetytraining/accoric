@@ -1,10 +1,10 @@
-import milconLogo from "@/public/Images/client-logos/milcon-logo.webp";
-import championLogo from "@/public/Images/client-logos/champion-scc-logo.webp";
-import posillicoLogo from "@/public/Images/client-logos/posillico-logo.webp";
-import hauglandLogo from "@/public/Images/client-logos/haugland-group-logo.webp";
-import kendrionLogo from "@/public/Images/client-logos/kedrion-biopharma-logo.webp";
-import dubnerLogo from "@/public/Images/client-logos/dubner-landscaping-logo.webp";
-import cacLogo from "@/public/Images/client-logos/cac-logo.webp";
+import milconLogo from "@/public/images/client-logos/milcon-logo.webp";
+import championLogo from "@/public/images/client-logos/champion-scc-logo.webp";
+import posillicoLogo from "@/public/images/client-logos/posillico-logo.webp";
+import hauglandLogo from "@/public/images/client-logos/haugland-group-logo.webp";
+import kendrionLogo from "@/public/images/client-logos/kedrion-biopharma-logo.webp";
+import dubnerLogo from "@/public/images/client-logos/dubner-landscaping-logo.webp";
+import cacLogo from "@/public/images/client-logos/cac-logo.webp";
 
 import type { StaticImageData } from "next/image";
 

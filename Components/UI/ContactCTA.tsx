@@ -9,7 +9,7 @@ export default function ContactCTA() {
           <div className={styles.contactCTA__imageContainer}>
             <Image
               className={styles.contactCTA__imageContainer__image}
-              src="/Images/accoric-trust-promise.webp"
+              src="/images/accoric-trust-promise.webp"
               alt="Call to action image"
               width={391}
               height={150}

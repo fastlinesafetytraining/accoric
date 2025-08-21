@@ -26,7 +26,7 @@ export default function IntroSec() {
 				height={745}
 				className={styles.accoricManagement__content__1__image}
 				alt='A mockup example of accoric management on a desktop'
-				src='/Images/accoric-desktop-mockup.webp'
+				src='/images/accoric-desktop-mockup.webp'
 			/>
 		</section>
 	);

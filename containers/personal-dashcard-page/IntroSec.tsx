@@ -49,7 +49,7 @@ export default function IntroSec() {
 				{isWebGLSupported === false ? (
 					<div className={styles.introSec__content__assetContainer}>
 						<Image
-							src='/Images/personal-dashcard/hero-image.png'
+							src='/images/personal-dashcard/hero-image.png'
 							alt='Construction worker holding a child with arms looking at the construction site background'
 							width={600}
 							height={600}

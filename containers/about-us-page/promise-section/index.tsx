@@ -25,7 +25,7 @@ export default function index() {
 					aria-label='Accoric Promise Image Container'
 				>
 					<Image
-						src='/Images/trustworthy-software-for-construction-companies.webp'
+						src='/images/trustworthy-software-for-construction-companies.webp'
 						width={1120}
 						height={1120}
 						alt='Accoric has a promise to its customers, to provide the best possible service and support.'

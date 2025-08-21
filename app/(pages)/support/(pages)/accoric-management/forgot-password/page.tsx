@@ -26,7 +26,7 @@ export default function Page() {
 				<Image
 					width={204}
 					height={161}
-					src='/Images/support-page-screenshots/accoric-management-forgot-password.webp'
+					src='/images/support-page-screenshots/accoric-management-forgot-password.webp'
 					alt='Forgot Password on Login'
 				/>
 				<li>
@@ -49,13 +49,13 @@ export default function Page() {
 			<Image
 				width={241}
 				height={182}
-				src='/Images/support-page-screenshots/accoric-management-reset-password.webp'
+				src='/images/support-page-screenshots/accoric-management-reset-password.webp'
 				alt='Forgot Password on Login'
 			/>
 			<Image
 				width={473}
 				height={334}
-				src='/Images/support-page-screenshots/accoric-management-set-new-password.webp'
+				src='/images/support-page-screenshots/accoric-management-set-new-password.webp'
 				alt='Forgot Password on Login'
 			/>
 		</>

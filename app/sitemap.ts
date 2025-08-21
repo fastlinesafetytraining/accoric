@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
 	const baseUrl = process.env.NEXT_PUBLIC_BASE_URL as string || 'http://localhost:3000';
-    const defaultImageUrl = `${baseUrl}/Images/accoric-social-media-image.svg`;
+    const defaultImageUrl = `${baseUrl}/images/accoric-social-media-image.svg`;
 
 	return [
 		{

@@ -8,7 +8,7 @@ export default function Content2Sec() {
 			<Image
 				width={766}
 				height={534}
-				src='/Images/accoric-management-mockup.webp'
+				src='/images/accoric-management-mockup.webp'
 				alt='A mockup example of accoric management on a tablet device'
 			/>
 			<div className={styles.accoricManagement__content__2__text}>

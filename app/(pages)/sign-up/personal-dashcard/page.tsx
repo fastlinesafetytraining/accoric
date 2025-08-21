@@ -30,7 +30,7 @@ export default function PersonalDashcardSignUp() {
 			<div className={styles.signUpPage__divider}></div>
 
 			<Image
-				src='/Images/personal-dashcard/construction-sign-up-for-accoric.webp'
+				src='/images/personal-dashcard/construction-sign-up-for-accoric.webp'
 				alt='Construction worker holding a child with arms looking at the construction site background'
 				width={600}
 				height={600}

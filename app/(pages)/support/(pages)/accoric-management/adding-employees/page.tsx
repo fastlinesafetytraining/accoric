@@ -24,7 +24,7 @@ export default function Page() {
 				<Image
 					width={1206}
 					height={631}
-					src='/Images/support-page-screenshots/accoric-management-add-employee-form.webp'
+					src='/images/support-page-screenshots/accoric-management-add-employee-form.webp'
 					alt='accoric screenshot'
 				/>
 				<li>

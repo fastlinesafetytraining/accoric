@@ -44,7 +44,7 @@ export default function YourCardSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.yourCardSec__content__assetContainer}
 				>
-					<video src="/Videos/personal-dashcard/pd-1.mp4" autoPlay loop muted playsInline />
+					<video src="/videos/personal-dashcard/pd-1.mp4" autoPlay loop muted playsInline />
 				</motion.div>
 			</div>
 		</section>

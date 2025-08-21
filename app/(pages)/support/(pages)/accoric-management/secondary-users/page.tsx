@@ -34,7 +34,7 @@ export default function Page() {
 			<Image
 				width={426}
 				height={699}
-				src='/Images/support-page-screenshots/accoric-management-create-secondary-user.webp'
+				src='/images/support-page-screenshots/accoric-management-create-secondary-user.webp'
 				alt='Accoric Management - Creating Secondary Users'
 			/>
 			<hr />
@@ -47,7 +47,7 @@ export default function Page() {
 					<Image
 						width={183}
 						height={125}
-						src='/Images/support-page-screenshots/accoric-management-secondary-user-access-level.webp'
+						src='/images/support-page-screenshots/accoric-management-secondary-user-access-level.webp'
 						alt='Accoric Management - Secondary User Access Level'
 					/>
 					<ol>

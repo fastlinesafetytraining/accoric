@@ -27,7 +27,7 @@ export default function index() {
 				<Image
 					width={150}
 					height={150}
-					src='/Images/rating-stars.webp'
+					src='/images/rating-stars.webp'
 					alt='Rating Stars'
 					className={styles.testimonial_stars}
 				/>

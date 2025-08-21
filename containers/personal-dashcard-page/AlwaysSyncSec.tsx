@@ -44,7 +44,7 @@ export default function AlwaysSyncSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.alwaysSyncSec__content__assetContainer}
 				>
-					<video src="/Videos/personal-dashcard/pd-5.mp4" autoPlay loop muted playsInline />
+					<video src="/videos/personal-dashcard/pd-5.mp4" autoPlay loop muted playsInline />
 				</motion.div>
 			</div>
 		</section>

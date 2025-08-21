@@ -41,7 +41,7 @@ export default function Page() {
 			<Image
 				width={256}
 				height={517}
-				src='/Images/support-page-screenshots/accoric-management-create-category.webp'
+				src='/images/support-page-screenshots/accoric-management-create-category.webp'
 				alt='Creating Categories'
 			/>
 			<hr />
@@ -57,7 +57,7 @@ export default function Page() {
 			<Image
 				width={337}
 				height={156}
-				src='/Images/support-page-screenshots/accoric-management-delete-category.webp'
+				src='/images/support-page-screenshots/accoric-management-delete-category.webp'
 				alt='Creating Categories'
 			/>
 
@@ -79,7 +79,7 @@ export default function Page() {
 			<Image
 				width={2590}
 				height={1869}
-				src='/Images/support-page-screenshots/accoric-management-update-category-name.webp'
+				src='/images/support-page-screenshots/accoric-management-update-category-name.webp'
 				alt='Creating Categories'
 			/>
 		</>
