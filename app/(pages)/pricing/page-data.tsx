@@ -1,12 +1,3 @@
-export const includedInAllSubscriptions = [
-    "Unlimited Certifications",
-    "Unlimited Certification Types",
-    "Unlimited File Attachments",
-    "Unlimited Categories",
-    "Spreadsheet Functionality",
-    "Multiple User Access",
-    "Email/Text Support",
-  ];
 
 export const faqItems = [
     {

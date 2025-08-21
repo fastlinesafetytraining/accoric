@@ -1,8 +1,8 @@
 import React from "react";
 import { Toaster } from "react-hot-toast";
-import { PricingForm, FAQ, PastClients, CompanyStats } from "@components/UI";
-import { TbSquareRoundedCheckFilled } from "react-icons/tb";
-import { includedInAllSubscriptions, faqItems } from "./page-data";
+import { FAQ, PastClients, CompanyStats } from "@components/UI";
+// import { TbSquareRoundedCheckFilled } from "react-icons/tb";
+import { faqItems } from "./page-data";
 import type { Metadata } from "next";
 import styles from "@styles/pages/pricing.module.scss";
 
@@ -25,24 +25,7 @@ export default function Page() {
 				<CompanyStats />
 			</section>
 			<div className={styles.pricing__content}>
-				<section className={styles.pricing__includedList}>
-					<div className={styles.pricing__includedList__container}>
-						<h2>Whats Included</h2>
-						<ul className={styles.pricing__includedList__container__list}>
-							{includedInAllSubscriptions.map((item, index) => (
-								<li key={index}>
-									<i>
-										<TbSquareRoundedCheckFilled />
-									</i>
-									{item}
-								</li>
-							))}
-						</ul>
-					</div>
-				</section>
-				<section className={styles.pricing__formContainer}>
-					<PricingForm />
-				</section>
+
 				<section className={styles.pricing__clients}>
 					<h2>
 						Start tracking your workers&apos; <span>certifications</span>
