@@ -47,7 +47,7 @@ export default function Footer() {
 							<Link href='/accoric-management'>Accoric Management</Link>
 						</li>
 						<li>
-							<Link href='/accoric-dashcard'>Accoric DashCard</Link>
+							<Link href='/personal-dashcard'>Personal DASHcard™</Link>
 						</li>
 					</ul>
 					<ul className='link-list'>
@@ -78,17 +78,6 @@ export default function Footer() {
 				</div>
 
 				<div className='flex flex-col items-center m-10'>
-					<Image
-						unoptimized
-						className='mb-8 rounded-full'
-						width={100}
-						height={100}
-						src='/svg/usa-flag.svg'
-						alt='USA Flag'
-					/>
-					<p>
-						<b>100% MADE IN THE USA</b>
-					</p>
 					<ThemeToggle />
 				</div>
 			</div>
