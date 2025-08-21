@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { supportMenu } from "@/libs/utils/const/routes";
+import { supportMenu } from "@/libs/constants/routes";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {

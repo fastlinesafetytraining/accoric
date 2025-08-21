@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 import createMDX from "@next/mdx";
-import { redirects } from "@/libs/utils/const/redirects";
+import { redirects } from "@/libs/constants/redirects";
 
 /* @type {import('next').NextConfig} */
 

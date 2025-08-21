@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import testimonials from "@/libs/utils/const/testimonials";
+import testimonials from "@/libs/constants/testimonials";
 import styles from "@styles/pages/home.module.scss";
 
 export default function index() {

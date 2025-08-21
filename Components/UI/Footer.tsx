@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggle } from ".";
-import socialAccounts from "@/libs/utils/const/socialAcccounts";
+import socialAccounts from "@/libs/constants/socialAcccounts";
 import { LuExternalLink } from "react-icons/lu";
 import "@styles/globals.css";
 

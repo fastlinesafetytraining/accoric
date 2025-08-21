@@ -5,7 +5,7 @@ import {
 	formFields,
 	marks,
 	radioOptions,
-} from "@/libs/utils/const/pricingFormData";
+} from "@/libs/constants/pricingFormData";
 import toast from "react-hot-toast";
 import { Form, Input, Slider, Radio } from "antd";
 import styles from "@styles/component.module.scss";

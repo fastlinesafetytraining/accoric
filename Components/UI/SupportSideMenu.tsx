@@ -4,7 +4,7 @@ import { LuChevronDown } from "react-icons/lu";
 import { Drawer } from "antd";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import supportMenu from "@/libs/utils/const/routes";
+import supportMenu from "@/libs/constants/routes";
 import styles from "@styles/component.module.scss";
 
 export default function SupportSideMenu() {

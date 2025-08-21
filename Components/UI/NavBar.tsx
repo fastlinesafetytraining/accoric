@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { Drawer } from "antd";
 import { SiteButton, ThemeToggle } from ".";
-import { navMenuItems } from "@/libs/utils/const/routes";
+import { navMenuItems } from "@/libs/constants/routes";
 import { LuUser, LuMenu, LuX } from "react-icons/lu";
 import styles from "@styles/component.module.scss";
 
