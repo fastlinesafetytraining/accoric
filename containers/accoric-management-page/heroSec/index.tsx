@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "@styles/pages/accoricManagement.module.scss";
+import { SiteButton } from "@/Components/UI";
 
 export default function HeroSec() {
 	return (
@@ -9,6 +10,9 @@ export default function HeroSec() {
 				A management system for your business.
 				<br /> Track your employees certifications, training, and more.
 			</p>
+			<SiteButton href="#pricing" title="Get Started" type="primary">
+				Get Started
+			</SiteButton>
 		</section>
 	);
 }
