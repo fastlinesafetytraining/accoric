@@ -427,11 +427,19 @@
 		color: var(--text-paragraph-color);
 		font-size: clamp(1rem, 1.5vw, 1.1rem);
 	}
-	.faqAnswer {
+	.faqAnswer, .faqAnswer p {
 		font-size: clamp(1rem, 1.5vw, 1.1rem);
 		text-align: start;
 		font-weight: 400;
 		color: var(--text-paragraph-color);
+		ul {
+			list-style: disc;
+			padding-left: 1rem;
+			li {
+				margin-bottom: var(--spacing-xs);
+			}
+		}
+
 	}
 }
 

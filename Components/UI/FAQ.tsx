@@ -5,7 +5,7 @@ import styles from "@styles/component.module.scss";
 
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: string; // Can contain HTML content
 }
 
 interface FAQProps {
@@ -18,7 +18,12 @@ export default async function FAQ({ items }: FAQProps) {
   const faqItems: CollapseProps['items'] = faqItemsArray.map((item, index) => ({
     key: index.toString(),
     label: <h3 className={styles.faqQuestion}>{item.question}</h3>,
-    children: <p className={styles.faqAnswer}>{item.answer}</p>
+    children: (
+      <div 
+        className={styles.faqAnswer}
+        dangerouslySetInnerHTML={{ __html: item.answer }}
+      />
+    )
   }));
 
   // Generates JSON-LD schema
@@ -30,7 +35,7 @@ export default async function FAQ({ items }: FAQProps) {
       "name": item.question,
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": item.answer
+        "text": item.answer.replace(/<[^>]*>/g, '') // Strip HTML tags for schema
       }
     }))
   };
