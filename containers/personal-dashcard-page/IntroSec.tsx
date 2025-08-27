@@ -14,7 +14,7 @@ export default function IntroSec() {
 	}, []);
 
 	return (
-		<section id='introduction' className={styles.introSec}>
+		<section id='introduction' aria-label='Introduction' className={styles.introSec}>
 			<div className={styles.introSec__background}>
 				{isWebGLSupported === true ? (
 					<Spline
@@ -36,12 +36,20 @@ export default function IntroSec() {
 						for.
 					</p>
 					<div className={styles.introSec__content__buttonContainer}>
+
 						<SiteButton
-							type='secondary'
+							type='primary'
 							href='/sign-up/personal-dashcard'
 							title='Sign Up'
 						>
 							Sign Up
+						</SiteButton>
+						<SiteButton
+							type='secondary'
+							href='#pricing'
+							title='Pricing'
+						>
+							Pricing
 						</SiteButton>
 					</div>
 				</div>

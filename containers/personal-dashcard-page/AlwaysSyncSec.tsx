@@ -22,7 +22,7 @@ export default function AlwaysSyncSec() {
 	);
 
 	return (
-		<section ref={ref} id='alwaysSync' className={styles.alwaysSyncSec}>
+		<section ref={ref} id='alwaysSync' aria-label='Always Synced' className={styles.alwaysSyncSec}>
 			<div className={styles.alwaysSyncSec__content}>
 				<motion.div
 					style={{ opacity }}

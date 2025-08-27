@@ -22,7 +22,7 @@ export default function YourCardSec() {
 	);
 
 	return (
-		<section ref={ref} id='yourCard' className={styles.yourCardSec}>
+		<section ref={ref} id='yourCard' aria-label='Your Card' className={styles.yourCardSec}>
 			<div className={styles.yourCardSec__content}>
 				<motion.div
 					className={styles.yourCardSec__content__text}

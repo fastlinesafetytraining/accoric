@@ -19,7 +19,7 @@ export default function AccessAnywhereSec() {
 		[0, 1, 1, 0.5]
 	);
 	return (
-		<section ref={ref} id='accessFromAnywhere' className={styles.accessAnywhereSec}>
+		<section ref={ref} id='accessFromAnywhere' aria-label='Access Anywhere' className={styles.accessAnywhereSec}>
 			<div className={styles.accessAnywhereSec__content}>
 				<motion.div
 					style={{ opacity }}

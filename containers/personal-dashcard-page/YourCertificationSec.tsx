@@ -24,6 +24,7 @@ export default function YourCertificationSec() {
 		<section
 			ref={ref}
 			id='yourCertification'
+			aria-label='Your Certification'
 			className={styles.yourCertificationSec}
 		>
 			<div className={styles.yourCertificationSec__content}>

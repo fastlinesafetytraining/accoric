@@ -18,7 +18,7 @@ export default function ExpirationReminderSec() {
 		[0, 1, 1, 0.5]
 	);
 	return (
-		<section ref={ref} id='reminders' className={styles.expirationReminderSec}>
+		<section ref={ref} id='reminders' aria-label='Smart Reminders' className={styles.expirationReminderSec}>
 			<div className={styles.expirationReminderSec__content}>
 				<motion.div
 					style={{ opacity }}
