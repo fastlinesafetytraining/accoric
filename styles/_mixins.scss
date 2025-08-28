@@ -21,36 +21,9 @@
 	-webkit-text-fill-color: transparent;
 }
 
-@mixin flex-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-@mixin link-text-effect {
+@mixin global-page-link-effect {
     color: var(--link-color);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    position: relative;
-    &::before {
-        content: "";
-        background-color: var(--link-color);
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        position: absolute;
-        width: 0;
-        transition: all 0.3s ease;
-    }
-    &:hover {
-        &::before {
-            width: 100%;
-        }
-    }
-}
-
-@mixin paragraph-link {
-    color: var(--link-color);
+    z-index: 1;
     text-decoration: none;
     transition: all 0.3s ease;
     position: relative;
@@ -73,8 +46,4 @@
             height: 100%;
         }
     }
-}
-
-@mixin blur-bright-background {
-    background-color: var(--section-backdrop-color);
 }
