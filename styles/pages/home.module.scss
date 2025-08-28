@@ -213,25 +213,11 @@
       display: inline-flex;
       margin: 1rem;
       align-self: flex-end;
-      position: relative;
-      &::after {
-        content: "";
-        width: 100%;
-        height: 2px;
-        background-color: var(--global-black-to-white-color);
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        transition: all 0.2s ease-in-out;
-      }
-
+      @include m.global-page-link-effect;
       svg {
         margin: 0 0.25rem;
         transition: all 0.2s ease-in-out;
         transform: rotate(45deg);
-      }
-      &:hover::after {
-        width: 10%;
       }
       &:hover > svg {
         animation: scaleAndRotate 0.5s ease-in-out;
