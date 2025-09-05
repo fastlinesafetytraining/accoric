@@ -128,4 +128,9 @@ export const redirects: Redirect[] = [
 			"/support/accoric-management/viewing-requesting-and-deleting-dashcards",
 		permanent: true,
 	},
+	{
+		source: "/support/blogs",
+		destination: "/blog",
+		permanent: true,
+	},
 ];
