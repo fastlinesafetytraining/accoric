@@ -17,3 +17,5 @@ export { default as FlipText } from './FlipText';
 export { default as SplineScene } from './SplineScene';
 export { default as DotPatternBackground } from './DotPatternBackground';
 export { default as ClickSparks } from './ClickSparks';
+export { default as SharePage } from './SharePage';
+export { default as ReadTime } from './ReadTime';
