@@ -7,7 +7,9 @@
     "devturbo": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:markdown": "node scripts/validate-markdown.js",
+    "lint:all": "npm run lint && npm run lint:markdown"
   },
   "dependencies": {
     "@ant-design/v5-patch-for-react-19": "^1.0.3",
@@ -39,16 +41,20 @@
     "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
+    "@babel/parser": "^7.28.4",
     "@cspell/eslint-plugin": "^9.2.0",
     "@eslint/eslintrc": "^3",
+    "@eslint/markdown": "^7.2.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.5.0",
+    "eslint-plugin-markdown": "^5.1.0",
     "sass": "^1.90.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "yaml": "^2.8.1"
   }
 }
