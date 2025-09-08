@@ -1,5 +1,6 @@
 export interface PostMetaDataProps {
     title: string;
+    subtitle: string;
     date: string;
     excerpt: string;
     slug: string;

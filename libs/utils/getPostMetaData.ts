@@ -13,6 +13,7 @@ export default function getPostMetaData(): PostMetaDataProps[] {
         const matterResult = matter(fileContents)
         return {
             title: matterResult.data.title,
+            subtitle: matterResult.data.subtitle,
             date: matterResult.data.date,
             excerpt: matterResult.data.excerpt,
             tag: matterResult.data.tag,
