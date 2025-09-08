@@ -16,5 +16,5 @@ function getReadTime(text: string): number {
 
 export default function ReadTime({ children }: ReadTimeProps) {
 	const minutes = getReadTime(children);
-	return <span>{minutes} min read</span>;
+	return <span>{minutes} min</span>;
 }
