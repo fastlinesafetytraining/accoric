@@ -36,6 +36,7 @@
 	/* Text Colors */
 	--text-paragraph-color: oklch(0.2 0 0);
 	--list-marker-color: oklch(0.2 0 0);
+	--meta-color: oklch(0.4 0 0);
 
 	/* Link Colors */
 	--link-color: oklch(0.6 0.2 240);
@@ -110,6 +111,7 @@
 	/* Text Colors */
 	--text-paragraph-color: oklch(0.9 0 0);
 	--list-marker-color: oklch(0.9 0 0);
+	--meta-color: oklch(0.9 0 0);
 
 	/* Link Colors */
 	--link-color: oklch(0.7 0.15 253);
