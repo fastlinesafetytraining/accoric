@@ -15,6 +15,7 @@ export default function getPostMetaData(): PostMetaDataProps[] {
             title: matterResult.data.title,
             date: matterResult.data.date,
             excerpt: matterResult.data.excerpt,
+            tag: matterResult.data.tag,
             slug: fileName.replace('.mdx', '').replace('.md', ''),
             author: matterResult.data.author,
             content: matterResult.content,

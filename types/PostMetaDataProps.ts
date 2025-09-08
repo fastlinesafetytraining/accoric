@@ -7,4 +7,5 @@ export interface PostMetaDataProps {
     content: string;
     image: string;
     imageAlt: string;
+    tag: string;
 }
