@@ -6,7 +6,6 @@ slug: "building-safer-construction-sites-with-accoric-management"
 image: "/Images/blog/7-building-safer-construction-sites.webp"
 imageAlt: "Learn more about building safer construction sites"
 excerpt: "The construction industry is facing a significant challenge: the presence of unqualified workers on construction sites. This not only poses a risk to the safety of workers but also to the quality of the construction projects. In this blog post, we will explore the reasons why unqualified workers are present in the construction industry and the consequences of their presence."
-
 ---
 
 The construction industry is one of the most vital sectors in the global economy, but it is also among the most hazardous. To mitigate risks and ensure the well-being of construction workers, strict safety certifications are required. However, ensuring compliance with these certifications across a diverse and often mobile workforce can be a challenging task. In recent years, web applications have emerged as a powerful tool to enhance transparency into workforce safety certifications. In this article, we will explore how increased transparency into workforce safety certifications, facilitated by web applications, can significantly boost overall safety in the construction industry.

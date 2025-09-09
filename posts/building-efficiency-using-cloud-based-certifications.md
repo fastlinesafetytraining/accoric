@@ -1,6 +1,6 @@
 ---
-title: 'Building Efficiency Using Cloud-Based Certifications'
-date: '2025-07-01'
+title: "Building Efficiency Using Cloud-Based Certifications"
+date: "2025-07-01"
 author: "Accoric"
 slug: "building-efficiency-using-cloud-based-certifications"
 image: "/Images/blog/1-building-efficiency-using-cloud-based-certifications.webp"

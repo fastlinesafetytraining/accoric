@@ -1,11 +1,11 @@
 ---
-title: 'Certification Chaos: An Accoric Management Solution'
-date: '2025-07-01'
+title: "Certification Chaos: An Accoric Management Solution"
+date: "2025-07-01"
 author: "Accoric"
 slug: "certification-chaos-an-accoric-management-solution"
 image: "/Images/blog/12-certification-chaos-solved-by-accoric-management.webp"
-imageAlt: ""
-excerpt: ""
+imageAlt: "A Construction worker looking worried about other workers not having the correct certifications"
+excerpt: "In the dynamic world of construction, ensuring the safety and compliance of your workforce is paramount. Yet, one of the most common pain points for contractors is the struggle to keep track of employees’ safety certifications and their expiration dates. This lack of clarity can lead to significant challenges, especially during the critical phases of project commencement. Enter Accoric Management, a revolutionary web-based application designed to transform the way construction contractors manage and track employee certifications."
 ---
 
 In the dynamic world of construction, ensuring the safety and compliance of your workforce is paramount. Yet, one of the most common pain points for contractors is the struggle to keep track of employees’ safety certifications and their expiration dates. This lack of clarity can lead to significant challenges, especially during the critical phases of project commencement. Enter Accoric Management, a revolutionary web-based application designed to transform the way construction contractors manage and track employee certifications.

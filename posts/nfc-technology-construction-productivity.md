@@ -5,6 +5,7 @@ author: "Accoric"
 slug: "nfc-technology-construction-productivity"
 image: "/Images/blog/2-nfc-technology-construction-productivity.webp"
 imageAlt: "A brief overview of relational databases and their role in certification management"
+excerpt: "Near Field Communication (NFC) technology has been a game-changer across various industries, and its application in construction is no exception. The NFC-chip embedded in DashCards enables seamless communication between the card and smartphones, creating an efficient and reliable system for real-time data exchange."
 ---
 
 Through all phases of construction, efficiency and productivity are key factors that can make or break a project. With advancements in technology, Accoric is paving a groundbreaking revolution through the integration of our NFC-chip encoded Accoric DashCards. These innovative cards, when carried and scanned by construction workers on-site, provide real-time documentation and certification data, significantly enhancing productivity for contractors. Accoric DashCards come customized with the contractor’s logo, presenting a professional image for each worker that reflects the contractor.
