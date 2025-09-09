@@ -5,7 +5,10 @@ import { PostMetaDataProps } from '@/types/PostMetaDataProps'
 export default function getPostMetaData(): PostMetaDataProps[] {
     const folder = 'posts/'
     const files = fs.readdirSync(folder)
-    const onlyMarkdownPosts = files.filter((file) => file.endsWith('.md') || file.endsWith('.mdx'))
+    const onlyMarkdownPosts = files.filter((file) => {
+        const excludeFiles = ['README.md'];
+        return file.endsWith('.md') || file.endsWith('.mdx') && !excludeFiles.includes(file)
+    })
 
     // Get Gray matter data from each file
     const posts = onlyMarkdownPosts.map((fileName) => {
