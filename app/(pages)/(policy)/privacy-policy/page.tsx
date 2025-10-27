@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
 		<div className={styles.policyPage}>
 			<div className={styles.policyHeader}>
 				<h1>Privacy Policy</h1>
-				<span>Last Updated May 5, 2023</span>
+				<span>Last Updated October 27, 2025</span>
 			</div>
 
 			<div className={styles.policyContent}>
@@ -280,7 +280,7 @@ export default function PrivacyPolicyPage() {
 					</p>
 					<p>
 						Standard messaging and data rates may apply depending on your mobile
-						carrier.
+						carrier. Mobile opt-in data will not be shared with third parties.
 					</p>
 				</div>
 				<div
