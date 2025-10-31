@@ -16,9 +16,9 @@ export default function PricingSec() {
 								styles.pricingSec__content__cardContainer__card__header
 							}
 						>
-							<h3>Personal Dashcard <br/> Standard Subscription</h3>
+							<h3>Personal DASHcard™ <br/> Standard Subscription</h3>
 							<h4>
-								10<span>99 /Month</span>
+								4<span>99 /Month</span>
 								<br />
 							</h4>
 						</div>
@@ -26,10 +26,8 @@ export default function PricingSec() {
 							className={styles.pricingSec__content__cardContainer__card__body}
 						>
 							<ul>
-								<li>Physical Card included in your subscription</li>
 								<li>Access your certifications anytime, anywhere</li>
-								<li>Text and email notifications</li>
-								<li>Automatic expiration reminders</li>
+								<li>Customizable expiration notifications for your credentials</li>
 								<li>Secure cloud storage for your credentials</li>
 								<li>Easy sharing with employers and clients</li>
 								<li>Simple, user-friendly dashboard</li>
