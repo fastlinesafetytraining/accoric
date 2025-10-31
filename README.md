@@ -22,3 +22,4 @@ Accoric Management is a centralized certification management, offers real-time c
 ## Accoric DashCard
 Combine with our Accoric Dashcard, you eliminate the need to carry multiple cards at the job site.
 Our cards carry NFC technology will display all your current certificates by just scanning it behind your Smartphone.
+##
