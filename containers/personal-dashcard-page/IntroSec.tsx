@@ -14,14 +14,10 @@ export default function IntroSec() {
 	}, []);
 
 	return (
+		<>
+		
 		<section id='introduction' aria-label='Introduction' className={styles.introSec}>
-			<div className={styles.introSec__background}>
-				{isWebGLSupported === true ? (
-					<Spline
-						scene={process.env.NEXT_PUBLIC_DASHCARD_SCENE_HERO as string}
-					/>
-				) : null}
-			</div>
+
 			<div className={styles.introSec__content}>
 				<div className={styles.introSec__content__text}>
 					<h1>
@@ -66,6 +62,13 @@ export default function IntroSec() {
 					</div>
 				) : null}
 			</div>
+
+			<div className={styles.introSec__background}>
+				<img src="/Images/personal-dashcard/personal-dashcard-logo.png"></img>
+					
+			</div>
 		</section>
+		
+		</>
 	);
 }
