@@ -64,7 +64,7 @@ export default function PrivacyPolicyPage() {
 		<div className={styles.policyPage}>
 			<div className={styles.policyHeader}>
 				<h1>Privacy Policy</h1>
-				<span>Last Updated October 27, 2025</span>
+				<span>Last Updated May 5, 2023</span>
 			</div>
 
 			<div className={styles.policyContent}>
@@ -249,6 +249,9 @@ export default function PrivacyPolicyPage() {
 							promotional campaigns and to evaluate and improve our Sites or
 							Apps, products, services, marketing, and your experience.
 						</li>
+						<li>
+							In cases where your employer or training provider registers you on the Accoric Management platform, we may also use your contact information to send you information about related Accoric products and services that support certification tracking and compliance management, such as the Personal DASHcard™. These communications are intended to enhance your use of the Accoric platform and you may opt out at any time by following the unsubscribe instructions provided in such communications.
+						</li>
 					</ol>
 					<p>
 						When you provide your mobile phone number or email address, you
@@ -280,7 +283,7 @@ export default function PrivacyPolicyPage() {
 					</p>
 					<p>
 						Standard messaging and data rates may apply depending on your mobile
-						carrier. Mobile opt-in data will not be shared with third parties.
+						carrier.
 					</p>
 				</div>
 				<div
@@ -729,11 +732,11 @@ export default function PrivacyPolicyPage() {
 								<br />
 								d/b/a Accoric
 								<br />
-								535 Broadhollow Rd
+								110 Walt Whitman Road 
 								<br />
-								STE B10
+								STE 203
 								<br />
-								Melville, NY 11747
+								Huntington Station, NY 11746
 							</p>
 						</div>
 					</div>
