@@ -28,13 +28,16 @@ export default function YourCardSec() {
 					className={styles.yourCardSec__content__text}
 					style={{ opacity }}
 				>
-					<h2 className={styles.yourCardSec__content__text__heading}>Your Personal DASHcard™</h2>
+					<h2 className={styles.yourCardSec__content__text__heading}>
+						This is Your Personal DASHcard™
+					</h2>
 					<h3 className={styles.yourCardSec__content__text__subHeading}>
-						<IoIdCard />
-						Your universal tool in total certification management.
+						<IoIdCard /> Show your phone. Prove your certifications.<br /> Never get sent home again.
 					</h3>
 					<p>
-						For the first time, you have a tool that&apos;s <span className={styles.yourCardSec__content__text__highlight}>built</span> for you, <span className={styles.yourCardSec__content__text__highlight}>owned</span> by you, and <span className={styles.yourCardSec__content__text__highlight}>controlled</span> by you.
+						Your certifications. One place. Always up to date.
+For the first time, you have a tool that&apos;s
+						 <span className={styles.yourCardSec__content__text__highlight}>built</span> for you, <span className={styles.yourCardSec__content__text__highlight}>owned</span> by you, and <span className={styles.yourCardSec__content__text__highlight}>controlled</span> by you.
 					</p>
 					<p>
 						Built with technology that lets you scan, view, and share your training certifications with anyone, anywhere, anytime.
@@ -44,7 +47,8 @@ export default function YourCardSec() {
 					style={{ opacity: opacity2 }}
 					className={styles.yourCardSec__content__assetContainer}
 				>
-					<video src="/videos/personal-dashcard/pd-1.mp4" autoPlay loop muted playsInline />
+					<img src="/Images/personal-dashcard/all-your-training-image.png"></img>
+					{/* <video src="/videos/personal-dashcard/pd-1.mp4" autoPlay loop muted playsInline /> */}
 				</motion.div>
 			</div>
 		</section>
