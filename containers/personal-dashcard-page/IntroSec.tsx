@@ -31,7 +31,7 @@ export default function IntroSec() {
 						<br /> we&apos;re protecting what lets you work — and what you work
 						for.
 					</p>
-					<div className={styles.introSec__content__buttonContainer}>
+					{/* <div className={styles.introSec__content__buttonContainer}>
 
 						<SiteButton
 							type='primary'
@@ -47,7 +47,7 @@ export default function IntroSec() {
 						>
 							Pricing
 						</SiteButton>
-					</div>
+					</div> */}
 				</div>
 
 				{isWebGLSupported === false ? (
