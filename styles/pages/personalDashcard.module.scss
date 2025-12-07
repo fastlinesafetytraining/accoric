@@ -85,6 +85,9 @@
 	@media (min-width: 768px) {
 				display: flex;
 			}
+	&__playStore {
+			width: 200px;
+		}
 	&__background {
 		inset: 0;
 		width: 100%;
@@ -170,6 +173,7 @@
 			display: flex;
 			gap: var(--spacing-sm);
 		}
+		
 	}
 }
 
