@@ -47,6 +47,21 @@ export default function Page() {
 					</p>
 				</div>
 				<div
+					aria-label='user-account-and-use-of-services'
+					className={styles.policyContentSection}
+				>
+					<h2>User Account and Use of Services</h2>
+					<p>
+						When you create an Accoric account—or when your employer or other authorized organization creates one on your behalf—you agree that Accoric may use your contact information to communicate with you regarding the services, including updates, compliance alerts, account notices, and information about related Accoric products that help manage or verify your certifications.
+					</p>
+					<p>
+						You are responsible for maintaining the accuracy of your account information and for all activity under your account. If you no longer wish to receive promotional communications, you may opt out at any time by following the unsubscribe instructions provided in such communications or by contacting us directly.
+					</p>
+					<p>
+						Use of the services must comply with all applicable laws and company policies. You agree not to misuse the platform or interfere with its normal operation.
+					</p>
+				</div>
+				<div
 					aria-label='Description of Website Services Offered'
 					className={styles.policyContentSection}
 				>
@@ -987,9 +1002,9 @@ export default function Page() {
 					<p>
 						<b>Mailing Address</b>
 						<br />
-						535 Broadhollow Road Suite B10
+						10 Walt Whitman Road Suite 203
 						<br />
-						Melville, NY 11747
+						Huntington Station, NY 11746
 						<br />
 						Email: <a href='mailto:dmca@accoric.com'>dmca@accoric.com</a>
 					</p>
