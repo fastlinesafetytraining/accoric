@@ -47,7 +47,7 @@ For the first time, you have a tool that&apos;s
 					style={{ opacity: opacity2 }}
 					className={styles.yourCardSec__content__assetContainer}
 				>
-					<img src="/Images/personal-dashcard/all-your-training-image.png"></img>
+					<img src="/Images/personal-dashcard/all-your-training-image-new.png"></img>
 					{/* <video src="/videos/personal-dashcard/pd-1.mp4" autoPlay loop muted playsInline /> */}
 				</motion.div>
 			</div>
