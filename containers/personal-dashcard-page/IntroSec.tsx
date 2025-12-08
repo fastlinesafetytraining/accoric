@@ -31,7 +31,20 @@ export default function IntroSec() {
 						<br /> we&apos;re protecting what lets you work — and what you work
 						for.
 					</p>
+
 					<div className={styles.introSec__content__buttonContainer}>
+
+					   <a href="https://apps.apple.com/us/app/personal-dashcard/id6747406123" target="_blank" className={styles.introSec__playStore}>
+							<img src="images/personal-dashcard/apple_play_store.png"></img>
+						</a>
+						
+						<a href="https://play.google.com/store/apps/details?id=com.accoric.dashcard" target="_blank" className={styles.introSec__playStore}>
+							<img src="images/personal-dashcard/google_play_store.png"></img>
+						</a>
+
+					</div>
+
+					{/* <div className={styles.introSec__content__buttonContainer}>
 
 						<SiteButton
 							type='primary'
@@ -47,7 +60,7 @@ export default function IntroSec() {
 						>
 							Pricing
 						</SiteButton>
-					</div>
+					</div> */}
 				</div>
 
 				{isWebGLSupported === false ? (
