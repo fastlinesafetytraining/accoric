@@ -77,7 +77,7 @@ export default function IntroSec() {
 			</div>
 
 			<div className={styles.introSec__background}>
-				<img src="/Images/personal-dashcard/personal-dashcard-logo.png"></img>
+				<img src="/Images/personal-dashcard/personal_dashcard_logo_new.png"></img>
 					
 			</div>
 		</section>
