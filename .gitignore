@@ -47,3 +47,6 @@ next-env.d.ts
 .netlify
 
 .vercel
+
+# Visual Studio local workspace files
+.vs/
