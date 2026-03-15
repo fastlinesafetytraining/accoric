@@ -1,25 +1,16 @@
-# Accoric 
+# React + Vite
 
-## Contact Information
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-### Technical Help (Accoric Management Customers)
-Monday-Friday: 9:00AM - 5:00PM EDT
-Phone: +1 (516) 200-4720
-Email: techsupport@accoric.com
+Currently, two official plugins are available:
 
-### For Sale/General Inquiry
-Monday-Friday: 9:00AM -  5:00PM EDT
-Phone: +1 (516) 200-4720
-Email: info@accoric.com
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
+## React Compiler
 
-We offer Certification Tracking for Construction Workers and Commercial Companies. With our Accoric Management Program You can easily manage your employee's certificates.
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
+## Expanding the ESLint configuration
 
-## Accoric Management
-Accoric Management is a centralized certification management, offers real-time certification verification with DashCards. Streamlines a renewal reminders with custom report generation, and provides valuable analytics via spreadsheet reports to identify potential gaps in training.
-
-## Accoric DashCard
-Combine with our Accoric Dashcard, you eliminate the need to carry multiple cards at the job site.
-Our cards carry NFC technology will display all your current certificates by just scanning it behind your Smartphone.
-##
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
