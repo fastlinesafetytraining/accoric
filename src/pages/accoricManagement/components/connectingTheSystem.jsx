@@ -1,4 +1,4 @@
-import bannerImage from "../../../assets/images/workforce-compliance.png";
+import bannerImage from "../../../assets/images/workForce-compliance.png";
 import arrowImage from "../../../assets/images/arrow.svg";
 
 import icon1 from "../../../assets/images/Services/op1.svg";

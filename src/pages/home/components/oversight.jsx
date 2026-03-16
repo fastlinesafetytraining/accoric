@@ -1,5 +1,5 @@
 
-import bannerImage from "../../../assets/images/sec4-img1.webp";
+import bannerImage from "../../../assets/images/Sec4-img1.webp";
 import icon1 from "../../../assets/images/Sec4-icon1.svg";
 import icon2 from "../../../assets/images/Sec4-icon2.svg";
 import icon3 from "../../../assets/images/Sec4-icon3.svg";
