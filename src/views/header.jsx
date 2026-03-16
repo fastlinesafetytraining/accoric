@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import logo from "../assets/images/accoric-management-logo.svg";
+import logo from "../assets/images/accoric-logo-new.png";
 import arrowImage from "../assets/images/arrow.svg";
 
 function Header() {

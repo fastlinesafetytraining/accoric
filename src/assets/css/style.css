@@ -486,8 +486,9 @@ img {
 .a-section h2.title {
     letter-spacing: 0px;
     font-family: "Diagramm", sans-serif;
-    font-size: 3.5rem;
-    line-height: 3.75rem;
+    font-size: 62px;
+    line-height: 75px;
+
 }
 
 
@@ -817,6 +818,8 @@ img {
         max-width: 480px;
     }
 
+  
+
     .overtime-step {
         display: flex;
         flex-direction: row;
@@ -1014,6 +1017,15 @@ img {
 }
 
 .b-boxes2 .b-box2 .text {
+    /* UI Properties */
+
+    font: normal normal normal 20px/32px Diagramm;
+    letter-spacing: 0px;
+    color: #212121;
+}
+
+
+.b-boxes2 .b-box2 .text a {
     /* UI Properties */
 
     font: normal normal normal 20px/32px Diagramm;
@@ -1540,6 +1552,44 @@ img {
 }
 
 
+/* ---------- Companies Animation -------------- */
+.companies {
+  overflow: hidden;
+  width: 100%;
+}
+
+.companies-track {
+  display: flex;
+  gap: 60px;
+  animation: marqueeScroll 20s linear infinite;
+}
+
+.col-auto{
+    width: 380px;
+height: 380px;
+display: flex;
+align-items: center;
+justify-content: center;
+
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 17px;
+opacity: 1;
+}
+.companies-track img{
+  height:150px;
+  
+  object-fit:contain;
+}
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 
 
 
@@ -1867,7 +1917,10 @@ img {
 
 @media screen and (max-width: 1919px) {
 
-
+.a-section h2.title {
+    font-size: 54px;
+    line-height: 67px;
+}
 
 .red-bar .title {
     font-size: 26px;
@@ -1941,6 +1994,13 @@ img {
 
     .testim:before {
         left: -98px;
+    }
+
+
+    
+    .col-auto{
+        width: 300px;
+        height: 300px;
     }
 
 }
@@ -2182,6 +2242,12 @@ img {
         margin: 40px 0;
     }
 
+
+    
+    .col-auto{
+        width: 200px;
+        height: 200px;
+    }
    
 }
 

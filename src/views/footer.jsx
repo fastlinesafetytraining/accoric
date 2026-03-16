@@ -1,4 +1,4 @@
-import logo from "../assets/images/accoric-management-logo.svg";
+import logo from "../assets/images/accoric-logo-new.png";
 import arrowImage from "../assets/images/arrow.svg";
 import logoFacebook from "../assets/images/logo-facebook.svg";
 import logoLinkedin from "../assets/images/logo-linkedin.svg";
@@ -84,7 +84,11 @@ function Footer() {
                 <li>
                   <a href="/about-us">About Us</a>
                 </li>
-              
+                <li>
+                  <a asp-controller="Home" asp-action="ContactUs">
+                    Certificate Training
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="col-md-4 b-col">
@@ -94,11 +98,11 @@ function Footer() {
               <p>Email us</p>
               <p>
                 <a href="mailto:sales@accoric.com">
-                  <strong>info@accoric.com</strong>
+                  <strong>sales@accoric.com</strong>
                 </a>
               </p>
               <p>Location</p>
-              <p>110 Walt Whitman Rd STE 203, Huntington Sta., NY 11746</p>
+              <p>2/118 Great North Rd, Five Dock NSW 2046</p>
             </div>
           </div>
         </div>
@@ -106,7 +110,7 @@ function Footer() {
         <div class="container copyright-container">
           <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-              <p>Copyright &copy; 2026 RORI Technologies dba Accoric, All Rights Reserved</p>
+              <p>Copyright &copy; 2026 Accoric, All Rights Reserved</p>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
               <div class="terms-wrap">
