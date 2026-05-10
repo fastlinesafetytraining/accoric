@@ -1,264 +1,394 @@
 import { Link } from "react-router-dom";
-import PageHeader from "../../views/pageHeader"
+import PageHeader from "../../views/pageHeader";
 function TermsOfService() {
-   return (
+  return (
     <>
       <PageHeader
-        title="ACCORIC™ Privacy Policy"
-        description="Updated March 22, 2026"
+        title="ACCORIC™ Terms of Service"
+        description="Updated March 5, 2026"
       ></PageHeader>
 
       <div class="container b-child-container white mt-5">
         <section class="a-section">
           <div>
-            <div class="policy-wrapper">
+            <div class="tos-wrapper">
               
-              <div class="policy-meta">
-                <strong>PLEASE READ THIS POLICY CAREFULLY</strong> to understand
-                our policies and practices regarding your information and how we
-                will treat it.
+
+              <div class="intro-box">
+                <strong>Please read these Terms of Service carefully.</strong>
+                By accessing or using our Site and Services, you agree to be
+                bound by these Terms of Service.
               </div>
 
-              <p>
-                By accessing or using this Site, you agree to this Privacy
-                Policy. If you do not agree with our policies and practices,
-                please do not use our Site or Services.
-              </p>
+              <h2>1. Acceptance of Terms</h2>
 
               <p>
-                This Privacy Policy may change from time to time. Your continued
-                use of the Site or Services after we make changes is deemed
-                acceptance of those changes, so please check the policy
-                periodically for updates.
-              </p>
-
-              <div class="summary-box">
-                <h2>Summary of Privacy Practices</h2>
-
-                <p>
-                  At Accoric, we believe your privacy is important and we are
-                  committed to protecting it.
-                </p>
-
-                <ol>
-                  <li>
-                    <strong>You own your Credential Data.</strong>
-                    Certifications, licenses, training records, and other
-                    professional documents you upload remain yours.
-                  </li>
-
-                  <li>
-                    <strong>We minimize what we collect.</strong>
-                    We gather only the information reasonably necessary to
-                    operate the Services and meet legal obligations.
-                  </li>
-
-                  <li>
-                    <strong>We keep your data secure.</strong>
-                    All Personal Information and Credential Data are protected
-                    using industry-standard encryption and security measures.
-                  </li>
-
-                  <li>
-                    <strong>We don't sell your Credential Data.</strong>
-                    We may share limited Personal Information with trusted
-                    providers to deliver the Services.
-                  </li>
-
-                  <li>
-                    <strong>You control communication.</strong>
-                    You can update, delete, or correct your Personal Information
-                    and opt out of non-essential communications.
-                  </li>
-
-                  <li>
-                    <strong>We're transparent about changes.</strong>
-                    Any policy updates will be posted on the Site.
-                  </li>
-                </ol>
-              </div>
-
-              <h2>1. Introduction</h2>
-
-              <p>
-                RORI Technologies LLC, dba Accoric, operates the software
-                platform known as “Accoric” including related applications,
-                tools, APIs, and services.
-              </p>
-
-              <p>
-                This Privacy Policy applies to visitors, Members, Organizational
-                Users, Relying Parties, and all others who access or use the
+                These Terms of Service (“TOS”) govern the relationship between
+                RORI Technologies LLC, DBA Accoric, and all Users, Members,
+                Organizational Users, and Relying Parties who access or use the
                 Site or Services.
               </p>
 
-              <h2>2. Users</h2>
+              <p>By using the Site or Services, you agree to these Terms.</p>
 
-              <p>We do not accept persons under 18 years of age as Users.</p>
+              <h2>2. Definitions</h2>
 
-              <h2>3. Credential Data</h2>
+              <ul>
+                <li>
+                  <strong>Accoric / Company</strong> refers to RORI Technologies
+                  LLC, DBA Accoric.
+                </li>
+
+                <li>
+                  <strong>Credential Data</strong> includes certifications,
+                  licenses, training records, permits, safety cards, and related
+                  professional documents.
+                </li>
+
+                <li>
+                  <strong>Member</strong> means an individual with an account on
+                  the platform.
+                </li>
+
+                <li>
+                  <strong>Organizational User</strong> means an employer,
+                  contractor, staffing agency, union, or business entity using
+                  the Services.
+                </li>
+
+                <li>
+                  <strong>Relying Party</strong> means any party reviewing
+                  Credential Data for hiring or contracting decisions.
+                </li>
+              </ul>
+
+              <h2>3. Account Creation & Use of Services</h2>
 
               <p>
-                Members and Organizational Users may upload Credential Data,
-                including certifications, licenses, permits, safety cards, and
-                related professional documents.
+                Members are responsible for maintaining accurate account
+                information and for all activity associated with their account.
               </p>
 
               <p>
-                The Member remains the sole owner of Credential Data. Company
-                stores and displays Credential Data solely to provide the
+                You agree not to misuse the platform or interfere with the
+                operation of the Services.
+              </p>
+
+              <h2>4. Description of Services</h2>
+
+              <p>
+                Accoric provides a technology platform for storing and
+                displaying Credential Data through web, mobile, desktop, and
+                API-based services.
+              </p>
+
+              <p>
+                Services are provided on an “AS-IS” basis and may be updated,
+                modified, suspended, or discontinued at any time.
+              </p>
+
+              <h2>5. Platform Role & Credential Disclaimer</h2>
+
+              <div class="highlight-box">
+                <strong>IMPORTANT:</strong>
+                Accoric does not verify, validate, or authenticate credentials,
+                certifications, licenses, or training records uploaded to the
+                platform.
+              </div>
+
+              <h3>5.1 Nature of Services</h3>
+
+              <p>
+                Company provides a storage and display platform only and does
+                not participate in employment, contracting, or safety decisions.
+              </p>
+
+              <h3>5.2 No Verification of Credentials</h3>
+
+              <p>
+                Company makes no warranties regarding the authenticity,
+                validity, or compliance status of Credential Data.
+              </p>
+
+              <h3>5.3 Member Responsibility</h3>
+
+              <p>
+                Members are solely responsible for ensuring Credential Data is
+                accurate, truthful, and current.
+              </p>
+
+              <h3>5.4 Relying Party Responsibility</h3>
+
+              <p>
+                Relying Parties are solely responsible for independently
+                verifying Credential Data before making any hiring or
+                contracting decisions.
+              </p>
+
+              <h2>6. Onboarding and Ongoing Use</h2>
+
+              <p>
+                By creating or using an account, you acknowledge and agree to
+                these Terms of Service in their entirety.
+              </p>
+
+              <h2>7. Privacy Policy</h2>
+
+              <p>
+                Your use of the Services is also governed by the Accoric Privacy
+                Policy.
+              </p>
+
+              <h2>8. Conduct</h2>
+
+              <p>Users agree not to:</p>
+
+              <ul>
+                <li>Upload false or fraudulent Credential Data</li>
+                <li>Use automated scraping or extraction tools</li>
+                <li>Attempt to bypass platform security measures</li>
+                <li>Transmit malware, viruses, or harmful code</li>
+                <li>Harass, abuse, or impersonate other users</li>
+                <li>Use the platform unlawfully</li>
+              </ul>
+
+              <h2>9. Data Transmission</h2>
+
+              <p>
+                By uploading Credential Data and files, you acknowledge that
+                data may be transmitted through Company networks and systems.
+              </p>
+
+              <h2>10. Global Use & Compliance</h2>
+
+              <p>
+                Users agree to comply with all applicable export, import, and
+                international regulations related to use of the Services.
+              </p>
+
+              <h2>11. Content & Licenses</h2>
+
+              <p>
+                Users retain ownership of their Credential Data while granting
+                Company limited rights necessary to operate the Services.
+              </p>
+
+              <h2>12. Contributions</h2>
+
+              <p>
+                Feedback and suggestions submitted to Company may be used
+                without compensation or confidentiality obligations.
+              </p>
+
+              <h2>13. Indemnification</h2>
+
+              <p>
+                Users agree to indemnify and hold Company harmless from claims,
+                damages, liabilities, and expenses arising from use of the
+                Services or inaccurate Credential Data.
+              </p>
+
+              <h2>14. Commercial Reuse</h2>
+
+              <p>
+                Users may not duplicate, resell, or commercially exploit the
+                Services without written authorization.
+              </p>
+
+              <h2>15. Storage Practices</h2>
+
+              <p>
+                Company reserves the right to establish limits on storage,
+                retention, and account inactivity.
+              </p>
+
+              <h2>16. Modifications</h2>
+
+              <p>
+                Company may modify, suspend, or discontinue Services at any time
+                without liability.
+              </p>
+
+              <h2>17. Termination</h2>
+
+              <p>
+                Company may suspend or terminate accounts for violations of
+                these Terms, illegal activity, nonpayment, or security concerns.
+              </p>
+
+              <h3>17.1 Data Export & Retention</h3>
+
+              <p>
+                Users may request export of Credential Data before termination.
+                Company may retain data for up to ninety (90) days after account
+                termination.
+              </p>
+
+              <h2>18. Advertisers</h2>
+
+              <p>
+                Company is not responsible for dealings between Users and
+                third-party advertisers.
+              </p>
+
+              <h2>19. Links</h2>
+
+              <p>
+                Company is not responsible for third-party websites or external
+                resources linked through the Services.
+              </p>
+
+              <h2>20. Proprietary Rights</h2>
+
+              <p>
+                All software, branding, trademarks, and platform materials
+                remain the property of Company.
+              </p>
+
+              <h2>21. Warranty Disclaimers</h2>
+
+              <div class="highlight-box">
+                SERVICES ARE PROVIDED “AS IS” AND “AS AVAILABLE” WITHOUT
+                WARRANTIES OF ANY KIND.
+              </div>
+
+              <p>
+                Company does not guarantee uptime, availability, accuracy,
+                reliability, or uninterrupted access to the Services.
+              </p>
+
+              <h2>22. Limitation of Liability</h2>
+
+              <p>
+                Company shall not be liable for indirect, incidental,
+                consequential, or punitive damages arising from use of the
                 Services.
               </p>
 
-              <h2>4. Information We Collect</h2>
-
-              <p>We may collect the following categories of information:</p>
-
-              <ul>
-                <li>
-                  Personal Information such as name, email address, phone
-                  number, employer, job title, and payment details.
-                </li>
-
-                <li>
-                  Credential-related information including certifications,
-                  licenses, and professional designations.
-                </li>
-
-                <li>
-                  Technical information such as IP address, browser type, device
-                  identifiers, and usage data.
-                </li>
-              </ul>
-
-              <h3>Automatic Data Collection Technologies</h3>
-
-              <ul>
-                <li>Cookies</li>
-                <li>Flash Cookies</li>
-                <li>Web Beacons</li>
-              </ul>
-
-              <h2>5. How We Use Information</h2>
-
-              <p>We use collected information to:</p>
-
-              <ul>
-                <li>Provide and improve the Services</li>
-                <li>Manage Accounts and Credential Data</li>
-                <li>Send notices and alerts</li>
-                <li>Prevent fraud and improve security</li>
-                <li>Perform research and product development</li>
-                <li>Comply with legal obligations</li>
-              </ul>
-
-              <h2>6. Disclosure of Information</h2>
-
-              <p>We do not sell Credential Data.</p>
-
-              <p>Personal Information may be disclosed to:</p>
-
-              <ul>
-                <li>Affiliates and subsidiaries</li>
-                <li>Service providers and contractors</li>
-                <li>Successors in mergers or acquisitions</li>
-                <li>Government authorities where legally required</li>
-              </ul>
-
-              <h2>7. Your Choices</h2>
-
-              <ul>
-                <li>You may disable cookies through your browser settings.</li>
-
-                <li>
-                  You may opt out of promotional emails by following unsubscribe
-                  instructions.
-                </li>
-
-                <li>
-                  Essential account notifications cannot be disabled while your
-                  Account remains active.
-                </li>
-              </ul>
-
-              <h2>8. Accessing and Correcting Information</h2>
-
               <p>
-                Members may access, edit, or delete their Personal Information
-                and Credential Data through their Account settings.
+                Maximum aggregate liability shall not exceed the greater of:
               </p>
 
-              <h2>9. Data Security</h2>
+              <ul>
+                <li>Total fees paid in the previous 12 months</li>
+                <li>$100 USD</li>
+              </ul>
+
+              <h2>23. Assumption of Risk & Waiver</h2>
 
               <p>
-                We use industry-standard encryption and security measures to
-                protect Personal Information and Credential Data.
+                Users acknowledge that Credential Data may be inaccurate,
+                incomplete, expired, or fraudulent, and assume all risks related
+                to reliance on such data.
               </p>
+
+              <h2>24. Exclusions & Limitations</h2>
 
               <p>
-                However, no internet transmission can be guaranteed to be 100%
-                secure.
+                Certain jurisdictions may not permit some warranty exclusions or
+                limitations of liability.
               </p>
 
-              <h2>10. Data Retention and Processing</h2>
+              <h2>25. Third-Party Beneficiaries</h2>
 
               <p>
-                We retain Personal Information and Credential Data as long as
-                necessary to provide the Services and comply with legal
-                obligations.
+                Indemnified parties identified in these Terms are intended
+                third-party beneficiaries.
               </p>
 
-              <h2>11. Changes to Privacy Policy</h2>
+              <h2>26. Notices</h2>
 
               <p>
-                We may revise this Privacy Policy periodically. Updates will be
-                posted on this page with the updated revision date.
+                Notices may be delivered by email, SMS, regular mail, or through
+                the platform.
               </p>
 
-              <h2>12. Contact Information</h2>
+              <h2>27. Trademark Information</h2>
 
-              <div class="contact-box">
+              <p>
+                All trademarks and service marks associated with Accoric remain
+                the property of Company.
+              </p>
+
+              <h2>28. Copyright & Intellectual Property Claims</h2>
+
+              <p>
+                Claims regarding copyright or intellectual property infringement
+                should be directed to:
+              </p>
+
+              <div class="contact-box mb-4">
                 <p class="mb-1">
-                  <strong>RORI Technologies LLC, dba Accoric</strong>
+                  <strong>Attn: Copyright Agent</strong>
                 </p>
-                <p class="mb-1">535 Broadhollow Road, Suite B10</p>
+                <p class="mb-1">Nick Ercolano</p>
+                <p class="mb-1">535 Broadhollow Road Suite B10</p>
                 <p class="mb-1">Melville, NY 11747</p>
                 <p class="mb-0">
                   Email:
-                  <a href="mailto:info@accoric.com">info@accoric.com</a>
+                  <a href="mailto:dmca@accoric.com">dmca@accoric.com</a>
                 </p>
               </div>
 
-              <h2>13. California Privacy Rights</h2>
+              <h2>29. SMS & Email Communication</h2>
 
-              <p>
-                California residents may have rights under the California
-                Consumer Privacy Act (CCPA), including rights to access and
-                request deletion of Personal Information.
-              </p>
-
-              <h2>14. GDPR Rights</h2>
-
-              <p>
-                Users located in the European Union may have rights under the
-                GDPR, including:
-              </p>
+              <p>Users may receive:</p>
 
               <ul>
-                <li>Right to Access</li>
-                <li>Right to Rectification</li>
-                <li>Right to Erasure</li>
-                <li>Right to Restrict Processing</li>
-                <li>Right to Data Portability</li>
-                <li>Right to Object</li>
+                <li>OTP authentication messages</li>
+                <li>Certification expiration reminders</li>
+                <li>Service-related notifications</li>
               </ul>
 
-              <h2>15. Law and Jurisdiction</h2>
+              <h2>30. API Access & Use</h2>
 
               <p>
-                This Privacy Policy shall be governed by the laws of the State
-                of New York.
+                API access may be subject to rate limits, restrictions,
+                suspension, or revocation at Company’s discretion.
               </p>
+
+              <h2>31. Dispute Resolution & Arbitration</h2>
+
+              <p>
+                Disputes shall be governed by New York law and resolved through
+                binding arbitration in Suffolk County, New York.
+              </p>
+
+              <div class="highlight-box">
+                BOTH PARTIES WAIVE RIGHTS TO PARTICIPATE IN CLASS ACTIONS OR
+                REPRESENTATIVE PROCEEDINGS.
+              </div>
+
+              <h2>32. Data Processing & Organizational User Obligations</h2>
+
+              <p>
+                Organizational Users are responsible for obtaining all required
+                consents and complying with applicable privacy laws.
+              </p>
+
+              <h2>33. General Information</h2>
+
+              <p>
+                These Terms, together with the Privacy Policy and applicable
+                agreements, constitute the entire agreement between you and
+                Company.
+              </p>
+
+              <h2>34. Violations</h2>
+
+              <p>Please report violations of these Terms to:</p>
+
+              <div class="contact-box">
+                <p class="mb-1">
+                  <strong>RORI Technologies LLC, DBA Accoric</strong>
+                </p>
+                <p class="mb-1">535 Broadhollow Road Suite B10</p>
+                <p class="mb-1">Melville, NY 11747</p>
+                <p class="mb-0">
+                  Email:
+                  <a href="mailto:dmca@accoric.com">dmca@accoric.com</a>
+                </p>
+              </div>
             </div>
           </div>
         </section>
