@@ -115,7 +115,7 @@ function Footer() {
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
               <div class="terms-wrap">
                 <p>
-                  <a asp-controller="Home" asp-action="PrivacyPolicy">
+                  <a href="/privacy-policy">
                     Privacy Policy
                   </a>
                 </p>

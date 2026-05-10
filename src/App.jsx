@@ -22,6 +22,8 @@ import SecondaryUsers from "./pages/support/childPages/SecondaryUsers";
 import ForgotPassword from "./pages/support/childPages/ForgotPassword";
 import CreatingAutomatedEmailReminders from "./pages/support/childPages/CreatingAutomatedEmailReminders";
 import ViewingRequestingAndDeletingDashcards from "./pages/support/childPages/ViewingRequestingAndDeletingDashcards";
+import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
+import TermsOfService from "./pages/termsOfService/TermsOfService";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
 
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms-of-service" element={<TermsOfService />} />
           <Route path="/accoric-management" element={<AccoricManagement />} />
           <Route path="/about-us" element={<About />} />
           <Route path="/support" element={<Support />} />
