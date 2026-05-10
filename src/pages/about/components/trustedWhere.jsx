@@ -22,13 +22,8 @@ function TrustedWhere() {
             </div>
 
             <div class="c-boxes">
+             
               <div class="c-box c-box1">
-                <div class="title">
-                  500<span>+</span>
-                </div>
-                <div class="desc">Companies Served</div>
-              </div>
-              <div class="c-box c-box2">
 
                 
                 <div class="title">
@@ -37,7 +32,7 @@ function TrustedWhere() {
                 <div class="desc">Certifications Tracked</div>
 
               </div>
-              <div class="c-box c-box3">
+              <div class="c-box c-box2">
 
                 
                 <div class="title">
@@ -45,7 +40,7 @@ function TrustedWhere() {
                 </div>
                 <div class="desc">Workforce Records Maintained</div>
               </div>
-              <div class="c-box c-box4">
+              <div class="c-box c-box3">
 
 
                 <div class="title">

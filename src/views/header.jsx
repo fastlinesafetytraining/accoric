@@ -68,9 +68,11 @@ function Header() {
                   <li className="nav-item">
                     <a href="/accoric-management" className="nav-link">Accoric Management</a>
                   </li>
-                  <li className="nav-item">
-                    <a href="/support" className="nav-link">Support</a>
-                  </li>
+                 {/* 
+                    <li className="nav-item">
+                       <a href="/support" className="nav-link">Support</a>
+                    </li> 
+                 */}
                   <li className="nav-item">
                     <a href="/about-us" className="nav-link">About Us</a>
                   </li>

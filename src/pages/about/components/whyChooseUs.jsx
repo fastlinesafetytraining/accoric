@@ -36,8 +36,7 @@ function WhyChooseUs() {
 
                   <h5>Quick Onboarding</h5>
                   <p>
-                    Our onboarding process is designed to be
-                    <strong>quick</strong> and <strong>easy</strong>. We will
+                    Our onboarding process is designed to be <strong>quick</strong> and <strong>easy</strong>. We will
                     help you get started with your Accoric account in no time.
                   </p>
                 </div>
@@ -51,8 +50,7 @@ function WhyChooseUs() {
                   </div>
                   <h5>Simplicity</h5>
                   <p>
-                    Simple user interface designed to be
-                    <strong>simple</strong>. Easily find what you need.
+                    Simple user interface designed to be <strong>simple</strong>. Easily find what you need.
                   </p>
                 </div>
               </div>
