@@ -22,8 +22,8 @@ import SecondaryUsers from "./pages/support/childPages/SecondaryUsers";
 import ForgotPassword from "./pages/support/childPages/ForgotPassword";
 import CreatingAutomatedEmailReminders from "./pages/support/childPages/CreatingAutomatedEmailReminders";
 import ViewingRequestingAndDeletingDashcards from "./pages/support/childPages/ViewingRequestingAndDeletingDashcards";
-import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
-import TermsOfService from "./pages/termsOfService/TermsOfService";
+import PrivacyPolicy from "./pages/privacyPolicy/privacyPolicy";
+import TermsOfService from "./pages/termsOfService/termsOfService";
 
 function App() {
   return (
