@@ -5,7 +5,7 @@ function PrivacyPolicy() {
         <>
             <PageHeader
                 title="Privacy Policy"
-                description="Updated March 22, 2026"
+                description="Updated May 22, 2026"
             ></PageHeader>
 
             <div class="container b-child-container white mt-5">
@@ -440,7 +440,7 @@ function PrivacyPolicy() {
                         Separate from the CCPA, California’s “Shine the Light” law (Civil Code Section § 1798.83) permits Users of our Site that are California residents to request certain information regarding our disclosure of Personal Information to third parties for their direct marketing purposes. To make such a request, please send an email to info@accoric.com.
                     </p>
 
-                    
+
                      <br/>
                     <h2>
                         18.	YOUR RIGHTS UNDER THE GDPR

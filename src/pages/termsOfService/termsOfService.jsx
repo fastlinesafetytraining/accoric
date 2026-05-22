@@ -5,7 +5,7 @@ function TermsOfService() {
         <>
             <PageHeader
                 title="ACCORIC™ Terms of Service"
-                description="Updated March 22, 2026"
+                description="Updated May 22, 2026"
             ></PageHeader>
 
             <div class="container b-child-container white mt-5">
