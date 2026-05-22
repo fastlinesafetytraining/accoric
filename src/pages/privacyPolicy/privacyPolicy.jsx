@@ -88,9 +88,10 @@ function PrivacyPolicy() {
 
                         This Privacy Policy applies to those who visit the Site without registering as well as to Members, Organizational Users, Relying Parties, and all other persons who access or use the Site or Services (collectively, “Users” or individually, “User,” “you” or “your”). As used herein, “Account” means a registered Member account or Organizational User account created on the Site, including all associated profile information, Credential Data, settings, and activity history; “Member” means any individual who has created an Account on the Site or on whose behalf an Account has been created; “Organizational User” means any employer, general contractor, staffing agency, union, or other organization that uses the Services to manage Credential Data for its workers; and “Relying Party” means any party that accesses or reviews Credential Data through the Services for purposes of making hiring, contracting, or other decisions.
                     </p>
+                     <br/>
                     <h2>
                         1.	INTRODUCTION
-                    </h2>
+                    </h2> <br/>
                     <p>
 
 
@@ -117,16 +118,18 @@ function PrivacyPolicy() {
                         </li>
                     </ol>
 
-
+                    <br/>
                     <h2>
                         2.	USERS
-                    </h2>
+                    </h2> <br/>
                     <p>
 
 
                         We do not accept persons under 18 years of age as Users.
                     </p>
-                    <h2>3.	CREDENTIAL DATA</h2>
+                     <br/>
+                    <h2>3.	CREDENTIAL DATA</h2> <br/>
+
                     <p>
 
 
@@ -136,9 +139,12 @@ function PrivacyPolicy() {
                     </p>
                     <p>Company reserves the right, in its sole discretion, to delete or anonymize Personal Information and Credential Data that it determines to be inactive, unlawful, or inconsistent with this Privacy Policy or applicable law. We may also delete information if required by law enforcement or a court order, or if we reasonably believe retention poses a risk to system integrity or other Users.
                     </p>
+
+                     <br/>
                     <h2>
                         4.	INFORMATION WE COLLECT ABOUT YOU AND HOW WE COLLECT IT
-                    </h2>
+                    </h2> <br/>
+
                     <p>
                         We collect different types of information from and about Users of our Site and Services, including information:
                     </p>
@@ -206,10 +212,11 @@ function PrivacyPolicy() {
 
 
 
+                     <br/>
                     <h2>
 
                         5.	HOW WE USE INFORMATION
-                    </h2>
+                    </h2> <br/>
                     <p>
 
                         We use information we collect about you or that you provide to us, including any Personal Information:
@@ -252,10 +259,11 @@ function PrivacyPolicy() {
                     </p>
 
 
-                    <h2>
+                     <br/>
+                     <h2>
 
                         6.	DISCLOSURE OF YOUR INFORMATION
-                    </h2>
+                    </h2> <br/>
 
                     <p>
 
@@ -296,9 +304,10 @@ function PrivacyPolicy() {
                         </li>
                     </ol>
 
+                     <br/>
                     <h2>
                         7.	CHOICES ABOUT HOW WE USE AND DISCLOSE YOUR INFORMATION
-                    </h2>
+                    </h2> <br/>
                     <p>
                         We have created mechanisms to provide you with the following control over your information:
                     </p>
@@ -313,9 +322,10 @@ function PrivacyPolicy() {
                     <p>
                         We do not control third parties’ collection or use of your information to serve interest-based advertising. However, these third parties may provide you with ways to choose to not have your information collected or used in this way. You can opt out of receiving targeted ads from members of the Network Advertising Initiative (“NAI”) on the NAI’s website.
                     </p>
+                     <br/>
                     <h2>
                         8.	ACCESSING AND CORRECTING YOUR INFORMATION
-                    </h2>
+                    </h2> <br/>
 
                     <ol type="a">
                         <li>If you are a Member, you are the only person who can edit, delete, or authorize the editing or deletion of your Personal Information and Credential Data, except as otherwise provided in the TOS for Organizational Users.
@@ -323,9 +333,10 @@ function PrivacyPolicy() {
                         </li>
                     </ol>
 
-                    <h2>
+                     <br/>
+                     <h2>
                         9.	DATA SECURITY
-                    </h2>
+                    </h2> <br/>
                     <p>
                         We employ measures designed to secure Personal Information and Credential Data from accidental loss and from unauthorized access, use, alteration, and disclosure. All data is protected using industry-standard encryption at rest and in transit, and systems are subject to periodic security assessments.
                     </p>
@@ -342,25 +353,31 @@ function PrivacyPolicy() {
                     <p>
                         Personal Information that we collect from you may be stored, processed, and transferred among any countries in which we operate. Our company relies on derogations for specific situations as defined in Article 49 of the GDPR. If you are a European Union customer or User, you hereby consent to your Personal Information being transferred to the United States or other countries outside the European Union.[JS3.1] Wherever we transfer, process, or store your Personal Information, we will take reasonable steps to protect it. By using our Site, Services, or products, you agree to the transfers of your Personal Information described within this section.
                     </p>
+
+                     <br/>
                     <h2>
 
                         10.	DATA RETENTION AND PROCESSING
-                    </h2>
+                    </h2> <br/>
                     <p>
                         Information You Store with Us. We will keep Personal Information and Credential Data you store with us for as long as we need it to make the Site and Services available to you; and we may store, use, and/or transmit Personal Information and Credential Data in locations around the world, including those outside your country. Even if you delete your Account, we will keep this information and any data collected regarding all activities in which you have already engaged pursuant to your use of the Site for a period of time as we deem appropriate but no longer than as allowed by applicable law.
                     </p>
                     <p>
                         Post-Termination and Data Export. Credential Data retention periods, export rights, and deletion procedures following termination or cancellation of an Account are governed by the TOS. Members and Organizational Users may contact info@accoric.com for data export requests.
                     </p>
+
+                     <br/>
                     <h2>
                         11.	CHANGES TO OUR PRIVACY POLICY
-                    </h2>
+                    </h2> <br/>
                     <p>
                         It is our policy to post any changes we make to our Privacy Policy on this page. If we make material changes to how we treat our Users’ Personal Information and Credential Data, we will notify you through a notice on the Site home page, an email, or other such means as we determine reasonable to bring the changes to your attention. The date the Privacy Policy was last revised is identified at the top of the page. You are responsible for ensuring we have an up-to-date, active, and deliverable email address for you, and for periodically visiting our Site and this Privacy Policy to check for any changes. By continuing to use or access the Site or Services after the revisions come into effect, you agree to be bound by the revised Privacy Policy.
                     </p>
+
+                     <br/>
                     <h2>
                         12.	CONTACT INFORMATION
-                    </h2>
+                    </h2> <br/>
                     <p>
                         To ask questions, comment about this Privacy Policy and our privacy practices, or file a complaint, contact us at:
                     </p>
@@ -370,36 +387,46 @@ function PrivacyPolicy() {
                         Melville, NY 11747<br />
                         Email: info@accoric.com<br />
                     </p>
+
+                     <br/>
                     <h2>
                         13.	NO WARRANTY; LIMITATION OF LIABILITY
-                    </h2>
+                    </h2> <br/>
                     <p>
                         All warranty disclaimers, limitations of liability, liability caps, assumptions of risk, and personal liability exclusions applicable to the Site and Services are set forth in the TOS and apply with equal force to this Privacy Policy and your use of the Site and Services in connection herewith.
                     </p>
+
+                     <br/>
                     <h2>
                         14.	INTEGRATION OF TERMS
-                    </h2>
+                    </h2> <br/>
                     <p>
                         This Privacy Policy forms part of and is incorporated by reference into the TOS. In the event of any conflict between this Privacy Policy and the TOS, the TOS shall control.
                     </p>
                     <p>
 
                     </p>
+
+                     <br/>
                     <h2>
                         15.	UNFORESEEABLE EVENTS
-                    </h2>
+                    </h2> <br/>
                     <p>
                         While we implement administrative, physical, and technical safeguards, Accoric cannot guarantee protection against all possible security incidents, cyberattacks, hardware failures, or other events beyond its reasonable control. By using the Site and Services, you acknowledge these inherent risks and agree that Accoric shall not be responsible for damages arising from such events, except as expressly required by applicable law.
                     </p>
+
+                     <br/>
                     <h2>
                         16.	LAW AND JURISDICTION
-                    </h2>
+                    </h2> <br/>
                     <p>
                         This Privacy Policy shall be governed by and construed in accordance with the laws of the State of New York without regard to its conflict of law provisions. Any and all claims, causes of action, and/or disputes arising out of or relating to this Privacy Policy shall be resolved pursuant to the dispute resolution provisions set forth in the TOS, including the binding arbitration and class action waiver provisions contained therein.
                     </p>
+
+                     <br/>
                     <h2>
                         17.	YOUR CALIFORNIA PRIVACY RIGHTS
-                    </h2>
+                    </h2> <br/>
                     <p>
                         Under the California Consumer Privacy Act of 2018 (“CCPA”), California residents have certain rights regarding our collection, use, and sharing of Personal Information. We may share limited Personal Information (never your Credential Data) with third-party service providers or partners who help deliver our Services, in accordance with applicable law. We do not sell Personal Information in the traditional sense of exchanging it for money. We do not offer financial incentives associated with our collection, use, or disclosure of your Personal Information. Residents of certain U.S. states, such as Colorado, Virginia, and Connecticut, may have additional rights under state privacy laws, which we will honor to the extent required by law.
                     </p>
@@ -412,9 +439,12 @@ function PrivacyPolicy() {
                     <p>
                         Separate from the CCPA, California’s “Shine the Light” law (Civil Code Section § 1798.83) permits Users of our Site that are California residents to request certain information regarding our disclosure of Personal Information to third parties for their direct marketing purposes. To make such a request, please send an email to info@accoric.com.
                     </p>
+
+                    
+                     <br/>
                     <h2>
                         18.	YOUR RIGHTS UNDER THE GDPR
-                    </h2>
+                    </h2> <br/>
                     <p>
                         When using our Site and Services and submitting Personal Information to us, you may have certain rights under the GDPR if you reside or are in any of the countries of the European Union. Depending on the legal basis for processing your Personal Information, you may have some or all of the following rights:
                     </p>
