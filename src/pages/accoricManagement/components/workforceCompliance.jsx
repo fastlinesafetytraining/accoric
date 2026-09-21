@@ -1,7 +1,7 @@
 import arrowImage from "../../../assets/images/arrow.svg";
 import bannerImage from "../../../assets/images/Services/img1.png";
 
-function  WorkforceCompliance() {
+function  WorkforceCompliance({openPopup}) {
   return (
     <>
       <div class="container b-child-container">
@@ -22,12 +22,14 @@ function  WorkforceCompliance() {
                  Accoric Management functions as the authoritative source of truth for workforce compliance, ensuring records remain current, consistent, and defensible as reality shifts.
                 </p>
 
-                <a href="#" class="btn btn-outline-primary">
+                <button type="button" class="btn btn-outline-primary"
+                onClick={openPopup}
+                >
                   <span>
                     Schedule a Compliance Strategy Call{" "}
                     <img src={arrowImage} alt="arrow"></img>
                   </span>
-                </a>
+                </button>
               </div>
               <div class="col-md-6 image-container">
                 <img class="rounded-image" src={bannerImage} />

@@ -4,7 +4,7 @@ import icon1 from "../../../assets/images/Services/b1.svg";
 import icon2 from "../../../assets/images/Services/b2.svg";
 import icon3 from "../../../assets/images/Services/b3.svg";
 
-function OverTime() {
+function OverTime({openPopup}) {
   return (
     <div class="container b-child-container black">
       <section class="a-section">
@@ -33,10 +33,12 @@ function OverTime() {
               and under scrutiny.
             </div>
 
-            <a href="#" className="btn btn-outline-primary">
+            <button type="button" className="btn btn-outline-primary" 
+            onClick={openPopup}
+            >
               Request a Demo
               <img src={arrowImage} alt="arrow" />
-            </a>
+            </button>
           </div>
 
          

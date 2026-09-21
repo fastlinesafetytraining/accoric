@@ -8,19 +8,24 @@ import CallBanner from "./components/callBanner";
 import Accuracy from "./components/accuracy";
 import ConnectingTheSystem from "./components/connectingTheSystem";
 import ReportingBuiltForOversight from "./components/reportingBuiltForOversight";
+import Testimonials from "./components/testimonials";
+import { useOutletContext } from "react-router-dom";
 function Home() {
+     const { openPopup } = useOutletContext();
   return (
     <>
       <Hero></Hero>
-      <WorkforceCompliance></WorkforceCompliance>
-      <ManagementFunctions></ManagementFunctions>
+      <WorkforceCompliance openPopup={openPopup}></WorkforceCompliance>
+      <ManagementFunctions openPopup={openPopup}></ManagementFunctions>
       <Companies></Companies>
-      <OverTime></OverTime>
+      <OverTime openPopup={openPopup}></OverTime>
       <FailQuietly></FailQuietly>
-      <CallBanner></CallBanner>
+      <CallBanner openPopup={openPopup}></CallBanner>
       <Accuracy></Accuracy>
-      <ConnectingTheSystem></ConnectingTheSystem>
-      <ReportingBuiltForOversight></ReportingBuiltForOversight>
+      <ConnectingTheSystem openPopup={openPopup}></ConnectingTheSystem>
+      <ReportingBuiltForOversight openPopup={openPopup}></ReportingBuiltForOversight>
+      <Testimonials></Testimonials>
+      
     </>
   );
 }

@@ -1,6 +1,6 @@
 import arrowImage from "../../../assets/images/arrow.svg";
 
-function CallBanner() {
+function CallBanner({openPopup}) {
   return (
     <>
       <div class="container black">
@@ -11,18 +11,25 @@ function CallBanner() {
           </div>
           <div class="col-md-4">
             <div class="pull-right">
-              <a href="#" class="btn btn-primary m-1">
+          
+              <button type="button" className="btn btn-primary m-1"
+              onClick={openPopup}
+              >
                 <span>
                   Get Started {"  "}
                   {/* <img src={arrowImage} alt="arrow"></img> */}
                 </span>
-              </a>
-              <a href="#" class="btn btn-outline-primary m-1">
+              </button>
+
+
+              <button type="button"  className="btn btn-outline-primary m-1"
+               onClick={openPopup}
+              >
                 <span>
                   Book a Call
                   <img src={arrowImage} alt="arrow"></img>
                 </span>
-              </a>
+              </button>
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ import logoLinkedin from "../assets/images/logo-linkedin.svg";
 import logoInstagram from "../assets/images/logo-instagram.svg";
 import footerText from "../assets/images/footer-text.svg";
 
-function Footer() {
+function Footer({openPopup}) {
   return (
     <>
       <footer class="main-footer">
@@ -20,12 +20,15 @@ function Footer() {
 
             <div class="col-lg-4 col-md-4">
               <div class="btns-wrp pull-right">
-                <a href="#" class="btn btn-outline-primary">
+                <button type="button" class="btn btn-outline-primary"
+                 onClick={openPopup}
+                >
+
                   <span>
                     Request a conversation{" "}
                     <img src={arrowImage} alt="arrow"></img>
                   </span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -84,7 +87,11 @@ function Footer() {
                 <li>
                   <a href="/about-us">About Us</a>
                 </li>
-                
+                <li>
+                  <a asp-controller="Home" asp-action="ContactUs">
+                    Certificate Training
+                  </a>
+                </li>
               </ul>
             </div>
             <div class="col-md-4 b-col">
@@ -98,7 +105,7 @@ function Footer() {
                 </a>
               </p>
               <p>Location</p>
-              <p>110 Walt Whitman Rd STE 203, Huntington Sta., NY 11746</p>
+              <p>2/118 Great North Rd, Five Dock NSW 2046</p>
             </div>
           </div>
         </div>
@@ -106,17 +113,13 @@ function Footer() {
         <div class="container copyright-container">
           <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-              <p>Copyright &copy; 2026 RORI Technologies dba Accoric, All Rights Reserved</p>
+              <p>Copyright &copy; 2026 Accoric, All Rights Reserved</p>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
               <div class="terms-wrap">
                 <p>
-                  <a href="/privacy-policy">
+                  <a asp-controller="Home" asp-action="PrivacyPolicy">
                     Privacy Policy
-                  </a>
-                   &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp; 
-                   <a href="/terms-of-service">
-                    Terms of Service
                   </a>
                 </p>
               </div>

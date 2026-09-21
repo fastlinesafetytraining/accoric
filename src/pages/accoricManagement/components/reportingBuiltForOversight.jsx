@@ -2,7 +2,7 @@ import arrowImage from "../../../assets/images/arrow.svg";
 import bannerImage from "../../../assets/images/Services/img6.png";
 import tickImage from "../../../assets/images/tick.svg"; 
 
-function  ReportingBuiltForOversight() {
+function  ReportingBuiltForOversight({openPopup}) {
   return (
     <>
       <div class="container b-child-container">
@@ -53,12 +53,14 @@ function  ReportingBuiltForOversight() {
 
               
            <div className="sec2-cta-row">
-                    <a href="#" className="btn btn-outline-primary">
+                    <button type="button" className="btn btn-outline-primary"
+                    onClick={openPopup}
+                    >
                       <span>
                         Stabilize Your Compliance System{" "}
                         <img src={arrowImage} alt="arrow" />
                       </span>
-                    </a>
+                    </button>
                     <div className="sec2-phone">
                       <i className="bi bi-telephone-fill"></i> <strong>+1 516-200-4720</strong>
                     </div>

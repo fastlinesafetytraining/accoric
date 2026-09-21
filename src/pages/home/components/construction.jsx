@@ -5,7 +5,7 @@ import icon2 from "../../../assets/images/expiration-go-unnotices-icon.svg";
 import icon3 from "../../../assets/images/workforce-rosters-icon.svg";
 import icon4 from "../../../assets/images/issues-surface-icon.svg";
 
-function Construction() {
+function Construction({openPopup}) {
   return (
     
       <section className="container b-child-container">
@@ -98,12 +98,16 @@ function Construction() {
               </div>
 
               <div className="sec2-cta-row">
-                <a href="#" className="btn btn-outline-primary">
-                  <span>
-                    Stabilize Your Compliance System{" "}
-                    <img src={arrowImage} alt="arrow" />
-                  </span>
-                </a>
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                onClick={openPopup}
+              >
+                <span>
+                  Stabilize Your Compliance System{" "}
+                  <img src={arrowImage} alt="arrow" />
+                </span>
+              </button>
                 <div className="sec2-phone">
                   <i className="bi bi-telephone-fill"></i> <strong>+1 516-200-4720</strong>
                 </div>

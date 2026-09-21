@@ -6,7 +6,7 @@ import icon2 from "../../../assets/images/Services/op2.svg";
 import icon3 from "../../../assets/images/Services/op3.svg";
 import icon4 from "../../../assets/images/Services/op4.svg";
 
-function ConnectingTheSystem() {
+function ConnectingTheSystem({openPopup}) {
   return (
     <>
       <div class="container b-child-container black">
@@ -36,12 +36,14 @@ function ConnectingTheSystem() {
                   system.
                 </div>
 
-                <a href="#" class="btn btn-outline-primary">
+                <button type="button" class="btn btn-outline-primary"
+                onClick={openPopup}
+                >
                   <span>
                     Schedule a Compliance Strategy Call{" "}
                     <img src={arrowImage} alt="arrow"></img>
                   </span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -63,12 +65,14 @@ function ConnectingTheSystem() {
                   stable foundation as systems and conditions change.
                 </div>
 
-                <a href="#" class="btn btn-outline-primary">
+                <button type="button" class="btn btn-outline-primary"
+                onClick={openPopup}
+                >
                   <span>
                     Schedule a Compliance Strategy Call{" "}
                     <img src={arrowImage} alt="arrow"></img>
                   </span>
-                </a>
+                </button>
               </div>
               <div class="col-md-6 ps-4">
                 <div class="row">

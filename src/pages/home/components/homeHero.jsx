@@ -1,6 +1,6 @@
-import bannerImage from '../../../assets/images/header-banner-image.png'
-import arrowImage from '../../../assets/images/arrow.svg'
-function HomeHero() {
+import bannerImage from "../../../assets/images/header-banner-image.png";
+import arrowImage from "../../../assets/images/arrow.svg";
+function HomeHero({ openPopup }) {
   return (
     <>
       <section class="home-hero-section">
@@ -8,7 +8,7 @@ function HomeHero() {
           <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 left-colm pe-5 first">
               <h1>
-                Accurate Workforce <br/>
+                Accurate Workforce <br />
                 Compliance <br />
                 Maintained at Scale
               </h1>
@@ -24,14 +24,18 @@ function HomeHero() {
               </h3>
 
               <div class="btns-wrp">
-                <a href="#"  class="btn btn-outline-primary">
-                    <span>
-                      Request a conversation{" "}
-                      <img src={arrowImage} alt="arrow"></img>
-                    </span>
-                </a>
+                <button
+                  type="button"
+                  onClick={openPopup}
+                  className="btn btn-outline-primary"
+                >
+                  <span>
+                    Request a conversation{" "}
+                    <img src={arrowImage} alt="arrow"></img>
+                  </span>
+                </button>
+                
               </div>
-              
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 right-colm">

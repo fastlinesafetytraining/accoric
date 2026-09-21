@@ -5,7 +5,7 @@ import icon1 from "../../../assets/images/Sec4-icon1.svg";
 import icon2 from "../../../assets/images/Sec4-icon2.svg";
 import icon3 from "../../../assets/images/Sec4-icon3.svg";
 
-function WorkForceCompliance() {
+function WorkForceCompliance({openPopup}) {
   return (
     <>
       <div class="container b-child-container black">
@@ -88,13 +88,17 @@ function WorkForceCompliance() {
             Requirement.
           </div>
           <div class="col-md-3">
-
-             <a href="#" className="btn btn-outline-primary">
-                              <span>
-                                Request a Demo{" "}
+              <button
+                type="button"
+                className="btn btn-outline-primary"
+                onClick={openPopup}
+              >
+                <span>
+                  Request a Demo{" "}
                                 <img src={arrowImage} alt="arrow" />
-                              </span>
-                            </a>
+                </span>
+              </button>
+
           </div>
         </div>
       </div>

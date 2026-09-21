@@ -2,7 +2,7 @@ import bannerImage from "../../../assets/images/Sec5-img1.png";
 import arrowImage from "../../../assets/images/arrow.svg";
 import tick from "../../../assets/images/tick-icon.svg";
 
-function Regulated() {
+function Regulated({openPopup}) {
   return (
     <>
       <div class="container b-child-container">
@@ -30,12 +30,14 @@ function Regulated() {
                 <div class="pt-4 pb-4">If accuracy matters, Accoric fits.</div>
 
                 <div>
-                  <a href="#" class="btn btn-outline-primary">
+                  <button type="button" class="btn btn-outline-primary"
+                  onClick={openPopup}
+                  >
                     <span>
                       Schedule a Compliance Strategy Call{" "}
                       <img src={arrowImage} alt="arrowImage" />
                     </span>
-                  </a>
+                  </button>
                 </div>
               </div>
             </div>

@@ -4,7 +4,7 @@ import icon1 from "../../../assets/images/accuracy-icon1.svg";
 import icon2 from "../../../assets/images/accuracy-icon2.svg";
 import icon3 from "../../../assets/images/accuracy-icon3.svg";
 
-function Accuracy() {
+function Accuracy({openPopup}) {
   return (
     <>
       <div class="container b-child-container">
@@ -72,11 +72,16 @@ function Accuracy() {
             </div>
           </div>
           <div class="text-center p60 button-bar">
-            <a href="#" className="btn btn-outline-primary item">
-              <span>
+                          <button
+                            type="button"
+                            className="btn btn-outline-primary item"
+                            onClick={openPopup}
+                          >
+                             <span>
                 Request a Demo <img src={arrowImage} alt="arrow" />
               </span>
-            </a>
+                          </button>
+
 
             <span class="empty-btn-border ms-4 item">
               +1 516-200-4720

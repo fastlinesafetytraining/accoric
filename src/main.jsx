@@ -3,6 +3,9 @@ import { createRoot } from 'react-dom/client'
 import './assets/css/bootstrap.min.css';
 import './assets/css/style.css';
 import './assets/css/font-awesome.min.css';
+import './assets/css/owl.carousel.min.css';
+import './assets/css/owl.theme.default.min.css';
+
 
 import App from './App.jsx'
 

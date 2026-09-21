@@ -47,6 +47,56 @@ body {
     font-family: "Figtree", sans-serif;
 }
 
+
+
+
+
+.contact-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 9999;
+}
+
+.contact-modal {
+  background: white;
+  padding: 30px;
+  width: 450px;
+  border-radius: 24px;
+}
+.contact-modal h2{
+     
+    font-family: "Diagramm", sans-serif;
+    font-size: 40px;
+    line-height: 44px;
+    margin: 0 0 20px;
+    text-align: left;
+    color: black;
+    opacity: 1;
+}
+
+.contact-modal input,
+.contact-modal textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contact-modal .btn {
+
+  padding: 10px 32px;
+}
+
+
+
 .container {
     max-width: 1580px;
 }
@@ -1391,165 +1441,100 @@ img {
 
 
 /*-------  testimonials-section -------*/
+
+/* ///New Testimonials */
 .testimonials-section {
-    background-color: rgba(245, 245, 245, .21);
-    backdrop-filter: blur(10px);
-    padding: 137px 0 150px;
-    overflow: hidden;
+  padding: 80px 0;
+  background: #f9f9f9;
 }
 
-.testimonials-container:before {
-    content: '';
-    position: absolute;
-    top: -250px;
-    left: -450px;
-    width: 1000px;
-    height: 1000px;
-    z-index: -1;
-    background: rgb(142, 198, 63);
-    background: radial-gradient(circle, rgba(142, 198, 63, 0.18) 0%, rgba(255, 255, 255, 0) 45%);
+.testi-heading {
+font-style: normal;
+font-variant: normal;
+font-weight: 500;       
+font-size: 44px;
+line-height: 75px;
+font-family: "Diagramm";
+
+letter-spacing: 0px;
+color: #000000;
+text-transform: capitalize;
+opacity: 1;
 }
 
-.testimonials-container:after {
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -550px;
-    width: 1000px;
-    height: 1000px;
-    z-index: -1;
-    background: rgb(142, 198, 63);
-    background: radial-gradient(circle, rgba(142, 198, 63, 0.18) 0%, rgba(255, 255, 255, 0) 45%);
-}
+.phone-pill {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  text-align: left;
 
-.testim {
-    position: relative;
-}
-
-.testim:before {
-    content: url('../images/grn-shape1.svg');
-    position: absolute;
-    left: -130px;
-    bottom: -100px;
-    transform: rotate(-8deg);
-}
-
-.testimonials-container .testi-heading {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    color: #111;
-    font-size: 140px;
-    font-weight: 500;
-    margin: 0;
-    line-height: 1;
-}
-
-.testimonials-container .blu-arw {
-    margin: 50px auto 0;
-    display: block;
-}
-
-.testim {
-    margin-top: -33px;
-}
-
-.testim .testi-box {
-    background-color: rgba(255, 255, 255, .88);
-    border-radius: 15px;
-    padding: 43px 32px;
-    backdrop-filter: blur(10px);
-    border: 1px solid #DCDCDC;
-    min-height: 377px;
-    position: relative;
-}
-
-.testim .testi-box .testi-head {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 17px;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-.testim .testi-box .testi-head:after {
-    content: url('../images/icon-quotes2.svg');
-    position: absolute;
-    right: -10px;
-    top: -30px;
-    z-index: -1;
-    height: 126px;
-    width: auto;
-}
-
-.testim .testi-box .testi-head .img-box {
-    width: 107px;
-    height: 107px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.testim .testi-box .testi-head .img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.testim .testi-box .testi-head .cnt-box h2 {
-    font-family: "Outfit", sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    margin: 0;
-    color: #111;
-}
-
-.testim .testi-box .testi-head .cnt-box h3 {
-    font-family: "Outfit", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;       /* bold */
     font-size: 16px;
-    font-weight: 400;
-    color: rgba(17, 17, 17, .83);
-    margin: 10px 0;
+    line-height: 32px;
+    font-family: "Diagramm";
+
+    letter-spacing: 0px;
+    color: #212121;
+    opacity: 1;
 }
 
-.testim .testi-box .testi-head .cnt-box .stars {
-    height: 18px;
-    width: auto;
+.testi-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  border: 1px solid #eee;
+  position: relative;
+  height: 100%;
 }
 
-.testim .testi-box .testi-body {
-    position: relative;
-    padding-bottom: 20px;
+.quote {
+  text-align: left;
+  color: #0d1b2a;
+  margin-bottom: 15px;
 }
 
-.testim .testi-box:after {
-    content: url('../images/icon-quotes.svg');
-    position: absolute;
-    right: 21px;
-    bottom: 18px;
-    z-index: -1;
-    height: 42px;
-    width: auto;
+.quote img {
+display: inline-block;
+max-width: auto;
+
 }
 
-.testim .testi-box .testi-body p {
-    font-size: 19px;
-    color: rgba(36, 36, 36, .90);
-    margin: 0;
+
+.testi-text {
+  font-size: 18px;
+  line-height: 36px;
+  font-weight: 500; /* medium */
+  font-family: 'Inter', sans-serif;
+  color: #161616;
+  margin-bottom: 30px;
+
 }
 
-.testim .owl-theme .owl-nav {
-    margin-top: 40px;
+.testi-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.testim .owl-carousel .owl-nav button.owl-next,
-.testim .owl-carousel .owl-nav button.owl-prev {
-    margin: 8px;
+.logo-box {
+  width: 40px;
+  height: 40px;
+  background: #eee;
+  border-radius: 6px;
 }
 
-.testim .owl-carousel .owl-nav button.owl-next:hover,
-.testim .owl-carousel .owl-nav button.owl-prev:hover {
-    background: none;
+.name {
+  font-weight: 500;
 }
+
+.stars {
+  color: #f5a623;
+}
+
+/* //New Testimonaial */
+
 
 
 /* ---------- Companies Animation -------------- */
@@ -2793,4 +2778,8 @@ opacity: 1;
     .prcss-wrks-section {
         padding: 60px 0;
     }
+    .phone-pill {
+  padding: 8px 12px;
+  font-size: 12px;
+}
 }

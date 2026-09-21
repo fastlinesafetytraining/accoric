@@ -6,24 +6,31 @@ import Oversight from "./components/oversight";
 import CallBanner from "./components/callBanner";
 import Regulated from "./components/regulated";
 import TrustedWhere from "./components/trustedWhere";
+import Testimonials from "../accoricManagement/components/testimonials";
 
+import { useOutletContext } from "react-router-dom";
 
 function Home() {
+
+   const { openPopup } = useOutletContext();
+
   return (
     <>
-      <HomeHero></HomeHero>
+      <HomeHero openPopup={openPopup} ></HomeHero>
 
-      <Construction></Construction>
+      <Construction openPopup={openPopup}></Construction>
 
-      <WorkForceCompliance></WorkForceCompliance>
+      <WorkForceCompliance openPopup={openPopup}></WorkForceCompliance>
 
-      <Accuracy></Accuracy>
+      <Accuracy openPopup={openPopup}></Accuracy>
 
       <Oversight></Oversight>
 
-      <CallBanner></CallBanner>
+      <CallBanner openPopup={openPopup}></CallBanner>
 
-      <Regulated></Regulated>
+      <Regulated openPopup={openPopup}></Regulated>
+
+      <Testimonials></Testimonials>
 
       <TrustedWhere></TrustedWhere>
     </>

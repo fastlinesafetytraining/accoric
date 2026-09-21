@@ -3,9 +3,8 @@ import { useEffect } from "react";
 import logo from "../assets/images/accoric-logo-new.png";
 import arrowImage from "../assets/images/arrow.svg";
 
-function Header() {
-
- useEffect(() => {
+function Header({ openPopup }) {
+  useEffect(() => {
     const header = document.querySelector(".main-header");
     let lastScrollY = window.scrollY;
 
@@ -63,18 +62,24 @@ function Header() {
               >
                 <ul className="navbar-nav col-12 col-md-auto justify-content-center">
                   <li className="nav-item">
-                    <a href="/" className="nav-link">Home</a>
+                    <a href="/" className="nav-link">
+                      Home
+                    </a>
                   </li>
                   <li className="nav-item">
-                    <a href="/accoric-management" className="nav-link">Accoric Management</a>
+                    <a href="/accoric-management" className="nav-link">
+                      Accoric Management
+                    </a>
                   </li>
-                 {/* 
-                    <li className="nav-item">
-                       <a href="/support" className="nav-link">Support</a>
-                    </li> 
-                 */}
+                  {/* <li className="nav-item">
+                    <a href="/support" className="nav-link">
+                      Support
+                    </a>
+                  </li> */}
                   <li className="nav-item">
-                    <a href="/about-us" className="nav-link">About Us</a>
+                    <a href="/about-us" className="nav-link">
+                      About Us
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -84,11 +89,14 @@ function Header() {
                     Login
                   </button>
                 </a>
-                <a href="/contact">
-                  <button type="button" className="btn btn-secondary">
-                    Book a Call <img src={arrowImage} alt="arrow" />
-                  </button>
-                </a>
+
+                <button
+                  type="button"
+                  className="btn btn-secondary"
+                  onClick={openPopup}
+                >
+                  Book a Call <img src={arrowImage} alt="arrow" />
+                </button>
               </div>
             </div>
           </nav>

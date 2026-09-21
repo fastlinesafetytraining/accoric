@@ -1,7 +1,7 @@
 import bannerImage from "../../../assets/images/Services/img2.png";
 import arrowImage from "../../../assets/images/arrow.svg";
 
-function  ManagementFunctions () {
+function  ManagementFunctions ({openPopup}) {
   return (
     <>
       <div class="container b-child-container">
@@ -25,12 +25,14 @@ function  ManagementFunctions () {
                   The system is designed to remain correct, not just complete, as organizations grow and complexity increases.
                 </p>
 
-                <a href="#" class="btn btn-outline-primary">
+                <button type="button" class="btn btn-outline-primary"
+                onClick={openPopup}
+                >
                   <span>
                     Schedule a Compliance Strategy Call{" "}
                     <img src={arrowImage} alt="arrow"></img>
                   </span>
-                </a>
+                </button>
               </div>
               
             </div>
