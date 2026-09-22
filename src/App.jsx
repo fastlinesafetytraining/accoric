@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Toaster } from "react-hot-toast";
 import Layout from "./layout";
 import Home from "./pages/home/home";
 import AccoricManagement from "./pages/accoricManagement/accoricManagement";
@@ -26,6 +27,12 @@ import ViewingRequestingAndDeletingDashcards from "./pages/support/childPages/Vi
 function App() {
   return (
     <BrowserRouter>
+    <Toaster
+      position="top-right"
+      containerStyle={{
+        zIndex: 2147483647,
+      }}
+    />
       <Routes>
 
         <Route element={<Layout />}>
@@ -53,11 +60,13 @@ function App() {
           <Route path="/support/creating-automated-email-reminders" element={<CreatingAutomatedEmailReminders />} />
           <Route path="/support/viewing-requesting-and-deleting-dashcard" element={<ViewingRequestingAndDeletingDashcards />} />
 
-
+     
         </Route>
 
       </Routes>
+
     </BrowserRouter>
+    
   );
 }
 

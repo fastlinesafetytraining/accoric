@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import toast from "react-hot-toast";
 import Modal from "react-modal";
 
 
@@ -21,7 +22,7 @@ const handleChange = (e) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("https://accoricmgt.com/Default/Contact", {
+    const response = await fetch("https://www.accoric.com/Default/Contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -29,12 +30,12 @@ const handleChange = (e) => {
       body: JSON.stringify(form)
     });
 
-    if (response.ok) {
-      alert("Message sent successfully!");
-      onClose();
-    } else {
-      alert("Error sending message");
-    }
+if (response.ok) {
+  toast.success("Message sent successfully!");
+  onClose();
+} else {
+  toast.error("Failed to send your message. Please try again.");
+}
   };
 
   return (
