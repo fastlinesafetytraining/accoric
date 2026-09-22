@@ -6,6 +6,7 @@ import Modal from "react-modal";
 Modal.setAppElement("#root");
 
 function ContactPopup({ isOpen, onClose }) {
+  const [IsSubmitting, setIsSubmitting] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -22,7 +23,9 @@ const handleChange = (e) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("https://accoricmgt.com/Default/Contact", {
+    setIsSubmitting(true);
+    try{
+        const response = await fetch("https://accoricmgt.com/Default/Contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -32,9 +35,17 @@ const handleChange = (e) => {
 
 if (response.ok) {
   toast.success("Message sent successfully!");
+
   onClose();
 } else {
   toast.error("Failed to send your message. Please try again.");
+}
+    }
+    catch(error){
+      toast.error("Something went wrong. Please try again.")
+    }
+finally{
+   setIsSubmitting(false);
 }
   };
 
@@ -69,9 +80,15 @@ if (response.ok) {
        <div class="btn-wrap d-flex justify-content-end gap-2" >
    
         <button type="button" className=" btn btn-secondary" onClick={onClose}>Close</button>
-        <button className="btn btn-outline-primary" type="submit">
-          <span>Send</span>
-          </button>
+        <button
+          className="btn btn-outline-primary"
+          type="submit"
+          disabled={IsSubmitting}
+        >
+          <span className="SubmitBtn">
+            {IsSubmitting ?  "Sending..." : "Send"}
+          </span>
+        </button>
         </div>
       </form>
     </Modal>
