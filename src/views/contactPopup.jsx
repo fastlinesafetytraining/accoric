@@ -22,7 +22,7 @@ const handleChange = (e) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("https://www.accoric.com/Default/Contact", {
+    const response = await fetch("https://accoricmgt.com/Default/Contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
